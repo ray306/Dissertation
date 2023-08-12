@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h4 class="unnumbered" id="materials-for-chapter-2">Materials for
+Chapter 2</h4>
+<p><strong>Code Snippets</strong></p>
+<ol>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#1-pre-processing-script-for-mne-python"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#1-pre-processing-script-for-mne-python</a><span
+id="smcode:ch2.1" label="smcode:ch2.1"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#2-load-multiple-fif-epoch-files-and-save-as-one-h5-file"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#2-load-multiple-fif-epoch-files-and-save-as-one-h5-file</a><span
+id="smcode:ch2.2" label="smcode:ch2.2"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#3-an-example-for-using-an-external-classifier-convolutional-neural-network"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#3-an-example-for-using-an-external-classifier-convolutional-neural-network</a><span
+id="smcode:ch2.3" label="smcode:ch2.3"></span></p></li>
+</ol>
+<p><strong>Output Results</strong></p>
+<ol>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#1"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#1</a><span
+id="smcode:ch2.r1" label="smcode:ch2.r1"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#2"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#2</a><span
+id="smcode:ch2.r2" label="smcode:ch2.r2"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#3"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#3</a><span
+id="smcode:ch2.r3" label="smcode:ch2.r3"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#4"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#4</a><span
+id="smcode:ch2.r4" label="smcode:ch2.r4"></span></p></li>
+<li><p><a
+href="https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#5"
+class="uri">https://github.com/ray306/EasyEEG/wiki/Appendix-for-paper-%22Group-Level-Multivariate-Analysis-in-EasyEEG-Toolbox:-Examining-the-Temporal-Dynamics-using-Topographic-Responses%22#5</a><span
+id="smcode:ch2.r5" label="smcode:ch2.r5"></span></p></li>
+</ol>
+<h4 class="unnumbered" id="materials-for-chapter-5">Materials for
+Chapter 5</h4>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span></p>
+<p><strong><em>Training parameter settings</em></strong> <span
+id="appendix:ch5.parameter" label="appendix:ch5.parameter"></span><br />
+Since BR-phono is a child-directed speech corpus, its chunk types are
+usually very common, and so they often have much higher document ratios
+than CTB8 chunks. We use a lower <span
+class="math inline"><em>τ</em><sub>0</sub></span>, which is related to
+document ratio, to balance the corpus difference. The number of training
+epochs for CTB8, which is large-scale, was set to a higher number than
+for BR-phono. The epochs numbers are well beyond the convergence points.
+<span class="math inline"><em>α</em></span> and <span
+class="math inline"><em>Δ</em></span> mainly affect the training speed,
+while <span class="math inline"><em>ω</em></span> and <span
+class="math inline"><em>τ</em><sub>0</sub></span> mainly affect <span
+class="math inline">|<em>L</em>|</span>. The current parameter settings
+may not be optimal for end tasks such as word segmentation; in
+preliminary experiments we optimized for speed<a href="bibilo.html#fn32"
+class="footnote-ref" id="fnref32"
+role="doc-noteref"><sup>32</sup></a>.</p>
+<div class="center">
+<div id="tab:ch5.parameters">
+<table>
+<caption><strong>The parameter settings in the training on two
+corpora.</strong> <span class="math inline"><em>α</em></span> is the
+sampling probability, <span class="math inline"><em>Δ</em></span> the
+re-ranking rate, <span class="math inline"><em>ω</em></span> the
+forgetting ratio, <span
+class="math inline"><em>τ</em><sub>0</sub></span> the probation
+period.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: center;"><span
+class="math inline"><strong>α</strong></span></th>
+<th style="text-align: center;"><span
+class="math inline"><strong>Δ</strong></span></th>
+<th style="text-align: center;"><span
+class="math inline"><strong>ω</strong></span></th>
+<th style="text-align: center;"><span
+class="math inline"><strong>τ</strong><sub><strong>0</strong></sub></span></th>
+<th style="text-align: center;"><strong>epochs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BR-phono</td>
+<td rowspan="2" style="text-align: center;">0.25</td>
+<td rowspan="2" style="text-align: center;">0.2</td>
+<td rowspan="2" style="text-align: center;">0.0001</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">5,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CTB8</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">50,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong><em>Segmentations with increasing number of training
+epochs</em></strong> <span id="appendix:ch5.dynamics"
+label="appendix:ch5.dynamics"></span><br />
+The progression in chunking over training epochs before convergence
+(Table <a href="#tab:ch5.dynamics" data-reference-type="ref"
+data-reference="tab:ch5.dynamics">3.2</a>) shows LiB can learn some word
+chunks even in the very early epochs. Also, Table <a
+href="#tab:ch5.dynamics" data-reference-type="ref"
+data-reference="tab:ch5.dynamics">3.2</a> illustrates that convergence
+is reached well before the preset number of runs.</p>
+<div class="center">
+<div id="tab:ch5.dynamics">
+<table>
+<caption><strong>Example segmentations of strings in the two corpora
+with increasing number of training epochs.</strong> See Table <a
+href="#tab:ch5.sentences" data-reference-type="ref"
+data-reference="tab:ch5.sentences">1.3</a> for the correct word-level
+segementation.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: right;"><strong>Epoch</strong></th>
+<th style="text-align: left;"><strong>Segmentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BRphono</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Olr9tW9dontwipUthIm6wenQ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">1</td>
+<td
+style="text-align: left;">O·l·r·9·t·W·9·don·t·w·i·pUt·h·I·m·6·w·e·nQ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Ol·r·9t·W·9·dont·wi·pUt·h·I·m·6·we·nQ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Olr9t·W9·dont·wi·pUt·hIm·6we·nQ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">Olr9t·W·9dont·wi·pUthIm6we·nQ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: left;">Olr9t·W·9dont·wi·pUthIm6we·nQ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CTB8</td>
+<td style="text-align: right;">0</td>
+<td
+style="text-align: left;">这个出口信贷项目委托中国银行为代理银行</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">1</td>
+<td
+style="text-align: left;">这·个·出·口·信·贷·项·目·委·托·中·国·银·行·为·代·理·银·行</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">2</td>
+<td
+style="text-align: left;">这·个·出·口·信·贷·项·目·委·托·中国·银·行·为·代·理·银·行</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">10</td>
+<td
+style="text-align: left;">这·个·出口·信·贷·项·目·委·托·中国·银·行·为·代·理·银·行</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">100</td>
+<td
+style="text-align: left;">这个·出口·信·贷·项目·委·托·中国·银·行·为·代·理·银·行</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">1,000</td>
+<td
+style="text-align: left;">这个·出口·信贷·项目·委·托·中国·银行·为·代·理·银行</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;">10,000</td>
+<td
+style="text-align: left;">这个·出口信贷·项目·委托·中国银行·为·代理·银行</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong><em>Top, middle and tail entries in lexicon</em></strong>
+<span id="appendix:ch5.lexicon" label="appendix:ch5.lexicon"></span></p>
+<div class="center">
+<table>
+<caption><strong>The top 50 entries, the middle 20 entries and the tail
+20 entries in the lexicons.</strong> The original results of BRphono are
+in phonemic characters; we transcribed the entries containing complete
+words into English words (in bold font) for ease of presentation. The
+original results of CTB8 are the Chinese characters; we added the
+English translations (in bold font) with the entries containing complete
+words.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: left;"><strong>Entries in Lexicon</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BRphono(Top 50)</td>
+<td style="text-align: left;"><span> D6 <strong>the</strong>, y&amp;
+<strong>yeah</strong>, yu <strong>you</strong>, WAt
+<strong>what</strong>, wan6 <strong>wanna</strong>, k&amp;nyu
+<strong>can you</strong>, tu <strong>two</strong>, &amp;nd
+<strong>and</strong>, D&amp;ts <strong>that’s</strong>, oke
+<strong>okay</strong>, f% <strong>four</strong>, nQ
+<strong>now</strong>, It <strong>it</strong>, D*
+<strong>they’re</strong>, hiz <strong>he’s</strong>, In
+<strong>in</strong>, lUk <strong>look</strong>, wIT
+<strong>with</strong>, yuwant <strong>you want</strong>, hu
+<strong>who</strong>, hi <strong>he</strong>, D&amp;t
+<strong>that</strong>, Ol <strong>all</strong>, y)
+<strong>your</strong>, h( <strong>here</strong>, 9TINk <strong>i
+think</strong>, pUt <strong>put</strong>, D&amp;ts6 <strong>that’s
+a</strong>, WAts <strong>what’s</strong>, yuk&amp;n <strong>you
+can</strong>, hIz <strong>his</strong>, m9 <strong>my</strong>, si
+<strong>see</strong>, yuwan6 <strong>you wanna</strong>, no
+<strong>no</strong>, IzD&amp;t <strong>is that</strong>, h9
+<strong>high</strong>, huz <strong>whose</strong>, DIs
+<strong>this</strong>, gUd <strong>good</strong>, D*z
+<strong>there’s</strong>, v*i <strong>very</strong>, siD6 <strong>see
+the</strong>, Its6 <strong>its a</strong>, IzIt <strong>is it</strong>,
+Olr9t <strong>alright</strong>, DIsIz <strong>this is</strong>, #yu
+<strong>are you</strong>, IN <strong>ing</strong>, h&amp;v
+<strong>have</strong> </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BRphono(Middle 20)</td>
+<td style="text-align: left;"><span> siD&amp;t <strong>see
+that</strong>, nik, lEtmiQt <strong>let me out</strong>, DIsgoz
+<strong>this goes</strong>, d&amp;diznat <strong>daddy’s not</strong>,
+9ms%i <strong>i’m sorry</strong>, kIN, lUksl9k6n9s, wITDiz <strong>with
+these</strong>, hizwe <strong>he’s way</strong>, lON
+<strong>long</strong>, h&amp;p  <strong>happen</strong>, lEtssiIf
+<strong>let’s see if</strong>, lEtspUthIm6we <strong>let’s put him
+away</strong>, diIzf%, pR, brEkf6st <strong>breakfast</strong>, h9c*
+<strong>high chair</strong>, lUk&amp;tD6bUk <strong>look at the
+book</strong>, W*zD6kIti </span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Nkyu, T, uyuwant, * <strong>air</strong>,
+3, ( <strong>ear</strong>, Z, c, ), M, InhIzhQs, 6mily6
+<strong>amelia</strong>, dOghQs <strong>doghouse</strong>, wITt7z
+<strong>with toys</strong>, &amp;ndsAmt9mzwi, holdh&amp;ndz <strong>hold
+hands</strong>, tIkLmi <strong>tickle me</strong>, h9ke <strong>high
+kay</strong>, tekItQt, k&amp;nyubrAShIzh*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CTB8(Top 50)</td>
+<td style="text-align: left;"><span> 没有 <strong>haven’t</strong>, 中国
+<strong>China</strong>, 我们 <strong>we</strong>, 经济
+<strong>economics</strong>, 已经 <strong>already</strong>, 孩子
+<strong>kid</strong>, 但是 <strong>but</strong>, 教育
+<strong>education</strong>, 可以 <strong>can</strong>, 目前
+<strong>now</strong>, 政府 <strong>government</strong>, 国家
+<strong>country</strong>, 一个 <strong>a</strong>, 这些
+<strong>these</strong>, 自己 <strong>self</strong>, 不能
+<strong>can’t</strong>, 如果 <strong>if</strong>, 记者
+<strong>journalist</strong>, 今天 <strong>today</strong>, 他们
+<strong>they</strong>, 虽然 <strong>although</strong>, 要求
+<strong>require</strong>, 技术 <strong>tech</strong>, 进行
+<strong>process</strong>, 这个 <strong>this</strong>, 新华社
+<strong>Xinhua News Agency</strong>, 希望 <strong>wish</strong>, 问题
+<strong>issue</strong>, 就是 <strong>is</strong>, 大陆
+<strong>mainland</strong>, 因为 <strong>because</strong>, 一些
+<strong>some</strong>, 以及 <strong>and</strong>, 都是 <strong>all
+are</strong>, 因此 <strong>so</strong>, 现在 <strong>now</strong>, 可能
+<strong>may</strong>, 台湾 <strong>Taiwan</strong>, 应该
+<strong>should</strong>, 政治 <strong>political</strong>, 发展
+<strong>development</strong>, 也是 <strong>also is</strong>, 还是
+<strong>also is</strong>, 社会 <strong>society</strong>, 这样
+<strong>such</strong>, 通过 <strong>via</strong>, 继续
+<strong>continue</strong>, 不是 <strong>isn’t</strong>, 上海
+<strong>Shanghai</strong>, 的 <strong>’s</strong> </span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CTB8(Middle 20)</td>
+<td style="text-align: left;"><span> 肝脏 <strong>liver</strong>,
+军事政变推翻 <strong>military coup overthrows</strong>, 在其他地方
+<strong>in other places</strong>, 在野势力 <strong>opposition
+force</strong>, 而且这个 <strong>and this</strong>, 泄的, 帮他
+<strong>help him</strong>, 宝应县 <strong>Baoying County</strong>,
+政治新闻 <strong>political news</strong>, 经济越 <strong>economic
+more</strong>, 塔肯, 迅速地 <strong>rapidly</strong>, 铅笔
+<strong>pencil</strong>, 集体经济 <strong>collective economy</strong>,
+起源 <strong>origin</strong>, 邓相扬协助 <strong>Tang Xiangyang
+assisted</strong>, 建制 <strong>establishment</strong>, 写完
+<strong>after writing</strong>, 说的那样 <strong>as said</strong>, 后顾
+<strong>look back</strong> </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CTB8(Tail 20)</td>
+<td style="text-align: left;"><span> 存在主权 <strong>there is
+sovereignty</strong>, 确权 <strong>confirm rights</strong>, 草案还
+<strong>the draft also</strong>, 桌会议, 第一首相 <strong>the first
+prime minister</strong>, 迪奥 <strong>dior</strong>, 长大了
+<strong>grown up</strong>, 爱他 <strong>love him</strong>, 说他
+<strong>say him</strong>, 子虚乌, 有没有参与 <strong>did you
+participate</strong>, 严谨的 <strong>rigorous</strong>, 仍然是
+<strong>is still</strong>, 站上车, 运输署 <strong>Transport
+Department</strong>, 杀机 <strong>murderous</strong>, 决
+<strong>decided</strong>, 建成通车 <strong>completed and opened to
+traffic</strong>, 主要嫌疑人赖昌星 <strong>the main suspect Lai
+Changxing</strong>, 已经向加拿大 <strong>has to Canada</strong>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 class="unnumbered" id="research-data-management">Research Data
+Management</h4>
+<p><strong>Chapter 2:</strong><br />
+The dataset was downloaded from the Internet; its license allowed
+unrestricted use for research. The URL of the dataset and the analysis
+code were described in the main text and appendix.<br />
+<strong>Chapter 3:</strong><br />
+This chapter involves the analyses of behavioral (reaction time) and EEG
+data. The data were collected by the author. The participants were
+anonymized by their experimental ID in order to protect the
+participants’ privacy. The reaction time and EEG data of any participant
+cannot be used to identify the participant. Participants provided their
+ages and genders, but the chapter reports only the summary of these
+information.<br />
+In the context of scientific integrity, I followed the policy of my
+institute and archived the research data associated with my publication
+(including raw data and analysis scripts) in a folder in my Radboud
+University work group folder (i.e., in my "werkgroepmap") for a minimum
+of 10 years.<br />
+The data sharing is possible since the data can be regarded as
+completely anonimised. With the purpose of data reuse, I made my data
+public by publishing it on Open Science Framework (<a
+href="https://osf.io/ecqrd/" class="uri">https://osf.io/ecqrd/</a>).
+This includes raw data and analysis scripts, and is under the Open Data
+Commons Attribution License.<br />
+<strong>Chapter 4:</strong><br />
+This chapter involves the analyses of behavioral (reaction time) and EEG
+data. The data were collected by the author. The participants were
+anonymized by their experimental ID in order to protect the
+participants’ privacy. The reaction time and EEG data of any participant
+cannot be used to identify the participant. Participants provided their
+ages and genders, but the chapter reports only the summary of these
+information.<br />
+In the context of scientific integrity, I followed the policy of my
+institute and archived the research data associated with my publication
+(including raw data and analysis scripts) in a folder in my Radboud
+University work group folder (i.e., in my "werkgroepmap") for a minimum
+of 10 years.<br />
+The data sharing is possible since the data can be regarded as
+completely anonimised and participants agreed to this via informed
+consent. With the purpose of data reuse, I made my data public by
+publishing it on Open Science Framework (<a href="https://osf.io/bvpz2/"
+class="uri">https://osf.io/bvpz2/</a>). This includes raw data and
+analysis scripts, and is under the Open Data Commons Attribution
+License.<br />
+<strong>Chapter 5:</strong><br />
+The dataset was downloaded from the Internet; its license allowed
+unrestricted use for research. The URL of the dataset were described in
+the main text. The analysis script can be found at <a
+href="https://github.com/ray306/LiB"
+class="uri">https://github.com/ray306/LiB</a>.<br />
+<strong>Chapter 6:</strong><br />
+The dataset was downloaded from the Internet; its license allowed
+unrestricted use for research. The URL of the dataset were described in
+the main text. The analysis script can be found at <a
+href="https://github.com/ray306/LiB-predicts-eye-fixations"
+class="uri">https://github.com/ray306/LiB-predicts-eye-fixations</a>.</p>
+
+<h4 class="unnumbered" id="acknowledgement">Acknowledgement</h4>
+<p>My PhD journey started five years ago when I got the fellowship from
+the Max Planck Institute for Psycholinguistics. There are so many people
+I would like to thank. The first two are, of course, my supervisors,
+Antal and Stefan. I am grateful to have met such patient supervisors!
+Every time I finished a draft of my paper, they double-checked every
+word. Their revisions greatly improved the quality of my papers, and I
+could gradually understand the subtler ideas of writing from their
+comments. Moreover, I must admit that I am a hopeless scheduler - I am
+always lazy about the necessary but curious about all kinds of
+unnecessary things. I couldn’t have finished my thesis without Stefan
+and Antal pulling me back on track many times. I also appreciate the
+feedback from my thesis committee members, Mirjam Ernestus, Fermín
+Moscoso del Prado Martín, Inbal Arnon, Tianlin Wang, and Lars Meyer.
+They showed me what I had missed.</p>
+<p>I have also received much support from staff and colleagues
+throughout my PhD career. Whenever I have a workflow problem, Kevin is
+the first person I consider asking. Margret helped me with my
+experimental schedule. Bob helped me when I had problems with the lab
+equipment. Henk organized seminars and shared his Overleaf accounts with
+me. Angela guided me on my contracts and institute accounts. Edith and
+Luise handled my conference travel arrangements and reimbursements.
+Johan built the trigger box I requested. Wessel helped me with problems
+on the server. I have three great officemates, Marten, Afrooz, and
+Danny. I am not used to join the Dutch-style party to make friends, but
+because of the close distance and familiarity, I can enjoy the time with
+them.</p>
+<p>Life abroad can be difficult without friends from the same country.
+Fortunately, I met a lot of Chinese friends in my life in Nijmegen. Chen
+Shen was my first Chinese colleague, and she was the first new friend I
+met in Nijmegen. We used to live closely with each other, so we used to
+leave work together and discussed about everything. I heard she just had
+a baby; congratulations! Zhen Zhang invited me into a circle where there
+are also Ting Mei, Weitao Zhang, Chao Tang, and Mingqian Guo. We
+traveled around, had parties, or enjoyed delicious food made by Zhen and
+Ting almost weekly. I have a lot of great neighbors, Chao Guo, Tao He,
+Mingmei Sun, Chunan Guo, Qi Song, Liu Shi, Fugang Gao, and Juanyuan
+Zhao. We often had parties or visited each other’s houses. I often had
+dinner with my CLS friends Yu Bai, Wei Xue (and her husband, Zhengyu
+Zhao), Xiaoru Yu, Hongling Xiao, Lei Wang, my Donders friends Xiangzhen
+Kong, Xiaochen Cheng, Bohan Dai, Xu Gong, Wei Liu, and Huan Wang. Lei
+Li, Junfei Hu, Yiguang Liu, Wanxiao Tang, Shan Jiang, Jiahao Xu, Qiming
+Su, Jiaqi Wang, and Tongyu Wu, we played TRPG or chatted online
+frequently. We had a great time, and I miss them all. Some of them are
+far away. But the world is such a small place. Who knows?</p>
+<p>The most important support came from my family. My grandfather,
+father, mother, aunts, sister, and niece stayed in China, but I still
+had close contact with them from frequent video calls. Their concern
+relieved me of homesickness, and their understanding encouraged me in my
+career. Although we went through a hard time, we got through it well. I
+hope our family will always be happy, safe, and healthy. About three
+years ago, Sizhu Han came to Europe as a visiting scholar. Fate brought
+us together, and she became my girlfriend, my first lover. Her presence
+in my life changed me. I believe she will become the other half of my
+life.</p>
+<p>Jinbiao Yang was born in Fuyang, China, on December 31st 1990. He
+obtained his bachelor’s degree in Computer Science and Technology from
+Anhui Agricultural University, China, in 2013. He considered that human
+language ability as the key to general artificial intelligence, so he
+started studying psycholinguistics and cognitive neuroscience at East
+China Normal University, China where he received his MSc degree in 2016.
+He then worked as a research associate at New York University Shanghai,
+China for one year. In 2017, he received the PhD fellowship from the Max
+Planck Institute for Psycholinguistics (MPI) and became a PhD candidate
+at both MPI and the Centre for Language Studies, Radboud University, the
+Netherlands. He finished this thesis in 2022, and joined the Language
+and Computation in Neural Systems Group at MPI as a postdoctoral
+researcher.</p>
+    </section>
+
+  </body>
+</html>
+

@@ -1,0 +1,1860 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h4 class="unnumbered" id="references">References</h4>
+      <div id="refs" class="references csl-bib-body hanging-indent"
+data-line-spacing="2" role="doc-bibliography">
+</br><div id="ref-Abadi2016-rx" class="csl-entry" role="doc-biblioentry">
+Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C.,
+Corrado, G. S., Davis, A., Dean, J., Devin, M., Ghemawat, S.,
+Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz,
+R., Kaiser, L., Kudlur, M., … Zheng, X. (2016). <span>TensorFlow</span>:
+Large-scale machine learning on heterogeneous distributed systems.
+<em>arXiv Preprint arXiv:1603.04467</em>, 265–283. <a
+href="https://arxiv.org/abs/1603.04467">https://arxiv.org/abs/1603.04467</a>
+</div>
+</br><div id="ref-Abel2003-sb" class="csl-entry" role="doc-biblioentry">
+Abel, B. (2003). <span>English</span> idioms in the first language and
+second language lexicon: A dual representation approach. <em>Second
+Language Research</em>, <em>19</em>(4), 329–358. <a
+href="https://doi.org/10.1191/0267658303sr226oa">https://doi.org/10.1191/0267658303sr226oa</a>
+</div>
+</br><div id="ref-Adiwardana2020-ak" class="csl-entry"
+role="doc-biblioentry">
+Adiwardana, D., Luong, M.-T., So, D. R., Hall, J., Fiedel, N.,
+Thoppilan, R., Yang, Z., Kulshreshtha, A., Nemade, G., Lu, Y., &amp; Le,
+Q. V. (2020). Towards a human-like <span>Open-Domain</span> chatbot.
+<em>arXiv Preprint arXiv:2001.09977</em>. <a
+href="https://arxiv.org/abs/2001.09977">https://arxiv.org/abs/2001.09977</a>
+</div>
+</br><div id="ref-Almohizea2016-vu" class="csl-entry" role="doc-biblioentry">
+Almohizea, M. I. (2016). The placement of idioms in traditional and
+non-traditional approaches. <em>International Journal of Language and
+Linguistics</em>, <em>3</em>(5).
+</div>
+</br><div id="ref-Andrews2004-ab" class="csl-entry" role="doc-biblioentry">
+Andrews, S., Miller, B., &amp; Rayner, K. (2004). Eye movements and
+morphological segmentation of compound words: There is a mouse in
+mousetrap. <em>Eur. J. Cogn. Psychol.</em>, <em>16</em>(1-2), 285–311.
+<a
+href="https://doi.org/10.1080/09541440340000123">https://doi.org/10.1080/09541440340000123</a>
+</div>
+</br><div id="ref-Araujo2015-jf" class="csl-entry" role="doc-biblioentry">
+Araújo, S., Faı́sca, L., Bramão, I., Reis, A., &amp; Petersson, K. M.
+(2015). Lexical and sublexical orthographic processing: An
+<span>ERP</span> study with skilled and dyslexic adult readers.
+<em>Brain Lang.</em>, <em>141</em>, 16–27. <a
+href="https://doi.org/10.1016/j.bandl.2014.11.007">https://doi.org/10.1016/j.bandl.2014.11.007</a>
+</div>
+</br><div id="ref-Arlot2010-sk" class="csl-entry" role="doc-biblioentry">
+Arlot, S., &amp; Celisse, A. (2010). A survey of cross-validation
+procedures for model selection. <em>Stat. Surv.</em>, <em>4</em>, 40–79.
+<a
+href="https://doi.org/10.1214/09-SS054">https://doi.org/10.1214/09-SS054</a>
+</div>
+</br><div id="ref-Arnon2015-pi" class="csl-entry" role="doc-biblioentry">
+Arnon, I. (2015). What can frequency effects tell us about the building
+blocks and mechanisms of language learning? <em>J. Child Lang.</em>,
+<em>42</em>(2), 274-7; discussion 316-22. <a
+href="https://doi.org/10.1017/S0305000914000610">https://doi.org/10.1017/S0305000914000610</a>
+</div>
+</br><div id="ref-Arnon2013-zi" class="csl-entry" role="doc-biblioentry">
+Arnon, I., &amp; Priva, U. C. (2013). More than words: The effect of
+multi-word frequency and constituency on phonetic duration. <em>Lang.
+Speech</em>, <em>56</em>(Pt 3), 349–371. <a
+href="https://doi.org/10.1177/0023830913484891">https://doi.org/10.1177/0023830913484891</a>
+</div>
+</br><div id="ref-Arnon2010-kw" class="csl-entry" role="doc-biblioentry">
+Arnon, I., &amp; Snider, N. (2010). More than words: Frequency effects
+for multi-word phrases. <em>J. Mem. Lang.</em>, <em>62</em>(1), 67–82.
+<a
+href="https://doi.org/10.1016/j.jml.2009.09.005">https://doi.org/10.1016/j.jml.2009.09.005</a>
+</div>
+</br><div id="ref-Baayen2007-lk" class="csl-entry" role="doc-biblioentry">
+Baayen, R. H. (2007). Storage and computation in the mental lexicon. In
+G. Jarema &amp; G. Libben (Eds.), <em>The mental lexicon: Core
+perspectives</em> (pp. 81–104). Elsevier. <a
+href="https://doi.org/10.1163/9780080548692_006">https://doi.org/10.1163/9780080548692_006</a>
+</div>
+</br><div id="ref-Baddeley1999-xb" class="csl-entry" role="doc-biblioentry">
+Baddeley, A. D. (1999). <em>Essentials of human memory</em>. Psychology
+Press.
+</div>
+</br><div id="ref-Balota1985-jq" class="csl-entry" role="doc-biblioentry">
+Balota, D. A., Pollatsek, A., &amp; Rayner, K. (1985). The interaction
+of contextual constraints and parafoveal visual information in reading.
+<em>Cogn. Psychol.</em>, <em>17</em>(3), 364–390. <a
+href="https://doi.org/10.1016/0010-0285(85)90013-1">https://doi.org/10.1016/0010-0285(85)90013-1</a>
+</div>
+</br><div id="ref-Bannard2008-eo" class="csl-entry" role="doc-biblioentry">
+Bannard, C., &amp; Matthews, D. (2008). Stored word sequences in
+language learning: The effect of familiarity on children’s repetition of
+four-word combinations. <em>Psychol. Sci.</em>, <em>19</em>(3), 241–248.
+<a
+href="https://doi.org/10.1111/j.1467-9280.2008.02075.x">https://doi.org/10.1111/j.1467-9280.2008.02075.x</a>
+</div>
+</br><div id="ref-Bar2003-ch" class="csl-entry" role="doc-biblioentry">
+Bar, M. (2003). A cortical mechanism for triggering top-down
+facilitation in visual object recognition. <em>J. Cogn. Neurosci.</em>,
+<em>15</em>(4), 600–609. <a
+href="https://doi.org/10.1162/089892903321662976">https://doi.org/10.1162/089892903321662976</a>
+</div>
+</br><div id="ref-Bar2007-vf" class="csl-entry" role="doc-biblioentry">
+Bar, M. (2007). The proactive brain: Using analogies and associations to
+generate predictions. <em>Trends Cogn. Sci.</em>, <em>11</em>(7),
+280–289. <a
+href="https://doi.org/10.1016/j.tics.2007.05.005">https://doi.org/10.1016/j.tics.2007.05.005</a>
+</div>
+</br><div id="ref-Bar2006-cr" class="csl-entry" role="doc-biblioentry">
+Bar, M., Kassam, K. S., Ghuman, A. S., Boshyan, J., Schmid, A. M.,
+Schmidt, A. M., Dale, A. M., Hämäläinen, M. S., Marinkovic, K.,
+Schacter, D. L., Rosen, B. R., &amp; Halgren, E. (2006). Top-down
+facilitation of visual recognition. <em>Proc. Natl. Acad. Sci. U. S.
+A.</em>, <em>103</em>(2), 449–454. <a
+href="https://doi.org/10.1073/pnas.0507062103">https://doi.org/10.1073/pnas.0507062103</a>
+</div>
+</br><div id="ref-Barman2012-li" class="csl-entry" role="doc-biblioentry">
+Barman, B. (2012). The linguistic philosophy of noam chomsky.
+<em>Philos. Prog.</em>, 103–122. <a
+href="https://doi.org/10.3329/pp.v51i1-2.17681">https://doi.org/10.3329/pp.v51i1-2.17681</a>
+</div>
+</br><div id="ref-Benjamini1995-rm" class="csl-entry" role="doc-biblioentry">
+Benjamini, Y., &amp; Hochberg, Y. (1995). Controlling the false
+discovery rate: A practical and powerful approach to multiple testing.
+<em>J. R. Stat. Soc. Series B Stat. Methodol.</em>, <em>57</em>(1),
+289–300. <a
+href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a>
+</div>
+</br><div id="ref-Bennett1995-fg" class="csl-entry" role="doc-biblioentry">
+Bennett, C. H. (1995). Logical depth and physical complexity. In
+<em>Computerkultur</em> (pp. 207–235). Springer Vienna. <a
+href="https://doi.org/10.1007/978-3-7091-6597-3_8">https://doi.org/10.1007/978-3-7091-6597-3_8</a>
+</div>
+</br><div id="ref-Bernstein-Ratner1987-op" class="csl-entry"
+role="doc-biblioentry">
+Bernstein-Ratner, N. (1987). The phonology of parent-child speech.
+<em>Children’s Language</em>, <em>6</em>(3).
+</div>
+</br><div id="ref-Berwick2016-ck" class="csl-entry" role="doc-biblioentry">
+Berwick, R. C., &amp; Chomsky, N. (2016). <em>Why only us: Language and
+evolution</em>. MIT Press.
+</div>
+</br><div id="ref-Blache2015-jf" class="csl-entry" role="doc-biblioentry">
+Blache, P. (2015). Hybrid parsing for human language processing.
+<em>Natural Language Processing and Cognitive Science</em>, 9–20.
+</div>
+</br><div id="ref-Blache2012-zs" class="csl-entry" role="doc-biblioentry">
+Blache, P., &amp; Rauzy, S. (2012). Robustness and processing difficulty
+models. <span>A</span> pilot study for eye-tracking data on the french
+treebank. <em>24th International Conference on Computational
+Linguistics</em>, 21.
+</div>
+</br><div id="ref-Bloomfield1933-gl" class="csl-entry"
+role="doc-biblioentry">
+Bloomfield, L. (1933). <em>Language</em>. Unwin University Books.
+</div>
+</br><div id="ref-Van_den_Bosch2013-we" class="csl-entry"
+role="doc-biblioentry">
+Bosch, A. van den, &amp; Daelemans, W. (2013). Implicit schemata and
+categories in memory-based language processing. <em>Lang. Speech</em>,
+<em>56</em>(Pt 3), 309–328. <a
+href="https://doi.org/10.1177/0023830913484902">https://doi.org/10.1177/0023830913484902</a>
+</div>
+</br><div id="ref-Box1987-dj" class="csl-entry" role="doc-biblioentry">
+Box, G. E. P., &amp; Draper, N. R. (1987). Empirical model-building and
+response surfaces. <em>Wiley Series in Probability and Mathematical
+Statistics.</em>, <em>669</em>.
+</div>
+</br><div id="ref-Brennan2019-oo" class="csl-entry" role="doc-biblioentry">
+Brennan, J., &amp; Hale, J. T. (2019). Hierarchical structure guides
+rapid linguistic predictions during naturalistic listening. <em>PLoS
+One</em>, <em>14</em>(1), e0207741. <a
+href="https://doi.org/10.1371/journal.pone.0207741">https://doi.org/10.1371/journal.pone.0207741</a>
+</div>
+</br><div id="ref-Brennan2012-qw" class="csl-entry" role="doc-biblioentry">
+Brennan, J., Nir, Y., Hasson, U., Malach, R., Heeger, D. J., &amp;
+Pylkkänen, L. (2012). Syntactic structure building in the anterior
+temporal lobe during natural story listening. <em>Brain Lang.</em>,
+<em>120</em>(2), 163–173. <a
+href="https://doi.org/10.1016/j.bandl.2010.04.002">https://doi.org/10.1016/j.bandl.2010.04.002</a>
+</div>
+</br><div id="ref-Brett2017-bb" class="csl-entry" role="doc-biblioentry">
+Brett, K. D., &amp; Michael, W. (2017). <em>Max wertheimer and gestalt
+theory</em>. Routledge.
+</div>
+</br><div id="ref-Brown2020-rs" class="csl-entry" role="doc-biblioentry">
+Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal,
+P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
+Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A.,
+Ziegler, D. M., Wu, J., Winter, C., … Amodei, D. (2020). Language models
+are <span>Few-Shot</span> learners. <em>arXiv Preprint
+arXiv:2005.14165</em>. <a
+href="https://arxiv.org/abs/2005.14165">https://arxiv.org/abs/2005.14165</a>
+</div>
+</br><div id="ref-Brunet2011-gi" class="csl-entry" role="doc-biblioentry">
+Brunet, D., Murray, M. M., &amp; Michel, C. M. (2011). Spatiotemporal
+analysis of multichannel <span>EEG</span>: <span>CARTOOL</span>.
+<em>Comput. Intell. Neurosci.</em>, <em>2011</em>, 813870. <a
+href="https://doi.org/10.1155/2011/813870">https://doi.org/10.1155/2011/813870</a>
+</div>
+</br><div id="ref-Brysbaert1998-bf" class="csl-entry" role="doc-biblioentry">
+Brysbaert, M., &amp; Vitu, F. (1998). Word skipping: Implications for
+theories of eye movement control in reading. In G. Underwood (Ed.),
+<em>Eye guidance in reading and scene perception</em> (pp. 125–147).
+Elsevier Science Ltd. <a
+href="https://doi.org/10.1016/B978-008043361-5/50007-9">https://doi.org/10.1016/B978-008043361-5/50007-9</a>
+</div>
+</br><div id="ref-Buswell1935-da" class="csl-entry" role="doc-biblioentry">
+Buswell, G. T. (1935). <em>How people look at pictures: A study of the
+psychology and perception in art</em> (Vol. 198). University of Chicago
+Press.
+</div>
+</br><div id="ref-Bybee1995-ha" class="csl-entry" role="doc-biblioentry">
+Bybee, J. (1995). Regular morphology and the lexicon. <em>Lang. Cogn.
+Process.</em>, <em>10</em>(5), 425–455. <a
+href="https://doi.org/10.1080/01690969508407111">https://doi.org/10.1080/01690969508407111</a>
+</div>
+</br><div id="ref-Cai2010-mg" class="csl-entry" role="doc-biblioentry">
+Cai, Q., &amp; Brysbaert, M. (2010). <span>SUBTLEX-CH</span>:
+<span>Chinese</span> word and character frequencies based on film
+subtitles. <em>PLoS One</em>, <em>5</em>(6). <a
+href="https://doi.org/10.1371/journal.pone.0010729">https://doi.org/10.1371/journal.pone.0010729</a>
+</div>
+</br><div id="ref-Chater2016-nm" class="csl-entry" role="doc-biblioentry">
+Chater, N., McCauley, S. M., &amp; Christiansen, M. H. (2016). Language
+as skill: Intertwining comprehension and production. <em>J. Mem.
+Lang.</em>, <em>89</em>, 244–254. <a
+href="https://doi.org/10.1016/j.jml.2015.11.004">https://doi.org/10.1016/j.jml.2015.11.004</a>
+</div>
+</br><div id="ref-Chen1982-db" class="csl-entry" role="doc-biblioentry">
+Chen, L. (1982). Topological structure in visual perception.
+<em>Science</em>, <em>218</em>(4573), 699–700. <a
+href="https://doi.org/10.1126/science.7134969">https://doi.org/10.1126/science.7134969</a>
+</div>
+</br><div id="ref-Chollet2015-nh" class="csl-entry" role="doc-biblioentry">
+Chollet, F., &amp; Others. (2015). <em>Keras</em>. <a
+href="https://keras.io">https://keras.io</a>
+</div>
+</br><div id="ref-Chomsky2006-wj" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (2006). <em>Language and mind</em> (third). Cambridge
+University Press.
+</div>
+</br><div id="ref-Chomsky2016-lc" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (2016). Minimal computation and the architecture of
+language. <em>Chin. Semiot. Stud.</em>, <em>12</em>(1), 13–24. <a
+href="https://doi.org/10.1515/css-2016-0003">https://doi.org/10.1515/css-2016-0003</a>
+</div>
+</br><div id="ref-Chomsky1953-zp" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (1953). Systems of syntactic analysis. <em>J. Symbolic
+Logic</em>, <em>18</em>(3), 242–256. <a
+href="https://doi.org/10.2307/2267409">https://doi.org/10.2307/2267409</a>
+</div>
+</br><div id="ref-Chomsky1957-dk" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (1957). <em>Syntactic structures</em>. Mouton.
+</div>
+</br><div id="ref-Chomsky1986-nq" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (1986). <em>Knowledge of language: Its nature, origin, and
+use</em>. Greenwood Publishing Group.
+</div>
+</br><div id="ref-Chomsky1993-zy" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (1993). A minimalist program for linguistic theory. <em>The
+View from Building 20: Essays in Linguistics in Honor of Sylvain
+Bromberger</em>.
+</div>
+</br><div id="ref-Chomsky1995-tr" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (1995). <em>The minimalist program</em>. MIT Press.
+</div>
+</br><div id="ref-Chomsky2000-li" class="csl-entry" role="doc-biblioentry">
+Chomsky, N. (2000). <em>The architecture of language</em>. Oxford
+University Press.
+</div>
+</br><div id="ref-Chomsky1968-ol" class="csl-entry" role="doc-biblioentry">
+Chomsky, N., &amp; Halle, M. (1968). <em>The sound pattern of
+<span>English</span></em>. The MIT Press.
+</div>
+</br><div id="ref-Christie2008-fr" class="csl-entry" role="doc-biblioentry">
+Christie, A. (1920–2008). <em>The mysterious affair at styles</em>.
+Project Gutenberg.
+</div>
+</br><div id="ref-Chung2017-cr" class="csl-entry" role="doc-biblioentry">
+Chung, J., Ahn, S., &amp; Bengio, Y. (2017, April). Hierarchical
+multiscale recurrent neural networks. <em>5th International Conference
+on Learning Representations, <span>ICLR</span> 2017</em>.
+</div>
+</br><div id="ref-Coch2013-od" class="csl-entry" role="doc-biblioentry">
+Coch, D., Bares, J., &amp; Landers, A. (2013). <span>ERPs</span> and
+morphological processing: The <span>N400</span> and semantic
+composition. <em>Cogn. Affect. Behav. Neurosci.</em>, <em>13</em>(2),
+355–370. <a
+href="https://doi.org/10.3758/s13415-012-0145-3">https://doi.org/10.3758/s13415-012-0145-3</a>
+</div>
+</br><div id="ref-Coltheart2001-ff" class="csl-entry" role="doc-biblioentry">
+Coltheart, M., Rastle, K., Perry, C., Langdon, R., &amp; Ziegler, J.
+(2001). <span>DRC</span>: A dual route cascaded model of visual word
+recognition and reading aloud. <em>Psychol. Rev.</em>, <em>108</em>(1),
+204–256. <a
+href="https://doi.org/10.1037/0033-295X.108.1.204">https://doi.org/10.1037/0033-295X.108.1.204</a>
+</div>
+</br><div id="ref-Cop2017-ll" class="csl-entry" role="doc-biblioentry">
+Cop, U., Dirix, N., Drieghe, D., &amp; Duyck, W. (2017). Presenting
+<span>GECO</span>: An eyetracking corpus of monolingual and bilingual
+sentence reading. <em>Behav. Res. Methods</em>, <em>49</em>(2), 602–615.
+<a
+href="https://doi.org/10.3758/s13428-016-0734-0">https://doi.org/10.3758/s13428-016-0734-0</a>
+</div>
+</br><div id="ref-Cowan2001-qn" class="csl-entry" role="doc-biblioentry">
+Cowan, N. (2001). The magical number 4 in short-term memory: A
+reconsideration of mental storage capacity. <em>Behav. Brain Sci.</em>,
+<em>24</em>(1), 87-114; discussion 114-85. <a
+href="https://doi.org/10.1017/s0140525x01003922">https://doi.org/10.1017/s0140525x01003922</a>
+</div>
+</br><div id="ref-Cox1958-rv" class="csl-entry" role="doc-biblioentry">
+Cox, D. R. (1958). The regression analysis of binary sequences. <em>J.
+R. Stat. Soc. Series B Stat. Methodol.</em>, <em>20</em>(2), 215–242.
+</div>
+</br><div id="ref-Croft2001-vh" class="csl-entry" role="doc-biblioentry">
+Croft, W. (2001). <em>Radical construction grammar: Syntactic theory in
+typological perspective</em>. Oxford University Press. <a
+href="https://doi.org/10.1093/acprof:oso/9780198299554.001.0001">https://doi.org/10.1093/acprof:oso/9780198299554.001.0001</a>
+</div>
+</br><div id="ref-Croft2004-ok" class="csl-entry" role="doc-biblioentry">
+Croft, W., &amp; Alan Cruse, D. (2004). <em>Cognitive linguistics</em>.
+Cambridge University Press. <a
+href="https://doi.org/10.1017/CBO9780511803864">https://doi.org/10.1017/CBO9780511803864</a>
+</div>
+</br><div id="ref-Daelemans2005-zm" class="csl-entry" role="doc-biblioentry">
+Daelemans, W., &amp; Bosch, A. van den. (2005).
+<em><span>Memory-Based</span> language processing</em>. Cambridge
+University Press. <a
+href="https://doi.org/10.1017/CBO9780511486579">https://doi.org/10.1017/CBO9780511486579</a>
+</div>
+</br><div id="ref-Davies2008-sn" class="csl-entry" role="doc-biblioentry">
+Davies, M. (2008). <em><span class="nocase">Corpus of Contemporary
+American English (COCA)</span></em>. <a
+href="https://www.english-corpora.org/coca/">https://www.english-corpora.org/coca/</a>
+</div>
+</br><div id="ref-Davis2004-hd" class="csl-entry" role="doc-biblioentry">
+Davis, M. H. (2004). Units of representation in visual word recognition.
+<em>Proc. Natl. Acad. Sci. U. S. A.</em>, <em>101</em>(41), 14687–14688.
+<a
+href="https://doi.org/10.1073/pnas.0405788101">https://doi.org/10.1073/pnas.0405788101</a>
+</div>
+</br><div id="ref-Davis2017-iv" class="csl-entry" role="doc-biblioentry">
+Davis, R. L., &amp; Zhong, Y. (2017). The biology of forgetting — a
+perspective. <em>Neuron</em>, <em>95</em>(3), 490–503. <a
+href="https://doi.org/10.1016/j.neuron.2017.05.039">https://doi.org/10.1016/j.neuron.2017.05.039</a>
+</div>
+</br><div id="ref-De_Groot1946-vc" class="csl-entry" role="doc-biblioentry">
+De Groot, A. D. (1946). Het denken van den schaker [thought and choice
+in chess]. <em>Amsterdam: Noord Hollandsche</em>.
+</div>
+</br><div id="ref-Saussure1959-rs" class="csl-entry" role="doc-biblioentry">
+De Saussure, F. (1916–1959). Course in general linguistics
+(<span>W</span>. <span>B</span>askin, trans.). <em>New York:
+Philosophical Library</em>.
+</div>
+</br><div id="ref-Delorme2004-ld" class="csl-entry" role="doc-biblioentry">
+Delorme, A., &amp; Makeig, S. (2004). <span>EEGLAB</span>: An open
+source toolbox for analysis of single-trial <span>EEG</span> dynamics
+including independent component analysis. <em>J. Neurosci. Methods</em>,
+<em>134</em>(1), 9–21. <a
+href="https://doi.org/10.1016/j.jneumeth.2003.10.009">https://doi.org/10.1016/j.jneumeth.2003.10.009</a>
+</div>
+</br><div id="ref-Delorme2011-ht" class="csl-entry" role="doc-biblioentry">
+Delorme, A., Mullen, T., Kothe, C., Akalin Acar, Z., Bigdely-Shamlo, N.,
+Vankov, A., &amp; Makeig, S. (2011). <span>EEGLAB</span>,
+<span>SIFT</span>, <span>NFT</span>, <span>BCILAB</span>, and
+<span>ERICA</span>: New tools for advanced <span>EEG</span> processing.
+<em>Comput. Intell. Neurosci.</em>, <em>2011</em>, 130714. <a
+href="https://doi.org/10.1155/2011/130714">https://doi.org/10.1155/2011/130714</a>
+</div>
+</br><div id="ref-Devlin2004-uv" class="csl-entry" role="doc-biblioentry">
+Devlin, J. T., Jamison, H. L., Matthews, P. M., &amp; Gonnerman, L. M.
+(2004). Morphology and the internal structure of words. <em>Proc. Natl.
+Acad. Sci. U. S. A.</em>, <em>101</em>(41), 14984–14988. <a
+href="https://doi.org/10.1073/pnas.0403766101">https://doi.org/10.1073/pnas.0403766101</a>
+</div>
+</br><div id="ref-Devlin2018-eq" class="csl-entry" role="doc-biblioentry">
+Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2018).
+<span>BERT</span>: Pre-training of deep bidirectional transformers for
+language understanding. <em><span class="nocase">Proceedings of the 2019
+Conference of the North American Chapter of the Association for
+Computational Linguistics: Human Language Technologies, Volume 1 (Long
+and Short Papers)</span></em>, 4171–4186. <a
+href="https://doi.org/10.18653/v1/N19-1423">https://doi.org/10.18653/v1/N19-1423</a>
+</div>
+</br><div id="ref-Dewey2018-ye" class="csl-entry" role="doc-biblioentry">
+Dewey, R. A. (2018). <em><span class="nocase">Gestalt Psychology | in
+Chapter 04: Senses</span></em>. <a
+href="http://www.psywww.com/intropsych/ch04-senses/gestalt-psychology.html">http://www.psywww.com/intropsych/ch04-senses/gestalt-psychology.html</a>
+</div>
+</br><div id="ref-Di_Liberto2020-bs" class="csl-entry"
+role="doc-biblioentry">
+Di Liberto, G. M., Pelofi, C., Bianco, R., Patel, P., Mehta, A. D.,
+Herrero, J. L., Cheveigné, A. de, Shamma, S., &amp; Mesgarani, N.
+(2020). Cortical encoding of melodic expectations in human temporal
+cortex. <em>Elife</em>, <em>9</em>. <a
+href="https://doi.org/10.7554/eLife.51784">https://doi.org/10.7554/eLife.51784</a>
+</div>
+</br><div id="ref-Ding2017-wf" class="csl-entry" role="doc-biblioentry">
+Ding, N., Melloni, L., Yang, A., Wang, Y., Zhang, W., &amp; Poeppel, D.
+(2017). Characterizing neural entrainment to hierarchical linguistic
+units using electroencephalography (<span>EEG</span>). <em>Front. Hum.
+Neurosci.</em>, <em>11</em>, 481. <a
+href="https://doi.org/10.3389/fnhum.2017.00481">https://doi.org/10.3389/fnhum.2017.00481</a>
+</div>
+</br><div id="ref-Ding2016-zc" class="csl-entry" role="doc-biblioentry">
+Ding, N., Melloni, L., Zhang, H., Tian, X., &amp; Poeppel, D. (2016).
+Cortical tracking of hierarchical linguistic structures in connected
+speech. <em>Nat. Neurosci.</em>, <em>19</em>(1), 158–164. <a
+href="https://doi.org/10.1038/nn.4186">https://doi.org/10.1038/nn.4186</a>
+</div>
+</br><div id="ref-Dudai2015-rn" class="csl-entry" role="doc-biblioentry">
+Dudai, Y., Karni, A., &amp; Born, J. (2015). The consolidation and
+transformation of memory. <em>Neuron</em>, <em>88</em>(1), 20–32. <a
+href="https://doi.org/10.1016/j.neuron.2015.09.004">https://doi.org/10.1016/j.neuron.2015.09.004</a>
+</div>
+</br><div id="ref-Dufau2015-ar" class="csl-entry" role="doc-biblioentry">
+Dufau, S., Grainger, J., Midgley, K. J., &amp; Holcomb, P. J. (2015). A
+thousand words are worth a picture: Snapshots of
+<span>Printed-Word</span> processing in an <span>Event-Related</span>
+potential megastudy. <em>Psychol. Sci.</em>, <em>26</em>(12), 1887–1897.
+<a
+href="https://doi.org/10.1177/0956797615603934">https://doi.org/10.1177/0956797615603934</a>
+</div>
+</br><div id="ref-Ehrlich1981-dq" class="csl-entry" role="doc-biblioentry">
+Ehrlich, S. F., &amp; Rayner, K. (1981). Contextual effects on word
+perception and eye movements during reading. <em>Journal of Verbal
+Learning and Verbal Behavior</em>, <em>20</em>(6), 641–655. <a
+href="https://doi.org/10.1016/S0022-5371(81)90220-6">https://doi.org/10.1016/S0022-5371(81)90220-6</a>
+</div>
+</br><div id="ref-Ellis2002-hl" class="csl-entry" role="doc-biblioentry">
+Ellis, N. C. (2002). <span>FREQUENCY</span> <span>EFFECTS</span>
+<span>IN</span> <span>LANGUAGE</span> <span>PROCESSING</span>: A review
+with implications for theories of implicit and explicit language
+acquisition. <em>Studies in Second Language Acquisition</em>,
+<em>24</em>(2), 143–188. <a
+href="https://doi.org/10.1017/S0272263102002024">https://doi.org/10.1017/S0272263102002024</a>
+</div>
+</br><div id="ref-Ellis2003-ij" class="csl-entry" role="doc-biblioentry">
+Ellis, N. C. (2003). Constructions, chunking, and connectionism: The
+emergence of second language structure. In <em>The handbook of second
+language acquisition</em> (pp. 63–103). Blackwell Publishing Ltd. <a
+href="https://doi.org/10.1002/9780470756492.ch4">https://doi.org/10.1002/9780470756492.ch4</a>
+</div>
+</br><div id="ref-Emerson2005-ae" class="csl-entry" role="doc-biblioentry">
+Emerson, T. (2005). The second international <span>Chinese</span> word
+segmentation bakeoff. <em>Proceedings of the Fourth <span>SIGHAN</span>
+Workshop on <span>Chinese</span> Language Processing</em>.
+</div>
+</br><div id="ref-Engbert2005-vs" class="csl-entry" role="doc-biblioentry">
+Engbert, R., Nuthmann, A., Richter, E. M., &amp; Kliegl, R. (2005).
+<span>SWIFT</span>: A dynamical model of saccade generation during
+reading. <em>Psychol. Rev.</em>, <em>112</em>(4), 777–813. <a
+href="https://doi.org/10.1037/0033-295X.112.4.777">https://doi.org/10.1037/0033-295X.112.4.777</a>
+</div>
+</br><div id="ref-Faisca2019-we" class="csl-entry" role="doc-biblioentry">
+Faı́sca, L., Reis, A., &amp; Araújo, S. (2019). Early brain sensitivity
+to word frequency and lexicality during reading aloud and implicit
+reading. <em>Front. Psychol.</em>, <em>10</em>, 830. <a
+href="https://doi.org/10.3389/fpsyg.2019.00830">https://doi.org/10.3389/fpsyg.2019.00830</a>
+</div>
+</br><div id="ref-Fillmore1988-hf" class="csl-entry" role="doc-biblioentry">
+Fillmore, C. J. (1988). The mechanisms of<span>“ construction
+grammar.”</span> <em>Annual Meeting of the Berkeley Linguistics
+Society</em>, <em>14</em>, 35–55.
+</div>
+</br><div id="ref-Fiorentino2014-pg" class="csl-entry"
+role="doc-biblioentry">
+Fiorentino, R., Naito-Billen, Y., Bost, J., &amp; Fund-Reznicek, E.
+(2014). Electrophysiological evidence for the morpheme-based
+combinatoric processing of <span>English</span> compounds. <em>Cogn.
+Neuropsychol.</em>, <em>31</em>(1-2), 123–146. <a
+href="https://doi.org/10.1080/02643294.2013.855633">https://doi.org/10.1080/02643294.2013.855633</a>
+</div>
+</br><div id="ref-Fiorentino2007-tx" class="csl-entry"
+role="doc-biblioentry">
+Fiorentino, R., &amp; Poeppel, D. (2007). Compound words and structure
+in the lexicon. <em>Lang. Cogn. Process.</em>, <em>22</em>(7), 953–1000.
+<a
+href="https://doi.org/10.1080/01690960701190215">https://doi.org/10.1080/01690960701190215</a>
+</div>
+</br><div id="ref-Frank2015-qh" class="csl-entry" role="doc-biblioentry">
+Frank, S. L., Otten, L. J., Galli, G., &amp; Vigliocco, G. (2015). The
+<span>ERP</span> response to the amount of information conveyed by words
+in sentences. <em>Brain Lang.</em>, <em>140</em>, 1–11. <a
+href="https://doi.org/10.1016/j.bandl.2014.10.006">https://doi.org/10.1016/j.bandl.2014.10.006</a>
+</div>
+</br><div id="ref-Frank2017-kf" class="csl-entry" role="doc-biblioentry">
+Frank, S. L., &amp; Willems, R. M. (2017). Word predictability and
+semantic similarity show distinct patterns of brain activity during
+language comprehension. <em>Language, Cognition and Neuroscience</em>,
+<em>32</em>(9), 1192–1203. <a
+href="https://doi.org/10.1080/23273798.2017.1323109">https://doi.org/10.1080/23273798.2017.1323109</a>
+</div>
+</br><div id="ref-Frazier1979-xm" class="csl-entry" role="doc-biblioentry">
+Frazier, L. (1979). <em>On comprehending sentences: Syntactic parsing
+strategies</em>. Indiana Univ. Linguistics Club.
+</div>
+</br><div id="ref-Frazier1987-ei" class="csl-entry" role="doc-biblioentry">
+Frazier, L. (1987). Sentence processing: A tutorial review.
+<em>Attention and Performance 12: The Psychology of Reading.</em>,
+<em>12</em>(707), 559–586.
+</div>
+</br><div id="ref-Frazier1982-vf" class="csl-entry" role="doc-biblioentry">
+Frazier, L., &amp; Rayner, K. (1982). Making and correcting errors
+during sentence comprehension: Eye movements in the analysis of
+structurally ambiguous sentences. <em>Cogn. Psychol.</em>,
+<em>14</em>(2), 178–210. <a
+href="https://doi.org/10.1016/0010-0285(82)90008-1">https://doi.org/10.1016/0010-0285(82)90008-1</a>
+</div>
+</br><div id="ref-French2011-lf" class="csl-entry" role="doc-biblioentry">
+French, R. M., Addyman, C., &amp; Mareschal, D. (2011).
+<span>TRACX</span>: A recognition-based connectionist framework for
+sequence segmentation and chunk extraction. <em>Psychol. Rev.</em>,
+<em>118</em>(4), 614–636. <a
+href="https://doi.org/10.1037/a0025255">https://doi.org/10.1037/a0025255</a>
+</div>
+</br><div id="ref-Fries2001-qp" class="csl-entry" role="doc-biblioentry">
+Fries, P., Reynolds, J. H., Rorie, A. E., &amp; Desimone, R. (2001).
+Modulation of oscillatory neuronal synchronization by selective visual
+attention. <em>Science</em>, <em>291</em>(5508), 1560–1563. <a
+href="https://doi.org/10.1126/science.1055465">https://doi.org/10.1126/science.1055465</a>
+</div>
+</br><div id="ref-Futrell2015-ca" class="csl-entry" role="doc-biblioentry">
+Futrell, R., Mahowald, K., &amp; Gibson, E. (2015). Large-scale evidence
+of dependency length minimization in 37 languages. <em>Proc. Natl. Acad.
+Sci. U. S. A.</em>, <em>112</em>(33), 10336–10341. <a
+href="https://doi.org/10.1073/pnas.1502134112">https://doi.org/10.1073/pnas.1502134112</a>
+</div>
+</br><div id="ref-Giraudo2016-xs" class="csl-entry" role="doc-biblioentry">
+Giraudo, H., &amp; Dal Maso, S. (2016). The salience of complex words
+and their parts: Which comes first? <em>Front. Psychol.</em>,
+<em>7</em>, 1778. <a
+href="https://doi.org/10.3389/fpsyg.2016.01778">https://doi.org/10.3389/fpsyg.2016.01778</a>
+</div>
+</br><div id="ref-Gobet2016-sz" class="csl-entry" role="doc-biblioentry">
+Gobet, F., Lloyd-Kelly, M., &amp; Lane, P. C. R. (2016). What’s in a
+name? <span>The</span> multiple meanings of <span>“chunk”</span> and
+<span>“chunking.”</span> <em>Front. Psychol.</em>, <em>7</em>, 102. <a
+href="https://doi.org/10.3389/fpsyg.2016.00102">https://doi.org/10.3389/fpsyg.2016.00102</a>
+</div>
+</br><div id="ref-Gold2007-yr" class="csl-entry" role="doc-biblioentry">
+Gold, B. T., &amp; Rastle, K. (2007). Neural correlates of morphological
+decomposition during visual word recognition. <em>J. Cogn.
+Neurosci.</em>, <em>19</em>(12), 1983–1993. <a
+href="https://doi.org/10.1162/jocn.2007.19.12.1983">https://doi.org/10.1162/jocn.2007.19.12.1983</a>
+</div>
+</br><div id="ref-Goldberg1995-kz" class="csl-entry" role="doc-biblioentry">
+Goldberg, A. E. (1995). <em>Constructions: A construction grammar
+approach to argument structure</em>. University of Chicago Press.
+</div>
+</br><div id="ref-Goldberg2013-ci" class="csl-entry" role="doc-biblioentry">
+Goldberg, A. E. (2013). Constructionist approaches. In T. Hoffmann &amp;
+G. Trousdale (Eds.), <em>The oxford handbook of construction
+grammar</em>. Oxford University Press. <a
+href="https://doi.org/10.1093/oxfordhb/9780195396683.013.0002">https://doi.org/10.1093/oxfordhb/9780195396683.013.0002</a>
+</div>
+</br><div id="ref-Goldberg2006-gf" class="csl-entry" role="doc-biblioentry">
+Goldberg, A. E. (2006). <em>Constructions at work: The nature of
+generalization in language</em>. Oxford University Press.
+</div>
+</br><div id="ref-Goldwater2009-wc" class="csl-entry" role="doc-biblioentry">
+Goldwater, S., Griffiths, T. L., &amp; Johnson, M. (2009). A bayesian
+framework for word segmentation: Exploring the effects of context.
+<em>Cognition</em>, <em>112</em>(1), 21–54. <a
+href="https://doi.org/10.1016/j.cognition.2009.03.008">https://doi.org/10.1016/j.cognition.2009.03.008</a>
+</div>
+</br><div id="ref-Gramfort2013-gh" class="csl-entry" role="doc-biblioentry">
+Gramfort, A., Luessi, M., Larson, E., Engemann, D. A., Strohmeier, D.,
+Brodbeck, C., Goj, R., Jas, M., Brooks, T., Parkkonen, L., &amp;
+Hämäläinen, M. (2013). <span>MEG</span> and <span>EEG</span> data
+analysis with <span>MNE-Python</span>. <em>Front. Neurosci.</em>,
+<em>7</em>(7 DEC), 267. <a
+href="https://doi.org/10.3389/fnins.2013.00267">https://doi.org/10.3389/fnins.2013.00267</a>
+</div>
+</br><div id="ref-Graves2013-hu" class="csl-entry" role="doc-biblioentry">
+Graves, A. (2013). Generating sequences with recurrent neural networks.
+<em>arXiv Preprint arXiv:1308.0850</em>. <a
+href="https://arxiv.org/abs/1308.0850">https://arxiv.org/abs/1308.0850</a>
+</div>
+</br><div id="ref-Gravitz2019-ov" class="csl-entry" role="doc-biblioentry">
+Gravitz, L. (2019). The importance of forgetting. <em>Nature</em>,
+<em>571</em>, S12–S14.
+</div>
+</br><div id="ref-Grech2008-nv" class="csl-entry" role="doc-biblioentry">
+Grech, R., Cassar, T., Muscat, J., Camilleri, K. P., Fabri, S. G.,
+Zervakis, M., Xanthopoulos, P., Sakkalis, V., &amp; Vanrumste, B.
+(2008). Review on solving the inverse problem in <span>EEG</span> source
+analysis. <em>J. Neuroeng. Rehabil.</em>, <em>5</em>, 25. <a
+href="https://doi.org/10.1186/1743-0003-5-25">https://doi.org/10.1186/1743-0003-5-25</a>
+</div>
+</br><div id="ref-Groppe2011-cl" class="csl-entry" role="doc-biblioentry">
+Groppe, D. M., Urbach, T. P., &amp; Kutas, M. (2011). Mass univariate
+analysis of event-related brain potentials/fields i: A critical tutorial
+review. <em>Psychophysiology</em>, <em>48</em>(12), 1711–1725. <a
+href="https://doi.org/10.1111/j.1469-8986.2011.01273.x">https://doi.org/10.1111/j.1469-8986.2011.01273.x</a>
+</div>
+</br><div id="ref-Hajibayova2013-ud" class="csl-entry"
+role="doc-biblioentry">
+Hajibayova, L. (2013). Basic-level categories: A review. <em>J. Inf.
+Sci. Eng.</em>, <em>39</em>(5), 676–687. <a
+href="https://doi.org/10.1177/0165551513481443">https://doi.org/10.1177/0165551513481443</a>
+</div>
+</br><div id="ref-Hale2015-hg" class="csl-entry" role="doc-biblioentry">
+Hale, J., Lutz, D., Luh, W.-M., &amp; Brennan, J. (2015). Modeling <span
+class="nocase">fMRI</span> time courses with linguistic structure at
+various grain sizes. <em>Proceedings of the 6th Workshop on Cognitive
+Modeling and Computational Linguistics</em>, 89–97.
+</div>
+</br><div id="ref-Han1999-pc" class="csl-entry" role="doc-biblioentry">
+Han, S., Fan, S., Chen, L., &amp; Zhuo, Y. (1999). Modulation of brain
+activities by hierarchical processing: A high-density <span>ERP</span>
+study. <em>Brain Topography</em>, <em>11</em>(3), 171–183. <a
+href="https://doi.org/10.1023/a:1022244727182">https://doi.org/10.1023/a:1022244727182</a>
+</div>
+</br><div id="ref-Han2003-gv" class="csl-entry" role="doc-biblioentry">
+Han, S., Yund, E. W., &amp; Woods, D. L. (2003). An <span>ERP</span>
+study of the global precedence effect: The role of spatial frequency.
+<em>Clin. Neurophysiol.</em>, <em>114</em>(10), 1850–1865. <a
+href="https://doi.org/10.1016/s1388-2457(03)00196-2">https://doi.org/10.1016/s1388-2457(03)00196-2</a>
+</div>
+</br><div id="ref-Hauk2006-dt" class="csl-entry" role="doc-biblioentry">
+Hauk, O., Patterson, K., Woollams, A., Watling, L., Pulvermüller, F.,
+&amp; Rogers, T. T. (2006). [Q:] When would you prefer a
+<span>SOSSAGE</span> to a <span>SAUSAGE</span>? [A:] At about 100 msec.
+<span>ERP</span> correlates of orthographic typicality and lexicality in
+written word recognition. <em>J. Cogn. Neurosci.</em>, <em>18</em>(5),
+818–832. <a
+href="https://doi.org/10.1162/jocn.2006.18.5.818">https://doi.org/10.1162/jocn.2006.18.5.818</a>
+</div>
+</br><div id="ref-Heider1977-hb" class="csl-entry" role="doc-biblioentry">
+Heider, G. M. (1977). <em>More about hull and koffka</em>.
+<em>32</em>(5), 383a. <a
+href="https://doi.org/10.1037/0003-066X.32.5.383.a">https://doi.org/10.1037/0003-066X.32.5.383.a</a>
+</div>
+</br><div id="ref-Held2018-ir" class="csl-entry" role="doc-biblioentry">
+Held, L., &amp; Ott, M. (2018). On p-values and bayes factors. <em>Annu.
+Rev. Stat. Appl.</em>, <em>5</em>(1), 393–419. <a
+href="https://doi.org/10.1146/annurev-statistics-031017-100307">https://doi.org/10.1146/annurev-statistics-031017-100307</a>
+</div>
+</br><div id="ref-Henderson2011-bl" class="csl-entry" role="doc-biblioentry">
+Henderson, J. M. (2011). Eye movements and scene perception. In S. P.
+Liversedge, I. Gilchrist, &amp; S. Everling (Eds.), <em>The oxford
+handbook of eye movements</em>. Oxford University Press. <a
+href="https://doi.org/10.1093/oxfordhb/9780199539789.013.0033">https://doi.org/10.1093/oxfordhb/9780199539789.013.0033</a>
+</div>
+</br><div id="ref-Hinton1990-np" class="csl-entry" role="doc-biblioentry">
+Hinton, G. E. (1990). Mapping part-whole hierarchies into connectionist
+networks. <em>Artif. Intell.</em>, <em>46</em>(1), 47–75. <a
+href="https://doi.org/10.1016/0004-3702(90)90004-j">https://doi.org/10.1016/0004-3702(90)90004-j</a>
+</div>
+</br><div id="ref-Hinton1986-sx" class="csl-entry" role="doc-biblioentry">
+Hinton, G. E. (1986). Learning distributed representations of concepts.
+<em>Proceedings of the Eighth Annual Conference of the Cognitive Science
+Society</em>, <em>1</em>, 12.
+</div>
+</br><div id="ref-Hinton2012-qj" class="csl-entry" role="doc-biblioentry">
+Hinton, G. E., Srivastava, N., Krizhevsky, A., Sutskever, I., &amp;
+Salakhutdinov, R. R. (2012). Improving neural networks by preventing
+co-adaptation of feature detectors. <em>arXiv Preprint
+arXiv:1207.0580</em>. <a
+href="https://arxiv.org/abs/1207.0580">https://arxiv.org/abs/1207.0580</a>
+</div>
+</br><div id="ref-Houde2002-li" class="csl-entry" role="doc-biblioentry">
+Houde, J. F., Nagarajan, S. S., Sekihara, K., &amp; Merzenich, M. M.
+(2002). Modulation of the auditory cortex during speech: An
+<span>MEG</span> study. <em>J. Cogn. Neurosci.</em>, <em>14</em>(8),
+1125–1138. <a
+href="https://doi.org/10.1162/089892902760807140">https://doi.org/10.1162/089892902760807140</a>
+</div>
+</br><div id="ref-Hyona1995-nn" class="csl-entry" role="doc-biblioentry">
+Hyönä, J., &amp; Olson, R. K. (1995). Eye fixation patterns among
+dyslexic and normal readers: Effects of word length and word frequency.
+<em>J. Exp. Psychol. Learn. Mem. Cogn.</em>, <em>21</em>(6), 1430–1440.
+<a
+href="https://doi.org/10.1037/0278-7393.21.6.1430">https://doi.org/10.1037/0278-7393.21.6.1430</a>
+</div>
+</br><div id="ref-Jackendoff2002-bd" class="csl-entry"
+role="doc-biblioentry">
+Jackendoff, R. (2002). What’s in the lexicon? In S. Nooteboom, F.
+Weerman, &amp; F. Wijnen (Eds.), <em>Storage and computation in the
+language faculty</em> (pp. 23–58). Springer Netherlands. <a
+href="https://doi.org/10.1007/978-94-010-0355-1_2">https://doi.org/10.1007/978-94-010-0355-1_2</a>
+</div>
+</br><div id="ref-Johnson2008-zx" class="csl-entry" role="doc-biblioentry">
+Johnson, M. (2008). Using <span>A</span>daptor <span>G</span>rammars to
+identify synergies in the unsupervised acquisition of linguistic
+structure. <em>Proceedings of <span>ACL-08</span>:
+<span>HLT</span></em>, 398–406.
+</div>
+</br><div id="ref-Johnson2009-pp" class="csl-entry" role="doc-biblioentry">
+Johnson, M., &amp; Goldwater, S. (2009). Improving nonparameteric
+bayesian inference: Experiments on unsupervised word segmentation with
+adaptor grammars. <em>Proceedings of Human Language Technologies: The
+2009 Annual Conference of the North American Chapter of the Association
+for Computational Linguistics</em>, 317–325.
+</div>
+</br><div id="ref-Johnson2007-jt" class="csl-entry" role="doc-biblioentry">
+Johnson, M., Griffiths, T. L., &amp; Goldwater, S. (2007). Adaptor
+grammars: A framework for specifying compositional nonparametric
+bayesian models. In B. Scholkopf, J. Platt, &amp; T. Hoffman (Eds.),
+<em><span class="nocase">Advances in Neural Information Processing
+Systems 19: Proceedings of the 2006 Conference</span></em> (Vol. 19).
+MIT Press.
+</div>
+</br><div id="ref-Juhasz2008-vc" class="csl-entry" role="doc-biblioentry">
+Juhasz, B. J. (2008). The processing of compound words in
+<span>English</span>: Effects of word length on eye movements during
+reading. <em>Lang. Cogn. Process.</em>, <em>23</em>(7-8), 1057–1088. <a
+href="https://doi.org/10.1080/01690960802144434">https://doi.org/10.1080/01690960802144434</a>
+</div>
+</br><div id="ref-Kaczer2015-em" class="csl-entry" role="doc-biblioentry">
+Kaczer, L., Timmer, K., Bavassi, L., &amp; Schiller, N. O. (2015).
+Distinct morphological processing of recently learned compound words: An
+<span>ERP</span> study. <em>Brain Res.</em>, <em>1629</em>, 309–317. <a
+href="https://doi.org/10.1016/j.brainres.2015.10.029">https://doi.org/10.1016/j.brainres.2015.10.029</a>
+</div>
+</br><div id="ref-Kawakami2019-dr" class="csl-entry" role="doc-biblioentry">
+Kawakami, K., Dyer, C., &amp; Blunsom, P. (2019). Learning to discover,
+ground and use words with segmental neural language models.
+<em>Proceedings of the 57th Annual Meeting of the Association for
+Computational Linguistics</em>, 6429–6441. <a
+href="https://doi.org/10.18653/v1/P19-1645">https://doi.org/10.18653/v1/P19-1645</a>
+</div>
+</br><div id="ref-Kenesei2013-qu" class="csl-entry" role="doc-biblioentry">
+Kenesei, I. (2013). The role of creativity in the cognitive turn in
+linguistics. <em>International Review of Pragmatics</em>, <em>5</em>(2),
+271–292. <a
+href="https://doi.org/10.1163/18773109-13050207">https://doi.org/10.1163/18773109-13050207</a>
+</div>
+</br><div id="ref-Kennedy2003-nw" class="csl-entry" role="doc-biblioentry">
+Kennedy, A., Hill, R., &amp; Pynte, J. (2003). The dundee corpus.
+<em>Proceedings of the 12th European Conference on Eye Movement</em>.
+</div>
+</br><div id="ref-Kerr1992-nr" class="csl-entry" role="doc-biblioentry">
+Kerr, P. W. (1992). <em>Eye movement control during reading: The
+selection of where to send the eyes</em> (G. W. McConkie, Ed.) [PhD
+thesis]. University of Illinois at Urbana-Champaign.
+</div>
+</br><div id="ref-Kimchi1992-kz" class="csl-entry" role="doc-biblioentry">
+Kimchi, R. (1992). Primacy of wholistic processing and global/local
+paradigm: A critical review. <em>Psychol. Bull.</em>, <em>112</em>(1),
+24–38. <a
+href="https://doi.org/10.1037/0033-2909.112.1.24">https://doi.org/10.1037/0033-2909.112.1.24</a>
+</div>
+</br><div id="ref-Kimura2018-hp" class="csl-entry" role="doc-biblioentry">
+Kimura, A., Ghahramani, Z., Takeuchi, K., Iwata, T., &amp; Ueda, N.
+(2018). Imitation networks: Few-shot learning of neural networks from
+scratch. <em>arXiv Preprint arXiv:1802.03039</em>. <a
+href="https://arxiv.org/abs/1802.03039">https://arxiv.org/abs/1802.03039</a>
+</div>
+</br><div id="ref-King2013-tf" class="csl-entry" role="doc-biblioentry">
+King, J. R., Faugeras, F., Gramfort, A., Schurger, A., El Karoui, I.,
+Sitt, J. D., Rohaut, B., Wacongne, C., Labyt, E., Bekinschtein, T.,
+Cohen, L., Naccache, L., &amp; Dehaene, S. (2013). Single-trial decoding
+of auditory novelty responses facilitates the detection of residual
+consciousness. <em>Neuroimage</em>, <em>83</em>, 726–738. <a
+href="https://doi.org/10.1016/j.neuroimage.2013.07.013">https://doi.org/10.1016/j.neuroimage.2013.07.013</a>
+</div>
+</br><div id="ref-Kliegl2004-fw" class="csl-entry" role="doc-biblioentry">
+Kliegl, R., Grabner, E., Rolfs, M., &amp; Engbert, R. (2004). Length,
+frequency, and predictability effects of words on eye movements in
+reading. <em>Eur. J. Cogn. Psychol.</em>, <em>16</em>(1-2), 262–284. <a
+href="https://doi.org/10.1080/09541440340000213">https://doi.org/10.1080/09541440340000213</a>
+</div>
+</br><div id="ref-Knill2004-la" class="csl-entry" role="doc-biblioentry">
+Knill, D. C., &amp; Pouget, A. (2004). The bayesian brain: The role of
+uncertainty in neural coding and computation. <em>Trends Neurosci.</em>,
+<em>27</em>(12), 712–719. <a
+href="https://doi.org/10.1016/j.tins.2004.10.007">https://doi.org/10.1016/j.tins.2004.10.007</a>
+</div>
+</br><div id="ref-Koch2006-gn" class="csl-entry" role="doc-biblioentry">
+Koch, K., McLean, J., Segev, R., Freed, M. A., Berry, M. J., 2nd,
+Balasubramanian, V., &amp; Sterling, P. (2006). How much the eye tells
+the brain. <em>Curr. Biol.</em>, <em>16</em>(14), 1428–1434. <a
+href="https://doi.org/10.1016/j.cub.2006.05.056">https://doi.org/10.1016/j.cub.2006.05.056</a>
+</div>
+</br><div id="ref-Koester2007-us" class="csl-entry" role="doc-biblioentry">
+Koester, D., Gunter, T. C., &amp; Wagner, S. (2007). The morphosyntactic
+decomposition and semantic composition of <span>German</span> compound
+words investigated by <span>ERPs</span>. <em>Brain Lang.</em>,
+<em>102</em>(1), 64–79. <a
+href="https://doi.org/10.1016/j.bandl.2006.09.003">https://doi.org/10.1016/j.bandl.2006.09.003</a>
+</div>
+</br><div id="ref-Koester2011-sv" class="csl-entry" role="doc-biblioentry">
+Koester, D., &amp; Schiller, N. O. (2011). The functional neuroanatomy
+of morphology in language production. <em>Neuroimage</em>,
+<em>55</em>(2), 732–741. <a
+href="https://doi.org/10.1016/j.neuroimage.2010.11.044">https://doi.org/10.1016/j.neuroimage.2010.11.044</a>
+</div>
+</br><div id="ref-Krishnamurthy2003-md" class="csl-entry"
+role="doc-biblioentry">
+Krishnamurthy, R. (2003). Language as chunks, not words. In M. Swanson
+&amp; K. Hill (Eds.), <em><span>JALT2002</span>: Conference proceedings:
+Waves of the future</em> (pp. 288–294). The Japan Association for
+Language Teaching.
+</div>
+</br><div id="ref-Krogh1992-bs" class="csl-entry" role="doc-biblioentry">
+Krogh, A., &amp; Hertz, J. A. (1992). A simple weight decay can improve
+generalization. In J. E. Moody, S. J. Hanson, &amp; R. P. Lippmann
+(Eds.), <em>Advances in neural information processing systems 4</em>
+(pp. 950–957). Morgan-Kaufmann.
+</div>
+</br><div id="ref-Kudo2018-uu" class="csl-entry" role="doc-biblioentry">
+Kudo, T., &amp; Richardson, J. (2018). <span
+class="nocase"><span>S</span>entence<span>P</span>iece</span>: A simple
+and language independent subword tokenizer and detokenizer for neural
+text processing. <em>Proceedings of the 2018 Conference on Empirical
+Methods in Natural Language Processing: System Demonstrations</em>,
+66–71. <a
+href="https://doi.org/10.18653/v1/D18-2012">https://doi.org/10.18653/v1/D18-2012</a>
+</div>
+</br><div id="ref-Kutas1980-eb" class="csl-entry" role="doc-biblioentry">
+Kutas, M., &amp; Hillyard, S. A. (1980). Reading senseless sentences:
+Brain potentials reflect semantic incongruity. <em>Science</em>,
+<em>207</em>(4427), 203–205. <a
+href="https://doi.org/10.1126/science.7350657">https://doi.org/10.1126/science.7350657</a>
+</div>
+</br><div id="ref-Lakoff1977-jw" class="csl-entry" role="doc-biblioentry">
+Lakoff, G. (1977). Linguistic gestalts. In W. A. Beach, S. E. Fox, &amp;
+S. Philosoph (Eds.), <em>Papers from the thirteenth regional meeting,
+chicago linguistic society, april 14-16</em> (pp. 236–287). Chicago
+Linguistic Society.
+</div>
+</br><div id="ref-Lakoff1987-cl" class="csl-entry" role="doc-biblioentry">
+Lakoff, G. (1987). <em>Women, fire, and dangerous things: What
+categories reveal about the mind</em>. University of Chicago Press.
+</div>
+</br><div id="ref-Langacker2017-lf" class="csl-entry" role="doc-biblioentry">
+Langacker, R. (2017a). <em>Ten lectures on the basics of cognitive
+grammar</em>. BRILL. <a
+href="https://doi.org/10.1163/9789004347458">https://doi.org/10.1163/9789004347458</a>
+</div>
+</br><div id="ref-Langacker2017-rx" class="csl-entry" role="doc-biblioentry">
+Langacker, R. (2017b). <em>Ten lectures on the elaboration of cognitive
+grammar</em>. BRILL.
+</div>
+</br><div id="ref-Langacker1987-fi" class="csl-entry" role="doc-biblioentry">
+Langacker, R. W. (1987). <em>Foundations of cognitive grammar:
+Theoretical prerequisites</em>. Stanford University Press.
+</div>
+</br><div id="ref-Langacker1988-vg" class="csl-entry" role="doc-biblioentry">
+Langacker, R. W. (1988). A usage-based model. In <em>Topics in cognitive
+linguistics</em> (p. 127). John Benjamins Publishing Company. <a
+href="https://doi.org/10.1075/cilt.50.06lan">https://doi.org/10.1075/cilt.50.06lan</a>
+</div>
+</br><div id="ref-Langacker2008-nx" class="csl-entry" role="doc-biblioentry">
+Langacker, R. W. (2008). <em>Construction grammars: Cognitive, radical,
+and less so</em>. De Gruyter Mouton.
+</div>
+</br><div id="ref-Lange2015-js" class="csl-entry" role="doc-biblioentry">
+Lange, V. M., Perret, C., &amp; Laganaro, M. (2015). Comparison of
+single-word and adjective-noun phrase production using event-related
+brain potentials. <em>Cortex</em>, <em>67</em>, 15–29. <a
+href="https://doi.org/10.1016/j.cortex.2015.02.017">https://doi.org/10.1016/j.cortex.2015.02.017</a>
+</div>
+</br><div id="ref-Lehmann1980-ol" class="csl-entry" role="doc-biblioentry">
+Lehmann, D., &amp; Skrandies, W. (1980). <a
+href="https://www.ncbi.nlm.nih.gov/pubmed/6155251">Reference-free
+identification of components of checkerboard-evoked multichannel
+potential fields</a>. <em>Electroencephalogr. Clin. Neurophysiol.</em>,
+<em>48</em>(6), 609–621.
+</div>
+</br><div id="ref-Leminen2019-wz" class="csl-entry" role="doc-biblioentry">
+Leminen, A., Smolka, E., Duñabeitia, J. A., &amp; Pliatsikas, C. (2019).
+Morphological processing in the brain: The good (inflection), the bad
+(derivation) and the ugly (compounding). <em>Cortex</em>, <em>116</em>,
+4–44. <a
+href="https://doi.org/10.1016/j.cortex.2018.08.016">https://doi.org/10.1016/j.cortex.2018.08.016</a>
+</div>
+</br><div id="ref-Li2020-io" class="csl-entry" role="doc-biblioentry">
+Li, S., Zhu, H., &amp; Tian, X. (2020). Distinct neural signals in
+speech preparation differentially modulate auditory responses. In
+<em>bioRxiv</em> (p. 2020.01.14.905620). <a
+href="https://doi.org/10.1101/2020.01.14.905620">https://doi.org/10.1101/2020.01.14.905620</a>
+</div>
+</br><div id="ref-Li2011-rf" class="csl-entry" role="doc-biblioentry">
+Li, X., Liu, P., &amp; Rayner, K. (2011). Eye movement guidance in
+<span>Chinese</span> reading: Is there a preferred viewing location?
+<em>Vision Res.</em>, <em>51</em>(10), 1146–1156. <a
+href="https://doi.org/10.1016/j.visres.2011.03.004">https://doi.org/10.1016/j.visres.2011.03.004</a>
+</div>
+</br><div id="ref-Ling2019-mz" class="csl-entry" role="doc-biblioentry">
+Ling, S., Lee, A. C. H., Armstrong, B. C., &amp; Nestor, A. (2019). How
+are visual words represented? <span>Insights</span> from <span
+class="nocase">EEG-based</span> visual word decoding, feature derivation
+and image reconstruction. <em>Hum. Brain Mapp.</em>, <em>40</em>(17),
+5056–5068. <a
+href="https://doi.org/10.1002/hbm.24757">https://doi.org/10.1002/hbm.24757</a>
+</div>
+</br><div id="ref-Luo2007-yy" class="csl-entry" role="doc-biblioentry">
+Luo, H., &amp; Poeppel, D. (2007). Phase patterns of neuronal responses
+reliably discriminate speech in human auditory cortex. <em>Neuron</em>,
+<em>54</em>(6), 1001–1010. <a
+href="https://doi.org/10.1016/j.neuron.2007.06.004">https://doi.org/10.1016/j.neuron.2007.06.004</a>
+</div>
+</br><div id="ref-Luo2019-vv" class="csl-entry" role="doc-biblioentry">
+Luo, R., Xu, J., Zhang, Y., Ren, X., &amp; Sun, X. (2019).
+<span>PKUSEG</span>: A toolkit for multi-domain <span>Chinese</span>
+word segmentation. <em>arXiv Preprint arXiv:1906.11455</em>. <a
+href="https://arxiv.org/abs/1906.11455">https://arxiv.org/abs/1906.11455</a>
+</div>
+</br><div id="ref-Ma2019-ir" class="csl-entry" role="doc-biblioentry">
+Ma, O., &amp; Tian, X. (2019). Distinct mechanisms of imagery
+differentially influence speech perception. <em>eNeuro</em>,
+<em>6</em>(5). <a
+href="https://doi.org/10.1523/ENEURO.0261-19.2019">https://doi.org/10.1523/ENEURO.0261-19.2019</a>
+</div>
+</br><div id="ref-MacGregor2013-qb" class="csl-entry" role="doc-biblioentry">
+MacGregor, L. J., &amp; Shtyrov, Y. (2013). Multiple routes for compound
+word processing in the brain: Evidence from <span>EEG</span>. <em>Brain
+Lang.</em>, <em>126</em>(2), 217–229. <a
+href="https://doi.org/10.1016/j.bandl.2013.04.002">https://doi.org/10.1016/j.bandl.2013.04.002</a>
+</div>
+</br><div id="ref-Mahowald2013-ip" class="csl-entry" role="doc-biblioentry">
+Mahowald, K., Fedorenko, E., Piantadosi, S. T., &amp; Gibson, E. (2013).
+Info/information theory: Speakers choose shorter words in predictive
+contexts. <em>Cognition</em>, <em>126</em>(2), 313–318. <a
+href="https://doi.org/10.1016/j.cognition.2012.09.010">https://doi.org/10.1016/j.cognition.2012.09.010</a>
+</div>
+</br><div id="ref-Manly2006-pd" class="csl-entry" role="doc-biblioentry">
+Manly, B. F. J. (2006). <em>Randomization, bootstrap and monte carlo
+methods in biology, third edition</em>. Chapman; Hall/CRC. <a
+href="https://doi.org/10.1201/9781315273075">https://doi.org/10.1201/9781315273075</a>
+</div>
+</br><div id="ref-Manly1991-ha" class="csl-entry" role="doc-biblioentry">
+Manly, B. F. J. (1991). <em>Randomization and monte carlo methods in
+biology</em>. Springer US. <a
+href="https://doi.org/10.1007/978-1-4899-2995-2">https://doi.org/10.1007/978-1-4899-2995-2</a>
+</div>
+</br><div id="ref-Manning1999-pp" class="csl-entry" role="doc-biblioentry">
+Manning, C. D., &amp; Schütze, H. (1999). <em>Foundations of statistical
+natural language processing</em>. MIT Press.
+</div>
+</br><div id="ref-De_Marcken1996-zr" class="csl-entry"
+role="doc-biblioentry">
+Marcken, C. de. (1996). <em>Unsupervised language acquisition</em> [PhD
+thesis]. Massachusetts Institute of Technology, Cambridge, MA,
+<span>USA</span>.
+</div>
+</br><div id="ref-Maris2007-aa" class="csl-entry" role="doc-biblioentry">
+Maris, E., &amp; Oostenveld, R. (2007). Nonparametric statistical
+testing of <span>EEG-</span> and <span class="nocase">MEG-data</span>.
+<em>J. Neurosci. Methods</em>, <em>164</em>(1), 177–190. <a
+href="https://doi.org/10.1016/j.jneumeth.2007.03.024">https://doi.org/10.1016/j.jneumeth.2007.03.024</a>
+</div>
+</br><div id="ref-McCandliss2003-gg" class="csl-entry"
+role="doc-biblioentry">
+McCandliss, B. D., Cohen, L., &amp; Dehaene, S. (2003). The visual word
+form area: Expertise for reading in the fusiform gyrus. <em>Trends Cogn.
+Sci.</em>, <em>7</em>(7), 293–299. <a
+href="https://doi.org/10.1016/s1364-6613(03)00134-7">https://doi.org/10.1016/s1364-6613(03)00134-7</a>
+</div>
+</br><div id="ref-McCauley2019-vv" class="csl-entry" role="doc-biblioentry">
+McCauley, S. M., &amp; Christiansen, M. H. (2019). Language learning as
+language use: A cross-linguistic model of child language development.
+<em>Psychol. Rev.</em>, <em>126</em>(1), 1–51. <a
+href="https://doi.org/10.1037/rev0000126">https://doi.org/10.1037/rev0000126</a>
+</div>
+</br><div id="ref-McCauley2017-tq" class="csl-entry" role="doc-biblioentry">
+McCauley, S. M., &amp; Christiansen, M. H. (2017). Computational
+investigations of multiword chunks in language learning. <em>Top. Cogn.
+Sci.</em>, <em>9</em>(3), 637–652. <a
+href="https://doi.org/10.1111/tops.12258">https://doi.org/10.1111/tops.12258</a>
+</div>
+</br><div id="ref-McCauley2011-gp" class="csl-entry" role="doc-biblioentry">
+McCauley, S. M., &amp; Christiansen, M. H. (2011). Learning simple
+statistics for language comprehension and production: The
+<span>CAPPUCCINO</span> model. <em>Proceedings of the Annual Meeting of
+the Cognitive Science Society</em>, <em>33</em>(33).
+</div>
+</br><div id="ref-McClelland1981-oz" class="csl-entry"
+role="doc-biblioentry">
+McClelland, J. L., &amp; Rumelhart, D. E. (1981a). An interactive
+activation model of context effects in letter perception. <em>Psychol.
+Rev.</em>, <em>88</em>, 375–407.
+</div>
+</br><div id="ref-McClelland1981-ba" class="csl-entry"
+role="doc-biblioentry">
+McClelland, J. L., &amp; Rumelhart, D. E. (1981b). An interactive
+activation model of context effects in letter perception: I. An account
+of basic findings. <em>Psychol. Rev.</em>, <em>88</em>(5), 375–407. <a
+href="https://doi.org/10.1037/0033-295x.88.5.375">https://doi.org/10.1037/0033-295x.88.5.375</a>
+</div>
+</br><div id="ref-McConkie1988-wp" class="csl-entry" role="doc-biblioentry">
+McConkie, G. W., Kerr, P. W., Reddix, M. D., &amp; Zola, D. (1988). Eye
+movement control during reading: I. The location of initial eye
+fixations on words. <em>Vision Res.</em>, <em>28</em>(10), 1107–1118. <a
+href="https://doi.org/10.1016/0042-6989(88)90137-x">https://doi.org/10.1016/0042-6989(88)90137-x</a>
+</div>
+</br><div id="ref-McGurk1976-li" class="csl-entry" role="doc-biblioentry">
+McGurk, H., &amp; MacDonald, J. (1976). Hearing lips and seeing voices.
+<em>Nature</em>, <em>264</em>(5588), 746–748. <a
+href="https://doi.org/10.1038/264746a0">https://doi.org/10.1038/264746a0</a>
+</div>
+</br><div id="ref-Meinzer2009-pk" class="csl-entry" role="doc-biblioentry">
+Meinzer, M., Lahiri, A., Flaisch, T., Hannemann, R., &amp; Eulitz, C.
+(2009). Opaque for the reader but transparent for the brain: Neural
+signatures of morphological complexity. <em>Neuropsychologia</em>,
+<em>47</em>(8-9), 1964–1971. <a
+href="https://doi.org/10.1016/j.neuropsychologia.2009.03.008">https://doi.org/10.1016/j.neuropsychologia.2009.03.008</a>
+</div>
+</br><div id="ref-Meunier2007-dx" class="csl-entry" role="doc-biblioentry">
+Meunier, F., &amp; Longtin, C.-M. (2007). Morphological decomposition
+and semantic integration in word processing☆. <em>J. Mem. Lang.</em>,
+<em>56</em>(4), 457–471. <a
+href="https://doi.org/10.1016/j.jml.2006.11.005">https://doi.org/10.1016/j.jml.2006.11.005</a>
+</div>
+</br><div id="ref-Meyer1971-ej" class="csl-entry" role="doc-biblioentry">
+Meyer, D. E., &amp; Schvaneveldt, R. W. (1971). Facilitation in
+recognizing pairs of words: Evidence of a dependence between retrieval
+operations. <em>Journal of Experimental Psychology</em>, <em>90</em>(2),
+227–234. <a
+href="https://doi.org/10.1037/h0031564">https://doi.org/10.1037/h0031564</a>
+</div>
+</br><div id="ref-Mikolov2013-om" class="csl-entry" role="doc-biblioentry">
+Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., &amp; Dean, J.
+(2013). Distributed representations of words and phrases and their
+compositionality. In C. J. C. Burges, L. Bottou, M. Welling, Z.
+Ghahramani, &amp; K. Q. Weinberger (Eds.), <em>Advances in neural
+information processing systems</em> (Vol. 26). Curran Associates, Inc.
+</div>
+</br><div id="ref-Mikolov2013-oo" class="csl-entry" role="doc-biblioentry">
+Mikolov, T., Yih, W.-T., &amp; Zweig, G. (2013). Linguistic regularities
+in continuous space word representations. <em>Hlt-Naacl</em>,
+<em>13</em>, 746–751.
+</div>
+</br><div id="ref-Miller1956-ju" class="csl-entry" role="doc-biblioentry">
+Miller, G. A. (1956). <a
+href="https://www.ncbi.nlm.nih.gov/pubmed/13310704">The magical number
+seven plus or minus two: Some limits on our capacity for processing
+information</a>. <em>Psychol. Rev.</em>, <em>63</em>(2), 81–97.
+</div>
+</br><div id="ref-Monsalve2012-qc" class="csl-entry" role="doc-biblioentry">
+Monsalve, I. F., Frank, S. L., &amp; Vigliocco, G. (2012). Lexical
+surprisal as a general predictor of reading time. <em>Proceedings of the
+13th Conference of the European Chapter of the Association for
+Computational Linguistics</em>, 398–408.
+</div>
+</br><div id="ref-Monsell1991-hc" class="csl-entry" role="doc-biblioentry">
+Monsell, S. (1991). The nature and locus of word frequency effects in
+reading. In <em>Basic processes in reading: Visual word recognition</em>
+(pp. 148–197). Lawrence Erlbaum Associates, Inc.
+</div>
+</br><div id="ref-Murray2008-gz" class="csl-entry" role="doc-biblioentry">
+Murray, M. M., Brunet, D., &amp; Michel, C. M. (2008). Topographic
+<span>ERP</span> analyses: A step-by-step tutorial review. <em>Brain
+Topogr.</em>, <em>20</em>(4), 249–264. <a
+href="https://doi.org/10.1007/s10548-008-0054-5">https://doi.org/10.1007/s10548-008-0054-5</a>
+</div>
+</br><div id="ref-Nagy2009-ih" class="csl-entry" role="doc-biblioentry">
+Nagy, G. (2009). <em>Performance and text in ancient greece</em>. Oxford
+University Press. <a
+href="https://doi.org/10.1093/oxfordhb/9780199286140.013.0037">https://doi.org/10.1093/oxfordhb/9780199286140.013.0037</a>
+</div>
+</br><div id="ref-Navon1977-ss" class="csl-entry" role="doc-biblioentry">
+Navon, D. (1977). Forest before trees: The precedence of global features
+in visual perception. <em>Cogn. Psychol.</em>, <em>9</em>(3), 353–383.
+<a
+href="https://doi.org/10.1016/0010-0285(77)90012-3">https://doi.org/10.1016/0010-0285(77)90012-3</a>
+</div>
+</br><div id="ref-Nozaradan2011-fc" class="csl-entry" role="doc-biblioentry">
+Nozaradan, S., Peretz, I., Missal, M., &amp; Mouraux, A. (2011). Tagging
+the neuronal entrainment to beat and meter. <em>J. Neurosci.</em>,
+<em>31</em>(28), 10234–10240. <a
+href="https://doi.org/10.1523/JNEUROSCI.0411-11.2011">https://doi.org/10.1523/JNEUROSCI.0411-11.2011</a>
+</div>
+</br><div id="ref-Nuthmann2005-mf" class="csl-entry" role="doc-biblioentry">
+Nuthmann, A., Engbert, R., &amp; Kliegl, R. (2005). Mislocated fixations
+during reading and the inverted optimal viewing position effect.
+<em>Vision Res.</em>, <em>45</em>(17), 2201–2217. <a
+href="https://doi.org/10.1016/j.visres.2005.02.014">https://doi.org/10.1016/j.visres.2005.02.014</a>
+</div>
+</br><div id="ref-Oehrn2018-bx" class="csl-entry" role="doc-biblioentry">
+Oehrn, C. R., Fell, J., Baumann, C., Rosburg, T., Ludowig, E., Kessler,
+H., Hanslmayr, S., &amp; Axmacher, N. (2018). Direct
+electrophysiological evidence for prefrontal control of hippocampal
+processing during voluntary forgetting. <em>Curr. Biol.</em>,
+<em>28</em>(18), 3016–3022.e4. <a
+href="https://doi.org/10.1016/j.cub.2018.07.042">https://doi.org/10.1016/j.cub.2018.07.042</a>
+</div>
+</br><div id="ref-Oostdijk2013-wg" class="csl-entry" role="doc-biblioentry">
+Oostdijk, N., Reynaert, M., Hoste, V., &amp; Schuurman, I. (2013). The
+construction of a 500-million-word reference corpus of contemporary
+written <span>Dutch</span>. In P. Spyns &amp; J. Odijk (Eds.),
+<em>Essential speech and language technology for <span>Dutch</span></em>
+(pp. 219–247). Springer, Berlin, Heidelberg. <a
+href="https://doi.org/10.1007/978-3-642-30910-6_13">https://doi.org/10.1007/978-3-642-30910-6_13</a>
+</div>
+</br><div id="ref-Oostenveld2011-sk" class="csl-entry"
+role="doc-biblioentry">
+Oostenveld, R., Fries, P., Maris, E., &amp; Schoffelen, J.-M. (2011).
+<span>FieldTrip</span>: Open source software for advanced analysis of
+<span>MEG</span>, <span>EEG</span>, and invasive electrophysiological
+data. <em>Comput. Intell. Neurosci.</em>, <em>2011</em>, 156869. <a
+href="https://doi.org/10.1155/2011/156869">https://doi.org/10.1155/2011/156869</a>
+</div>
+</br><div id="ref-Panichello2012-tp" class="csl-entry"
+role="doc-biblioentry">
+Panichello, M. F., Cheung, O. S., &amp; Bar, M. (2012). Predictive
+feedback and conscious visual experience. <em>Front. Psychol.</em>,
+<em>3</em>, 620. <a
+href="https://doi.org/10.3389/fpsyg.2012.00620">https://doi.org/10.3389/fpsyg.2012.00620</a>
+</div>
+</br><div id="ref-Pascual-Marqui2007-ij" class="csl-entry"
+role="doc-biblioentry">
+Pascual-Marqui, R. D. (2007). Discrete, <span>3D</span> distributed,
+linear imaging methods of electric neuronal activity. <span>Part</span>
+1: Exact, zero error localization. <em>arXiv Preprint
+arXiv:0710.3341</em>. <a
+href="https://arxiv.org/abs/0710.3341">https://arxiv.org/abs/0710.3341</a>
+</div>
+</br><div id="ref-Paterson2015-oj" class="csl-entry" role="doc-biblioentry">
+Paterson, K. B., Almabruk, A. A. A., McGowan, V. A., White, S. J., &amp;
+Jordan, T. R. (2015). Effects of word length on eye movement control:
+The evidence from <span>Arabic</span>. <em>Psychon. Bull. Rev.</em>,
+<em>22</em>(5), 1443–1450. <a
+href="https://doi.org/10.3758/s13423-015-0809-4">https://doi.org/10.3758/s13423-015-0809-4</a>
+</div>
+</br><div id="ref-Pedregosa2011-vn" class="csl-entry" role="doc-biblioentry">
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B.,
+Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V.,
+Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M.,
+&amp; Duchesnay, É. (2011). Scikit-learn: Machine learning in
+<span>Python</span>. <em>J. Mach. Learn. Res.</em>, <em>12</em>(Oct),
+2825–2830.
+</div>
+</br><div id="ref-Pennington2014-ii" class="csl-entry"
+role="doc-biblioentry">
+Pennington, J., Socher, R., &amp; Manning, C. D. (2014). Glove: Global
+vectors for word representation. <em>Proceedings of the 2014 Conference
+on Empirical Methods in Natural Language Processing
+(<span>EMNLP</span>)</em>, 1532–1543. <a
+href="https://doi.org/10.3115/v1/D14-1162">https://doi.org/10.3115/v1/D14-1162</a>
+</div>
+</br><div id="ref-Pernet2011-vs" class="csl-entry" role="doc-biblioentry">
+Pernet, C. R., Chauveau, N., Gaspar, C., &amp; Rousselet, G. A. (2011).
+<span>LIMO</span> <span>EEG</span>: A toolbox for hierarchical linear
+modeling of <span>ElectroEncephaloGraphic</span> data. <em>Comput.
+Intell. Neurosci.</em>, <em>2011</em>, 831409. <a
+href="https://doi.org/10.1155/2011/831409">https://doi.org/10.1155/2011/831409</a>
+</div>
+</br><div id="ref-Perruchet1998-ot" class="csl-entry" role="doc-biblioentry">
+Perruchet, P., &amp; Vinter, A. (1998). <span>PARSER</span>: A model for
+word segmentation. <em>J. Mem. Lang.</em>, <em>39</em>(2), 246–263. <a
+href="https://doi.org/10.1006/jmla.1998.2576">https://doi.org/10.1006/jmla.1998.2576</a>
+</div>
+</br><div id="ref-Piantadosi2011-ct" class="csl-entry"
+role="doc-biblioentry">
+Piantadosi, S. T., Tily, H., &amp; Gibson, E. (2011). Word lengths are
+optimized for efficient communication. <em>Proc. Natl. Acad. Sci. U. S.
+A.</em>, <em>108</em>(9), 3526–3529. <a
+href="https://doi.org/10.1073/pnas.1012551108">https://doi.org/10.1073/pnas.1012551108</a>
+</div>
+</br><div id="ref-Pitman1937-gw" class="csl-entry" role="doc-biblioentry">
+Pitman, E. J. G. (1937). Significance tests which may be applied to
+samples from any populations. <em>Supplement to the Journal of the Royal
+Statistical Society</em>, <em>4</em>(1), 119–130. <a
+href="https://doi.org/10.2307/2984124">https://doi.org/10.2307/2984124</a>
+</div>
+</br><div id="ref-Plaut1996-kj" class="csl-entry" role="doc-biblioentry">
+Plaut, D. C., McClelland, J. L., Seidenberg, M. S., &amp; Patterson, K.
+(1996). Understanding normal and impaired word reading: Computational
+principles in quasi-regular domains. <em>Psychol. Rev.</em>,
+<em>103</em>(1), 56–115. <a
+href="https://doi.org/10.1037/0033-295x.103.1.56">https://doi.org/10.1037/0033-295x.103.1.56</a>
+</div>
+</br><div id="ref-Pliatsikas2014-an" class="csl-entry"
+role="doc-biblioentry">
+Pliatsikas, C., Wheeldon, L., Lahiri, A., &amp; Hansen, P. C. (2014).
+Processing of zero-derived words in <span>English</span>: An <span
+class="nocase">fMRI</span> investigation. <em>Neuropsychologia</em>,
+<em>53</em>, 47–53. <a
+href="https://doi.org/10.1016/j.neuropsychologia.2013.11.003">https://doi.org/10.1016/j.neuropsychologia.2013.11.003</a>
+</div>
+</br><div id="ref-Poghosyan2008-om" class="csl-entry" role="doc-biblioentry">
+Poghosyan, V., &amp; Ioannides, A. A. (2008). Attention modulates
+earliest responses in the primary auditory and visual cortices.
+<em>Neuron</em>, <em>58</em>(5), 802–813. <a
+href="https://doi.org/10.1016/j.neuron.2008.04.013">https://doi.org/10.1016/j.neuron.2008.04.013</a>
+</div>
+</br><div id="ref-Pollatsek1989-fm" class="csl-entry" role="doc-biblioentry">
+Pollatsek, A., &amp; Rayner, K. (1989). Reading. In M. I. Posner (Ed.),
+<em>Foundations of cognitive science</em> (pp. 401–436). MIT Press. <a
+href="https://doi.org/10.7551/mitpress/3072.003.0003">https://doi.org/10.7551/mitpress/3072.003.0003</a>
+</div>
+</br><div id="ref-Posner1989-eq" class="csl-entry" role="doc-biblioentry">
+Posner, M. I. (Ed.). (1989). <em>Foundations of cognitive science</em>.
+MIT Press.
+</div>
+</br><div id="ref-Prechelt1998-zs" class="csl-entry" role="doc-biblioentry">
+Prechelt, L. (1998). Early stopping - but when? In G. B. Orr &amp; K.-R.
+Müller (Eds.), <em>Neural networks: Tricks of the trade</em> (pp.
+55–69). Springer Berlin Heidelberg. <a
+href="https://doi.org/10.1007/3-540-49430-8_3">https://doi.org/10.1007/3-540-49430-8_3</a>
+</div>
+</br><div id="ref-Radach2013-fq" class="csl-entry" role="doc-biblioentry">
+Radach, R., &amp; Kennedy, A. (2013). Eye movements in reading: Some
+theoretical context. <em>Q. J. Exp. Psychol.</em>, <em>66</em>(3),
+429–452. <a
+href="https://doi.org/10.1080/17470218.2012.750676">https://doi.org/10.1080/17470218.2012.750676</a>
+</div>
+</br><div id="ref-Rayner1979-pb" class="csl-entry" role="doc-biblioentry">
+Rayner, K. (1979). Eye guidance in reading: Fixation locations within
+words. <em>Perception</em>, <em>8</em>(1), 21–30. <a
+href="https://doi.org/10.1068/p080021">https://doi.org/10.1068/p080021</a>
+</div>
+</br><div id="ref-Rayner1998-fq" class="csl-entry" role="doc-biblioentry">
+Rayner, K. (1998). Eye movements in reading and information processing:
+20 years of research. <em>Psychol. Bull.</em>, <em>124</em>(3), 372–422.
+<a
+href="https://doi.org/10.1037/0033-2909.124.3.372">https://doi.org/10.1037/0033-2909.124.3.372</a>
+</div>
+</br><div id="ref-Rayner2009-wn" class="csl-entry" role="doc-biblioentry">
+Rayner, K. (2009). <em>Eye movements and attention in reading, scene
+perception, and visual search</em> (Vol. 62, pp. 1457–1506). <a
+href="https://doi.org/10.1080/17470210902816461">https://doi.org/10.1080/17470210902816461</a>
+</div>
+</br><div id="ref-Rayner1976-dc" class="csl-entry" role="doc-biblioentry">
+Rayner, K., &amp; McConkie, G. W. (1976). What guides a reader’s eye
+movements? <em>Vision Res.</em>, <em>16</em>(8), 829–837. <a
+href="https://doi.org/10.1016/0042-6989(76)90143-7">https://doi.org/10.1016/0042-6989(76)90143-7</a>
+</div>
+</br><div id="ref-Rayner1996-kg" class="csl-entry" role="doc-biblioentry">
+Rayner, K., Sereno, S. C., &amp; Raney, G. E. (1996). Eye movement
+control in reading: A comparison of two types of models. <em>J. Exp.
+Psychol. Hum. Percept. Perform.</em>, <em>22</em>(5), 1188–1200. <a
+href="https://doi.org/10.1037/0096-1523.22.5.1188">https://doi.org/10.1037/0096-1523.22.5.1188</a>
+</div>
+</br><div id="ref-Rayner1982-jf" class="csl-entry" role="doc-biblioentry">
+Rayner, K., Well, A. D., Pollatsek, A., &amp; Bertera, J. H. (1982). The
+availability of useful information to the right of fixation in reading.
+<em>Percept. Psychophys.</em>, <em>31</em>(6), 537–550. <a
+href="https://doi.org/10.3758/bf03204186">https://doi.org/10.3758/bf03204186</a>
+</div>
+</br><div id="ref-Reali2007-fn" class="csl-entry" role="doc-biblioentry">
+Reali, F., &amp; Christiansen, M. H. (2007). Word chunk frequencies
+affect the processing of pronominal object-relative clauses. <em>Q. J.
+Exp. Psychol.</em>, <em>60</em>(2), 161–170. <a
+href="https://doi.org/10.1080/17470210600971469">https://doi.org/10.1080/17470210600971469</a>
+</div>
+</br><div id="ref-Reicher1969-iu" class="csl-entry" role="doc-biblioentry">
+Reicher, G. M. (1969). Perceptual recognition as a function of
+meaningfulness of stimulus material. <em>J. Exp. Psychol.</em>,
+<em>81</em>(2), 275–280. <a
+href="https://doi.org/10.1037/h0027768">https://doi.org/10.1037/h0027768</a>
+</div>
+</br><div id="ref-Reichle2013-lt" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., Liversedge, S. P., Drieghe, D., Blythe, H. I., Joseph,
+H. S. S. L., White, S. J., &amp; Rayner, K. (2013). Using
+<span>E-Z</span> reader to examine the concurrent development of
+eye-movement control and reading skill. <em>Dev. Rev.</em>,
+<em>33</em>(2), 110–149. <a
+href="https://doi.org/10.1016/j.dr.2013.03.001">https://doi.org/10.1016/j.dr.2013.03.001</a>
+</div>
+</br><div id="ref-Reichle1998-ah" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., Pollatsek, A., Fisher, D. L., &amp; Rayner, K. (1998).
+Toward a model of eye movement control in reading. <em>Psychol.
+Rev.</em>, <em>105</em>(1), 125–157. <a
+href="https://doi.org/10.1037/0033-295X.105.1.125">https://doi.org/10.1037/0033-295X.105.1.125</a>
+</div>
+</br><div id="ref-Reichle2003-qe" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., Rayner, K., &amp; Pollatsek, A. (2003). The
+<span>E-Z</span> reader model of eye-movement control in reading:
+Comparisons to other models. <em>Behav. Brain Sci.</em>, <em>26</em>(4),
+445–476. <a
+href="https://doi.org/10.1017/s0140525x03000104">https://doi.org/10.1017/s0140525x03000104</a>
+</div>
+</br><div id="ref-Reichle2015-cq" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., &amp; Sheridan, H. (2015). <span>E-Z</span> reader: An
+overview of the model and two recent applications. In <em>The oxford
+handbook of reading</em> (pp. 277–290). Oxford University Press. <a
+href="https://doi.org/10.1093/oxfordhb/9780199324576.013.17">https://doi.org/10.1093/oxfordhb/9780199324576.013.17</a>
+</div>
+</br><div id="ref-Reichle2011-pj" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., Tokowicz, N., Liu, Y., &amp; Perfetti, C. A. (2011).
+Testing an assumption of the <span>E-Z</span> reader model of
+eye-movement control during reading: Using event-related potentials to
+examine the familiarity check. <em>Psychophysiology</em>,
+<em>48</em>(7), 993–1003. <a
+href="https://doi.org/10.1111/j.1469-8986.2011.01169.x">https://doi.org/10.1111/j.1469-8986.2011.01169.x</a>
+</div>
+</br><div id="ref-Reichle2009-pe" class="csl-entry" role="doc-biblioentry">
+Reichle, E. D., Warren, T., &amp; McConnell, K. (2009). Using
+<span>E-Z</span> reader to model the effects of higher level language
+processing on eye movements during reading. <em>Psychon. Bull.
+Rev.</em>, <em>16</em>(1), 1–21. <a
+href="https://doi.org/10.3758/PBR.16.1.1">https://doi.org/10.3758/PBR.16.1.1</a>
+</div>
+</br><div id="ref-Reilly2006-gj" class="csl-entry" role="doc-biblioentry">
+Reilly, R. G., &amp; Radach, R. (2006). Some empirical tests of an
+interactive activation model of eye movement control in reading.
+<em>Cogn. Syst. Res.</em>, <em>7</em>(1), 34–55. <a
+href="https://doi.org/10.1016/j.cogsys.2005.07.006">https://doi.org/10.1016/j.cogsys.2005.07.006</a>
+</div>
+</br><div id="ref-Rhodes2013-uq" class="csl-entry" role="doc-biblioentry">
+Rhodes, D. (2013). <em>Conditional random field latin word
+segmenter</em>. Tech. rep., University of Stanford.
+</div>
+</br><div id="ref-Rissanen1978-pb" class="csl-entry" role="doc-biblioentry">
+Rissanen, J. (1978). Modeling by shortest data description.
+<em>Automatica</em>, <em>14</em>(5), 465–471. <a
+href="https://doi.org/10.1016/0005-1098(78)90005-5">https://doi.org/10.1016/0005-1098(78)90005-5</a>
+</div>
+</br><div id="ref-Schotter2012-ew" class="csl-entry" role="doc-biblioentry">
+Schotter, E. R., Angele, B., &amp; Rayner, K. (2012). Parafoveal
+processing in reading. <em>Atten. Percept. Psychophys.</em>,
+<em>74</em>(1), 5–35. <a
+href="https://doi.org/10.3758/s13414-011-0219-2">https://doi.org/10.3758/s13414-011-0219-2</a>
+</div>
+</br><div id="ref-Semenza2014-cd" class="csl-entry" role="doc-biblioentry">
+Semenza, C., &amp; Luzzatti, C. (2014). Combining words in the brain:
+The processing of compound words. Introduction to the special issue.
+<em>Cogn. Neuropsychol.</em>, <em>31</em>(1-2), 1–7. <a
+href="https://doi.org/10.1080/02643294.2014.898922">https://doi.org/10.1080/02643294.2014.898922</a>
+</div>
+</br><div id="ref-Sennrich2016-fv" class="csl-entry" role="doc-biblioentry">
+Sennrich, R., Haddow, B., &amp; Birch, A. (2016). Neural machine
+translation of rare words with subword units. <em>Proceedings of the
+54th Annual Meeting of the Association for Computational Linguistics
+(Volume 1: Long Papers)</em>, 1715–1725. <a
+href="https://doi.org/10.18653/v1/P16-1162">https://doi.org/10.18653/v1/P16-1162</a>
+</div>
+</br><div id="ref-Shannon1951-ye" class="csl-entry" role="doc-biblioentry">
+Shannon, C. E. (1951). Prediction and entropy of printed
+<span>English</span>. <em>Bell System Technical Journal</em>,
+<em>30</em>(1), 50–64. <a
+href="https://doi.org/10.1002/j.1538-7305.1951.tb01366.x">https://doi.org/10.1002/j.1538-7305.1951.tb01366.x</a>
+</div>
+</br><div id="ref-Sinclair1991-gd" class="csl-entry" role="doc-biblioentry">
+Sinclair, J. (1991). <em>Corpus, concordance, collocation</em>. Oxford
+University Press.
+</div>
+</br><div id="ref-Siyanova-Chanturia2017-nj" class="csl-entry"
+role="doc-biblioentry">
+Siyanova-Chanturia, A., Conklin, K., Caffarra, S., Kaan, E., &amp;
+Heuven, W. J. B. van. (2017). Representation and processing of
+multi-word expressions in the brain. <em>Brain Lang.</em>, <em>175</em>,
+111–122. <a
+href="https://doi.org/10.1016/j.bandl.2017.10.004">https://doi.org/10.1016/j.bandl.2017.10.004</a>
+</div>
+</br><div id="ref-Smith2013-pj" class="csl-entry" role="doc-biblioentry">
+Smith, N. J., &amp; Levy, R. (2013). The effect of word predictability
+on reading time is logarithmic. <em>Cognition</em>, <em>128</em>(3),
+302–319. <a
+href="https://doi.org/10.1016/j.cognition.2013.02.013">https://doi.org/10.1016/j.cognition.2013.02.013</a>
+</div>
+</br><div id="ref-Snell2017-pq" class="csl-entry" role="doc-biblioentry">
+Snell, J., &amp; Grainger, J. (2017). The sentence superiority effect
+revisited. <em>Cognition</em>, <em>168</em>, 217–221. <a
+href="https://doi.org/10.1016/j.cognition.2017.07.003">https://doi.org/10.1016/j.cognition.2017.07.003</a>
+</div>
+</br><div id="ref-Steels2006-nn" class="csl-entry" role="doc-biblioentry">
+Steels, L., &amp; De Beule, J. (2006). A (very) brief introduction to
+fluid construction grammar. <em>Proceedings of the Third Workshop on
+Scalable Natural Language Understanding</em>, 73–80.
+</div>
+</br><div id="ref-Steinmetz2000-zo" class="csl-entry" role="doc-biblioentry">
+Steinmetz, P. N., Roy, A., Fitzgerald, P. J., Hsiao, S. S., Johnson, K.
+O., &amp; Niebur, E. (2000). Attention modulates synchronized neuronal
+firing in primate somatosensory cortex. <em>Nature</em>,
+<em>404</em>(6774), 187–190. <a
+href="https://doi.org/10.1038/35004588">https://doi.org/10.1038/35004588</a>
+</div>
+</br><div id="ref-Stites2016-by" class="csl-entry" role="doc-biblioentry">
+Stites, M. C., Federmeier, K. D., &amp; Christianson, K. (2016). Do
+morphemes matter when reading compound words with transposed letters?
+<span>Evidence</span> from <span>Eye-Tracking</span> and
+<span>Event-Related Potentials</span>. <em>Lang Cogn Neurosci</em>,
+<em>31</em>(10), 1299–1319. <a
+href="https://doi.org/10.1080/23273798.2016.1212082">https://doi.org/10.1080/23273798.2016.1212082</a>
+</div>
+</br><div id="ref-Stockall2006-in" class="csl-entry" role="doc-biblioentry">
+Stockall, L., &amp; Marantz, A. (2006). A single route, full
+decomposition model of morphological complexity: <span>MEG</span>
+evidence. <em>Ment. Lex.</em>, <em>1</em>(1), 85–123. <a
+href="https://doi.org/10.1075/ml.1.1.07sto">https://doi.org/10.1075/ml.1.1.07sto</a>
+</div>
+</br><div id="ref-Sun2016-id" class="csl-entry" role="doc-biblioentry">
+Sun, M., Chen, X., Zhang, K., Guo, Z., &amp; Liu, Z. (2016). <em>Thulac:
+An efficient lexical analyzer for chinese</em>. <a
+href="https://github.com/thunlp/THULAC">https://github.com/thunlp/THULAC</a>
+</div>
+</br><div id="ref-Sun2018-om" class="csl-entry" role="doc-biblioentry">
+Sun, Z., &amp; Deng, Z.-H. (2018). Unsupervised neural word segmentation
+for <span>C</span>hinese via segmental language modeling.
+<em>Proceedings of the 2018 Conference on Empirical Methods in Natural
+Language Processing</em>, 4915–4920. <a
+href="https://doi.org/10.18653/v1/D18-1531">https://doi.org/10.18653/v1/D18-1531</a>
+</div>
+</br><div id="ref-Taft2013-tv" class="csl-entry" role="doc-biblioentry">
+Taft, M. (2013). <em>Reading and the mental lexicon</em>. Psychology
+Press.
+</div>
+</br><div id="ref-Taft1976-df" class="csl-entry" role="doc-biblioentry">
+Taft, M., &amp; Forster, K. I. (1976). Lexical storage and retrieval of
+polymorphemic and polysyllabic words. <em>Journal of Verbal Learning and
+Verbal Behavior</em>, <em>15</em>(6), 607–620. <a
+href="https://doi.org/10.1016/0022-5371(76)90054-2">https://doi.org/10.1016/0022-5371(76)90054-2</a>
+</div>
+</br><div id="ref-Teh2006-ws" class="csl-entry" role="doc-biblioentry">
+Teh, Y. W., Jordan, M. I., Beal, M. J., &amp; Blei, D. M. (2006).
+Hierarchical dirichlet processes. <em>J. Am. Stat. Assoc.</em>,
+<em>101</em>(476), 1566–1581. <a
+href="https://doi.org/10.1198/016214506000000302">https://doi.org/10.1198/016214506000000302</a>
+</div>
+</br><div id="ref-Teng2020-df" class="csl-entry" role="doc-biblioentry">
+Teng, X., Ma, M., Yang, J., Blohm, S., Cai, Q., &amp; Tian, X. (2020).
+Constrained structure of ancient <span>Chinese</span> poetry facilitates
+speech content grouping. <em>Curr. Biol.</em>, <em>0</em>(0). <a
+href="https://doi.org/10.1016/j.cub.2020.01.059">https://doi.org/10.1016/j.cub.2020.01.059</a>
+</div>
+</br><div id="ref-Tesniere2015-of" class="csl-entry" role="doc-biblioentry">
+Tesniere, L. (2015). <em>Elements of structural syntax</em>. John
+Benjamins Publishing. <a
+href="https://doi.org/10.1075/z.185">https://doi.org/10.1075/z.185</a>
+</div>
+</br><div id="ref-Tian2018-qi" class="csl-entry" role="doc-biblioentry">
+Tian, X., Ding, N., Teng, X., Bai, F., &amp; Poeppel, D. (2018).
+Imagined speech influences perceived loudness of sound. <em>Nature Human
+Behaviour</em>, <em>2</em>(3), 225–234. <a
+href="https://doi.org/10.1038/s41562-018-0305-8">https://doi.org/10.1038/s41562-018-0305-8</a>
+</div>
+</br><div id="ref-Tian2008-cg" class="csl-entry" role="doc-biblioentry">
+Tian, X., &amp; Huber, D. E. (2008). Measures of spatial similarity and
+response magnitude in <span>MEG</span> and scalp <span>EEG</span>.
+<em>Brain Topogr.</em>, <em>20</em>(3), 131–141. <a
+href="https://doi.org/10.1007/s10548-007-0040-3">https://doi.org/10.1007/s10548-007-0040-3</a>
+</div>
+</br><div id="ref-Tian2015-ds" class="csl-entry" role="doc-biblioentry">
+Tian, X., &amp; Poeppel, D. (2015). Dynamics of self-monitoring and
+error detection in speech production: Evidence from mental imagery and
+<span>MEG</span>. <em>J. Cogn. Neurosci.</em>, <em>27</em>(2), 352–364.
+<a
+href="https://doi.org/10.1162/jocn_a_00692">https://doi.org/10.1162/jocn_a_00692</a>
+</div>
+</br><div id="ref-Tian2013-eq" class="csl-entry" role="doc-biblioentry">
+Tian, X., &amp; Poeppel, D. (2013). The effect of imagination on
+stimulation: The functional specificity of efference copies in speech
+processing. <em>J. Cogn. Neurosci.</em>, <em>25</em>(7), 1020–1036. <a
+href="https://doi.org/10.1162/jocn_a_00381">https://doi.org/10.1162/jocn_a_00381</a>
+</div>
+</br><div id="ref-Tian2010-qc" class="csl-entry" role="doc-biblioentry">
+Tian, X., &amp; Poeppel, D. (2010). Mental imagery of speech and
+movement implicates the dynamics of internal forward models. <em>Front.
+Psychol.</em>, <em>1</em>(OCT), 166. <a
+href="https://doi.org/10.3389/fpsyg.2010.00166">https://doi.org/10.3389/fpsyg.2010.00166</a>
+</div>
+</br><div id="ref-Tian2011-rs" class="csl-entry" role="doc-biblioentry">
+Tian, X., Poeppel, D., &amp; Huber, D. E. (2011).
+<span>TopoToolbox</span>: Using sensor topography to calculate
+psychologically meaningful measures from event-related
+<span>EEG/MEG</span>. <em>Comput. Intell. Neurosci.</em>, <em>2011</em>,
+674605. <a
+href="https://doi.org/10.1155/2011/674605">https://doi.org/10.1155/2011/674605</a>
+</div>
+</br><div id="ref-Tian2016-jb" class="csl-entry" role="doc-biblioentry">
+Tian, X., Zarate, J. M., &amp; Poeppel, D. (2016). Mental imagery of
+speech implicates two mechanisms of perceptual reactivation.
+<em>Cortex</em>, <em>77</em>, 1–12. <a
+href="https://doi.org/10.1016/j.cortex.2016.01.002">https://doi.org/10.1016/j.cortex.2016.01.002</a>
+</div>
+</br><div id="ref-Tsai1932-on" class="csl-entry" role="doc-biblioentry">
+Tsai, L. S. (1932). <em>The laws of minimum effort and maximum
+satisfaction in animal behavior</em>. National Research Institute of
+Psychology.
+</div>
+</br><div id="ref-Underwood2004-gp" class="csl-entry" role="doc-biblioentry">
+Underwood, G., Schmitt, N., &amp; Galpin, A. (2004). The eyes have it:
+An eye-movement study into the processing of formulaic sequences. In N.
+Schmitt (Ed.), <em>Formulaic sequences: Acquisition, processing and
+use</em> (Vol. 9, pp. 153–172). John Benjamins Publishing Company. <a
+href="https://doi.org/10.1075/lllt.9.09und">https://doi.org/10.1075/lllt.9.09und</a>
+</div>
+</br><div id="ref-Van_Rijsbergen1979-uu" class="csl-entry"
+role="doc-biblioentry">
+Van Rijsbergen, C. J. (1979). <em>Information retrieval</em>.
+Butterworth; Co.
+</div>
+</br><div id="ref-Van_Veen1988-no" class="csl-entry" role="doc-biblioentry">
+Van Veen, B. D., &amp; Buckley, K. M. (1988). Beamforming: A versatile
+approach to spatial filtering. <em>IEEE ASSP Magazine</em>,
+<em>5</em>(2), 4–24. <a
+href="https://doi.org/10.1109/53.665">https://doi.org/10.1109/53.665</a>
+</div>
+</br><div id="ref-Van_Wassenhove2005-qj" class="csl-entry"
+role="doc-biblioentry">
+Van Wassenhove, V., Grant, K. W., &amp; Poeppel, D. (2005). Visual
+speech speeds up the neural processing of auditory speech.
+<em>Proceedings of the National Academy of Sciences</em>,
+<em>102</em>(4), 1181–1186.
+</div>
+</br><div id="ref-Vannest2005-ad" class="csl-entry" role="doc-biblioentry">
+Vannest, J., Polk, T. A., &amp; Lewis, R. L. (2005). Dual-route
+processing of complex words: New <span class="nocase">fMRI</span>
+evidence from derivational suffixation. <em>Cogn. Affect. Behav.
+Neurosci.</em>, <em>5</em>(1), 67–76. <a
+href="https://doi.org/10.3758/CABN.5.1.67">https://doi.org/10.3758/CABN.5.1.67</a>
+</div>
+</br><div id="ref-Vitu2000-db" class="csl-entry" role="doc-biblioentry">
+Vitu, F., &amp; McConkie, G. W. (2000). Regressive saccades and word
+perception in adult reading. In A. Kennedy, R. Radach, D. Heller, &amp;
+J. Pynte (Eds.), <em>Reading as a perceptual process</em> (pp. 301–326).
+North-Holland/Elsevier Science Publishers. <a
+href="https://doi.org/10.1016/B978-008043642-5/50015-2">https://doi.org/10.1016/B978-008043642-5/50015-2</a>
+</div>
+</br><div id="ref-Wakeman2015-up" class="csl-entry" role="doc-biblioentry">
+Wakeman, D. G., &amp; Henson, R. N. (2015). A multi-subject, multi-modal
+human neuroimaging dataset. <em>Sci Data</em>, <em>2</em>, 150001. <a
+href="https://doi.org/10.1038/sdata.2015.1">https://doi.org/10.1038/sdata.2015.1</a>
+</div>
+</br><div id="ref-Wang2007-vd" class="csl-entry" role="doc-biblioentry">
+Wang, B., Zhou, T. G., Zhuo, Y., &amp; Chen, L. (2007). Global
+topological dominance in the left hemisphere. <em>Proc. Natl. Acad. Sci.
+U. S. A.</em>, <em>104</em>(52), 21014–21019. <a
+href="https://doi.org/10.1073/pnas.0709664104">https://doi.org/10.1073/pnas.0709664104</a>
+</div>
+</br><div id="ref-Wang2010-ho" class="csl-entry" role="doc-biblioentry">
+Wang, S.-H., &amp; Morris, R. G. M. (2010). Hippocampal-neocortical
+interactions in memory formation, consolidation, and reconsolidation.
+<em>Annu. Rev. Psychol.</em>, <em>61</em>, 49–79, C1–4. <a
+href="https://doi.org/10.1146/annurev.psych.093008.100523">https://doi.org/10.1146/annurev.psych.093008.100523</a>
+</div>
+</br><div id="ref-Wang2019-bv" class="csl-entry" role="doc-biblioentry">
+Wang, X., Zhu, H., &amp; Tian, X. (2019). Revealing the temporal
+dynamics in non-invasive electrophysiological recordings with
+topography-based analyses. In <em>bioRxiv</em> (p. 779546). <a
+href="https://doi.org/10.1101/779546">https://doi.org/10.1101/779546</a>
+</div>
+</br><div id="ref-Warren2007-lx" class="csl-entry" role="doc-biblioentry">
+Warren, T., &amp; McConnell, K. (2007). Investigating effects of
+selectional restriction violations and plausibility violation severity
+on eye-movements in reading. <em>Psychon. Bull. Rev.</em>,
+<em>14</em>(4), 770–775. <a
+href="https://doi.org/10.3758/bf03196835">https://doi.org/10.3758/bf03196835</a>
+</div>
+</br><div id="ref-Xue2003-ds" class="csl-entry" role="doc-biblioentry">
+Xue, N., &amp; Palmer, M. (2003). Annotating the propositions in the
+penn chinese treebank. <em><span>SIGHAN</span> ’03: Proceedings of the
+Second <span>SIGHAN</span> Workshop on Chinese Language Processing</em>,
+47–54. <a
+href="https://doi.org/10.3115/1119250.1119257">https://doi.org/10.3115/1119250.1119257</a>
+</div>
+</br><div id="ref-Xue2013-ai" class="csl-entry" role="doc-biblioentry">
+Xue, N., Zhang, X., Jiang, Z., Palmer, M., Xia, F., Chiou, F.-D., &amp;
+Chang, M. (2013). <em>Chinese treebank 8.0</em>. <a
+href="https://doi.org/10.35111/wygn-4f57">https://doi.org/10.35111/wygn-4f57</a>
+</div>
+</br><div id="ref-Yang2020-au" class="csl-entry" role="doc-biblioentry">
+Yang, J., Cai, Q., &amp; Tian, X. (2020). How do we segment text?
+Two-stage chunking operation in reading. <em>eNeuro</em>, <em>7</em>(3).
+<a
+href="https://doi.org/10.1523/ENEURO.0425-19.2020">https://doi.org/10.1523/ENEURO.0425-19.2020</a>
+</div>
+</br><div id="ref-Yang2020-lz" class="csl-entry" role="doc-biblioentry">
+Yang, J., Frank, S. L., &amp; Bosch, A. van den. (2020). Less is better:
+A cognitively inspired unsupervised model for language segmentation.
+<em>Proceedings of the Workshop on the Cognitive Aspects of the
+Lexicon</em>, 33–45.
+</div>
+</br><div id="ref-Yang2018-cq" class="csl-entry" role="doc-biblioentry">
+Yang, J., Zhu, H., &amp; Tian, X. (2018). <span>Group-Level</span>
+multivariate analysis in <span>EasyEEG</span> toolbox: Examining the
+temporal dynamics using topographic responses. <em>Front.
+Neurosci.</em>, <em>12</em>, 468. <a
+href="https://doi.org/10.3389/fnins.2018.00468">https://doi.org/10.3389/fnins.2018.00468</a>
+</div>
+</br><div id="ref-Zhai2014-zx" class="csl-entry" role="doc-biblioentry">
+Zhai, K., Boyd-Graber, J., &amp; Cohen, S. B. (2014). Online adaptor
+grammars with hybrid inference. <em>Transactions of the Association for
+Computational Linguistics</em>, <em>2</em>, 465–476. <a
+href="https://doi.org/10.1162/tacl_a_00196">https://doi.org/10.1162/tacl_a_00196</a>
+</div>
+</br><div id="ref-Zheng2015-wv" class="csl-entry" role="doc-biblioentry">
+Zheng, Z., Li, J., &amp; Xiao, F. (2015). Familiarity contributes to
+associative memory: The role of unitization. <em>Advances in
+Psychological Science</em>, <em>23</em>(2), 202. <a
+href="https://doi.org/10.3724/SP.J.1042.2015.00202">https://doi.org/10.3724/SP.J.1042.2015.00202</a>
+</div>
+</br><div id="ref-Zhikov2013-vf" class="csl-entry" role="doc-biblioentry">
+Zhikov, V., Takamura, H., &amp; Okumura, M. (2013). An efficient
+algorithm for unsupervised word segmentation with branching entropy and
+<span>MDL</span>. <em>Information and Media Technologies</em>,
+<em>8</em>(2), 514–527. <a
+href="https://doi.org/10.11185/imt.8.514">https://doi.org/10.11185/imt.8.514</a>
+</div>
+</br><div id="ref-Zipf1949-lo" class="csl-entry" role="doc-biblioentry">
+Zipf, G. K. (1949). <em>Human behavior and the principle of least
+effort</em> (Vol. 573). Addison-Wesley Press.
+</div>
+</div>
+
+</div>
+<hr />
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<h4 class="unnumbered" id="footnotes">Footnotes</h4>
+
+<ol>
+<li id="fn1"><p>Yang, J., Zhu, H., &amp; Tian, X. (2018). Group-Level
+Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal
+Dynamics Using Topographic Responses. <em>Frontiers in Neuroscience,
+12</em>, 468.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://github.com/bahramisharif/DMLT"
+class="uri">https://github.com/bahramisharif/DMLT</a><a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a
+href="https://github.com/ray306/EasyEEG/blob/master/tests/(Demo)%20Face%20perception.ipynb"
+class="uri">https://github.com/ray306/EasyEEG/blob/master/tests/(Demo)%20Face%20perception.ipynb</a><a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn4"><p>https://www.frontiersin.org/articles/10.3389/fnins.2018.00468/full#supplementary-material<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn5"><p>https://www.frontiersin.org/articles/10.3389/fnins.2018.00468/full#supplementary-material<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn6"><p>https://www.frontiersin.org/articles/10.3389/fnins.2018.00468/full#supplementary-material<a
+href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn7"><p>https://www.frontiersin.org/articles/10.3389/fnins.2018.00468/full#supplementary-material<a
+href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Yang, J., Cai, Q., &amp; Tian, X. (2020). How do we
+segment text? Two-stage chunking operation in reading. <em>eNeuro,
+7</em>(3).<a href="#fnref8" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>The EXTRA characters were randomly selected from the
+characters with no frequency information in Chardb (<a
+href="https://chardb.cls.ru.nl/"><u>https://chardb.cls.ru.nl/</u></a>)
+and filtered by the stroke number (ranging from 4 to 13 as in the
+previous study).<a href="#fnref9" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Yang, J., Frank, S. L., &amp; van den Bosch, A. (2020).
+Less is Better: A cognitively inspired unsupervised model for language
+segmentation. <em>Proceedings of the Workshop on the Cognitive Aspects
+of the Lexicon</em>, 33–45.<a href="#fnref10" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://github.com/ray306/LiB"
+class="uri">https://github.com/ray306/LiB</a><a href="#fnref11"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>The code of the BPC calculations was modified from a
+Github project: <a
+href="https://github.com/joshualoehr/ngram-language-model"
+class="uri">https://github.com/joshualoehr/ngram-language-model</a>. We
+kept all tokens during training.<a href="#fnref12" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://github.com/fxsjy/jieba"
+class="uri">https://github.com/fxsjy/jieba</a><a href="#fnref13"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>The scores of Jieba, THULAC, and pkuseg are provided by
+<a href="https://github.com/lancopku/pkuseg-python"
+class="uri">https://github.com/lancopku/pkuseg-python</a><a
+href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Yang, J., van den Bosch, A., &amp; Frank, S. L. (2022).
+Unsupervised text segmentation predicts eye ﬁxations during reading.
+<em>Frontiers in Artificial Intelligence, 5</em>:731615.<a
+href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>All code and datasets involved in modelling and
+experimentation are available at <a
+href="https://github.com/ray306/LiB-predicts-eye-fixations"
+class="uri">https://github.com/ray306/LiB-predicts-eye-fixations</a>.<a
+href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p><a href="https://expsy.ugent.be/downloads/geco/"
+class="uri">https://expsy.ugent.be/downloads/geco/</a><a href="#fnref17"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p><a
+href="https://www.corpusdata.org/coca/samples/coca-samples-db.zip"
+class="uri">https://www.corpusdata.org/coca/samples/coca-samples-db.zip</a><a
+href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>The metric is the product of <span
+class="math inline">log<sub>2</sub>|lexicon|</span> (the cost of storing
+unit types) and <span class="math inline">$\frac{1}{\text{average chunk
+length}}$</span> (the cost of computing unit tokens).<a href="#fnref19"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>To simplify the model, we removed a regularizer that
+only memorizes the chunk tokens that appear more than twice in a single
+epoch in the LiB model described by <span class="citation"
+data-cites="Yang2020-lz">(Yang, Frank, and Bosch 2020)</span>. We
+reduced the <em>probation period</em> to an arbitrary value of 3, since
+the original setting will cause the lexicon to grow too fast after
+removing the regularizer.<a href="#fnref20" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p><a
+href="https://github.com/ray306/LiB-predicts-eye-fixations/tree/main/other_models/cbl_modified.py"
+class="uri">https://github.com/ray306/LiB-predicts-eye-fixations/tree/main/other_models/cbl_modified.py</a><a
+href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p><a
+href="https://github.com/ray306/LiB-predicts-eye-fixations/tree/main/other_models/AdapterGrammar/ag_geco/Makefile"
+class="uri">https://github.com/ray306/LiB-predicts-eye-fixations/tree/main/other_models/AdapterGrammar/ag_geco/Makefile</a><a
+href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html</a><a
+href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>The training of the AG model on large scale corpus is
+not feasible because of its very low time efficiency (more than 10 hours
+on GECO).<a href="#fnref24" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>In a pre-test, we rated the wordness of the
+two/four-character strings. But besides the two-character words,
+four-character idioms and familiar compounds are also considered as
+words in Chinese. In order to disambiguate the notion in a general
+sense, we use <em>recognizability</em> instead of <em>wordness</em> here
+and below.<a href="#fnref25" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>For examples, “g” and “o” -&gt; “go”； “going” and “to”
+-&gt; “going to”.<a href="#fnref26" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>For example, in case the Lexicon has already stored “go
+”, “goi”, “ing”, and their letters, the string “going” can be segmented
+to “go/ing ” or “goi/n/g”. Because the shorter unit “go” results in
+fewer units in the segmentation, the longer unit “goi” will be regarded
+as a junk unit type.<a href="#fnref27" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>We should notice that the counterbalancing of different
+cognitive modules does not lead to the global minimum of cognitive
+load.<a href="#fnref28" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>“Remember that all models are wrong; the practical
+question is how wrong do they have to be to not be useful." (<span
+class="citation" data-cites="Box1987-dj">Box and Draper (1987)</span>,
+<span class="citation" data-cites="Box1987-dj">(1987)</span>, p. 74)<a
+href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn30"><p>https://karpathy.github.io/2015/05/21/rnn-effectiveness/<a
+href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p>There are a few exceptions such as Fluid construction
+grammar <span class="citation" data-cites="Steels2006-nn">(Steels and De
+Beule 2006)</span> and Memory-Based Learner <span class="citation"
+data-cites="Daelemans2005-zm">(Daelemans and Bosch 2005)</span>.<a
+href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn32"><p>The training of BR-phone costs 57 s and the training of
+CTB8 costs 31 min 55 s. The code is written in pure Python 3.7 and ran
+on a single core of Intel Core i5-7300HQ.<a href="#fnref32"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+    </section>
+
+  </body>
+</html>
+

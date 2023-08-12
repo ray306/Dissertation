@@ -1,0 +1,1419 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="ch6">Unsupervised text segmentation predicts eyefixations during
+reading<a href="bibilo.html#fn15" class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a> <a href="bibilo.html#fn16"
+class="footnote-ref" id="fnref16"
+role="doc-noteref"><sup>16</sup></a></h2>
+<div class="center">
+<p><strong>Abstract</strong><br />
+</p>
+</div>
+<p>Words typically form the basis of psycholinguistic and computational
+linguistic studies about sentence processing. However, recent evidence
+shows the basic units during reading, i.e., the items in the mental
+lexicon, are not always words, but could also be sub-word and supra-word
+units. To recognize these units, human readers require a cognitive
+mechanism to learn and detect them. In this paper, we assume eye
+fixations during reading reveal the locations of the cognitive units,
+and that the cognitive units are analogous with the text units
+discovered by unsupervised segmentation models. We predict eye fixations
+by model-segmented units on both English and Dutch text. The results
+show the model-segmented units predict eye fixations better than word
+units. This finding suggests that the predictive performance of
+model-segmented units indicates their plausibility as cognitive units.
+The Less-is-Better (LiB) model, which finds the units that minimize both
+long-term and working memory load, offers advantages both in terms of
+prediction score and efficiency among alternative models. Our results
+also suggest that modeling the least-effort principle for the management
+of long-term and working memory can lead to inferring cognitive units.
+Overall, the study supports the theory that the mental lexicon stores
+not only words but also smaller and larger units, suggests that fixation
+locations during reading depend on these units, and shows that
+unsupervised segmentation models can discover these units.</p>
+<h3 id="ch6.introduction">Introduction</h3>
+<p>Language researchers may easily agree that an utterance comprises a
+sequence of “units", but it is not easy to come to an agreement on what
+these units are. The units can be words, phonemes, morphemes, phrases,
+etc. from a linguistic perspective <span class="citation"
+data-cites="Jackendoff2002-bd">(Jackendoff 2002)</span>; or unigrams,
+bigrams, trigrams, etc. from a statistical perspective <span
+class="citation" data-cites="Manning1999-pp">(Manning and Schütze
+1999)</span>. In this paper, we take a <em>cognitive perspective</em>
+and aim to identify the cognitive units that play the role of building
+blocks in human language processing.</p>
+<p>Words seem to be the most generally accepted units, perhaps because
+the spaces in written European languages steer us towards implicitly
+assuming that individual words are the most distinctive elements of
+sentences. <span class="citation"
+data-cites="Pollatsek1989-fm">(Pollatsek and Rayner 1989)</span>
+summarized ten key questions for the cognitive science of reading;
+nearly half of them are about words. Another case in point is that there
+are many models of visual word recognition, such as the Interactive
+Activation model <span class="citation"
+data-cites="McClelland1981-ba">(McClelland and Rumelhart 1981)</span>,
+the Triangle model <span class="citation"
+data-cites="Plaut1996-kj">(Plaut et al. 1996)</span>, and the Dual Route
+Cascaded model <span class="citation"
+data-cites="Coltheart2001-ff">(Coltheart et al. 2001)</span>. Even when
+considering sentence-level processing, researchers tend to take words as
+the basic units in their studies; this is the case for the classical
+studies relevant to the garden-path model which describes how the reader
+analyzes the grammatical structure of sentence from the serial input of
+words <span class="citation"
+data-cites="Frazier1987-ei Frazier1982-vf">(Frazier 1987; Frazier and
+Rayner 1982)</span>, for the E-Z reader model which explains how the
+attributes of words guide eye movements during reading <span
+class="citation" data-cites="Reichle1998-ah">(E. D. Reichle et al.
+1998)</span>, and for the discovery of the N400 component in brain
+activity which responds to semantically anomalous words <span
+class="citation" data-cites="Kutas1980-eb">(Kutas and Hillyard
+1980)</span>. Word units are also assumed for more recent studies such
+as those that map brain activity to processing of each word of a
+sequence <span class="citation"
+data-cites="Brennan2012-qw Brennan2019-oo Ding2016-zc">(Brennan et al.
+2012; Brennan and Hale 2019; Ding et al. 2016)</span> as well as studies
+that compare the statistical attributes of words in sentences with the
+cognitive and neural response to the words <span class="citation"
+data-cites="Frank2015-qh Frank2017-kf Mahowald2013-ip">(Frank et al.
+2015; Frank and Willems 2017; Mahowald et al. 2013)</span>.</p>
+<p>Though words are often used as psycholinguistic units, morphemes,
+which are defined as the smallest meaning-bearing units in a language
+<span class="citation" data-cites="Chomsky1953-zp">(Chomsky
+1953)</span>, are usually the basic units in linguistic analysis. The
+central role of morphemes in linguistics also influenced some
+psycholinguists to consider the mental operations of morphologically
+complex words. In a recent review, <span class="citation"
+data-cites="Leminen2019-wz">(Leminen et al. 2019)</span> analyzed more
+than 100 neuroimaging studies of inflected words (e.g., walk-ed),
+derived words (e.g., dark-ness), and compounds (e.g., walk-man). As they
+summarized, most studies of the processing of derivational/inflectional
+morphology agree that such complex words are decomposed during
+processing; but studies of the processing of compound words show
+inconsistent results: some support the access of constituent morpheme
+units <span class="citation"
+data-cites="Fiorentino2014-pg Koester2011-sv">(Fiorentino et al. 2014;
+Koester and Schiller 2011)</span>, some support the access of whole-word
+units <span class="citation" data-cites="Stites2016-by">(Stites,
+Federmeier, and Christianson 2016)</span>, and some support mixed access
+of both <span class="citation"
+data-cites="Kaczer2015-em MacGregor2013-qb Yang2020-au">(Kaczer et al.
+2015; MacGregor and Shtyrov 2013; Yang, Cai, and Tian 2020)</span></p>
+<p>In addition to subword units, the cognitive system can also make use
+of supra-word units. Some studies provide indications that supra-words
+such as frequent phrases and idioms (e.g., “I don’t know") are stored in
+our long-term mental lexicon <span class="citation"
+data-cites="Arnon2010-kw Bannard2008-eo Jackendoff2002-bd">(Arnon and
+Snider 2010; Bannard and Matthews 2008; Jackendoff 2002)</span>,
+implying that supra-words can be processed directly. <span
+class="citation" data-cites="Baayen2007-lk">(Baayen 2007)</span> has
+argued that the mental lexicon involves storage (of the wholes) and
+computation (of the combinatorial rules), and that they counterbalance
+each other. <span class="citation" data-cites="Yang2020-au">(Yang, Cai,
+and Tian 2020)</span> also considered the counterbalancing, arguing that
+storing more supra-words in our mental lexicon could reduce the
+cognitive load of computation since larger units (e.g., “I amgoing to"
+vs. “Iamgoingto") result in fewer processing steps (e.g., two retrievals
++ one combination vs. four retrievals + three combinations). Taken
+together, this diverse evidence shows that cognitive units exist at
+various linguistic levels, and that cognitive units have a wide range of
+possible lengths.</p>
+<p>The flexibility of cognitive units implies that there is no clear or
+uniform perceptual salience of the units during reading, since a
+cognitive unit may be a sub-word or a supra-word that is not surrounded
+by two dividers (i.e., spaces), let alone the fact that in some writing
+systems (e.g., Chinese) there are no dividers for words. However,
+readers must be able to segment language input into cognitive units in
+order to access the meaning of the units and understand the input. Thus,
+our cognitive system must have a mechanism to quickly locate the
+cognitive units in language input for subsequent recognition. In fact,
+our eye movements in daily tasks may indicate the existence of this
+mechanism, since eye movements include many fixations which land neither
+randomly nor uniformly, but primarily on the targets of salience,
+information, or interest in the scene we see <span class="citation"
+data-cites="Buswell1935-da Henderson2011-bl">(Buswell 1935; Henderson
+2011)</span>. So it is with reading: eye movements are controlled to
+skip some words, especially when the words are high-frequency function
+words <span class="citation" data-cites="Rayner1982-jf">(K. Rayner et
+al. 1982)</span>.</p>
+<p>The flexibility of cognitive units also implies that it is hard for
+language learners to decide on the basis of perceptual cues whether or
+not a particular morpheme, word, or arbitrary string is a cognitive
+unit. Humans must have the ability to learn the cognitive units from
+their own experience, or in machine learning terms: unsupervised. To
+understand the human ability to learn and to identify the cognitive
+units, we need a model that is unsupervised and cognitively plausible.
+We here introduce the Less-is-Better (LiB) model <span class="citation"
+data-cites="Yang2020-lz">(Yang, Frank, and Bosch 2020)</span> as a
+candidate.</p>
+<p>The LiB model is inspired by one intrinsic aspect of our nature: the
+principle of least effort. George Kingsley Zipf, who proposed the
+principle, explained it as “<span>[</span>the human agent<span>]</span>
+will strive to solve his problems in such a way as to minimize the total
+work that he must expend in solving both his immediate problems and his
+probable future problems." <span class="citation"
+data-cites="Zipf1949-lo">(Zipf 1949, 573:1)</span>. Limiting ourselves
+to purely cognitive tasks, we here interpret his words as:</p>
+<ol>
+<li><blockquote>
+<p><em>To reduce the number of <strong>processing units</strong> in
+<strong>both current and prospective working memory</strong>.</em></p>
+</blockquote></li>
+</ol>
+<p>The cognitive load refers to the demand not only on working memory,
+but also on long-term memory (see Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>a
+below), so we here extend the principle of least effort to:</p>
+<ol>
+<li><blockquote>
+<p><em>To reduce the number of <strong>stored units</strong> in
+<strong>long-term memory</strong>.</em></p>
+</blockquote></li>
+</ol>
+<p>The LiB model regards the cognitive units as the language chunks that
+require the least effort during language processing, and the above two
+goals can be operationalised as: <em>a. to reduce the number of unit
+<strong>tokens</strong> in all potential texts</em>, and <em>b. to
+reduce the number of unit <strong>types</strong> in long-term memory
+(mental lexicon)</em>. There is a trade-off between the two goals. The
+former goal will prefer combining adjacent chunks into larger chunks,
+such as phrases, to reduce the number of tokens. If this process would
+be unrestricted, it would lead to units being so large as to represent
+the entire text with only one unit token. This would result in an
+extremely large lexicon memory that will not generalize to future use,
+as its units are unlikely to recur. To prevent this from happening, the
+latter goal will remove low-frequency chunk types from memory. The two
+goals counterbalance each other during learning and make the result in
+line with the least-effort requirement.</p>
+<p>The current study aims to evaluate how similar the units segmented by
+unsupervised word segmentation models are to cognitive units. Although
+we lack a gold standard for cognitive units, eye movements during
+reading, specifically the eye fixations, may provide information about
+them. Taking words as units of analysis of eye-tracking data, studies
+have reported that fixation positions frequently fall at (or close to)
+the center of a word when the word is fixated only once <span
+class="citation"
+data-cites="Li2011-rf Paterson2015-oj Rayner1996-kg">(X. Li, Liu, and
+Rayner 2011; Paterson et al. 2015; K. Rayner, Sereno, and Raney
+1996)</span>, but some words are fixated more than once <span
+class="citation"
+data-cites="Cop2017-ll Hyona1995-nn Kliegl2004-fw Rayner1976-dc">(Cop et
+al. 2017; Hyönä and Olson 1995; Kliegl et al. 2004; K. Rayner and
+McConkie 1976)</span>, while some short words are not fixated upon <span
+class="citation" data-cites="Brysbaert1998-bf Kerr1992-nr">(Brysbaert
+and Vitu 1998; Kerr 1992)</span>. Taking multiword sequences as units of
+analysis of eye-tracking data, formulaic sequences (e.g., “as a matter
+of fact") get fewer fixations than non-formulaic sequences (e.g., “it’s
+a well-known fact") <span class="citation"
+data-cites="Underwood2004-gp">(Underwood, Schmitt, and Galpin
+2004)</span>. In light of these empirical findings, we hypothesize that
+eye fixations are a proxy to the location of the cognitive building
+blocks of the text, that is, the cognitive units.</p>
+<p>Our main goal in the current study is not to predict or explain eye
+fixations, but to validate the model as a cognitive model by quantifying
+its ability to predict eye fixations. The current model aims to be as
+simple as possible by using only unannotated text. Therefore, in this
+study, we will not include properties that can improve fixation
+prediction but are outside the scope of the model (e.g., semantics).</p>
+<p>We use the units segmented by LiB in a corpus to predict the
+locations of the eye fixations in the same or a different corpus. If the
+LiB units indeed predict eye fixations, this suggests both that the LiB
+units are similar to the cognitive units and that the cognitive units
+are located by the eye fixations. In other words, cognitive units may be
+considered a latent factor driving both eye fixations and the discovery
+of units by LiB, and the extent to which the LiB units predict eye
+fixations reflects their plausibility as cognitive units. Then we
+evaluate the similarity between the LiB units and the hypothesized
+cognitive units during human reading by comparing the eye fixations
+predicted by LiB with the observed eye fixations extracted from an
+eye-movement corpus. As the design and the training of the model are
+independent of the eye movements (i.e., the model is not fitted on the
+eye-tracking data), any overlap found between model predictions and eye
+movements is caused by properties of the model itself and not by
+spurious patterns discovered in the eye-movement data.</p>
+<p>Two other segmentation models are also evaluated for comparison:
+Chunk-Based Learner <span class="citation"
+data-cites="McCauley2017-tq">(McCauley and Christiansen 2017)</span>,
+and Adaptor Grammar <span class="citation"
+data-cites="Goldwater2009-wc">(Goldwater, Griffiths, and Johnson
+2009)</span>. We also compare to two word-based baselines: one that
+assumes the cognitive units are equal to words, and one that assumes the
+cognitive units are determined by the word length. The models are
+introduced in more detail below. In the comparisons, we will demonstrate
+that the segmentation models outperform the baselines, and show the
+advantages of LiB in various aspects.</p>
+<h3 id="ch6.methods">Methods</h3>
+<h4 id="ch6.less-is-Better-Model">The Less-is-Better Model</h4>
+<p>The information workflow of the LiB model consists of an interaction
+loop between the text segmentation module (blue box with solid line;
+Fig. <a href="#fig:ch6.model" data-reference-type="ref"
+data-reference="fig:ch6.model">2.1</a>a) and the lexicon update module
+(orange box with dotted line; Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>a). We
+briefly characterise the model; more detail is given in <span
+class="citation" data-cites="Yang2020-lz">(Yang, Frank, and Bosch
+2020)</span>. The model has a lexicon <span
+class="math inline"><em>L</em></span> which is an ordered set of unit
+types <span class="math inline"><em>u</em></span>. In each epoch, the
+segmentation module (Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>b)
+segments the input, which is a sequence of symbols <span
+class="math inline">(<em>s</em><sub>1</sub>,<em>s</em><sub>2</sub>,…,<em>s</em><sub><em>n</em></sub>)</span>
+(in the current simulations, symbols are characters, excluding spaces)
+into a sequence of a minimal number of unit tokens <span
+class="math inline">(<em>u</em><sub>1</sub>,…,<em>u</em><sub><em>N</em></sub>)</span>,
+where each <span class="math inline"><em>u</em></span> token is a
+subsequence of the input; <span
+class="math inline"><em>u</em> = (<em>s</em><sub><em>i</em></sub>,…,<em>s</em><sub><em>j</em></sub>)</span>,
+and each <span class="math inline"><em>u</em></span> is in the current
+<span class="math inline"><em>L</em></span>. The update module (Fig. <a
+href="#fig:ch6.model" data-reference-type="ref"
+data-reference="fig:ch6.model">2.1</a>c) then updates <span
+class="math inline"><em>L</em></span> according to the output <span
+class="math inline">(<em>u</em><sub>1</sub>,…,<em>u</em><sub><em>N</em></sub>)</span>,
+meaning that some new unit types are created and added to <span
+class="math inline"><em>L</em></span> to decrease the number of tokens
+in future inputs, and some current unit types are removed to decrease
+the number of types in <span class="math inline"><em>L</em></span>.</p>
+<div class="center">
+<figure>
+<img src="figures/ch6.model.jpg" id="fig:ch6.model"
+alt="Illustration of the LiB model: a) information ﬂow in the LiB model; b) the mechanisms in the text segmentation module; c) the mechanisms in the lexicon update module." />
+<figcaption aria-hidden="true"><strong>Illustration of the LiB
+model</strong>: a) information ﬂow in the LiB model; b) the mechanisms
+in the text segmentation module; c) the mechanisms in the lexicon update
+module.</figcaption>
+</figure>
+</div>
+<p>To reduce the number of <span class="math inline"><em>u</em></span>
+tokens during the segmentation, if <span
+class="math inline"><em>u</em></span> types of different sizes in <span
+class="math inline"><em>L</em></span> match the current input, the
+largest <span class="math inline"><em>u</em></span> type has the
+priority to be selected as the <span
+class="math inline"><em>u</em></span> token (<em>Larger-first
+selection</em>; Fig. <a href="#fig:ch6.model" data-reference-type="ref"
+data-reference="fig:ch6.model">2.1</a>b). Then LiB evaluates the <span
+class="math inline"><em>u</em></span> token by segmenting the following
+input and counting the segmented tokens. LiB segments the current input
+as if the largest <span class="math inline"><em>u</em></span> type does
+not exist (<em>counterfact</em>) so the second-largest u type will also
+be evaluated. In case the largest <span
+class="math inline"><em>u</em></span> type causes more <span
+class="math inline"><em>u</em></span> tokens in the input than the
+second-largest <span class="math inline"><em>u</em></span> type, the
+largest <span class="math inline"><em>u</em></span> type is evaluated as
+<em>Bad</em> (otherwise as <em>Good</em>) and the second-largest <span
+class="math inline"><em>u</em></span> type is selected instead
+(<em>Counterfactual evaluation</em>; Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>b).</p>
+<p><span class="math inline"><em>L</em></span> is empty at the
+beginning, and all the symbols <span
+class="math inline"><em>s</em><sub>1</sub>, …, <em>s</em><sub><em>n</em></sub></span>
+in the input are unknown to the model. Those symbols will be memorized
+as the first batch of new <span class="math inline"><em>u</em></span>
+types in <span class="math inline"><em>L</em></span>. Adjacent <span
+class="math inline"><em>u</em></span> tokens in the input can become a
+larger <span class="math inline"><em>u</em></span> token by
+concatenation of the two original tokens, and the adjacent larger <span
+class="math inline"><em>u</em></span> tokens can become an even larger
+<span class="math inline"><em>u</em></span> token. LiB randomly samples
+the combinations of segmented <span
+class="math inline"><em>u</em></span> tokens and memorizes the sampled
+combinations as new <span class="math inline"><em>u</em></span> types
+(<em>Memorizing</em>; Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>c).
+These new <span class="math inline"><em>u</em></span> types go to <span
+class="math inline"><em>L</em></span> immediately and can be used for
+further segmentations and combinations, so LiB learns online. The
+sampling strategy achieves similar results as tracking the frequencies
+of each <span class="math inline"><em>u</em></span> type and dropping
+the low-frequency ones, since the <span
+class="math inline"><em>u</em></span> types with higher frequencies are
+more likely to be sampled. However, compared to frequency tracking,
+LiB’s sampling strategy consumes markedly less resources of memory and
+operation.</p>
+<p>Although no statistical information of the <span
+class="math inline"><em>u</em></span> types is recorded, LiB indicates a
+<span class="math inline"><em>u</em></span> type’s likelihood of being a
+cognitive unit by the type’s rank in the Lexicon. A newly memorized
+<span class="math inline"><em>u</em></span> type is appended to the end
+of <span class="math inline"><em>L</em></span>, which means it has the
+lowest likelihood of being a cognitive unit, because the new <span
+class="math inline"><em>u</em></span> type might merely be an accidental
+concatenation of two <span class="math inline"><em>u</em></span> tokens.
+Besides the memorizing order, the order of <span
+class="math inline"><em>L</em></span> also depends on <em>Chunk
+evaluation</em>: after the evaluation, a <em>Good</em> <span
+class="math inline"><em>u</em></span> is moved forward and a
+<em>Bad</em> <span class="math inline"><em>u</em></span> is moved
+backward in <span class="math inline"><em>L</em></span>
+(<em>Re-ranking</em>; Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>c).</p>
+<p>The <em>Re-ranking</em> pushes the chunks <span
+class="math inline"><em>u</em></span> that were evaluated as
+<em>Bad</em> as well as very infrequent chunks (that never had the
+opportunity to be evaluated) backward in <span
+class="math inline"><em>L</em></span>. This means the end of <span
+class="math inline"><em>L</em></span> contains not just newly memorized
+<span class="math inline"><em>u</em></span> but also junk <span
+class="math inline"><em>u</em></span> (infrequent <span
+class="math inline"><em>u</em></span> and <em>Bad</em> <span
+class="math inline"><em>u</em></span>). To clean up only the junk <span
+class="math inline"><em>u</em></span>, all <span
+class="math inline"><em>u</em></span> at the end of <span
+class="math inline"><em>L</em></span> enter a probationary period. In
+case a <span class="math inline"><em>u</em></span> was evaluated as
+<em>Good</em> during the probation, its probation is canceled;
+otherwise, the chunk is removed from <span
+class="math inline"><em>L</em></span>. By such a mechanism
+(<em>Forgetting</em>; Fig. <a href="#fig:ch6.model"
+data-reference-type="ref" data-reference="fig:ch6.model">2.1</a>c) LiB
+can reduce the number of <span class="math inline"><em>u</em></span>
+types and keep a small size <span
+class="math inline"><em>L</em></span>.<br />
+</p>
+<h4 id="ch6.other-models-for-evaluation">Other models for
+evaluation</h4>
+<p>Firstly we introduce a frequentist computational model named
+Chunk-Based Learner (CBL; <span class="citation"
+data-cites="McCauley2019-vv">(McCauley and Christiansen 2019)</span>),
+which aims to simulate human incremental language acquisition. CBL also
+has its cognitive basis: frequency‐based learning. In detail, CBL
+processes naturalistic linguistic input as sequences of chunks.
+Initially, each word is a chunk. Then CBL calculates the backward
+transitional probabilities (BTPs) between the chunks. If the BTP of a
+chunk‐pair rises above the average of all tracked BTPs, the chunk‐pair
+will be grouped as a new chunk and be replaced by the new chunk in
+further processes. CBL in this way implements the incremental learning
+of multi-word units. Some words will not be combined into larger chunks,
+and thus the lexicon of CBL will contain both word units and multi-word
+units.</p>
+<p>Bayesian models can be seen as an alternative to frequentist models,
+and the “Bayesian coding hypothesis" also argues that humans behave
+Bayesian <span class="citation" data-cites="Knill2004-la">(Knill and
+Pouget 2004)</span>. Adaptor Grammar (AG; <span class="citation"
+data-cites="Johnson2007-jt">(Johnson, Griffiths, and Goldwater
+2007)</span>) is a word segmentation model based on a Bayesian
+framework. Like the other models we compare, it aims to segment the
+tokens from the input in an unsupervised way. The AG model represents
+each input sequence from the corpus as a multi-level tree structure with
+a predefined number of levels. Although different trees can represent
+the same sequence, AG assumes there is an optimal tree. The Hierarchical
+Dirichlet Process, which is a nonparametric Bayesian approach to group
+the observed data hierarchically <span class="citation"
+data-cites="Teh2006-ws">(Teh et al. 2006)</span>, is used to find the
+<em>optimal</em> trees that fit the input sequences. Notwithstanding AG
+is usually used for word segmentation, syllabification, and other
+linguistic applications <span class="citation"
+data-cites="Johnson2007-jt Johnson2008-zx Johnson2009-pp Zhai2014-zx">(Johnson,
+Griffiths, and Goldwater 2007; Johnson 2008; Johnson and Goldwater 2009;
+Zhai, Boyd-Graber, and Cohen 2014)</span>, in the current study we
+investigate whether the unsupervised nature of the model can help to
+discover the cognitive units.</p>
+<p>Besides the segmentation models that can generate non-word units, we
+set two baselines that are completely word-based. The first baseline
+(<em>Word-by-Word</em>) simply assumes that the cognitive units are
+equal to words. As we mentioned above, words are the commonly accepted
+units in many studies so it is worth investigating whether words or the
+model-produced cognitive units can better predict eye fixations.</p>
+<p>Another baseline (<em>Only-Length</em>) implements the assumption
+that the number of fixations on a word is determined by the length of
+the word. Different from the <em>Word-by-Word</em> baseline, the
+<em>Only-Length</em> baseline uses the knowledge of observed eye
+fixations. <em>Only-Length</em> groups the words with the same number of
+letters together and shuffles the numbers of fixations within each
+group. Only the distributions related to the word lengths persist in
+this baseline so the prediction will not be influenced by frequency,
+morphology, position, or other non-length information.<br />
+</p>
+<h4 id="ch6.eye-fixation-data">Eye fixation data</h4>
+<p>The eye fixation data is extracted from the Ghent Eye-Tracking Corpus
+(GECO) corpus<a href="bibilo.html#fn17" class="footnote-ref" id="fnref17"
+role="doc-noteref"><sup>17</sup></a> <span class="citation"
+data-cites="Cop2017-ll">(Cop et al. 2017)</span>. GECO contains three
+sets of eye-tracking data: fourteen English monolinguals reading the
+English novel <em>The Mysterious Affair at Styles</em> by <span
+class="citation" data-cites="Christie2008-fr">(Christie
+1920/2008)</span> (monolingual set); nineteen Dutch (L1)–English (L2)
+bilinguals reading the same novel (L2 set); and the same bilinguals
+reading the Dutch translation of the novel (title in Dutch: <em>De zaak
+Styles</em>) (L1 set). The English monolingual group read the full
+English novel and the bilingual group read either the first half of the
+novels in English and the second half in Dutch, or vice versa. For the
+evaluation in the current study, we discard the L2 set since it is not
+native-language reading.</p>
+<p>The GECO datasets provide two types of eye fixation data:
+<em>first-pass fixation count</em> and <em>total fixation count</em>.
+The first-pass fixation includes only the initial reading (until any
+fixation on another word) within each word and the total fixation
+includes also the re-reading (after regression) within each word. Most
+of the regressions reflect post-lexical language processing <span
+class="citation" data-cites="Reichle2009-pe">(Erik D. Reichle, Warren,
+and McConnell 2009)</span>, and others may reflect oculomotor error or
+difficulty associated with the identification of words <span
+class="citation" data-cites="Vitu2000-db">(Vitu and McConkie
+2000)</span>. These processes are beyond the scope of the segmentation
+models we evaluated, since the segmented cognitive units are for
+planning what to process rather than post-hoc adaptation. That being so,
+we evaluate only the first-pass fixation count.</p>
+<h4 id="ch6.corpora">Corpora</h4>
+<p>Both the English and the Dutch GECO corpora are used for model
+training in the current study. Since the material presented to the
+participants are in multiple lines, and the last word in a line and the
+first word in the next line are too far apart to be perceived as a
+cognitive unit, we break any sentence that appears across different
+lines into separate sequences. Two other corpora also serve as training
+material but only in the generalizability test of the models. One of
+them is Corpus of Contemporary American English (COCA; <span
+class="citation" data-cites="Davies2008-sn">(Davies 2008)</span>. We
+used a sample dataset of COCA which is free for the public<a
+href="bibilo.html#fn18" class="footnote-ref" id="fnref18"
+role="doc-noteref"><sup>18</sup></a>. Although the sample dataset is
+only a small part of the complete COCA corpus, it is more than one
+hundred times larger than the English material in GECO. The other
+additional training corpus is SoNaR <span class="citation"
+data-cites="Oostdijk2013-wg">(Oostdijk et al. 2013)</span>, a
+500-million-word reference corpus of contemporary written Dutch from a
+wide variety of text types. The complete corpus is very large so we
+selected the <em>book</em> subset of SoNaR. The corpus sizes are shown
+in Table <a href="#tab:ch6.corpora" data-reference-type="ref"
+data-reference="tab:ch6.corpora">2.1</a>.</p>
+<div class="center">
+<div id="tab:ch6.corpora">
+<table>
+<caption><strong>The corpora statistics after
+preprocessing.</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><em>Language</em></th>
+<th style="text-align: left;"><em>Corpus</em></th>
+<th style="text-align: right;"><em>Sentences</em></th>
+<th style="text-align: right;"><em>Word tokens</em></th>
+<th style="text-align: right;"><em>Word types</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2" style="text-align: left;">English</td>
+<td style="text-align: left;">GECO</td>
+<td style="text-align: right;">13,491</td>
+<td style="text-align: right;">57,170</td>
+<td style="text-align: right;">5,316</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COCA (sample)</td>
+<td style="text-align: right;">1,745,060</td>
+<td style="text-align: right;">9,451,421</td>
+<td style="text-align: right;">140,553</td>
+</tr>
+<tr class="odd">
+<td rowspan="2" style="text-align: left;">Dutch</td>
+<td style="text-align: left;">GECO</td>
+<td style="text-align: right;">13,407</td>
+<td style="text-align: right;">60,836</td>
+<td style="text-align: right;">5,859</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SoNaR (books)</td>
+<td style="text-align: right;">3,308,337</td>
+<td style="text-align: right;">22,802,170</td>
+<td style="text-align: right;">272,865</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The text from all corpora was converted to lowercase. Dutch
+characters with accents (<em>diacritical characters</em>) were replaced
+by their unaccented counterparts (e.g., ë <span
+class="math inline">→</span> e). All punctuation (except the apostrophe
+as a part of possessive) was used as a divider between the input
+sequences and then were replaced by a space. Finally, all sentences have
+a space added at the end to make sure that all word tokens end with a
+space.</p>
+<h4 id="evaluation">Evaluation</h4>
+<p>To evaluate the units segmented by the different models against the
+eye fixation counts on each word from GECO, we predict the eye fixation
+count from the segmentation models and from the word-based baselines,
+and then compare the predicted eye fixation counts per word with the
+observed eye fixation counts.</p>
+<p>For the segmentation models, the eye fixation counts are predicted in
+the following procedure:</p>
+<ol>
+<li><p><strong>Training the models</strong>:</p>
+<ul>
+<li><p><strong>The LiB model</strong>: In each training epoch, a
+200-sentence batch is randomly extracted from the corpus text
+(batch-based update in LiB reduces the computing cost) and then fed into
+the model. When training on GECO, which is rather small, the batch
+extraction is with replacement and the training stops when the number of
+input encoding bits<a href="bibilo.html#fn19" class="footnote-ref" id="fnref19"
+role="doc-noteref"><sup>19</sup></a> no longer decreases. When training
+on the large-scale corpus, the batch extraction is without replacement,
+and the training will stop when there is no training material left. The
+hyperparameter settings in the current study follow the previous LiB
+study <span class="citation" data-cites="Yang2020-lz">(Yang, Frank, and
+Bosch 2020)</span> except the setting of <em>probation period</em><a
+href="bibilo.html#fn20" class="footnote-ref" id="fnref20"
+role="doc-noteref"><sup>20</sup></a>.</p></li>
+<li><p><strong>The CBL model</strong>: Different from LiB and AG which
+regard the input as a sequence of characters, CBL regards the input as a
+sequence of words, so it preprocesses the input into words based on the
+spaces. There is no change in the training stage of the original code of
+<span class="citation" data-cites="McCauley2019-vv">McCauley and
+Christiansen (2019)</span>’s (<span class="citation"
+data-cites="McCauley2019-vv">(2019)</span>) implementation<a
+href="bibilo.html#fn21" class="footnote-ref" id="fnref21"
+role="doc-noteref"><sup>21</sup></a>.</p></li>
+<li><p><strong>The AG model</strong>: The simplest grammar tree in AG
+starts with characters, then processes words, and then sentences. The
+model tends to under-segment without an intermediate level of
+collocations <span class="citation" data-cites="Johnson2009-pp">(Johnson
+and Goldwater 2009)</span>, so the AG grammar tree used in the current
+study is: character(s) <span class="math inline">→</span> word, word(s)
+<span class="math inline">→</span> collocation, collocation(s) <span
+class="math inline">→</span> sentence. Besides the design of the grammar
+tree, we also follow the hyperparameter settings of <span
+class="citation" data-cites="Johnson2009-pp">Johnson and Goldwater
+(2009)</span>’s (<span class="citation"
+data-cites="Johnson2009-pp">(2009)</span>) experiment<a href="bibilo.html#fn22"
+class="footnote-ref" id="fnref22"
+role="doc-noteref"><sup>22</sup></a>.</p></li>
+</ul></li>
+<li><p><strong>Segmenting the text into units</strong>:</p>
+<ul>
+<li><p><strong>The LiB model</strong>: Each sequence of the GECO corpus
+is fed to the trained model to be segmented into the units existing in
+the trained lexicon. The segmentation is guided by <em>Larger-first
+selection</em> and <em>Counterfactual evaluation</em>. No new cognitive
+units will be memorized in this stage.</p></li>
+<li><p><strong>The CBL model</strong>: The original implementation
+simulates children’s incremental learning so the lexicon is empty at the
+start of training. This means a group of words may be a unit at the end
+of segmenting the GECO corpus but not at the beginning. To keep the
+segmentation consistent in the test material, as in the other models,
+our implementation of CBL learns the training corpus thoroughly and then
+segments the test corpus again with a fixed lexicon.</p></li>
+<li><p><strong>The AG model</strong>: AG learns the parsing rules during
+training. When the model applies the rules to the test corpus, each
+sequence will be processed into a hierarchical structure which contains
+the <em>character</em> level, the <em>word</em> level, the
+<em>collocation</em> level, and the <em>sentence</em> level. We
+extracted the units at the <em>word</em> level (the <em>AG-word</em>
+units) and at the <em>collocation</em> level (the
+<em>AG-collocation</em> units).</p></li>
+</ul></li>
+<li><p><strong>Predicting the number of fixations on each
+word</strong>:</p>
+<blockquote>
+<p>We assume that reading is based on the cognitive units and the
+fixation positions are the centers of the cognitive units, at least if
+the entire unit is within the perceptual span. We ignore the perceptual
+span for now since we want to evaluate the models totally free of prior
+limitations. We calculate the predicted number of fixations on a word as
+the number of cognitive units centered on the word. For example, the
+predicted fixation position of the unit <em>I have</em> is between
+<em>h</em> and <em>a</em>, so the predicted fixation number is zero on
+the word <em>I</em> (we can also say <em>I</em> is skipped in this case)
+and one on the word <em>have</em>. The predicted fixation number of the
+word <em>neuroscience</em> is two if it is segmented into <em>neuro</em>
+and <em>science</em>.</p>
+<p>To investigate the possible effect of perceptual span limitations, we
+also evaluate LiB while considering the perceptual span. We set
+different upper limits on the unit length in the model and expect there
+to be a maximum length that is optimal for the prediction of fixation
+counts and that equals the perceptual span.</p>
+</blockquote></li>
+</ol>
+<p>For the word-based baselines, the eye-fixation numbers are predicted
+differently:</p>
+<ul>
+<li><p>The <em>Word-by-Word</em> baseline predicts exactly one fixation
+on each word;</p></li>
+<li><p>The <em>Only-Length</em> baseline groups the words with the same
+length together and randomly shuffles the observed number of fixations
+on the words within each group. Hence, the predicted number of fixations
+of a word is actually the observed number of fixations of another word
+with the same length.</p></li>
+</ul>
+<p>The last step in the evaluation is comparing the predicted number of
+eye fixations with the observed number of eye fixations on each word.
+The F1 metric (Equation <a href="#eqn:ch6.f1" data-reference-type="ref"
+data-reference="eqn:ch6.f1">[eqn:ch6.f1]</a>) is commonly used for
+evaluating a binary classification model based on the predictions made
+for the positive class <span class="citation"
+data-cites="Van_Rijsbergen1979-uu">(Van Rijsbergen 1979)</span>. <span
+class="math display">$$\label{eqn:ch6.f1}
+  \text{F1} = \frac{\text{True positive}}{\text{True
+positive}+0.5\times(\text{False positive}+\text{False
+negative})}$$</span> However, both the observed number and our predicted
+number of eye fixations are not binary, in other words, the metric must
+work for multi-label data. Because of the very imbalanced distribution
+of the fixation counts, we choose weighted F1 as the measure of
+prediction accuracy<a href="bibilo.html#fn23" class="footnote-ref" id="fnref23"
+role="doc-noteref"><sup>23</sup></a>. The weighted F1 calculates the
+binary F1 metric, which is shown by Equation <a href="#eqn:ch6.f1"
+data-reference-type="ref" data-reference="eqn:ch6.f1">[eqn:ch6.f1]</a>,
+for each label (fixation count), and finds their average weighted by the
+number of true instances for each label.</p>
+<h3 id="ch6.results">Results</h3>
+<h4 id="ch6.qualitative-comparison">Qualitative comparison</h4>
+<p>Firstly we provide some segmentation examples generated by the
+different models (Table <a href="#tab:ch6.segmentation"
+data-reference-type="ref"
+data-reference="tab:ch6.segmentation">2.2</a>). In general, short and
+frequent collocations tend to form individual units (e.g., <em>to
+do</em>), and some of those collocations are not in a syntactic phrase
+(e.g., <em>i was</em>); long words tend to be divided into subword units
+(e.g., <em>uitnodigde</em> segmented as <em>uitnodigde</em>). Each model
+has its own characteristics: the CBL model learns no subword units; the
+AG-word model always over-segments the text; the LiB units and the
+AG-collocation units are generally similar.</p>
+<div class="center">
+<div id="tab:ch6.segmentation">
+<table>
+<caption><strong>Segmentation examples from different models in English
+and Dutch.</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><em></em></th>
+<th style="text-align: left;"><em></em></th>
+<th colspan="2" style="text-align: left;"><em>Language</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Sample</em></td>
+<td style="text-align: left;"><em>Model</em></td>
+<td style="text-align: left;"><em>English</em></td>
+<td style="text-align: left;"><em>Dutch</em></td>
+</tr>
+<tr class="even">
+<td rowspan="5" style="text-align: left;">1</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">i was trying to make up my mind what to
+do</td>
+<td style="text-align: left;">was ik nog aan het overleggen wat ik zou
+gaan doen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LiB</td>
+<td style="text-align: left;">i was trying to make up my mind what to
+do</td>
+<td style="text-align: left;">was ik nog aan het overleggen wat ik zou
+gaan doen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CBL</td>
+<td style="text-align: left;">i was trying to make up my mind what to
+do</td>
+<td style="text-align: left;">was ik nog aan het overleggen wat ik zou
+gaan doen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AG-word</td>
+<td style="text-align: left;">i was trying to make up my mind what to
+do</td>
+<td style="text-align: left;">was ik nog aan het overleggen wat ik zou
+gaan doen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AG-collocation</td>
+<td style="text-align: left;">i was trying to make up my mind what to
+do</td>
+<td style="text-align: left;">was ik nog aan het overleggen wat ik zou
+gaan doen</td>
+</tr>
+<tr class="odd">
+<td rowspan="5" style="text-align: left;">2</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">and it ended in his inviting me down to
+styles to spend my leave there</td>
+<td style="text-align: left;">en het eind van ’t liedje was dat hij mij
+uitnodigde mijn verlof door te brengen op styles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LiB</td>
+<td style="text-align: left;">and it ended in his inviting me down to
+styles to spend my leave there</td>
+<td style="text-align: left;">en het eind van ’t liedje was dat hij mij
+uitnodigde mijn verlof door te brengen op styles</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CBL</td>
+<td style="text-align: left;">and it ended in his inviting me down to
+styles to spend my leave there</td>
+<td style="text-align: left;">en het eind van ’t liedje was dat hij mij
+uitnodigde mijn verlof door te brengen op styles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AG-word</td>
+<td style="text-align: left;">and it ended in his inviting me down to
+styles to spendmy leave there</td>
+<td style="text-align: left;">en het eind van ’t liedje was dat hij mij
+uitnodigde mijn verlof door te brengen op styles</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AG-collocation</td>
+<td style="text-align: left;">and it ended in his inviting me down to
+styles to spend my leave there</td>
+<td style="text-align: left;">en het eind van ’t liedje was dat hij mij
+uitnodigde mijn verlof door te brengen op styles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 id="ch6.unit-length-comparison">Unit-length comparison</h4>
+<p>The segmentation examples show the models’ output are markedly
+different from each other even though they are all unsupervised models.
+To investigate in more detail how the models’ outputs differ and relate
+to eye fixations, we first look at the average of the unit token lengths
+of the models and the observed eye fixations. The GECO dataset does not
+provide the locations but only the number of eye fixations in any word,
+so we do not know every interval between each two eye fixations.
+Instead, we infer the locations of eye fixations from their counts in
+each word and then calculate the lengths of the eye fixation units by
+assuming eye fixations are located in the middle of the units. Fig. <a
+href="#fig:ch6.unit_lengths" data-reference-type="ref"
+data-reference="fig:ch6.unit_lengths">2.2</a> shows that the average
+unit length of the observed eye fixations is clearly longer than the
+average length of space-delimited words, and is close to the average
+unit length of LiB. Among the unsupervised models, only AG-word shows
+even shorter unit length than the linguistic words. Moreover, Dutch
+units are in general slightly longer than English units, except in the
+AG models.</p>
+<div class="center">
+<figure>
+<img src="figures/ch6.unit_lengths.jpg" id="fig:ch6.unit_lengths"
+style="width:10cm"
+alt="The average token lengths of the observed eye fixation units, the model-segmented units, and linguistic words in English and Dutch texts. The error bars represent 99% confidence intervals." />
+<figcaption aria-hidden="true"><strong>The average token lengths of the
+observed eye fixation units, the model-segmented units, and linguistic
+words in English and Dutch texts.</strong> The error bars represent 99%
+confidence intervals.</figcaption>
+</figure>
+</div>
+<h4
+id="ch6.the-distributions-of-predicted-and-actual-fixation-counts">The
+distributions of predicted and actual fixation counts</h4>
+<div class="center">
+<figure>
+<img src="figures/ch6.distributions.jpg" id="fig:ch6.distributions"
+alt="Distributions of the counts of the (predicted) eye fixations on the English (a) and Dutch (b) corpora. Firstly we define three labels of the fixation counts (Skip: 0, One: 1, and More: &gt;1). The histograms present the distribution of three labels; specifically, the vertical histograms present the predictions of the models and the horizontal histogram presents the observations in GECO. The scatter plots present the confusion matrix between the model predictions and the GECO observations; the surface area of each circle indicates the item count of the matching instance." />
+<figcaption aria-hidden="true"><strong>Distributions of the counts of
+the (predicted) eye fixations on the English (a) and Dutch (b)
+corpora.</strong> Firstly we define three labels of the fixation counts
+(<em>Skip</em>: 0, <em>One</em>: 1, and <em>More</em>: &gt;1). The
+histograms present the distribution of three labels; specifically, the
+vertical histograms present the predictions of the models and the
+horizontal histogram presents the observations in GECO. The scatter
+plots present the confusion matrix between the model predictions and the
+GECO observations; the surface area of each circle indicates the item
+count of the matching instance.</figcaption>
+</figure>
+</div>
+<p>Next, we predicted the number of eye fixations on each word token
+from the segmentation of the models. We display the joint distribution
+of the predictions and observed eye fixations (Fig. <a
+href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>). The CBL model’s output
+has only very few subword units (indicated by <em>More</em>, meaning
+more than one predicted fixation on the word). In fact, CBL itself does
+not output any subword units, but there are some hyphenated tokens in
+GECO (e.g., <em>forty-five</em>), which are processed as multiple words
+by the models while GECO (and so the evaluation) regards them as single
+words. AG-word has only very few supraword units (indicated by
+<em>Skip</em>, meaning no fixation at the word). Compared to the
+distributions of other models’ predictions, the distribution of LiB’s
+prediction is most similar to the distribution of observed fixations on
+both the English and the Dutch dataset. Furthermore, the surface area of
+the circle in the confusion matrix (Fig. <a
+href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>) shows that <em>One</em>
+(exactly one fixation at the word) predictions match the observed data
+most often for all models, and that <em>More</em> predictions match the
+observed data the least.</p>
+<h4 id="ch6.the-F-scores-of-model-predictions">The F-scores of model
+predictions</h4>
+<p>The unit lengths and fixation distributions displayed above (Figs. <a
+href="#fig:ch6.unit_lengths" data-reference-type="ref"
+data-reference="fig:ch6.unit_lengths">2.2</a> and <a
+href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>) provide an overview of
+the differences between the predicted eye fixations by the different
+models and the observed eye fixations. Next, we quantitatively evaluate
+the similarity between the predicted and observed eye fixations by their
+weighted F1 scores.</p>
+<p>Table <a href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a> shows that three of the
+four segmentation models outperform the word-based baselines in the
+eye-fixation prediction tasks. The <em>Only-Length</em> baseline, which
+predicts by only the word length, is better than the
+<em>Word-by-Word</em> baseline, and close to the segmentation models.
+Out of the four models, LiB and AG-collocation produce the best
+predictions and AG-word produces the worst predictions, worse than the
+word-based baselines.</p>
+<div class="center">
+<div id="tab:ch6.evaluations">
+<table>
+<caption><strong>Evaluations of models/baselines in different
+languages.</strong> All the scores are the weighted F1 metric between
+the predicted eye fixations and the observed eye fixations. Bold font
+indicates the highest score across models.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><em>Model</em></th>
+<th style="text-align: right;"><em>English</em></th>
+<th style="text-align: right;"><em>Dutch</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">LiB</td>
+<td style="text-align: right;">53.06</td>
+<td style="text-align: right;"><strong>51.87</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CBL</td>
+<td style="text-align: right;">52.20</td>
+<td style="text-align: right;">50.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AG-word</td>
+<td style="text-align: right;">30.10</td>
+<td style="text-align: right;">28.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AG-collocation</td>
+<td style="text-align: right;"><strong>53.35</strong></td>
+<td style="text-align: right;">51.45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Word-by-Word</td>
+<td style="text-align: right;">38.32</td>
+<td style="text-align: right;">38.68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Only-Length</td>
+<td style="text-align: right;">50.82</td>
+<td style="text-align: right;">50.57</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 id="ch6.the-effect-of-unit-length-limitation">The effect of
+unit-length limitation</h4>
+<p>Next, we evaluate LiB under different limitations of unit length,
+which captures possible perceptual limitations. The sharp rise of the
+prediction scores with increasing maximum length quickly levels off
+(Fig. <a href="#fig:ch6.unit_length_limitations"
+data-reference-type="ref"
+data-reference="fig:ch6.unit_length_limitations">2.4</a>). The
+prediction scores even slightly decrease after the peaks: the optimal
+maximum unit lengths (indicated by the arrows in Fig. <a
+href="#fig:ch6.unit_length_limitations" data-reference-type="ref"
+data-reference="fig:ch6.unit_length_limitations">2.4</a>) are 16 for
+English (F1 = 53.84) and 13 for Dutch (F1 = 53.16).</p>
+<div class="center">
+<figure>
+<img src="figures/ch6.unit_length_limitations.jpg"
+id="fig:ch6.unit_length_limitations" style="width:10cm"
+alt="The prediction scores with different LiB unit length limitations. The blue/orange dotted lines indicate the peak scores and the corresponding maximum unit length in the English/Dutch simulations, respectively." />
+<figcaption aria-hidden="true"><strong>The prediction scores with
+different LiB unit length limitations.</strong> The blue/orange dotted
+lines indicate the peak scores and the corresponding maximum unit length
+in the English/Dutch simulations, respectively.</figcaption>
+</figure>
+</div>
+<h4 id="ch6.training-on-non-GECO-corpus">Training on non-GECO
+corpus</h4>
+<p>The eye fixation data are from the GECO corpora, which are also the
+model training corpora for the results above. To test the
+generalizability of the models, we evaluate the models trained on the
+non-GECO large scale corpora and compare the results with the models
+trained on the GECO corpora<a href="bibilo.html#fn24" class="footnote-ref"
+id="fnref24" role="doc-noteref"><sup>24</sup></a>. Table <a
+href="#tab:ch6.large_corpora" data-reference-type="ref"
+data-reference="tab:ch6.large_corpora">[tab:ch6.large_corpora]</a> shows
+that training on the non-GECO corpora improves the prediction of eye
+fixations compared to training on the GECO corpora themselves. This is
+the case for both LiB and CBL, although the predictions by LiB remain
+the most accurate. CBL shows high time efficiency since its training is
+based on words rather than characters (as in LiB and AG). However, CBL,
+compared with LiB, shows a higher <em>relative</em> increase in training
+time with the same increase of the training materials. Moreover, CBL
+tracks the frequencies of all words and the backward transitional
+probabilities of all word pairs, which causes the sharp growth of the
+lexicon on the large corpora.</p>
+<div class="center">
+<div class="tabular">
+<p><span>|l|p<span>1.4cm</span>|p<span>1.5cm</span>|p<span>1.6cm</span>|p<span>1.1cm</span>|p<span>1.5cm</span>|p<span>1.6cm</span>|p<span>1.1cm</span>|</span>
+&amp; &amp; &amp;<br />
+&amp; &amp; <em>Training time</em> &amp; <em>Lexicon size</em> &amp;
+<em>F1 Score</em> &amp; <em>Training time</em> &amp; <em>Lexicon
+size</em> &amp; <em>F1 Score</em><br />
+&amp; GECO &amp; 2min31s &amp; 15,867 &amp; 53.06 &amp; 2min38s &amp;
+17,525 &amp; 51.87<br />
+&amp; Other &amp; 24min51s &amp; 97,872 &amp; <strong>53.46</strong>
+&amp; 72min5s &amp; 143,665 &amp; <strong>53.72</strong><br />
+&amp; GECO &amp; 1s &amp; 29,268 &amp; 52.28 &amp; 1s &amp; 33,248 &amp;
+50.04<br />
+&amp; Other &amp; 1min24s &amp; 2,051,239 &amp; 53.30 &amp; 3min23s
+&amp; 3,782,605 &amp; 51.71<br />
+</p>
+</div>
+</div>
+<h3 id="ch6.discussion">Discussion</h3>
+<p>In this study we have shown how to predict eye fixations on text by
+unsupervised segmented cognitive units. Conversely, we evaluate these
+units by their predictions of eye fixations. In particular, we tested
+three segmentation models: the LiB model, the CBL model, and the AG
+model. We also compared them with two word-based baselines: assuming
+that reading is word by word; and assuming that we can predict the
+number of fixations on each word by the length of the word. Firstly, we
+found eye fixations can be better explained by the cognitive-unit-based
+models than by the word-based models, and both the LiB and AG models
+predicted the fixations best among the cognitive-unit-based models.
+Secondly, the predictions are robust between two languages (English and
+Dutch). Lastly, we found the LiB and CBL models can predict eye
+fixations on a different corpus, and large-scale training material
+improves the prediction.</p>
+<h4 id="from-word-based-to-cognitive-unit-based-reading-theories">From
+word-based to cognitive-unit-based reading theories</h4>
+<p>The evaluations in the current paper show that eye fixations during
+reading can be predicted by unsupervised text segmentation models (Fig.
+<a href="#fig:ch6.unit_length_limitations" data-reference-type="ref"
+data-reference="fig:ch6.unit_length_limitations">2.4</a>; Tables <a
+href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a> and <a
+href="#tab:ch6.large_corpora" data-reference-type="ref"
+data-reference="tab:ch6.large_corpora">[tab:ch6.large_corpora]</a>).
+These results suggest a cognitive-unit-based eye-movement planning in
+the oculomotor system. Eye fixation during reading is not arbitrary nor
+guided by purely orthographic cues such as spaces and punctuations, so
+the reader’s oculomotor system must plan the fixations by using both
+orthographic cues in the text and top-down knowledge.</p>
+<p>Traditional theories of fixation-planning regard words as reading
+units. To explain the fixations which are not word by word (<em>fixating
+words more than once</em> or <em>skipping words</em>), it is usually
+assumed that a word’s lexical attributes (e.g., frequency,
+predictability, and length) can help to decide whether to refixate or
+skip the word. An example of such a theory is the E-Z reader model <span
+class="citation"
+data-cites="Reichle1998-ah Reichle2009-pe Reichle2015-cq">(E. D. Reichle
+et al. 1998; Erik D. Reichle, Warren, and McConnell 2009; Erik D.
+Reichle and Sheridan 2015)</span>, which is one of the most popular eye
+movement models. It assumes that our visual system can preview the text
+to the right of the current fixation and make use of the lexical
+attributes of the next word to plan the next fixation position.</p>
+<p>Different from the traditional word-based theories, we regard
+<em>cognitive</em> units as reading units and assume that most of the
+first-pass fixations are at the center of each reading unit (we here
+ignore the limitation of perceptual span for simplicity and will get
+back to it later). Based on this assumption, the fixation-planning task
+may be approximated as a cognitive-unit segmentation task, just as we
+did in this study. The cognitive-unit-based predictions (from the
+<em>LiB</em>, <em>CBL</em>, and <em>AG</em> models) are generally better
+than the word-based predictions (<em>Word-by-Word</em> and
+<em>Only-Length</em>) (Table <a href="#tab:ch6.evaluations"
+data-reference-type="ref" data-reference="tab:ch6.evaluations">2.3</a>).
+<em>Word-by-Word</em> assumes reading proceeds with one fixation per
+word, but the baseline’s poor performance undermines this assumption.
+<em>Only-Length</em> assumes that the number of fixations on a word is
+determined solely by the word’s length. It scores higher than
+<em>Word-by-Word</em> showing that longer words tend to be fixated more
+often (which is already well known). Importantly, <em>Only-Length</em>
+predictions are still worse than the cognitive-unit-based predictions,
+even though its predictions use the distributions of observed eye
+fixation, which the segmentation models are ignorant to. To sum up, the
+cognitive-unit-based approaches can outperform the word-based approaches
+with less information and even when allowing for unrealistically long
+units (i.e., longer than the visual span). Therefore,
+cognitive-unit-based reading can be seen as a new, and arguably better
+candidate for explaining eye movement during reading.</p>
+<p>The evaluation results are also consistent between English and Dutch
+(Figs. <a href="#fig:ch6.unit_lengths" data-reference-type="ref"
+data-reference="fig:ch6.unit_lengths">2.2</a>, <a
+href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>, and <a
+href="#fig:ch6.unit_length_limitations" data-reference-type="ref"
+data-reference="fig:ch6.unit_length_limitations">2.4</a>; Tables <a
+href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a> and <a
+href="#tab:ch6.large_corpora" data-reference-type="ref"
+data-reference="tab:ch6.large_corpora">[tab:ch6.large_corpora]</a>),
+which shows the validity of the models and the theory of
+cognitive-unit-based eye movement are not limited to a particular
+language. To collect more evidence of whether they are indeed
+language-independent, it would be interesting to run the same study on
+Chinese, where we may find even better results because there are no
+perceptual cues (spaces) that guide eye-movements in addition to the
+cognitive units. However, there is currently no publicly available
+large-scale Chinese eye-tracking corpus.</p>
+<p>It must be noted that the perceptual span of our eyes is limited, so
+a cognitive unit should get more fixations when it exceeds the span.
+Perceptual span is not of concern to any segmentation model, but we can
+examine perceptual span anyway by limiting the unit length in the LiB
+model. If the maximum unit length is shorter than the real perceptual
+span, the predicted fixation location would be biased to the left for
+the cognitive units whose length are between the limitation and the
+perceptual span; if the maximum unit length is longer than the real
+perceptual span, the prediction would be biased to the right for the
+cognitive units whose length exceeds the perceptual span; the optimal
+maximum unit length should reflect the best fixation prediction. The
+results did show the best prediction scores when we limit the unit
+length to 16 in the English prediction task and to 13 in the Dutch
+prediction task (Fig. <a href="#fig:ch6.unit_length_limitations"
+data-reference-type="ref"
+data-reference="fig:ch6.unit_length_limitations">2.4</a>), which is
+close to the finding that the perceptual span extends to 14-15 letter
+spaces to the right of fixation <span class="citation"
+data-cites="Rayner1998-fq">(Keith Rayner 1998)</span>.</p>
+<p>This finding does not mean that there really is a maximum unit length
+in cognition. The current study does not aim to improve the prediction
+of eye fixations: the eye-ﬁxation prediction task in this study only
+serves to cognitively evaluate the units segmented by the models. For
+this reason, we needed to prevent any prior information about eye
+movements (e.g., oculomotor constraints or linguistic knowledge) from
+“contaminating” the eye-fixation prediction task, which is why we did
+not include such prior knowledge in the models. However, in possible
+future work which explicitly aims to predict or explain the eye
+fixations, we may include the constraints from the physiological system
+and the linguistic attributes of reading material in the linking
+hypothesis between segmentation and eye ﬁxation. For example,the
+attention distribution in the perceptual span is actually asymmetrical
+<span class="citation" data-cites="Reilly2006-gj">(Reilly and Radach
+2006)</span>, which causes the optimal viewing position and preferred
+viewing location to be slightly to the left of the middle of a token
+<span class="citation"
+data-cites="McConkie1988-wp Rayner1979-pb">(McConkie et al. 1988; K.
+Rayner 1979)</span> rather than the exact center as we assume in this
+study. If the fixation fails to land on the ideal location in a token,
+it will trigger an immediate re-fixation for correction <span
+class="citation" data-cites="Nuthmann2005-mf">(Nuthmann, Engbert, and
+Kliegl 2005)</span>. Another example is that high-level linguistic
+attributes of tokens can also influence eye fixation by mediating the
+tokens’ predictability <span class="citation"
+data-cites="Balota1985-jq Ehrlich1981-dq Warren2007-lx">(Balota,
+Pollatsek, and Rayner 1985; Ehrlich and Rayner 1981; Warren and
+McConnell 2007)</span>.</p>
+<p>The concept of cognitive unit does have some connections to models of
+eye movement control in reading. The E-Z reader model assumes that the
+attention of reading shifts word by word, so it is categorized as a
+“serial attention shift” (SAS) model <span class="citation"
+data-cites="Engbert2005-vs Reichle2009-pe">(Engbert et al. 2005; Erik D.
+Reichle, Warren, and McConnell 2009)</span>. An important alternative
+model is the SWIFT model, which assumes that parallel activation of
+multiple words over the fixated region is also possible. This model is
+categorized as a “gradient by attention guidance” (GAG) model <span
+class="citation" data-cites="Engbert2005-vs Reichle2009-pe">(Engbert et
+al. 2005; Erik D. Reichle, Warren, and McConnell 2009)</span>. Although
+E-Z reader and SWIFT are still word-based models, so neither supports
+the processing of multi-word groups as single units, the latter model
+shares with the LiB model the idea that multiple words can be activated
+in parallel. Besides, human processing of cognitive units may involve
+two stages (familiarity detection and recognition; <span
+class="citation" data-cites="Yang2020-au">(Yang, Cai, and Tian
+2020)</span>) which are similar to the two stages (familiarity check and
+lexical access) assumed by the E-Z reader model <span class="citation"
+data-cites="Reichle2009-pe">(Erik D. Reichle, Warren, and McConnell
+2009)</span>.</p>
+<h4 id="cognitive-units-from-different-modelsmotivations">Cognitive
+units from different models/motivations</h4>
+<p>We have seen the advantage of cognitive-unit-based predictions for
+explaining eye fixation during reading (Table <a
+href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a>). The question then turns
+to which model best segments the cognitive units from text, that is,
+which model more accurately predicts the eye fixations. The answer is
+also in Table <a href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a>: LiB is on par with
+AG-collocation, AG-word performs the worst, and CBL is in between.
+Moreover, LiB (unlike AG-word and AG-collocation) predicts longer
+fixation distances on Dutch than on English, in accordance with the
+observed pattern (Fig. <a href="#fig:ch6.unit_lengths"
+data-reference-type="ref"
+data-reference="fig:ch6.unit_lengths">2.2</a>). The performance
+differences between the models may reflect differences between <em>how
+our cognition defines the units</em> and <em>how the model defines the
+units</em>.</p>
+<p>The CBL model follows the notion that both children and adults can
+learn multi-word sequences from words, and that learning is based on the
+transitional probabilities <span class="citation"
+data-cites="McCauley2017-tq">(McCauley and Christiansen 2017)</span>.
+The units in CBL are words and multi-word sequences, not subwords.
+However, <span class="citation" data-cites="McCauley2019-vv">(McCauley
+and Christiansen 2019)</span> also admit that learning directly from
+individual words is unrealistic for children. In addition, both CBL and
+LiB tend to memorize frequent units, but only LiB also forgets the units
+that are frequent but increase the numbers of types or tokens and
+therefore violate the principle of least effort. Thus, in the current
+study, the higher performance of LiB over CBL may be attributed to the
+character-based learning and the principle of least effort.</p>
+<p>The learning in AG takes another approach: it tries to infer the
+<em>optimal</em> (in the Bayesian view) tree structures to represent the
+given language material <span class="citation"
+data-cites="Johnson2008-zx">(Johnson 2008)</span>. The model clusters
+the symbols in the corpus in a hierarchical way so its output units are
+shown at the middle level(s) of the hierarchy <span class="citation"
+data-cites="Johnson2009-pp">(Johnson and Goldwater 2009)</span>. The
+similar performance of AG-collocation and LiB (Table <a
+href="#tab:ch6.evaluations" data-reference-type="ref"
+data-reference="tab:ch6.evaluations">2.3</a>) arises in spite of their
+very different structures and workflows. Although AG is based on
+Bayesian estimation whereas LiB is based on cognitive assumptions, both
+models aim to optimize the lexicon and the segmentation, and thereby
+learn supra-word and subword units (Fig. <a
+href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>), which may result in
+their similar performance. Another interesting phenomenon is that the
+AG-collocation units show much better performance than the AG-word units
+in the fixation prediction task (Table <a href="#tab:ch6.evaluations"
+data-reference-type="ref" data-reference="tab:ch6.evaluations">2.3</a>).
+Since AG-word finds only very few supraword units and many subword units
+(Fig. <a href="#fig:ch6.distributions" data-reference-type="ref"
+data-reference="fig:ch6.distributions">2.3</a>), the higher performance
+of AG-collocation and LiB suggests that language cognition prefers
+larger units.</p>
+<p>The motivation underlying the LiB model is the least-effort
+principle: LiB regards the text chunks fitting the least-effort
+requirement as the cognitive units during reading. This motivation
+follows William of Ockham’s (1287–1347) law of parsimony, which is also
+known as <em>Occam’s razor</em>. The law of parsimony for cognition is
+applicable since cognitive resources are limited. This motivation also
+follows Zipf’s (<span class="citation"
+data-cites="Zipf1949-lo">(1949)</span>) argument that all human behavior
+can be systematized under the Principle of Least Effort (PLE). Although
+neither Occam’s razor nor PLE is tangible and quantifiable enough for a
+computational model, LiB implements their philosophy by interpreting
+least effort (in language processing) as less use of both working memory
+(the number of cognitive unit tokens) and long-term memory (the number
+of cognitive unit types).</p>
+<p>The balance between working and long-term memory can be seen as the
+balance between computation and storage, which is still under debate.
+<span class="citation" data-cites="Chomsky1968-ol">(Chomsky and Halle
+1968)</span> believed complex words are generated from simpler forms.
+<span class="citation" data-cites="Baayen2007-lk">(Baayen 2007)</span>
+criticized this generative theory, because in that case the balance of
+storage and computation is shifted totally to the maximization of
+computation and the minimization of storage. He, in turn, claimed the
+importance of storage, but did not provide a measure of the two. Minimum
+description length (MDL; <span class="citation"
+data-cites="Rissanen1978-pb">(Rissanen 1978)</span>) fills the blank to
+some extent: MDL describes both storage and computation by their
+required encoding bits and so MDL unifies the two parts. <span
+class="citation" data-cites="Yang2020-lz">(Yang, Frank, and Bosch
+2020)</span> showed that LiB also minimizes description length of a
+corpus compared to some other models. MDL assigns storage and
+computation the same weights. However, they are in different cognitive
+systems (long-term memory versus working memory) and may have different
+cognitive processing costs. These costs may also depend on individual
+differences. In the LiB model, these differences can be reflected in
+hyperparameters.</p>
+<p>Moreover, the cognitive units should be generalizable if we want them
+to be practical. The reading experience of an educated adult relies to a
+large extent on language materials. It is meaningless if the language
+users learn the cognitive units from some piece of language materials
+but cannot use them on new material. Fortunately, a task-independent but
+large-scale corpus can help to discover cognitive units that are at
+least as usable as those from the task-specific corpus (Table <a
+href="#tab:ch6.large_corpora" data-reference-type="ref"
+data-reference="tab:ch6.large_corpora">[tab:ch6.large_corpora]</a>).
+This finding demonstrates the training generalizability of the
+segmentation models and the external validity of the trained cognitive
+units. Besides the better performance, it is also worth noting that the
+time and memory costs of LiB on large training data are reasonable
+because LiB only requires simple computations (compared with Bayesian
+computation) and a small lexicon (compared with tracking all unit
+frequencies or even bigram transitional probabilities). The saving of
+time and storage suggest that the LiB lexicon is in itself actively
+trying to optimise towards a saturation point, or to converge towards a
+set of <em>good</em> cognitive units.</p>
+<h4 id="room-for-improvement-of-cognitive-unit-discovery">Room for
+improvement of cognitive unit discovery</h4>
+<p>The ability to predict eye fixations demonstrates the cognitive
+reality of the concept <em>cognitive unit</em>, but cognitive units can
+do more than predict the eye fixations. Those units by definition are
+the building blocks of human language processing. They may serve as
+better operational units in computational linguistics,
+psycholinguistics, language education, translation, and so on. As an
+example in computational linguistics, the corpus segmented into LiB’s
+cognitive units shows more concise description and lower N-gram language
+model perplexity than when words form the units <span class="citation"
+data-cites="Yang2020-lz">(Yang, Frank, and Bosch 2020)</span>. All in
+all, it is still worth seeking ways to improve the discovery of
+cognitive units.</p>
+<p>Although the hyperparameters for training LiB in the current study
+had almost the same values as in a previous LiB study <span
+class="citation" data-cites="Yang2020-lz">(Yang, Frank, and Bosch
+2020)</span>, which is unrelated to eye-fixation prediction and thereby
+avoids the double-dipping issue, we still want to decouple LiB from its
+hyperparameters to discover the cognitive units shared by most users of
+a language or the cognitive units that reflect the shared thoughts in
+multiple languages. CBL is an exemplar of such decoupling because it has
+no hyperparameters and its built-in parameter (the frequency threshold
+for constructing a chunk) is adjusted according to the running average
+of the chunk frequencies. We intend to also make the hyperparameters
+adaptive in the future LiB model. Alternatively, we may aim to make LiB
+into a dissipative system (a system that can reach a steady state when
+it interacts with the environment), more self-organized and insensitive
+to the initial hyperparameters.</p>
+<p>Decoupling LiB from its hyperparameters enhances the generality of
+the model. On the opposite side, the model can be tuned specifically to
+simulate the individual properties of a human agent; for example, the
+unique lexicon of a person with aphasia, or the change of a child’s
+mental lexicon during language acquisition. Introducing more
+hyperparameters related to individual cognitive differences may help to
+discover idiosyncractic cognitive units. Possible relevant
+hyperparameters could be the perceptual span and the balance between
+long-term memory and working memory that we have discussed above, and
+other empirical knowledge of physiology.</p>
+<p>Lastly, we should note that the prediction scores of different models
+vary within a narrow range. Also, altering training material from GECO
+to 100 times larger corpora did not lead to an F1-score improvement of
+more than two percentage points. The reason for the apparent performance
+ceiling could be that the current LiB model, as well as the CBL model
+and the AG model, discover only the frequent units. Some infrequent
+units can also be cognitive units: for example, people may immediately
+memorize the name of a never-heard city in a breaking news since the
+name is salient in the context. The current LiB model is not sensitive
+to such contextual semantic and pragmatic information.</p>
+<h3 id="ch6.conclusion">Conclusion</h3>
+<p>The current study demonstrates the advantage of cognitive-unit-based
+reading theories over traditional word-based reading theories by using
+an eye-fixation prediction task. Among the computational implementations
+of cognitive-unit-based reading as unsupervised word segmentation, the
+LiB model shows good performance and high efficiency, and indicates that
+least effort in both working memory and long-term memory may play an
+important role during language learning and processing. Overall, the
+study supports the theory that the mental lexicon stores not only words
+but also smaller and larger units, suggests that fixation locations
+during reading depend on these units, and shows that unsupervised
+segmentation models can discover these units.</p>
+    </section>
+
+  </body>
+</html>
+

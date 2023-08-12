@@ -1,0 +1,1048 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="part-two-computational-modeling">Part Two: Computational
+modeling</h1>
+<h2 id="ch5">Less is Better: A cognitively inspired unsupervised model
+for language segmentation<a href="bibilo.html#fn10" class="footnote-ref"
+id="fnref10" role="doc-noteref"><sup>10</sup></a></h2>
+<div class="center">
+<p><strong>Abstract</strong><br />
+</p>
+</div>
+<p>Language users process utterances by segmenting them into many
+<em>cognitive units</em>, which vary in their sizes and linguistic
+levels. Although we can do such unitization/segmentation easily, its
+cognitive mechanism is still not clear. This paper proposes an
+unsupervised model, <em>Less-is-Better</em> (LiB), to simulate the human
+cognitive process with respect to language unitization/segmentation. LiB
+follows the principle of least effort and aims to build a lexicon which
+minimizes the number of unit tokens (alleviating the effort of analysis)
+and number of unit types (alleviating the effort of storage) at the same
+time on any given corpus. LiB’s workflow is inspired by empirical
+cognitive phenomena. The design makes the mechanism of LiB cognitively
+plausible and the computational requirement light-weight. The lexicon
+generated by LiB performs the best among different types of lexicons
+(e.g. ground-truth words) both from an information-theoretical view and
+a cognitive view, which suggests that the LiB lexicon may be a plausible
+proxy of the mental lexicon.</p>
+<h3 id="ch5.introduction">Introduction</h3>
+<p>During language comprehension, we cannot always process an utterance
+instantly. Instead, we need to segment all but the shortest pieces of
+text or speech into smaller chunks. Since these chunks are likely the
+cognitive processing units for language understanding, we call them
+<em>cognitive units</em> in this paper. A chunk may be any string of
+letters, characters, or phonemes that occurs in the language, but which
+chunks serve as the cognitive units? Traditional studies <span
+class="citation" data-cites="Chomsky1957-dk Taft2013-tv">(Chomsky 1957;
+Taft 2013, for example)</span> often use words as the units in sentence
+analysis. But speech, as well as some writing systems such as Chinese,
+lack a clear word boundary. Even for written languages which use spaces
+as word boundaries, psychological evidence indicates that the morphemes,
+which are sub-word units, in infrequent or opaque compound words take
+priority over the whole word <span class="citation"
+data-cites="Fiorentino2014-pg MacGregor2013-qb">(Fiorentino et al. 2014;
+MacGregor and Shtyrov 2013)</span>; at the same time, some supra-word
+units such as frequent phrases and idioms are also stored in our
+long-term mental lexicon <span class="citation"
+data-cites="Arnon2010-kw Bannard2008-eo Jackendoff2002-bd">(Arnon and
+Snider 2010; Bannard and Matthews 2008; Jackendoff 2002)</span>. The
+evidence suggests that the cognitive units can be of different sizes;
+they can be words, or smaller than words, or multi-word expressions.</p>
+<p>Despite the flexible size of the cognitive units, and the lack of
+overt segmentation clues, infants are able to implicitly learn the units
+in their caregivers’ speech, and then generate their own utterances.
+Arguably, children’s language intelligence allows them to build their
+own lexicons from zero knowledge about the basic (cognitive) units in
+the particular language the child is learning, and then use the lexicon
+to segment language sequences. Can we mimic this ability of a human
+language learner in a computer model? This question is often phrased as
+the task of unsupervised segmentation. Several types of computational
+models or NLP algorithms have been proposed for segmentation, taking
+different approaches:</p>
+<ul>
+<li><p><strong>Model the lexicon</strong>: A straightforward basis for
+segmentation is to build a lexicon. One of the lexicon-building
+algorithms, Byte pair encoding (BPE) <span class="citation"
+data-cites="Sennrich2016-fv">(Sennrich, Haddow, and Birch 2016)</span>,
+is popular for NLP preprocessing. It iteratively searches for the most
+common n-gram pairs and adds them into the n-gram lexicon. Some other
+models such as the Chunk-Based Learner <span class="citation"
+data-cites="McCauley2019-vv">(McCauley and Christiansen 2019)</span> and
+PARSER <span class="citation" data-cites="Perruchet1998-ot">(Perruchet
+and Vinter 1998)</span> are also based on the local statistics of tokens
+(e.g., token frequency, mutual information, or transitional
+probability).</p></li>
+<li><p><strong>Model the grammar</strong>: Some studies attempted to
+analyze the grammar patterns of sentences and then parse/segment the
+sentences based on these patterns. To find the optimal grammar, de
+Marcken (<span class="citation"
+data-cites="De_Marcken1996-zr">(1996)</span>) used Minimum Description
+Length, and Johnson and Goldwater (<span class="citation"
+data-cites="Johnson2009-pp">(2009)</span>) used the Hierarchical
+Dirichlet Process.</p></li>
+<li><p><strong>Model the sequences</strong>: Recurrent neural networks
+and its variations are able to learn the sequential patterns in language
+and to perform text segmentation <span class="citation"
+data-cites="Chung2017-cr Kawakami2019-dr Sun2018-om Zhikov2013-vf">(Chung,
+Ahn, and Bengio 2017; Kawakami, Dyer, and Blunsom 2019; Z. Sun and Deng
+2018; Zhikov, Takamura, and Okumura 2013)</span>.</p></li>
+</ul>
+<p>In general, lexicon models capture only the local statistics of the
+tokens so they tend to be short-sighted at the global level (e.g.
+long-distance dependencies). The other two types of models, in contrast,
+learn how the tokens co-occur globally. Yet, the ways grammar models and
+sequence models learn the global information makes them more complicated
+and computing-intensive than the lexicon models.</p>
+<p>In this paper we propose a model that builds a lexicon, but does so
+by using both local and global information. Our model is not only a
+computational model but also a cognitive model: it is inspired by
+cognitive phenomena, and it needs only basic and light-weight
+computations which makes it cognitively more plausible than the grammar-
+and sequence-learning models mentioned above. We show that our model can
+effectively detect the cognitive units in language with an efficient
+procedure. We also show that our model can detect linguistically
+meaningful units. We further evaluate our model on traditional word
+segmentation tasks.</p>
+<h3 id="ch5.the-Less-is-better-Model">The Less-is-better Model</h3>
+<h4 id="ch5.cognitive-principles">Cognitive principles</h4>
+<p>We want our system to mimic human cognitive processes of language
+unitization/segmentation by simulating not only the behavioral output,
+but also the cognitive mechanism. We designed such a computational model
+by emulating three cognitive phenomena: the principle of least effort,
+larger-first processing, and passive and active forgetting.</p>
+<p><span><strong>The principle of least effort:</strong></span><span
+id="ch5.least-effort" label="ch5.least-effort"></span> The essence of
+the model is a simple and natural cognitive principle: the principle of
+least effort <span class="citation" data-cites="Zipf1949-lo">(Zipf
+1949)</span>, which says human cognition and behavior are economic; they
+prefer to spend the least effort or resources to obtain the largest
+reward. Since a language sequence can be segmented into different
+sequences of language chunks, we assume the cognitive units are the
+language chunks in the sequence which follow the principle of least
+effort.</p>
+<p><span><strong>Larger-first processing:</strong></span><span
+id="ch5.larger-first" label="ch5.larger-first"></span> As we mentioned,
+any language chunk may be the cognitive unit, short or long. A broadly
+known finding is that global/larger processing has priority over
+local/smaller processing for visual scene recognition; an effect named
+“global precedence" <span class="citation"
+data-cites="Navon1977-ss">(Navon 1977)</span>. This follows from the
+principle of least effort: the larger the units we process, the fewer
+processing steps we need to take. For visual word processing, the word
+superiority effect <span class="citation"
+data-cites="Reicher1969-iu">(Reicher 1969)</span> shows the precedence
+of words over recognizing letters. Recent work <span class="citation"
+data-cites="Snell2017-pq Yang2020-au">(Snell and Grainger 2017; Yang,
+Cai, and Tian 2020)</span> extends global precedence to the level beyond
+words, and also shows that we do not process only the larger units:
+smaller units also have a chance to become the processing units when
+processing larger units does not aid comprehension. In other words,
+cognitive units may be of any size, but the larger have priority.</p>
+<p><span><strong>Passive and active forgetting:</strong></span><span
+id="ch5.passive-forget" label="ch5.passive-forget"></span><span
+id="ch5.active-forget" label="ch5.active-forget"></span> To mimic human
+cognition, the model should have a flexible memory to store and update
+information. Forgetting is critical to prevent the accumulation of an
+extremely large number of memory engrams. It has been commonly held that
+forgetting is merely the passive decay of the memory engram over time,
+but recent studies put forward that forgetting can also be an active
+process <span class="citation"
+data-cites="Davis2017-iv Gravitz2019-ov">(R. L. Davis and Zhong 2017;
+Gravitz 2019)</span>. Passive forgetting by decay can clean up the
+engrams that are no longer used in our brains. However, our brains may
+sometimes need to suppress counter-productive engrams immediately.
+Active forgetting may thus be called upon to eliminate the unwanted
+engram’s memory traces, which enhances the memory management system
+<span class="citation" data-cites="Davis2017-iv Oehrn2018-bx">(R. L.
+Davis and Zhong 2017; Oehrn et al. 2018)</span>.</p>
+<h4 id="ch5.general-idea">General idea</h4>
+<p>We assume the cognitive units are the chunks in the language sequence
+which follow the principle of least effort (Section <a
+href="#ch5.least-effort" data-reference-type="ref"
+data-reference="ch5.least-effort">[ch5.least-effort]</a>). In other
+words, the less information we need to encode the language material, the
+better cognitive units we have. This less-is-better assumption grounds
+our model, so we named it Less-is-Better, or LiB for short.</p>
+<p>The LiB model accepts any sequence <span
+class="math inline"><em>S</em></span> of atomic symbols <span
+class="math inline"><em>s</em></span>: <span
+class="math inline"><em>S</em> = (<em>s</em><sub>1</sub>,<em>s</em><sub>2</sub>,…)</span>,
+as the input. A collection of <span
+class="math inline"><em>S</em></span> forms a document <span
+class="math inline"><em>D</em></span> and all <span
+class="math inline"><em>D</em></span> together form the training corpus.
+<span class="math inline"><em>S</em></span> can be segmented into chunk
+tokens <span
+class="math inline">(<em>c</em><sub>1</sub>,…,<em>c</em><sub><em>N</em></sub>)</span>,
+where each chunk is a subsequence of <span
+class="math inline"><em>S</em></span>: <span
+class="math inline"><em>c</em> = (<em>s</em><sub><em>i</em></sub>,…,<em>s</em><sub><em>j</em></sub>)</span>
+and <span class="math inline"><em>N</em></span> is the number of chunk
+tokens in <span class="math inline"><em>S</em></span>. The segmentation
+is based on a lexicon <span class="math inline"><em>L</em></span> (Fig.
+1) where all chunk types are stored in order. The ordinal number of
+chunk type <span class="math inline"><em>c</em></span> in <span
+class="math inline"><em>L</em></span> is denoted <span
+class="math inline"><em>Θ</em>(<em>c</em>)</span>, and <span
+class="math inline">|<em>L</em>|</span> is the number of chunk types in
+<span class="math inline"><em>L</em></span>.</p>
+<p>Let <span class="math inline"><em>I</em>(<em>c</em>)</span> be the
+amount of information (the number of encoding bits) required to identify
+each chunk type in <span class="math inline"><em>L</em></span>, that is,
+<span
+class="math inline"><em>I</em>(<em>c</em>) = log<sub>2</sub>|<em>L</em>|</span>,
+and <span class="math inline"><em>I</em>(<em>S</em>)</span> be the
+amount of information required for the input <span
+class="math inline"><em>S</em></span>, then: <span
+class="math inline"><em>I</em>(<em>S</em>) = <em>I</em>(<em>c</em>)<em>N</em></span>.
+Our model aims to minimize the expected encoding information to extract
+the cognitive units in any <span class="math inline"><em>S</em></span>,
+which means minimizing <span
+class="math inline"><em>E</em>[<em>I</em>(<em>S</em>)]</span>, which is
+accomplished by simultaneously reducing <span
+class="math inline">|<em>L</em>|</span> (smaller <span
+class="math inline">|<em>L</em>|</span> means lower <span
+class="math inline"><em>I</em>(<em>c</em>)</span>) and <span
+class="math inline"><em>E</em>[<em>N</em>]</span> (the expected number
+of chunk tokens in <span class="math inline"><em>S</em></span>). In
+practice our model:</p>
+<ol>
+<li><p>Starts with an empty <span
+class="math inline"><em>L</em></span>;</p></li>
+<li><p>Randomly selects a <span class="math inline"><em>D</em></span>
+from the corpus and analyzes the <span
+class="math inline"><em>S</em></span> in <span
+class="math inline"><em>D</em></span>;</p></li>
+<li><p>Adds previously unseen symbols <span
+class="math inline"><em>s</em></span> as (atomic) chunk types to <span
+class="math inline"><em>L</em></span>;</p></li>
+<li><p>Recursively combines adjacent chunk tokens into new chunk types,
+reducing <span class="math inline"><em>E</em>[<em>N</em>]</span> but
+increasing <span class="math inline">|<em>L</em>|</span>;</p></li>
+<li><p>Removes less useful types from <span
+class="math inline"><em>L</em></span>, reducing <span
+class="math inline">|<em>L</em>|</span>;</p></li>
+<li><p>Repeats steps 2 to 5 for a predetermined number of
+epochs.</p></li>
+</ol>
+<figure>
+<img src="figures/ch5.1.png" id="fig:ch5.overview" style="width:10cm"
+alt="Information flow in the LiB model." />
+<figcaption aria-hidden="true"><strong>Information flow in the LiB
+model.</strong></figcaption>
+</figure>
+<p>The LiB model can segment any string <span
+class="math inline"><em>S</em></span> into a sequence of chunks <span
+class="math inline">(<em>c</em><sub>1</sub>,...,<em>c</em><sub><em>N</em></sub>)</span>
+based on the lexicon <span class="math inline"><em>L</em></span>. The
+chunk types in <span class="math inline"><em>L</em></span> are ordered
+based on their importance inferred from the segmentation. The lexicon
+quality and the segmentation result mutually affect each other: LiB
+learns from its own segmentation results and updates <span
+class="math inline"><em>L</em></span> accordingly, then improves its
+next segmentation (Figure <a href="#fig:ch5.overview"
+data-reference-type="ref" data-reference="fig:ch5.overview">1.1</a>).
+The bootstrap procedure makes the model unsupervised.</p>
+<h4 id="ch5.implementation">Implementation</h4>
+<h5 id="ch5.segmentation">Segmentation</h5>
+<h6 id="larger-first-selection">Larger-first selection:</h6>
+<p>An <span class="math inline"><em>S</em></span> can be segmented in
+different ways. For example, if both “going” and “goingto” are in <span
+class="math inline"><em>L</em></span>, and the given <span
+class="math inline"><em>S</em></span> is “goingtorain”, then the first
+chunk token can be “going” or “goingto”. The Larger-first principle
+(Section <a href="#ch5.larger-first" data-reference-type="ref"
+data-reference="ch5.larger-first">[ch5.larger-first]</a>) dictates that
+LiB takes the largest substring of <span
+class="math inline"><em>S</em></span> that matches a chunk type in <span
+class="math inline"><em>L</em></span> (in the example case, it is
+“goingto”), i.e. greedy matching, and selects it as a chunk token
+(segment). If there is no chunk type in <span
+class="math inline"><em>L</em></span> that matches the current <span
+class="math inline"><em>S</em></span>, the first symbol <span
+class="math inline"><em>s</em></span> becomes the selected chunk
+token.</p>
+<h6 id="chunk-evaluation">Chunk evaluation:</h6>
+<p>In most cases, selecting larger chunk tokens will reduce the number
+of tokens <span class="math inline"><em>N</em></span> in <span
+class="math inline"><em>S</em></span>, but in some cases it will not.
+Let us continue the example we gave: If “goingtor”, “a”, “in”, and
+“rain” are also in <span class="math inline"><em>L</em></span>, the
+largest chunk token becomes “goingtor”, resulting in the segmentation
+“goingtor/a/in”. If “goingto” had been selected, this would result in
+“goingto/rain”. Hence, selecting the largest chunk type resulted in a
+larger <span class="math inline"><em>N</em></span>. The average chunk
+token sizes of the two segmentations are 5.5 and 3.6 letters,
+respectively.</p>
+<p>In order to test whether the selected chunk type <span
+class="math inline"><em>c</em></span> reduces <span
+class="math inline"><em>N</em></span>, LiB compares the proposed
+segmentation to the segmentation that results if <span
+class="math inline"><em>c</em></span> is not in <span
+class="math inline"><em>L</em></span>, i.e., if the second largest chunk
+type in <span class="math inline"><em>L</em></span> is selected instead
+of <span class="math inline"><em>c</em></span>. In case <span
+class="math inline"><em>L</em></span> cannot provide a second largest
+chunk token, there is no evaluation and <span
+class="math inline"><em>c</em></span> is selected directly. Otherwise,
+<span class="math inline"><em>c</em></span> is evaluated as “Good" if it
+results in fewer chunk tokens or in the same number of tokens but with
+lower total ordinal numbers (i.e., chunks that are higher up in the
+lexicon): <span class="math display">$$\begin{aligned}
+&amp;\texttt{segment}(S,L): S\rightarrow(c_{1}, c_{2}, \ldots ,c_{N})\\
+&amp;\texttt{segment}(S,L-c): S\rightarrow(c'_{1}, c'_{2}, \ldots,
+c'_{N'})\\
+&amp;\texttt{evaluate}(c)=
+\begin{cases}
+    \begin{cases}
+        \text{Good} &amp; \text{if}~N &lt; N'\\
+        \text{Bad} &amp; \text{if}~N &gt; N'
+    \end{cases} &amp;\text{if } N \neq N' \\
+    \begin{cases}
+        \text{Good} &amp; \text{if }\sum\limits_{i=1}^{N} \Theta(c_{i})
+\leq \sum\limits_{i=1}^{N'} \Theta(c'_{i})\\
+        \text{Bad} &amp; \text{if }\sum\limits_{i=1}^{N}
+\Theta(c_{i})&gt; \sum\limits_{i=1}^{N'} \Theta(c'_{i})
+    \end{cases} &amp;\text{if } N = N' \\
+\end{cases}
+\end{aligned}$$</span> If <span
+class="math inline"><code>evaluate</code>(<em>c</em>)</span> is Good,
+<span class="math inline"><em>c</em></span> is selected; otherwise, the
+second largest chunk token is selected.</p>
+<h5 id="lexicon-update">Lexicon update</h5>
+<h6 id="memorizing">Memorizing:</h6>
+<p>LiB learns new chunks from the segmentation results. There are two
+types of new chunks in the results: unknown symbols <span
+class="math inline"><em>s</em> ∉ <em>L</em></span> and concatenations of
+known chunks <span
+class="math inline">(<em>c</em><sub><em>i</em></sub>,<em>c</em><sub><em>i</em> + 1</sub>)</span>
+(with <span
+class="math inline"><em>c</em><sub><em>i</em></sub> ∈ <em>L</em></span>
+and <span
+class="math inline"><em>c</em><sub><em>i</em> + 1</sub> ∈ <em>L</em></span>)
+that occur consecutively in <span class="math inline"><em>S</em></span>.
+<span class="math inline"><em>L</em></span> starts empty, learns the
+symbol chunks, then the smallest chunks construct larger chunks and the
+larger chunks construct even larger chunks. Thus, <span
+class="math inline"><em>L</em></span> can contain chunks in different
+sizes.</p>
+<p>The number of all <span
+class="math inline">(<em>c</em><sub><em>i</em></sub>,<em>c</em><sub><em>i</em> + 1</sub>)</span>
+in the training corpus can be enormous, and most of them are infrequent
+chunks. In order to reduce the lexicon size <span
+class="math inline">|<em>L</em>|</span>, LiB will memorize all <span
+class="math inline"><em>s</em></span>, but not all <span
+class="math inline">(<em>c</em><sub><em>i</em></sub>,<em>c</em><sub><em>i</em> + 1</sub>)</span>.
+To recognize the frequent chunks, a strategy is to count all chunks’
+occurrences and delete the infrequent ones <span class="citation"
+data-cites="Perruchet1998-ot">(Perruchet and Vinter 1998)</span>.
+However, this strategy asks for storing all chunks at the beginning,
+which is memory inefficient for both a brain and a computer. Thus, LiB
+adopts a sampling strategy: The model samples from all possible <span
+class="math inline">(<em>c</em><sub><em>i</em></sub>,<em>c</em><sub><em>i</em> + 1</sub>)</span>
+tokens in the current <span class="math inline"><em>S</em></span> and
+memorizes only the tokens which were sampled at least twice. The
+probability of sampling a chunk pair is the sampling probability <span
+class="math inline"><em>α</em></span>. The sampling strategy is
+implicitly sensitive to the chunk token frequency in the text. It makes
+sure that even without explicit counting, higher-frequency chunks have a
+higher probability to be memorized. The at-least-twice strategy is not
+cognitively inspired but heuristic; it helps to prevent memorization of
+many arbitrary chunks.</p>
+<h6 id="re-ranking-and-active-forgetting">Re-ranking and active
+forgetting:</h6>
+<p>To avoid storing the frequencies of all possible chunk types, and to
+be more efficient, LiB bypasses explicit frequency counting of chunk
+types. Instead, LiB encodes the types’ importance by their ordinals
+<span class="math inline"><em>Θ</em>(<em>c</em>)</span> in <span
+class="math inline"><em>L</em></span> – the lower the more important.
+The importance reflects not only the frequency but also the principle of
+least effort (preference for fewer tokens and fewer types). In general,
+newly memorized chunk types are less frequent than known chunk types, so
+new chunk types are appended to the tail of <span
+class="math inline"><em>L</em></span>. The ordinals of known chunk types
+also need to be adjusted after new training text data comes in. The
+chunk evaluation we described in Section <a href="#ch5.segmentation"
+data-reference-type="ref" data-reference="ch5.segmentation">1.2.3.1</a>
+is not only for segmentation, but also for importance re-ranking. The
+“good" chunk types, which result in fewer chunk tokens in <span
+class="math inline"><em>S</em></span>, will move closer to the lexicon
+head (i.e., lower ordinal); The “bad” chunk types, which result in more
+chunk tokens in <span class="math inline"><em>S</em></span>, will move
+closer to the lexicon tail, i.e., they get a higher ordinal number. The
+updated <span class="math inline"><em>Θ</em>(<em>c</em>)</span> of a
+chunk type is relative to its previous ordinal <span
+class="math inline"><em>Θ</em>′(<em>c</em>)</span> in <span
+class="math inline"><em>L</em></span>: <span
+class="math display">$$\Theta(c)=
+\begin{cases}
+    \left\lfloor\Theta'(c)  (1-\Delta)\right\rfloor &amp;\text{if $c$ is
+good} \\
+    \left\lfloor\Theta'(c)  (1+\Delta)\right\rfloor &amp;\text{if $c$ is
+bad} \\
+\end{cases}$$</span> where <span
+class="math inline">0 &lt; <em>Δ</em> &lt; 1</span> is the re-ranking
+rate. In case the updated <span
+class="math inline"><em>Θ</em>(<em>c</em>) &gt; |<em>L</em>|</span>,
+<span class="math inline"><em>c</em></span> will be deleted from <span
+class="math inline"><em>L</em></span>.</p>
+<h6 id="passive-forgetting">Passive forgetting:</h6>
+<p>Obviously, the re-ranking also influences other chunk types whose
+ordinals are between <span
+class="math inline"><em>Θ</em>(<em>c</em>)</span> and <span
+class="math inline"><em>Θ</em>′(<em>c</em>)</span>. So even though the
+sampling strategy of the memorizer may add a few infrequent chunk types
+into <span class="math inline"><em>L</em></span>, the re-ranker will
+move them closer to the tail of <span
+class="math inline"><em>L</em></span>. Those chunk types, as well as the
+“bad” chunk types, are “junk chunks” which increase <span
+class="math inline"><em>I</em>(<em>c</em>)</span>. The passive forgetter
+removes them from <span class="math inline"><em>L</em></span> to reduce
+<span class="math inline"><em>I</em>(<em>c</em>)</span>.</p>
+<p>The junk chunk types tend to be at the tail of <span
+class="math inline"><em>L</em></span>, but the tail may also store some
+non-junk types. A cognitive strategy to avoid deleting them is
+<em>waiting</em> for more evidence. So instead of deleting these types
+immediately, LiB uses a soft deleting strategy: after each training
+epoch, LiB will select the last <span
+class="math inline"><em>ω</em>|<em>L</em>|</span> (at least one) chunk
+types in <span class="math inline"><em>L</em></span> and assign them a
+probation period <span class="math inline"><em>τ</em></span>. Here,
+<span class="math inline"><em>ω</em></span> is the forgetting ratio and
+<span class="math inline"><em>τ</em></span> is the remaining time until
+deletion; it is initialized at <span
+class="math inline"><em>τ</em><sub>0</sub></span> and decreases by one
+after each training epoch (LiB analyzes one document <span
+class="math inline"><em>D</em></span> in each training epoch). Once the
+probation time is over, when <span
+class="math inline"><em>τ</em> = 0</span>, the chunk is forgotten (i.e.,
+removed from <span class="math inline"><em>L</em></span>). If a chunk
+type was evaluated as “good" during its probation period, its probation
+is cancelled. The <span class="math inline"><em>c</em></span> that occur
+in fewer documents are more likely to be forgotten.</p>
+<h3 id="ch5.model-training">Model Training</h3>
+<p>We trained the LiB model on both English and Chinese materials (Table
+<a href="#tab:ch5.datasets" data-reference-type="ref"
+data-reference="tab:ch5.datasets">1.1</a>). The English material is
+<strong>BR-phono</strong>, which is a branch of the Brent corpus <span
+class="citation" data-cites="Bernstein-Ratner1987-op">(Bernstein-Ratner
+1987)</span>, containing phonetic transcriptions of utterances directed
+at children. We used it for testing segmentation of spoken language. LiB
+accepts the document as an input batch in each training epoch but the
+utterances in the BR-phono corpus have no document boundaries. We
+randomly sampled 200 utterances (without replacement) from BR-phono to
+form one document and repeated this 400 times to create 400 documents
+for model training. The Chinese materials are taken from Chinese
+Treebank 8.0 (<strong>CTB8</strong>) <span class="citation"
+data-cites="Xue2013-ai">(Xue et al. 2013)</span>, which is a
+hybrid-domain corpus (news reports, government documents, magazine
+articles, conversations, web discussions, and weblogs). As
+preprocessing, we replaced all the Roman letters and Arabic numbers with
+<span>[</span><em>X</em><span>]</span>, and regarded all punctuation as
+sequence boundaries.</p>
+<div class="center">
+<div id="tab:ch5.datasets">
+<table>
+<caption><strong>The training and test corpus statistics after
+preprocessing.</strong> MSR and PKU are the (Chinese) test corpora which
+are mentioned in Section <a href="#ch5.word-segmentation-evaluation"
+data-reference-type="ref"
+data-reference="ch5.word-segmentation-evaluation">1.4.5</a>. Word units
+are pre-segmented in the CTB8, MSR, and PKU corpora.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: right;"><strong>Documents</strong></th>
+<th style="text-align: right;"><strong>Sentences</strong></th>
+<th style="text-align: right;"><strong>Word tokens</strong></th>
+<th style="text-align: right;"><strong>Word types</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BR-phono</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">9,790</td>
+<td style="text-align: right;">33,399</td>
+<td style="text-align: right;">1,321</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CTB8</td>
+<td style="text-align: right;">3,007</td>
+<td style="text-align: right;">236,132</td>
+<td style="text-align: right;">1,376,142</td>
+<td style="text-align: right;">65,410</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MSR</td>
+<td style="text-align: right;">/</td>
+<td style="text-align: right;">18,236</td>
+<td style="text-align: right;">89,917</td>
+<td style="text-align: right;">11,728</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PKU</td>
+<td style="text-align: right;">/</td>
+<td style="text-align: right;">15,492</td>
+<td style="text-align: right;">88,327</td>
+<td style="text-align: right;">12,422</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>In order to examine the unsupervised performance of LiB, all spaces
+in the corpora were removed before training. We trained LiB on BR-phono
+and on CTB8 separately. The parameter settings are shown in Appendix <a
+href="#appendix:ch5.parameter" data-reference-type="ref"
+data-reference="appendix:ch5.parameter">[appendix:ch5.parameter]</a>.
+The example segmentations with increasing number of training epochs are
+shown in Appendix <a href="#appendix:ch5.dynamics"
+data-reference-type="ref"
+data-reference="appendix:ch5.dynamics">[appendix:ch5.dynamics]</a>. The
+related code and preprocessed corpora are available online<a
+href="#fn11" class="footnote-ref" id="fnref11"
+role="doc-noteref"><sup>11</sup></a>.</p>
+<h3 id="ch5.model-evaluation">Model Evaluation</h3>
+<h4 id="ch5.subchunks">Subchunks</h4>
+<p>After training, we evaluated the chunk units in the training corpora
+from two information-theoretical views that bear a relation to cognitive
+processing: description length and language model surprisal. We also
+examined the performance of LiB on word segmentation tasks. However,
+since LiB can learn new chunks from the concatenation of known chunks,
+the learned chunks are not only words, but also possible multi-word
+expressions. For the word segmentation task, we want to know the words
+in those multi-word expressions, so we had LiB find the subchunks <span
+class="math inline"><em>c</em><sup>♭</sup></span>, which are the chunks
+inside the original chunks (e.g., “you” and “are” inside “youare”), and
+regarded the subchunks as the words. LiB defines the subchunk by
+searching all the potential chunk sequences in the original chunk (<span
+class="math inline"><em>c</em><sub><em>raw</em></sub></span>) and
+selecting the sequence with lowest sum of ordinals unless <span
+class="math inline"><em>c</em><sub><em>raw</em></sub></span> has the
+lowest sum:</p>
+<p><span class="math display">$$\begin{aligned}
+(c^\flat_1, \ldots, c^\flat_n) = \mathop{\arg\min}_{(c_1, \ldots,
+c_n)}\left(\sum_i\Theta(c_i)\right), \text{where }(c_1, \ldots,
+c_n)=c_{\textit{raw}}
+\\
+\text{Subchunk(s) of }c_{\textit{raw}} =
+\begin{cases}
+(c^\flat_1, \ldots, c^\flat_n) &amp;\text{if } \max_i(\Theta(c^\flat_i))
+&lt; \Theta(c_{\textit{raw}})\\
+c_{\textit{raw}} &amp;\text{otherwise}
+\end{cases}
+\end{aligned}$$</span></p>
+<h4 id="ch5.qualitative-evaluation">Qualitative evaluation</h4>
+<p>Since the LiB lexicon is ordered, we may examine the head of the
+trained lexicons (Table <a href="#tab:ch5.lexicon"
+data-reference-type="ref" data-reference="tab:ch5.lexicon">1.2</a>),
+which are the highest-ranked chunk units. They show that LiB appears to
+learn common words and collocations. Among the learned units we observe
+some collocations (e.g., “that’sa") which are not linguistic phrases.
+The lexicon of LiB trained on CTB8 shows that the high-ranked Chinese
+chunk units are usually bigrams (Appendix <a
+href="#appendix:ch5.lexicon" data-reference-type="ref"
+data-reference="appendix:ch5.lexicon">[appendix:ch5.lexicon]</a>). The
+middle and the tail of the trained lexicons are also shown in Appendix
+<a href="#appendix:ch5.lexicon" data-reference-type="ref"
+data-reference="appendix:ch5.lexicon">[appendix:ch5.lexicon]</a>. We
+present examples of chunk and subchunk segmentation results in Table <a
+href="#tab:ch5.sentences" data-reference-type="ref"
+data-reference="tab:ch5.sentences">1.3</a>. The results show the chunk
+units include common collocations, while the subchunk units are very
+close to the linguistic words.</p>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span></p>
+<div class="center">
+<div id="tab:ch5.lexicon">
+<table>
+<caption><strong>Transliterations/translations into English of the top
+50 entries in the lexicons.</strong> The original results of BRphono are
+in phonemic characters, and the original results of CTB8 are the Chinese
+characters. For completeness, in Appendix <a
+href="#appendix:ch5.lexicon" data-reference-type="ref"
+data-reference="appendix:ch5.lexicon">[appendix:ch5.lexicon]</a> we
+repeat these results with the original results included.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: left;"><strong>Top 50 entries (translated) in
+Lexicon</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BRphono</td>
+<td style="text-align: left;">the, yeah, you, what, wanna, can you, two,
+and, that’s, okay, four, now, it, they’re, he’s, in, look, with, you
+want, who, he, that, all, your, here, i think, put, that’s a, what’s,
+you can, his, my, see, you wanna, no, is that, high, whose, this, good,
+there’s, very, see the, its a, is it, alright, this is, are you, ing,
+have</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CTB8</td>
+<td style="text-align: left;">haven’t, China, we, economics, already,
+kid, but, education, can, now, government, country, a, these, self,
+can’t, if, journalist, today, they, although, require, tech, process,
+this, Xinhua News Agency, wish, issue, is, mainland, because, some, and,
+all are, so, now, may, Taiwan, should, political, development, also is,
+also is, society, such, via, continue, isn’t, Shanghai, ’s</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="center">
+<div id="tab:ch5.sentences">
+<table>
+<caption><strong>Example segmentations of strings in the two
+corpora.</strong> BRphono’s results are transcribed into English words
+for ease of presentation.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Corpus</strong></th>
+<th style="text-align: left;"><strong>Level</strong></th>
+<th style="text-align: left;"><strong>Segmentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BRphono</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">allrightwhydon’tweputhimawaynow</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Chunks</td>
+<td style="text-align: left;">allright·whydon’t·we·puthimaway·now</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Subchunks</td>
+<td
+style="text-align: left;">all·right·why·don’t·we·put·him·away·now</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Words</td>
+<td
+style="text-align: left;">all·right·why·don’t·we·put·him·away·now</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CTB8</td>
+<td style="text-align: left;">Input</td>
+<td
+style="text-align: left;">这个出口信贷项目委托中国银行为代理银行</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Chunks</td>
+<td
+style="text-align: left;">这个·出口信贷·项目·委托·中国银行·为·代理·银行</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Subchunks</td>
+<td
+style="text-align: left;">这个·出口·信贷·项目·委托·中国·银行·为·代理·银行</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Words</td>
+<td
+style="text-align: left;">这·个·出口·信贷·项目·委托·中国·银行·为·代理·银行</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h4 id="ch5.description-length-evaluation">Description length
+evaluation</h4>
+<p>LiB provides two types of new units to segment language: <strong>LiB
+chunks</strong> are the raw segmentation result of LiB, and <strong>LiB
+subchunks</strong> are the subchunks inside LiB chunks. In order to
+examine the encoding efficiency of LiB chunks and LiB subchunks, we
+compared the description lengths (DL) on different segmentations. The DL
+is the number of bits required to represent the corpus; it sums the
+number of bits required to encode the lexicon and the number of bits
+required to encode the corpus when segmented by the lexicon <span
+class="citation" data-cites="Zhikov2013-vf">(Zhikov, Takamura, and
+Okumura 2013)</span>:</p>
+<p><span class="math display">$$\begin{split}
+DL(\textit{total}) &amp; =DL(\textit{lexicon})+DL(\textit{corpus})\\
+&amp; =-\sum\limits_{i=1}^{\#s}
+\textit{Freq}(s_i)\log_2P(s_i)-\sum\limits_{j=1}^{\#u}
+\textit{Freq}(u_j)\log_2P(u_j)
+\end{split}$$</span></p>
+<p>Here, <span class="math inline">#<em>s</em></span> denotes the number
+of unique symbols <span class="math inline"><em>s</em></span> in <span
+class="math inline"><em>L</em></span> (either as a single-symbol chunk
+or as part of a larger chunk); <span
+class="math inline"><em>Freq</em>(<em>s</em><sub><em>i</em></sub>)</span>
+and <span
+class="math inline"><em>P</em>(<em>s</em><sub><em>i</em></sub>)</span>
+are the occurrence count and ratio of <span
+class="math inline"><em>s</em><sub><em>i</em></sub></span> in <span
+class="math inline"><em>L</em></span>; <span
+class="math inline">#<em>u</em></span> denotes the number of unique
+units <span class="math inline"><em>u</em></span> in the corpus; <span
+class="math inline"><em>Freq</em>(<em>u</em><sub><em>j</em></sub>)</span>
+and <span
+class="math inline"><em>P</em>(<em>u</em><sub><em>j</em></sub>)</span>
+are the occurrence count and ratio of <span
+class="math inline"><em>u</em><sub><em>j</em></sub></span> in the
+corpus.</p>
+<p>As benchmarks, we used <strong>Symbol</strong> (the indivisible
+units; in our two corpora, phonemes and characters respectively),
+<strong>Word</strong> (the words presegmented in the corpora), and
+<strong>BPE subword</strong> (the Byte Pair generated by SentencePiece
+<span class="citation" data-cites="Kudo2018-uu">(Kudo and Richardson
+2018)</span> with default parameters setting). The DL result (Table <a
+href="#tab:ch5.dl" data-reference-type="ref"
+data-reference="tab:ch5.dl">[tab:ch5.dl]</a>) shows that LiB chunks
+result in shortest DL; they minimze the information; they are the most
+concise encodings.</p>
+<div class="center">
+<div class="tabular">
+<p><span>|r|l|rrrrr|</span> &amp; &amp;<br />
+&amp; &amp; &amp; &amp; <strong>Word</strong> &amp; <strong></strong>
+&amp; <strong></strong><br />
+&amp; Token length &amp; 1 &amp; 2.8 &amp; 2.9 &amp; 2.9 &amp; 3.6<br />
+&amp; Lexicon size &amp; 50 &amp; 5,574 &amp; 1,321 &amp; 1,119 &amp;
+1,869<br />
+&amp; DL(lexicon) &amp; <strong><span
+class="math inline">&lt;</span>1</strong> &amp; 173 &amp; 28 &amp; 24
+&amp; 47<br />
+&amp; DL(corpus) &amp; 490 &amp; 278 &amp; 262 &amp; 258 &amp;
+<strong>233</strong><br />
+&amp; DL(total) &amp; 490 &amp; 451 &amp; 289 &amp; 282 &amp;
+<strong>281</strong><br />
+&amp; Token length &amp; 1 &amp; 1.4 &amp; 1.7 &amp; 1.7 &amp; 1.9<br />
+&amp; Lexicon size &amp; 4,697 &amp; 7,980 &amp; 65,410 &amp; 24,763
+&amp; 39,320<br />
+&amp; DL(lexicon) &amp; <strong>57</strong> &amp; 133 &amp; 1,767 &amp;
+621 &amp; 1,153<br />
+&amp; DL(corpus) &amp; 21,864 &amp; 18,229 &amp; 15,669 &amp; 16,188
+&amp; <strong>15,602</strong><br />
+&amp; DL(total) &amp; 21,921 &amp; 18,362 &amp; 17,436 &amp; 16,809
+&amp; <strong>16,755</strong><br />
+</p>
+</div>
+</div>
+<h4 id="ch5.language-model-evaluation">Language model evaluation</h4>
+<p>Besides the DL, which compares the information efficiencies of
+different lexicons, we are also interested in whether the LiB lexicon
+can reflect the mental lexicon. We lack a ground truth of what is in the
+putative mental lexicon. However, we can regard natural language
+material as a large-scale result of human language use and language
+behavior. Trained on a very large corpus, a recent study by <span
+class="citation" data-cites="Brown2020-rs">Brown et al. (2020)</span>
+shows that Language Models (LMs) can closely predict human performance
+on various language tasks. LMs capture the probabilistic constraints in
+natural language and perform the tasks by making predictions, which is a
+fundamental cognitive function <span class="citation"
+data-cites="Bar2007-vf">(Moshe Bar 2007)</span>. So, by measuring the
+prediction surprisal in the corpus segmented by different lexicons, we
+can evaluate different lexicons from a cognitive view, and we presume
+that the lexicon that gets the best LM performance is a better
+approximation of the mental lexicon.</p>
+<p>Many studies have shown that word surprisal is positively correlated
+with human word-reading time <span class="citation"
+data-cites="Monsalve2012-qc Smith2013-pj">(Monsalve, Frank, and
+Vigliocco 2012; Smith and Levy 2013)</span> and size of the N400
+component in EEG <span class="citation" data-cites="Frank2015-qh">(Frank
+et al. 2015)</span>. From the cognitive principle of least effort, it
+follows that readers try to minimize reading time. Hence, it follows
+that readers would try to find lexical units such that total surprisal
+is also minimized.</p>
+<p>Surprisal, defined as <span
+class="math inline"> − log<sub>2</sub>(<em>P</em>(<em>w</em>|context))</span>,
+is not comparable between models with different segmentations. Instead
+we use bits per character (BPC) <span class="citation"
+data-cites="Graves2013-hu">(Graves 2013)</span>, which is <span
+class="math inline">average surprisal/|<em>c</em>|</span>, where <span
+class="math inline">|<em>c</em>|</span> is the average chunk length over
+the whole test set. We tested the segmentations<a href="bibilo.html#fn12"
+class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>
+on both bigram and trigram language models and the results show that the
+corpora represented by LiB chunks achieve the lowest surprisal (Table <a
+href="#tab:ch5.bpc" data-reference-type="ref"
+data-reference="tab:ch5.bpc">1.4</a>).</p>
+<div class="center">
+<div id="tab:ch5.bpc">
+<table>
+<caption><strong>Bits-per-character scores on different
+segmentations.</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th colspan="5"
+style="text-align: center;"><strong>Segmentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Corpus</strong></td>
+<td style="text-align: left;"><strong>Model</td>
+<td style="text-align: right;">Symbol</strong></td>
+<td style="text-align: right;">BPE subword</td>
+<td style="text-align: right;">Word</td>
+<td style="text-align: right;">LiB subchunk</td>
+<td style="text-align: right;"><strong>LiB chunk</strong></td>
+</tr>
+<tr class="odd">
+<td rowspan="2" style="text-align: left;">BRphono</td>
+<td style="text-align: left;">2-gram</td>
+<td style="text-align: right;">1.539</td>
+<td style="text-align: right;">0.695</td>
+<td style="text-align: right;">0.677</td>
+<td style="text-align: right;">0.649</td>
+<td style="text-align: right;"><strong>0.548</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3-gram</td>
+<td style="text-align: right;">0.950</td>
+<td style="text-align: right;">0.390</td>
+<td style="text-align: right;">0.405</td>
+<td style="text-align: right;">0.378</td>
+<td style="text-align: right;"><strong>0.335</strong></td>
+</tr>
+<tr class="odd">
+<td rowspan="2" style="text-align: left;">CTB8</td>
+<td style="text-align: left;">2-gram</td>
+<td style="text-align: right;">2.466</td>
+<td style="text-align: right;">1.932</td>
+<td style="text-align: right;">1.617</td>
+<td style="text-align: right;">1.668</td>
+<td style="text-align: right;"><strong>1.452</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3-gram</td>
+<td style="text-align: right;">1.404</td>
+<td style="text-align: right;">0.827</td>
+<td style="text-align: right;">0.806</td>
+<td style="text-align: right;">0.748</td>
+<td style="text-align: right;"><strong>0.626</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 id="ch5.word-segmentation-evaluation">Word segmentation
+evaluation</h4>
+<p>As we already illustrated in Table <a href="#tab:ch5.sentences"
+data-reference-type="ref" data-reference="tab:ch5.sentences">1.3</a>,
+subchunk units tend to be close to linguistic words. We thus tested LiB
+subchunks as a resource for word segmentation. To evaluate LiB on
+English word segmentation, we compared LiB with Adaptor Grammar (AG)
+<span class="citation" data-cites="Johnson2009-pp">(Johnson and
+Goldwater 2009)</span>, which achieves state-of-the-art performance on
+the segmentation task of BR-phono. AG requires grammar construction
+rules that encode prior linguistic knowledge. These rules presuppose
+knowledge about unigrams only, or unigrams+collocations, or
+unigrams+collocations+syllables. This yields three versions of AG. Table
+<a href="#tab:ch5.wseg" data-reference-type="ref"
+data-reference="tab:ch5.wseg">[tab:ch5.wseg]</a> shows that
+AG(syllable), whose rules carry extra linguistic knowledge <span
+class="citation" data-cites="Johnson2009-pp">(Johnson and Goldwater
+2009)</span>, achieves the highest score. The score of LiB is higher
+than AG(unigram) and slightly lower than AG(collocations), the two
+versions of AG comparable to our approach. AG(syllable) presumes
+knowledge that our model does not have (and that could possibly benefit
+LiB).</p>
+<p>In the Chinese segmentation task. we compared LiB with three popular
+word segmentation toolboxes: Jieba<a href="bibilo.html#fn13" class="footnote-ref"
+id="fnref13" role="doc-noteref"><sup>13</sup></a>, THULAC <span
+class="citation" data-cites="Sun2016-id">(M. Sun et al. 2016)</span>,
+and pkuseg <span class="citation" data-cites="Luo2019-vv">(R. Luo et al.
+2019)</span>. These toolboxes are supervised, learning the ground truth
+(word boundaries) during training. For comparison, we also modified a
+supervised LiB (LiB(sup)) for the word segmentation task. LiB(sup) skips
+the training phase. Instead, it counts all the ground-truth words in the
+training set and adds them as the chunk types to <span
+class="math inline"><em>L</em></span>. The higher the frequency of a
+type in the training set, the smaller its ordinal in <span
+class="math inline"><em>L</em></span>. We trained and tested the models
+on CTB8. To test the generalization performance of the models in the
+word segmentation task, we also test the training result on two
+additional corpora: MSR and PKU (Table <a href="#tab:datasets"
+data-reference-type="ref"
+data-reference="tab:datasets">[tab:datasets]</a>) provided by the Second
+International Chinese Word Segmentation Bakeoff <span class="citation"
+data-cites="Emerson2005-ae">(Emerson 2005)</span>. The segmentation
+rules are slightly different among MSR, PKU, and CTB8. MSR and PKU are
+news domain, which is different from CTB8. MSR and PKU were preprocessed
+in the same way as CTB8.</p>
+<p>Table <a href="#tab:ch5.wseg" data-reference-type="ref"
+data-reference="tab:ch5.wseg">[tab:ch5.wseg]</a> shows that the scores
+of the unsupervised original version of LiB are lower than the
+supervised models<a href="bibilo.html#fn14" class="footnote-ref" id="fnref14"
+role="doc-noteref"><sup>14</sup></a>, but the scores of the supervised
+version of LiB are close to the supervised models and are even higher on
+MSR. Due to the low out-of-vocabulary (OOV) rate of MSR <span
+class="citation" data-cites="Emerson2005-ae">(Emerson 2005)</span>, the
+good performance on MSR shows that the lexicon is important for LiB. The
+only difference between the two versions of LiB is in their lexicons:
+the original LiB learned the lexicon from zero and the supervised LiB
+directly uses the ground-truth words in its lexicon. It shows that the
+segmentation module in LiB is appropriate for the word segmentation
+task.</p>
+<p><br />
+</p>
+<h3 id="ch5.conclusions-and-future-work">Conclusions and Future
+Work</h3>
+<p>This paper presented an unsupervised model, LiB, to simulate the
+human cognitive process of language unitization/segmentation. Following
+the principles of least effort, larger-first processing, and passive and
+active forgetting, LiB incrementally builds a lexicon which can minimize
+the number of unit tokens (alleviating the effort of analysis) and unit
+types (alleviating the effort of storage) at the same time on any given
+corpus. Moreover, it is able to segment the corpus, or any other text in
+the same language, based on the induced lexicon. The computations in LiB
+are light-weight, which makes it very efficient. The LiB-generated
+lexicon shows optimal performances among different types of lexicons
+(e.g., ground-truth words) both in terms of description length and in
+terms of statistical language model surprisal, both of which are
+associated with cognitive processing. The workflow design and the
+computation requirement make LiB cognitively plausible, and the results
+suggest that the LiB lexicon may be a useful proxy of the mental
+lexicon.</p>
+<p>Future work will be to allow skip-gram units in the lexicon.
+Skip-grams may help to capture longer-distance dependencies, and further
+lessen the cognitive effort by reducing the number of unit types/tokens.
+Furthermore, as the word segmentation results of the current LiB are not
+ideal, we hypothesize that skip-gram units may also benefit the
+detection of infrequent named entities (e.g., the skip-gram “Mr._said"
+helps to detect “Mortimer" in “Mr.Mortimersaid") and thus improve the
+word segmentation performance. Other future work includes a LiB variant
+that accepts speech input and a semi-supervised LiB variant that uses
+semantic knowledge (e.g., word embeddings) to enhance the language
+unitization.</p>
+    </section>
+
+  </body>
+</html>
+

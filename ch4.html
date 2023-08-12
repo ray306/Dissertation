@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="#methods">2. Methods</a>
+              <a class="dropdown-item" href="#results">3. Results</a>
+              <a class="dropdown-item" href="#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="ch4">Rapid familiarity detection for text chunks in surrounding
+text</h2>
+<div class="center">
+<p><strong>Abstract</strong><br />
+</p>
+</div>
+<p>I attempted to replicate the study in Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a> using another
+behavioral experiment and another EEG experiment. The stimuli used in
+Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a> were presented in isolation, rather than
+within the surrounding text. However, in natural reading environments,
+the cognitive units are usually surrounded by more text. To test whether
+the findings in Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a> will generalize to a more natural reading
+environment, the stimuli in replication experiments used rare Chinese
+characters (as surrounding text) to fill a four-character Chinese string
+(as the reading target). The results of Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a> were partially
+replicated: behavioral experiments in the original and new studies
+showed similar results; both EEG experiments found early detection of
+available cognitive units, but the new study neither replicated nor
+falsified the global priority effect of cognitive units. Several
+possible explanations for the absence of global precedence effects will
+be discussed in Section <a href="#ch4.discussion"
+data-reference-type="ref" data-reference="ch4.discussion">3.4</a>.</p>
+<div id="introduction">
+<h3 id="ch4.introduction">Introduction</h3>
+</div>
+<p>Readers need to segment the reading material into chunks/units that
+are small enough for cognitive processing, but the segmentation
+mechanism remains under debate. As a part of this debate, many
+psycholinguists (e.g., <span class="citation"
+data-cites="Bybee1995-ha Fiorentino2014-pg Sinclair1991-gd Taft1976-df">(Bybee
+1995; Fiorentino et al. 2014; Sinclair 1991; Taft and Forster
+1976)</span>) argued whether a compound word (e.g. "neuroscience") is a
+single unit or consists of component units (e.g., "neuro" and "science")
+during cognitive processing. According to dual-route models <span
+class="citation"
+data-cites="Andrews2004-ab Koester2007-us MacGregor2013-qb Semenza2014-cd">(Andrews,
+Miller, and Rayner 2004; Koester, Gunter, and Wagner 2007; MacGregor and
+Shtyrov 2013; Semenza and Luzzatti 2014)</span>, both the compound and
+its components can be processed. If we extend our view to not only
+compound words but all units in sentences, the disagreement becomes even
+sharper. Words seem to be the most obvious units because many writing
+systems explicitly mark word boundaries (e.g., by spaces), consequently,
+segmenting into word units seems easy and natural. However,
+psycholinguists found that morphemes, which are the minimal meaning-form
+pairs, can be the processing units especially when the multimorphemic
+words are too complicated or too infrequent for being recognized as
+single units <span class="citation"
+data-cites="Andrews2004-ab Fiorentino2014-pg Koester2007-us MacGregor2013-qb Semenza2014-cd Taft1976-df">(Andrews,
+Miller, and Rayner 2004; Fiorentino et al. 2014; Koester, Gunter, and
+Wagner 2007; MacGregor and Shtyrov 2013; Semenza and Luzzatti 2014; Taft
+and Forster 1976)</span>. Frequent phrases and idioms, which are
+multi-word expressions, can also be stored in our mental lexicon and be
+processed as units <span class="citation"
+data-cites="Arnon2010-kw Arnon2013-zi Arnon2015-pi">(Arnon and Snider
+2010; Arnon and Priva 2013; Arnon 2015)</span>. All those findings
+support the idea that cognitive units in language are not at a specific
+linguistic level but can be across many levels.</p>
+<p>The flexibility of cognitive units asks for a cognitive mechanism to
+organize the processing. Readers can understand the meaning of a symbol
+sequence only after they detect the cognitive units in the sequence. The
+E-Z reader model for eye movements during reading <span class="citation"
+data-cites="Reichle2003-qe Rayner2009-wn Reichle2011-pj Reichle2015-cq Reichle2013-lt">(Erik
+D. Reichle, Rayner, and Pollatsek 2003; Keith Rayner 2009; Erik D.
+Reichle et al. 2011, 2013; Erik D. Reichle and Sheridan 2015)</span>
+describes such a procedure: the identification of a word begins with the
+identification of its orthographic form. The orthographic identification
+is named the <em>familiarity check</em> or <em>L1</em> in the model; it
+is the first stage of lexical access and it provides information for the
+planning of the next saccade/further analysis. The familiarity detection
+is only shallow lexical access so it should occur at an early stage. For
+example, the ERP component N1, which occurs around 100 ms after stimulus
+onset, is sensitive to the orthographic familiarity of words <span
+class="citation" data-cites="Araujo2015-jf">(Araújo et al. 2015)</span>.
+EEG’s high temporal resolution also provides researchers with a tool to
+test the more precise time course of familiarity detection. Reichle et
+al. <span class="citation" data-cites="Reichle2011-pj">(Erik D. Reichle
+et al. 2011)</span> predicted that the familiarity check of peripherally
+displayed letter strings starts from 150~178 ms after the first fixation
+based on their EOG/EEG data and E-Z reader model. Dufau et al. <span
+class="citation" data-cites="Dufau2015-ar">(Dufau et al. 2015)</span>
+claimed that the effect of word frequency emerges between 120 to 160 ms.
+By checking the multivariate pattern analysis (MVPA) scores on the time
+course, Ling et al. <span class="citation"
+data-cites="Ling2019-mz">(Ling et al. 2019)</span> found the
+discrimination of a word’s orthographic features arises soon after 100
+ms from the word’s appearance. These findings did not provide a very
+consistent timing and we can still wonder if the detection can occur
+even earlier.</p>
+<p>To complete lexical access, advanced analysis of the unit, such as
+semantic access, needs to follow the familiarity detection. In the
+detection stage, multiple familiar units may be detected at the same
+time (e.g. <em>hot</em>, <em>dog</em>, and <em>hotdog</em>) and some of
+these units may take priority over others. Studies have found the
+recognition of letters within words is faster than recognition of
+stand-alone letters <span class="citation"
+data-cites="Reicher1969-iu">(Reicher 1969)</span> and the recognition of
+words within grammatically correct word sequences is more accurate than
+in agrammatical scrambled sequences <span class="citation"
+data-cites="Snell2017-pq">(Snell and Grainger 2017)</span>. These
+behavioral findings already show that the language elements can be
+facilitated by meaningful context and suggest processing priority for
+larger text chunks.</p>
+<p>In Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a>, I described a two-stage procedure for the
+chunking operation. The study used Chinese four-character strings as the
+stimuli. The four characters comprised either a two-word phrase, an
+idiom, a random word pair, or a meaningless string (see Table <a
+href="#tab:ch3.1" data-reference-type="ref"
+data-reference="tab:ch3.1">2.1</a> for details and examples). There were
+two experiments in the study: a behavioral and an EEG experiment.</p>
+<p>In the behavioral experiment, the participants were asked to make
+lexical decisions on either the first half, last half, or the whole
+string. The reaction time (RT) showed the half-string lexical decision
+on phrases was significantly faster than on random word pairs, which
+suggests that the global lexical status can affect the process of local
+lexical status; but there was no significant difference in the
+whole-string lexical decision RT between phrases and idioms, which
+suggests that the local lexical status cannot affect the process of
+global lexical status in return. Together, these results suggest there
+exists global precedence during lexical/familiarity access.</p>
+<p>In the EEG experiment, the participants were not asked to perform a
+task for the trials with stimuli but just pay attention to the stimuli.
+Their brain responses over time were compared across the stimuli
+conditions. The comparison between the only non-word stimuli (random
+character sequences) and the other stimuli showed a significant
+difference around 100 ms after the stimulus display. That showed the
+latency of familiarity detection during reading is around 100 ms. What’s
+more, significant differences between the global-word group (phrases +
+idioms) and the global-nonword group (random word pairs + random
+character sequences) occurred around 160 ms after the stimuli onset. At
+around 220 ms, differences occurred between the local-word group
+(phrases + random word pairs) and the local-nonword group (idioms +
+random character sequences). In other words, the effect of global
+lexicality arose after 160 ms and the effect of local lexicality arose
+after 220 ms. Together, the EEG results showed that the reader could
+detect the familiar lexical chunks around 100 ms after seeing the text
+and then recognize the lexical chunks; the recognition of global
+familiar chunks is earlier than the local familiar chunks.</p>
+<p>The experimental results in Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a> suggested a
+processing flow for the cognitive units. The stimuli used in Chapter <a
+href="#ch3" data-reference-type="ref" data-reference="ch3">2</a> (and
+also in other studies that investigate the recognition of
+words/compounds/phrases) are presented in isolation rather than in
+surrounding text. However, cognitive units, in a natural reading
+environment, are commonly surrounded by more text. This text blurs the
+outer boundaries of the cognitive units so the reader may be distracted
+by surrounding text while detecting or recognizing the targets.
+Therefore, the isolated stimuli may make the evidence insufficient to be
+generalized to natural reading. In order to overcome this limitation, I
+tested whether the two-stage procedure for the chunking operation
+described in the previous chapter still occurs with the distraction of
+the surrounding text.</p>
+<p>In the current study, the stimuli were 6-char strings, consisting of
+the original 4-char strings surrounded by extra characters. The extra
+characters in the stimuli blur the boundary(ies) of the original
+4-character target, and to some extent simulate the natural reading in
+this way. The study in this chapter partially replicated the results in
+Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a>: the behavioral experiments in the original
+and current studies show similar results; for the EEG experiments, both
+studies found the early effect of the familiar vs. unfamiliar chunks,
+but the current study did not replicate the global-first effect in the
+original study. In the subsequent part of this chapter, I will show the
+details of the current experiments and discuss the similarities and
+differences in the results.</p>
+<div id="methods">
+<h3 id="ch4.methods">Methods</h3>
+</div>
+<div id="participants">
+<h4 id="ch4.participants">Participants</h4>
+</div>
+<p>In total, 33 healthy native Chinese speakers (14 males, mean age 26
+years, range 20 – 35 years) with normal or corrected-normal vision
+participated in one or both of the experiments for financial
+compensation. The behavioral experiment recruited 20 participants and
+the EEG experiment also recruited 20 participants (seven participants
+attended both experiments). No participants produced extensive EEG
+artifacts that required their exclusion. The experiments were approved
+by the Ethics Assessment Committee Humanities of Radboud University.
+Written consent forms were obtained from all participants before the
+experiments.</p>
+<div id="materials-and-experiments">
+<h4 id="ch4.materials-and-experiments">Materials and experiments</h4>
+</div>
+<p>The current experimental design basically followed the design of the
+previous experiment (please see Section <a
+href="#ch3.materials-and-methods" data-reference-type="ref"
+data-reference="ch3.materials-and-methods">2.2</a> since the current
+study was intended to replicate the findings in Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a>. However, the
+current study was also intended to test whether the two-stage procedure
+for the chunking operation described in the previous chapter still
+occurs with the distraction by surrounding text. Therefore, the reading
+targets are still the four-character Chinese string with different
+global/local familiarity, but each target was padded by two extra
+characters as the simulation of the surrounding text. The extra
+characters were extremely rare, thereby preventing them from forming
+meaningful chunks that would make participants pay attention to the
+unexpected meaningful chunk and affect the following analyses. In order
+to prevent it, I used extremely rare characters<a href="bibilo.html#fn9"
+class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> as
+the extra characters.</p>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span> In the behavioral experiment,
+there was a line under the local/global part of the reading target in
+each stimulus. If the trial asked the local decision, the underline
+covered the left (or right) two characters of the reading target, and
+two extra characters were added to the left (or right) side of the
+reading target. If the trial asked the global decision, the underline
+covered all four characters of the reading target, and one extra
+character was added to each side of the reading target. In this way, the
+underlined text (i.e., decision target) is always in the center of the
+six-character stimulus so participants need not move their eye fixations
+(which may cause unexpected cognitive processing). As simple examples,
+the stimulus may be “昛歾<u>考试</u>成绩” or “昛<u>考试成绩</u>歾” (note
+that 考试成绩 is a Chinese phrase and “昛” and “歾” are two rare
+characters).</p>
+<p>In the EEG experiment, one extra character was always added to each
+side of the reading target. In addition, unlike the underlined stimuli
+in Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a>, there was no underlining under any text in
+any stimulus in order to make the stimuli look more like in a natural
+reading environment. As a simple example, the stimulus may be
+“昛考试成绩歾”. There were some attention-checking trials in both the
+previous and current EEG experiments since the passive reading task
+still required the participants to pay attention to the stimulus. In the
+previous design, the participant needed to recognize the digital number;
+in the current design, the participant needed to recognize two Chinese
+numbers shown in the middle of four extra characters, which makes the
+attention-checking trial look like a normal trial. As a simple example,
+the stimulus may be “阸佱五三朶扨” (note that “五” and “三” are two
+Chinese numbers and the rest are rare characters).</p>
+<p>I used the same condition labels as in the previous study
+(<em>GwLw</em>, <em>GwLn</em>, <em>GnLw</em>, and <em>GnLn</em>; see
+Table <a href="#tab:ch3.1" data-reference-type="ref"
+data-reference="tab:ch3.1">2.1</a> for explanation) to represent the
+type of stimulus.</p>
+</div>
+<div id="behavioral-data-analysis">
+<h4 id="ch4.behavioral-data-analysis">Behavioral data analysis</h4>
+</div>
+<p>All participants had response accuracy exceeding 73%, and the average
+accuracy was 92%. No participant’s data were excluded. Trials with
+incorrect responses or with reaction time exceeding three standard
+deviations for each participant were removed before analysis. We applied
+t-tests for testing specific hypotheses.</p>
+<div id="eeg-recording">
+<h4 id="ch4.eeg-recording">EEG recording</h4>
+</div>
+<p>EEG signals were recorded with a 32-electrode active electrodes
+system (actiChamp system, Brain Products GmbH). Electrode impedances
+were kept below 10kV. Data were continuously recorded in single DC mode.
+Data were sampled at 2000 Hz, online referenced to Cz for all
+participants. While the previous experiment used no specific sensor to
+record the EOG, the current experiment used three sensors: TP10 and FT10
+were placed at the outer canthus of the participants’ left and right
+eyes for monitoring horizontal eye movements (hEOG), TP9 was placed at
+infraorbital regions of the left eye for monitoring vertical eye
+movements (vEOG). Because of the specific EOG recording, the
+participants in the current experiment (unlike those from the previous
+experiment) were not instructed to rigidly prevent blinks during the
+trial. As a result, more blinks were made than in the previous
+study.</p>
+<div id="eeg-data-analyses">
+<h4 id="ch4.eeg-data-analyses">EEG data analyses</h4>
+</div>
+<p>Due to the high number of blinks in the current experiment, I
+estimated the linear relationship between the recorded VEOG and HEOG and
+the signal amplitudes on other sensors by the method of least squares
+and then removed the eye-movement artifact from the signal. In addition,
+the lower limit of the band filter was 1 Hz, because EOG artifact
+estimation required the DC offset to be as small as possible in the time
+window covering a normal blink. Except for the artifact removal, all
+preprocessing steps were the same in both experiments.</p>
+<p>After the preprocessing, the EEG data were analyzed with a similar
+workflow as in the previous chapter, which includes two
+multivariate-based methods <span>[</span>clustering and topographic
+ANOVA (TANOVA)<span>]</span> and one mass-univariate method (analysis of
+the topographic distribution of amplitude differences). Please see
+Section <a href="#ch3.eeg-data-analyses" data-reference-type="ref"
+data-reference="ch3.eeg-data-analyses">2.2.4.2</a> for the details of
+these analysis methods.</p>
+<div id="results">
+<h3 id="ch4.results">Results</h3>
+</div>
+<div id="behavioral-experiment">
+<h4 id="ch4.behavioral-experiment">Behavioral experiment</h4>
+</div>
+<p>Planned <em>t</em>-tests were conducted on the comparisons that were
+consistent with the comparisons in the previous study: In the local
+task, the reaction time on the <em>GnLw</em> items was significantly
+longer than that on <em>GwLw</em> (<span
+class="math inline"><em>t</em><sub>20</sub> = 3.02</span>, <span
+class="math inline"><em>p</em> &lt; .01</span>, difference = 18 ms Fig.
+<a href="#fig:ch4.1" data-reference-type="ref"
+data-reference="fig:ch4.1">3.1</a>A, left), suggesting that the nonwords
+at the global level significantly slowed down the lexical decision of
+words at the local level. In the global task, we did not find a
+significant difference between reaction time on <em>GwLw</em> and
+<em>GwLn</em> (<span
+class="math inline"><em>t</em><sub>20</sub> =  − 0.72</span>, <span
+class="math inline"><em>p</em> = 0.47</span>, difference = 10 ms; Fig.
+<a href="#fig:ch4.1" data-reference-type="ref"
+data-reference="fig:ch4.1">3.1</a>B, left), suggesting that the lexical
+status of local chunks cannot affect the lexical decision of words at
+the global chunks. Moreover, the reaction time of <em>GwLn</em> was
+significantly longer than of <em>GnLn</em> in the local task (<span
+class="math inline"><em>t</em><sub>20</sub> = 3.96</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>, difference = 70 ms;
+Fig. <a href="#fig:ch4.1" data-reference-type="ref"
+data-reference="fig:ch4.1">3.1</a>B, right); <em>GnLw</em> was
+significantly longer than that <em>GnLn</em> in the global task (<span
+class="math inline"><em>t</em><sub>20</sub> = 6.39</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>, difference = 164 ms;
+Fig. <a href="#fig:ch4.1" data-reference-type="ref"
+data-reference="fig:ch4.1">3.1</a>B, right).</p>
+<div class="center">
+<figure>
+<img src="figures/ch4.1.jpg" id="fig:ch4.1"
+alt="Results of the behavioral experiment. Reaction time results in the global (A) and local (B) tasks, respectively. In each plot, condition labels are provided along the x-axis. Error bars represent \pm1 SEM (standard error of the mean). Each planned paired test is represented by the line linking two bars; n.s., not significant; ** p&lt;0.01." />
+<figcaption aria-hidden="true"><strong>Results of the behavioral
+experiment.</strong> Reaction time results in the global (A) and local
+(B) tasks, respectively. In each plot, condition labels are provided
+along the x-axis. Error bars represent <span
+class="math inline"> ± 1</span> SEM (standard error of the mean). Each
+planned paired test is represented by the line linking two bars; n.s.,
+not significant; ** <span
+class="math inline"><em>p</em> &lt; 0.01</span>.</figcaption>
+</figure>
+</div>
+<p>Even though the reaction times are shown in the current study are
+longer in the previous study (about 100 ms longer in the local decision
+and about 200 ms longer in the global decision; see Figure <a
+href="#fig:ch4.1" data-reference-type="ref"
+data-reference="fig:ch4.1">3.1</a> and Figure <a href="#fig:ch3.1"
+data-reference-type="ref" data-reference="fig:ch3.1">2.1</a>), all the
+comparisons resulted in similar patterns as in the previous study. These
+similar patterns indicate that even with the distraction by the extra
+padding, the current results further confirm the priority of the global
+chunk over the local chunk, and the possible overlapping processing of
+the global and the local chunks.</p>
+<div id="eeg-experiment">
+<h4 id="ch4.eeg-experiment">EEG experiment</h4>
+</div>
+<div id="clustering">
+<h5 id="ch4.clustering">Clustering</h5>
+</div>
+<p>As in the previous study, we first conducted clustering analysis to
+explore the dynamics of ERP responses (Fig. <a href="#fig:ch4.2"
+data-reference-type="ref" data-reference="fig:ch4.2">3.2</a>). All
+conditions show a standalone cluster about 100 ms after the stimuli
+onset and a baseline cluster following it. These patterns matched the
+previous finding and again suggested an early stage and a later stage
+during processing.</p>
+<div class="center">
+<figure>
+<img src="figures/ch4.2.jpg" id="fig:ch4.2"
+alt="Temporal clustering results of topographies for four conditions (GwLw, GwLn, GnLw, and GnLn). Samples in the same color but at different time points indicate that they are grouped into the same cluster, sharing similar features but occurring at different times. The temperature of colors represents the rank of the cluster distance relative to the cluster baseline (cluster defined by the baseline period)." />
+<figcaption aria-hidden="true"><strong>Temporal clustering results of
+topographies for four conditions (<em>GwLw</em>, <em>GwLn</em>,
+<em>GnLw</em>, and <em>GnLn</em>).</strong> Samples in the same color
+but at different time points indicate that they are grouped into the
+same cluster, sharing similar features but occurring at different times.
+The temperature of colors represents the rank of the cluster distance
+relative to the cluster baseline (cluster defined by the baseline
+period).</figcaption>
+</figure>
+</div>
+<div
+id="analysis-of-the-topographic-distribution-of-amplitude-differences">
+<h5
+id="ch4.analysis-of-the-topographic-distribution-of-amplitude-differences">Analysis
+of the topographic distribution of amplitude differences</h5>
+</div>
+<p>As in the previous study, we demonstrated the topographical patterns
+of response amplitude on different conditions and different time points.
+Fig. <a href="#fig:ch4.3" data-reference-type="ref"
+data-reference="fig:ch4.3">3.3</a>A clearly shows early differences
+(with 50~100 ms) between the <em>GnLn</em> condition and the other three
+lexical conditions (<em>GwLw</em>, <em>GwLn</em>, and <em>GnLw</em>).
+This finding was already explained as the detection of familiar chunks
+in the previous study, but the current results showed an earlier and
+clearer effect. For the later stage (after 100 ms), however, both the
+effects of global processing and local processing are absent in the
+current study (Fig. <a href="#fig:ch4.3" data-reference-type="ref"
+data-reference="fig:ch4.3">3.3</a>B), which was different from the
+previous study.</p>
+<div class="center">
+<figure>
+<img src="figures/ch4.3.jpg" id="fig:ch4.3"
+alt="Topographical comparisons of response amplitude. Each row shows a comparison across time. The color scheme depicts the differences in response amplitude between conditions. A. The processing dynamics of lexicalized chunks are revealed in the paired comparisons between GnLn condition and the other three lexical conditions (GwLw, GwLn, and GnLw. B. The processing dynamics of chunks at global and local levels are revealed by two Gw conditions vs. two Gn conditions, and two Lw conditions vs. two Ln conditions." />
+<figcaption aria-hidden="true"><strong>Topographical comparisons of
+response amplitude. Each row shows a comparison across time.</strong>
+The color scheme depicts the differences in response amplitude between
+conditions. <strong>A</strong>. The processing dynamics of lexicalized
+chunks are revealed in the paired comparisons between <em>GnLn</em>
+condition and the other three lexical conditions (<em>GwLw</em>,
+<em>GwLn</em>, and <em>GnLw</em>. <strong>B</strong>. The processing
+dynamics of chunks at global and local levels are revealed by two
+<em>Gw</em> conditions vs. two <em>Gn</em> conditions, and two
+<em>Lw</em> conditions vs. two <em>Ln</em> conditions.</figcaption>
+</figure>
+</div>
+<div id="tanova">
+<h5 id="ch4.tanova">TANOVA</h5>
+</div>
+<p>As in the previous study, we conduct the TANOVA method to examine the
+difference between conditions. The TANOVA result and the topographical
+demonstrations in the current study are consistent: The difference
+between the <em>GnLn</em> condition and the other three lexical
+conditions (<em>GwLw</em>, <em>GwLn</em>, and <em>GnLw</em>) are early
+and clear (Fig. <a href="#fig:ch4.4" data-reference-type="ref"
+data-reference="fig:ch4.4">3.4</a>A), but the difference of two Gw
+conditions vs. two Gn conditions, and two Lw conditions vs. two Ln
+conditions are absent (Fig. <a href="#fig:ch4.4"
+data-reference-type="ref" data-reference="fig:ch4.4">3.4</a>B).</p>
+<div class="center">
+<figure>
+<img src="figures/ch4.4.jpg" id="fig:ch4.4"
+alt="The temporal dynamics of TANOVA results. A. The processing dynamics of lexicalized chunks are revealed in the paired comparisons between GnLn condition and the other three lexical conditions (GwLw, GwLn, and GnLw. B. The processing dynamics of chunks at global and local levels are revealed by two Gw conditions vs. two Gn conditions, and two Lw conditions vs. two Ln conditions." />
+<figcaption aria-hidden="true"><strong>The temporal dynamics of TANOVA
+results.</strong> <strong>A</strong>. The processing dynamics of
+lexicalized chunks are revealed in the paired comparisons between
+<em>GnLn</em> condition and the other three lexical conditions
+(<em>GwLw</em>, <em>GwLn</em>, and <em>GnLw</em>. <strong>B</strong>.
+The processing dynamics of chunks at global and local levels are
+revealed by two <em>Gw</em> conditions vs. two <em>Gn</em> conditions,
+and two <em>Lw</em> conditions vs. two <em>Ln</em>
+conditions.</figcaption>
+</figure>
+</div>
+<div id="discussion">
+<h3 id="ch4.discussion">Discussion</h3>
+</div>
+<p>The main goal for the current study is to test whether the two-stage
+procedure for the chunking operation described in Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a> still occurs with
+distraction by surrounding text. The two-stage processing includes a
+detection stage and a recognition stage. Generally speaking, the current
+study replicated the effect of the first stage (detection); the effect
+of the second stage (recognition) is shown in the behavioral experiment
+but not in the EEG experiment. I will discuss the two stages separately
+below.</p>
+<p>Most studies related to lexical processing regard recognition as a
+standalone function. Only a few talk about a pre-recognition stage. For
+example, E-Z reader (a model of eye movements during reading) assumes a
+rapid familiarity check of cognitively available content before the
+lexical recognition <span class="citation"
+data-cites="Reichle2015-cq">(Erik D. Reichle and Sheridan 2015)</span>.
+A detection stage is theoretically necessary before the recognition of
+flexible targets since “where are the targets?” should be answered
+before “what are the targets?”.</p>
+<p>The EEG results in the current study provide more evidence for the
+detection stage: it shows an early and brief significant difference
+between the processing of familiar and unfamiliar chunks, and the timing
+of the differences across global/local levels are similar. The current
+finding replicated the early effect of familiarity chunks in the
+previous study. Furthermore, the stimuli in the previous study were
+four-character strings so the global level of the stimulus had explicit
+boundaries on both sides, which means the detection of the global units
+in the experiment was easier than in a natural reading environment. The
+current finding is based on the stimuli with extra characters padding to
+the reading target, which blurs the boundary(ies) of even global units.
+Therefore, the current finding confirmed the detection stage under a
+more realistic condition.</p>
+<p>The detection stage described in the last and the current chapters is
+similar to the “familiarity check” described in E-Z reader: this stage
+detects all familiar chunks. The familiarity of these chunks suggests
+that they are stored in the reader’s mental lexicon and ready to be
+recognized. Moreover, the earliness and the briefness of this stage
+showing in the EEG result suggest that the detection just pre-activates
+the recognizable chunks and does not involve deeper processing, such as
+semantic access. Dissociating the processing into two stages is a
+strategy to save energy cost since it avoids attempts to recognize
+unrecognizable chunks. In addition, the detection stage shown in the
+current EEG experiment is (about 40 ms) earlier than in the previous EEG
+experiment even though the current experiment contained distraction. I
+do not have a persuasive explanation, thus future work on the earliness
+is necessary.</p>
+<p>After the detection stage, the pre-activated chunks wait for
+recognition. However, the pre-activated units may be distributed at
+different linguistic levels. The processing allocated to the global
+units and to the local units may be unequal. The processing priorities
+for global/local units are tested in both the behavioral and EEG
+experiments.</p>
+<p>The current behavioral experiment tested the priority in a more
+naturalistic reading environment because the extra characters in the
+stimuli blur the target boundaries which are explicit in the original
+study. Even with the distraction characters, the reaction times in the
+current behavioral experiment show a pattern consistent with the results
+in Chapter <a href="#ch3" data-reference-type="ref"
+data-reference="ch3">2</a>: the behavioral results show that the lexical
+status of the global string influences the lexical decision of local
+lexicalized strings, but not vice versa. Additionally the lexical status
+of the global/local string influences the lexical decision of
+local/global unlexicalized strings. The consistent results in both
+behavioral experiments confirm the priority of global recognizable units
+over local units during reading; and if the processing of global units
+is not finished before the processing of local units, the two types of
+processes interact.</p>
+<p>The behavioral experiments show that global units are recognized
+prior to local units. However, those studies did not clarify whether the
+priority is for the <em>temporal</em> order (i.e., processing global
+unit earlier than local unit) or the <em>resource usage</em> (i.e.,
+processing global and local units at the same time, but global unit is
+given more cognitive resources so its processing is faster).</p>
+<p>The EEG result shows no significant continuous difference between
+global familiar/unfamiliar chunks, nor between local familiar/unfamiliar
+chunks. In other words, the effects of both global processing and local
+processing (that had been found in Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a>) are absent in the
+current study. Therefore, we cannot observe the temporal order of the
+global and local processing.</p>
+<p>The result fails to replicate the temporal priority of global
+chunking during reading. However, the result does not falsify the
+temporal priority of the global chunk since the temporal priority of the
+local chunk is also absent, not to mention the current behavioral
+experiment has replicated the priority of the global chunk. If we take
+the premise that the absent effect is due to the difference in the
+previous and the current experimental design, it is most likely that the
+current design reduces the attention of participants to the reading
+targets. For example:</p>
+<ol>
+<li><blockquote>
+<p>Distracting character: The extra characters were padded to the
+reading targets to serve as vanilla padding. However, they might
+strongly distract the attention that should be paid to the reading
+target, especially because the extra characters were rare and therefore
+might surprise participants.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Narrow attention field: Even though both EEG experiments inserted
+some number-reporting trials to maintain the participants’ attention
+during the passive reading task, the trials in current experiment
+required the response to only the middle-two characters (3rd + 4th
+characters), whereas the trials in previous experiment required the
+response to the entire strings.Therefore, it is possible that
+participants ignore the recognition of either the global reading target
+(centered 4-character string) or local reading target (2nd + 3rd
+characters or 4th + 5th characters).</p>
+</blockquote></li>
+<li><blockquote>
+<p>Missing guidance: The EEG experiment of Chapter <a href="#ch3"
+data-reference-type="ref" data-reference="ch3">2</a> used the underline.
+The underline may have helped focus attention during recognition and
+enhanced the recognition effect as a result.</p>
+</blockquote></li>
+</ol>
+<p>As explained above, the absent effect of the recognition stage may be
+related to reduced attention to the reading target. On the contrary, the
+replicated effect of the detection stage is insensitive to attention
+since the detection is automatic. In any further work that aims to
+investigate the temporal priority of cognitive units at different
+levels, the experimental design must make sure the participants direct
+enough attention to the reading targets.</p>
+    </section>
+
+  </body>
+</html>
+

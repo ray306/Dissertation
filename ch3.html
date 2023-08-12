@@ -1,0 +1,1251 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="#results">3. Results</a>
+              <a class="dropdown-item" href="#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="ch3">How do we segment text? Two-stage chunking operation in
+reading<a href="bibilo.html#fn8" class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a></h2>
+<div class="center">
+<p><strong>Abstract</strong><br />
+</p>
+</div>
+<p><em>Chunking</em> in language comprehension is a process that
+segments continuous linguistic input into smaller chunks that are in the
+reader’s mental lexicon. Effective chunking during reading facilitates
+disambiguation and enhances efficiency for comprehension. However, the
+chunking mechanisms remain elusive, especially in reading given that
+information arrives simultaneously yet the written systems, such as
+Chinese, may not have explicit cues for labeling boundaries. What are
+the mechanisms of chunking that mediates the reading of the text that
+contains hierarchical information? We investigated this question by
+manipulating the lexical status of the chunks at distinct levels in
+four-character Chinese strings, including the two-character local chunk
+and four-character global chunk. Human participants were asked to make
+lexical decisions on these strings in a behavioral experiment, followed
+by a passive reading task when their electroencephalography (EEG) was
+recorded. The behavioral results showed that the lexical decision time
+of lexicalized two-character local chunks was influenced by the lexical
+status of the four-character global chunk, but not vice versa, which
+indicated the processing of global chunks possessed priority over the
+local chunks. The EEG results revealed that familiar lexical chunks were
+detected simultaneously at both levels and further processed in a
+different temporal order: the onset of lexical access for the global
+chunks was earlier than that of local chunks. These consistent results
+suggest a two-stage operation for chunking in reading: the simultaneous
+detection of familiar lexical chunks at multiple levels around 100 ms
+followed by recognition of chunks with global precedence.</p>
+<p><strong>Significance Statement</strong></p>
+<p>The learners of a new language often read word by word. However, why
+can proficient readers read multiple words at a time? The current study
+investigates how we efficiently segment a complicated text into smaller
+pieces and how we process these pieces. Participants read Chinese
+strings with different structures while their key-press responses and
+brain EEG signals were recorded. We found that texts were quickly (about
+100 ms from their occurrences) segmented to varied sizes of pieces, and
+larger pieces were then processed earlier than small pieces. Our results
+suggest that readers can use existing knowledge to efficiently segment
+and process written information.</p>
+<div id="introduction">
+<h3 id="ch3.introduction">Introduction</h3>
+</div>
+<p>Reading is arguably unique for human. However, how we process written
+texts remains elusive. For instance, how can we comprehend a complex
+sentence? A sentence consists of many letters/characters that form a
+hierarchical structure of text chunks (e.g., morphemes, words, and
+phrases). Readers need to incrementally segment a complex sentence into
+smaller chunks that map onto their mental lexicon. This process is
+termed as text <em>chunking</em> <span class="citation"
+data-cites="Reali2007-fn Gobet2016-sz">(Reali and Christiansen 2007;
+Gobet, Lloyd-Kelly, and Lane 2016)</span>. What are the small chunks
+during chunking? How do we process the chunks? To answer those
+questions, this study investigated the cognitive procedure of text
+chunking.</p>
+<p>Words and their sub-level (morphemes) are usually assumed as the
+basic units in reading models in psycholinguistics and computer science
+<span class="citation"
+data-cites="McClelland1981-ba Taft2013-tv Coltheart2001-ff">(McClelland
+and Rumelhart 1981; Taft 2013; Coltheart et al. 2001)</span>. However,
+eye-tracking studies suggested we can perceive the text longer than a
+word at one time <span class="citation"
+data-cites="Rayner1998-fq">(Keith Rayner 1998)</span>. Our working
+memory also allows us to remember familiar multiple words <span
+class="citation" data-cites="Miller1956-ju">(Miller 1956)</span>. Even
+more, multi-word expressions can be stored in our mental lexicons <span
+class="citation"
+data-cites="Arnon2010-kw Siyanova-Chanturia2017-nj">(Arnon and Snider
+2010; Siyanova-Chanturia et al. 2017)</span>. These studies suggest the
+multi-word representations and the beyond-word processing are feasible.
+Moreover, relying on larger chunks effectively reduces the cognitive
+load while processing sentences: fewer chunks to be interpreted and
+integrated <span class="citation"
+data-cites="Krishnamurthy2003-md Ellis2003-ij Blache2012-zs">(Krishnamurthy
+2003; Ellis 2003; Blache and Rauzy 2012)</span>. Furthermore, the
+semantic combination of constituents can be different from holistic
+meaning <span class="citation" data-cites="Goldberg1995-kz">(Goldberg
+1995)</span>. One extreme example is idioms, as the metaphors of an
+idiom can be distinct from their literal meanings of smaller
+constituents. Multi-word representation is required in certain contexts
+to avoid ambiguity. Therefore, multi-word chunks, as well as word
+chunks, could be the units during chunking.</p>
+<p>What is the relation between the processes of word chunks and
+multi-word chunks during chunking? The studies of compound words (a
+single lexical entity but consists of more than one root morphemes,
+e.g., “flagship”) may offer hints. According to the dual-route models of
+compound-word processing, both the whole word and its constituents are
+processed at the same time or are selected to process each level
+flexibly <span class="citation"
+data-cites="Andrews2004-ab Koester2007-us MacGregor2013-qb Semenza2014-cd Blache2015-jf">(Andrews,
+Miller, and Rayner 2004; Koester, Gunter, and Wagner 2007; MacGregor and
+Shtyrov 2013; Semenza and Luzzatti 2014; Blache 2015)</span>. In a
+similar vein, we hypothesized that all the familiar lexical chunks, no
+matter which level it is, could be processed simultaneously. More
+specifically, the detection of chunks would be the first step in
+chunking, and the detection of chunks at multiple levels would occur at
+the same time, as the early lexical familiarity checking assumed in the
+E-Z reader model <span class="citation"
+data-cites="Reichle2003-qe">(Erik D. Reichle, Rayner, and Pollatsek
+2003)</span>.</p>
+<p>How does the multi-level operation unfold in the chunking process?
+Which level has the priority after being detected? The word superiority
+effect indicates that the recognition of letters within words is better
+than letters in nonwords or stand-alone letters <span class="citation"
+data-cites="Reicher1969-iu">(Reicher 1969)</span>. It suggests that the
+word has priority over the letter in reading. Similarly, the processing
+priority of global chunks can reduce the steps of integration and avoid
+the ambiguity to enhance the efficiency of language processing <span
+class="citation"
+data-cites="Krishnamurthy2003-md Ellis2003-ij Blache2012-zs">(Krishnamurthy
+2003; Ellis 2003; Blache and Rauzy 2012)</span>. Generalizing from the
+word superiority effect, we hypothesized that global chunks take
+priority over the parts and would be initiated first in the processing
+stage after detection.</p>
+<p>In this study, we used Chinese four-character strings to investigate
+the chunking operation in reading. The Chinese written system is an
+ideal model for observing multi-level chunking because Chinese does not
+have explicit word boundaries. Each Chinese character is a basic lexical
+unit with a similar length. Four characters can form two levels of
+chunks: chunks with two characters (hereafter called the <em>local level
+chunks</em>) and a chunk with four characters (hereafter called the
+<em>global level chunk</em>). The lexicality was manipulated at both
+levels so that four types of stimuli were included (phrase, idiom,
+random words, and random characters). In the behavioral experiment, we
+investigated the interaction between the global and local chunks in
+reading by a lexical decision task at different levels of chunks.
+Moreover, an EEG experiment was carried out to investigate the temporal
+dynamics of detection and recognition stages in the multi-level chunking
+operation.</p>
+<div id="materials-and-methods">
+<h3 id="ch3.materials-and-methods">Materials and Methods</h3>
+</div>
+<div id="participants">
+<h4 id="ch3.participants">Participants</h4>
+</div>
+<p>Twenty-one healthy native Chinese speakers (10 males, mean age 21
+years, range 18-30 years) with normal or corrected-normal vision
+participated in both behavior and EEG experiments for financial
+compensation. Five participants who produced extensive EEG artifacts
+were excluded from EEG analysis. Hence, a total of sixteen participants
+were included in the EEG study. The experiments were approved by the
+Research Ethics Committee of East China Normal University. Written
+informed consents were obtained from all participants before the
+experiments.</p>
+<div id="stimuli">
+<h4 id="ch3.stimuli">Stimuli</h4>
+</div>
+<p>All stimuli are four-Chinese-character strings. Two factors are
+included when designing these stimuli. The first factor is the <em>chunk
+size</em> that contains two levels -- a global size of 4 characters and
+a local size of 2 characters. The second factor is <em>lexicality</em>
+(word or nonword) at each chunk size. These two factors are fully
+crossed and yield four types of stimuli. We denote <em>chunk size</em>
+using upper case letters -- ‘G’ for global and ‘L’ for local, and use
+lower case letters for lexicality in each chunk size (‘w’ for word and
+‘n’ for nonword). For example, ‘GnLw’ stands for the condition of
+stimuli that are four-character nonwords at the global level made of two
+two-character words at the local level. Note that the stimuli in ‘GwLn’
+are Chinese idioms so called ‘Chengyu’. They are lexicalized compound
+phrases that consist of four independent mono-morphemic characters. None
+of the two characters within ‘Chengyu’ can form a common word, whereas
+the four characters together form an idiomatic expression. Chengyu
+generally expresses the gist or moral message of myths, stories, or
+historical events from which they were derived. Therefore, the meaning
+of a chengyu usually surpasses the sum of the meanings from the four
+characters. The four types of stimuli are listed in Table <a
+href="#tab:ch3.1" data-reference-type="ref"
+data-reference="tab:ch3.1">2.1</a>.</p>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span></p>
+<div id="tab:ch3.1">
+<table>
+<caption><strong>Stimuli description.</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><em>Local word</em></th>
+<th style="text-align: left;"><em>Local nonword</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td
+style="text-align: left;"><strong><strong><em>GwLw</em>:</strong></strong> lexicalized
+compound phrase composed of two two-character words.</td>
+<td
+style="text-align: left;"><strong><strong><em>GwLn</em>:</strong></strong> lexicalized
+compound phrases that consist of four independent mono-morphemic
+characters (Chinese idioms `Chengyu’).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Global word</em></td>
+<td style="text-align: left;">e.g. “<em>希 腊 神 话</em> ” (pinyin: xī
+là shén huà),</td>
+<td style="text-align: left;">e.g. “<em>以 逸 待 劳</em> ” (pinyin: yǐ
+yì dài láo),</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">translation: Greek mythologies. “<em>希
+腊</em> ” and “<em>神 话</em> ” means “Greek” and “mythologies”
+respectively</td>
+<td style="text-align: left;">translation: wait for the exhausted enemy
+at your ease. “<em>以 逸</em>” and “<em>待 劳</em> ” are not words.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td
+style="text-align: left;"><strong><strong><em>GnLw</em>:</strong></strong> non-lexicalized
+compound phrase composed of two two-character words.</td>
+<td
+style="text-align: left;"><strong><strong><em>GnLn</em>:</strong></strong> random
+character string – nonwords at both levels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Global nonword</em></td>
+<td style="text-align: left;">e.g. “<em>存 款 电 脑</em> ” (pinyin: cún
+kuǎn diàn nǎo),</td>
+<td style="text-align: left;">e.g. “<em>投 其 顾 此</em> ” (pinyin: tóu
+qí gù cǐ),</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">translation: deposit-computer. “<em>存
+款</em> ” and “<em>电 脑</em> ” means “deposit” and “computer”
+respectively.</td>
+<td style="text-align: left;">a nonsense phrase. “<em>投 其</em> ” and
+“<em>顾 此</em> ” are not words either.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We selected and created all stimuli with the following steps. We
+extracted the <em>GwLw</em> and <em>GwLn</em> stimuli from a database of
+Sogou Pinyin (<a href="https://www.sogou.com/labs/resource/w.php"
+class="uri">https://www.sogou.com/labs/resource/w.php</a>) and a
+database of Chinese characters (CharDB: data version: 0.98.1; program
+version: 0.97.2; https://chardb.cls.ru.nl/). All the <em>GwLw</em> and
+<em>GwLn</em> stimuli satisfied the following criteria at the global
+level: 1) noun (the part of speech is determined by a record of the
+lexicon of Jieba v0.36: <a href="https://github.com/fxsjy/jieba"
+class="uri">https://github.com/fxsjy/jieba</a>); 2) high-frequency (the
+frequency was determined by the database of the Sogou Pinyin, and
+high-frequency meant frequency above 3,000); and 3) no duplicative
+characters (e.g., “<em>高高兴兴</em> ”, translation: happy). Moreover,
+the <em>GwLw</em> stimuli satisfied the following criteria at the local
+level: 1) both two-character words were nouns, and 2) high-frequency
+words. Moreover, the lexicality of <em>GwLn</em> stimuli at the local
+level was verified by checking if the first two or last two characters’
+combination did not exist in the Sogou Pinyin database<em>.</em> These
+selection criteria made the <em>GwLw</em> and <em>GwLn</em> stimuli
+consistent in all aspects except the lexical status at the local
+level.</p>
+</div>
+<p>The <em>GnLw</em> stimuli were created by randomly pairing two
+different two-character words, the Lw in GnLw and GwLw follow the same
+criteria. So the only difference between the <em>GwLw</em> and
+<em>GnLw</em> was the lexical status at the global level. Finally, the
+<em>GnLn</em> stimuli were created by randomly mixing four different
+characters, and none of the first or last two characters’ combinations
+existed in the Sogou Pinyin database. Characters used in all stimuli
+have log frequency ranging from 3.011 to 5.344, with stroke counts
+ranging from 4 to 13. The character’s log frequency was determined by
+the Subtitle Database <span class="citation"
+data-cites="Cai2010-mg">(Cai and Brysbaert 2010)</span>.</p>
+<p>The distinction between word and nonword was further controlled by
+familiarity. Twelve participants who were not in the main experiment
+were asked to rate the familiarities of either the entire four-character
+or the constituents of two-character strings as being words or not. The
+rating range was from 1 to 5, where 1 stands for unfamiliar
+strings/nonwords and 5 for familiar words. The strings that were rated
+from 2 to 4 were removed and only the stimuli that were either very
+familiar words or very unfamiliar nonwords remained in a pool. Eighty
+stimuli in each condition were randomly selected from the pool and used
+in this study.</p>
+<div id="procedure-behavioral-experiment">
+<h4 id="ch3.procedure-behavioral-experiment">Procedure behavioral
+experiment</h4>
+</div>
+<p>In each trial, participants were first asked to focus on a cross
+presented at the center of the screen. After 400 ms, the fixation cross
+disappeared, and a four-character string was shown until response. A
+line also appeared either under the entire four-character string or
+under two-character string (the first or the last two characters).
+Participants were asked to make a lexical decision about the underlined
+string, either the entire string (global task henceforth) or the first
+or last two-character string (local task henceforth) by pressing either
+“F” or “J” on the keyboard as fast as possible. Participants had a
+maximum of 3 s to respond. Responses and reaction time were collected.
+Response keys were counterbalanced across participants. The intertrial
+intervals were randomly selected from a range from 800 to 1000 ms.</p>
+<p>Four stimuli types (<em>GwLw</em>, <em>GwLn</em>, <em>GnLw</em>, and
+<em>GnLn</em>) were fully crossed with task types (global task vs local
+task) and yielded eight conditions; 320 trials were included in this
+experiment. Half of the trials were randomly selected and used in the
+global task and the other half in the local task. The order of
+conditions was randomized. The experimental presentation was programmed
+in a Python package, Expy, which is a software for presenting and
+controlling psychological experiments (<a
+href="https://expy.readthedocs.io/"
+class="uri">https://expy.readthedocs.io/</a>).</p>
+<p><em><strong>Behavioral data analysis</strong></em></p>
+<p>All participants had response accuracy exceeding 85%, and the average
+accuracy was 92%. No participant’s data were excluded. Trials with
+incorrect responses were removed before analysis. We applied repeated
+measures three-way ANOVA (analysis of variance) on the reaction time
+data with factors of global-level lexicality, local-level lexicality,
+and task, followed by planned <em>t</em> tests for testing specific
+hypotheses.</p>
+<div id="procedure-eeg-experiment">
+<h4 id="ch3.procedure-eeg-experiment">Procedure EEG experiment</h4>
+</div>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span> The same group of subjects
+participated in the EEG experiment. The EEG experiment shared the same
+stimuli list with the behavioral experiment, but both the procedure and
+the task are different. First, the display of each character string
+lasted for 300 ms. Participants were asked to read the underlined parts
+of the stimuli (to keep their attention on the stimuli), but they did
+not perform any lexical decision task. We used all 320 strings with 80
+for each stimuli type in the global task and repeated once in the local
+task. Moreover, 320 four-symbol strings were included as the visual
+baseline in the EEG experiment. The symbols in a symbol string trial
+were randomly sampled with replacement from four symbols (□, △, ◇, and
+○). Underlines were included in the symbol trials similar to those in
+the global and local tasks in experimental trials. Half of the trials
+were randomly selected and used in the global task and the other half in
+the local task. To guarantee participants’ attention on the stimuli, we
+randomly inserted strings of digits for 100 ms, and participants were
+asked to report the underlined digits by pressing number buttons on a
+keyboard. About 48 number-report trials were presented to each
+participant.</p>
+</div>
+<div id="eeg-recording">
+<h5 id="ch3.eeg-recording">EEG recording</h5>
+</div>
+<p>EEG signals were recorded with a 32-electrode active electrodes
+system (actiChamp system, Brain Products GmbH). FP1 and FP2 were used to
+monitor vertical eye movements. Electrode impedances were kept below 10
+<span class="math inline"><em>k</em><em>ω</em></span>. Data were
+continuously recorded in single DC mode. Data were sampled at 500 Hz,
+online referenced to the Cz.</p>
+<div id="eeg-data-analyses">
+<h5 id="ch3.eeg-data-analyses">EEG data analyses</h5>
+</div>
+<p>EEG data were preprocessed using EEGLAB (version 13.5.4b; <span
+class="citation" data-cites="Delorme2004-ld">(Delorme and Makeig
+2004)</span>). Data were bandpass filtered (0.1–30 Hz, Hamming windowed
+sinc FIR filter), and re-referenced to the average reference. The
+preprocessed data were epoched between –200 and 800 ms relative to the
+onset of strings and baseline-corrected using the 200-ms prestimulus
+period. The trials with eye blinks were rejected if the amplitude within
+the 1000-ms epoch exceeded ±50 <span
+class="math inline"><em>μ</em></span>V. Remaining trials with apparent
+noise were rejected manually. Approximately 15% of trials were rejected.
+Five participants who produced a large number of artifacts or showed
+continuous <span class="math inline"><em>α</em></span> waves were
+excluded from further analysis. Epochs in each condition were averaged
+and used to creat an event-related potentials (ERPs). Root mean square
+(RMS) responses were also calculated as a geometric mean of all
+channels.</p>
+<p>In addition to the univariate analyses on ERPs and RMS responses, our
+analysis used the topographic patterns or distributions across all
+sensors rather than the response amplitude in selected groups of
+sensors, as it can provide more holistic and unbiased information. Such
+multivariate methods can collectively reflect spatial and temporal
+information and offer more power to test psychological and neuroscience
+hypothesis by overcoming problems such as individual differences, sensor
+selection and reference selection in EEG <span class="citation"
+data-cites="Murray2008-gz Tian2008-cg Tian2011-rs Yang2018-cq Wang2019-bv">(Murray,
+Brunet, and Michel 2008; Tian and Huber 2008; Tian, Poeppel, and Huber
+2011; Yang, Zhu, and Tian 2018; X. Wang, Zhu, and Tian 2019)</span>. Two
+multivariate-based methods <span>[</span>clustering and topographic
+ANOVA (TANOVA)<span>]</span> and one mass-univariate method (analysis of
+the topographic distribution of amplitude differences) were applied
+as:</p>
+<div id="clustering">
+<p class="heading" id="ch3.clustering">CLUSTERING</p>
+</div>
+<p>A clustering method on the ERP topographic responses was implemented
+first. This unsupervised machine learning method groups data across all
+conditions by forming temporal clusters based on the similarity of their
+topographical patterns. This clustering method is a data-driven method,
+in which it explores the pattern similarity in topographies in all
+conditions. The clustering algorithm organizes data at different time
+points into distinct clusters, so that we can explore the temporal
+dynamics of pattern changes. Moreover, if one considers the clusters
+reflecting different processing stages, this analysis can identify the
+processing stages in each condition and display the temporal differences
+of any specific stage among conditions. We used K-means, the most
+popular algorithm for clustering. The clustering analysis is an omnibus
+test about neural dynamics, which can detect clusters and set up the
+time windows of interest for the following analyses.</p>
+<p>The procedure of clustering algorithm covers three steps: (1)
+averaged EEG data across all participants to get ERPs at each time point
+for each condition; (2) defined ERPs at each time point in each
+condition as a sample, and the amplitudes of 32 electrodes were used as
+features in a sample; (3) K-means algorithm was conducted at all
+samples. The K-means algorithm is data driven. The target cluster number
+(K) can range from the minimum of one to the number of data points. We
+assumed that the baseline period before stimuli onset involved rest or
+random cognitive processes. The topographies would be consistent random
+patterns that were different from later sequences of topographies
+induced by stimuli. If the K-means separated the baseline period into
+more than one cluster, it was most likely overfitting. Therefore, we set
+the criterion of getting two clusters at the baseline period as a
+stopping point for increasing the number of clusters. That is, the
+K-means algorithm was conducted at all samples. The number of clusters
+was initially two and increased until the clustering result included
+more than one cluster at the baseline stage.</p>
+<div
+id="analysis-of-the-topographic-distribution-of-amplitude-differences">
+<p class="heading"
+id="ch3.analysis-of-the-topographic-distribution-of-amplitude-differences">ANALYSIS
+OF THE TOPOGRAPHIC DISTRIBUTION OF AMPLITUDE DIFFERENCES</p>
+</div>
+<p>We calculated the response amplitudes across all sensors at a given
+time window. The changes in the amplitude differences can reflect the
+processing dynamics. Especially, the earliest time point that shows
+significant differences would indicate the temporal onset of interest.
+Moreover, the spatial extent of experimental effects can be estimated by
+the distribution of sensors in which the amplitude differences are
+observed. At a window size of 20 ms, we checked the significant
+electrodes <span class="citation" data-cites="Yang2018-cq">(Yang, Zhu,
+and Tian 2018)</span> to obtain the distribution differences between
+conditions. Because there were 32 comparisons in each time window, the
+<em>p</em> values were corrected by false discovery rate (FDR). The
+primary purpose of this analysis was to identify the possible onset
+timing of any amplitude differences between conditions. However, the
+power of detecting the onset using a measure of amplitude could be
+small. To reduce the Type II error, we did not apply corrections across
+time so that we can reduce the chance of missing the exact onset time of
+amplitude differences.</p>
+<div id="tanova">
+<p class="heading" id="ch3.tanova">TANOVA</p>
+</div>
+<p>We further investigate the patterns of topographies by considering
+all sensors at the same time to infer the differences in underlying
+neural processes across conditions. A single index was calculated to
+indicate topographic information. Mathematically, each topography can be
+viewed as an <em>n</em>-dimensional vector, where the <em>n</em> equals
+the number of sensors. The divergence between the topographies of two
+experimental conditions can be quantified by the cosine value of the
+high-dimensional angle between two vectors <span class="citation"
+data-cites="Tian2008-cg">(Tian and Huber 2008)</span>. The cosine
+distance has a range from 0 to 2, where 0 stands for identical
+topographies and 2 exactly opposite patterns. Note that the cosine
+distance represents the similarity between the response patterns in
+topographies and is free from the difference of response magnitude
+because the measure of cosine distance is normalized by the vector
+length. To statistically test the cosine distance between topographies
+and to infer the underlying neural processing in different conditions,
+we applied an algorithm named TANOVA <span class="citation"
+data-cites="Murray2008-gz Tian2008-cg Brunet2011-gi Tian2011-rs Lange2015-js">(Murray,
+Brunet, and Michel 2008; Tian and Huber 2008; Brunet, Murray, and Michel
+2011; Tian, Poeppel, and Huber 2011; Lange, Perret, and Laganaro
+2015)</span>. In TANOVA, the null hypothesis distribution is generated
+by shuffling the condition labels, and we here shuffled the condition
+labels on the subjects’ ERPs using the EasyEEG toolbox <span
+class="citation" data-cites="Yang2018-cq">(Yang, Zhu, and Tian
+2018)</span>; strategy 2, shuffle times: 1000, window size: 10 ms).
+Furthermore, the temporal clusters in the TANOVA results were identified
+by a precluster threshold of 0.1 and were tested by cluster-based
+permutation with a corrected threshold of 0.05 <span class="citation"
+data-cites="Maris2007-aa">(Maris and Oostenveld 2007)</span>.</p>
+<div id="results">
+<h4 id="ch3.results">Results</h4>
+</div>
+<div id="behavioral-experimental-results">
+<h5 id="ch3.behavioral-experimental-results">Behavioral experimental
+results</h5>
+</div>
+<p>Reaction time was subject to repeated measures three-way ANOVA with
+the factors of global-level lexicality, local-level lexicality, and
+task. The main effect of global-level lexicality was significant (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 10.83</span>, <span
+class="math inline"><em>p</em> &lt; 0.01</span>), suggesting that
+participants took longer time to identify global-level nonwords than
+global-level words. The main effect of local-level lexicality is
+significant (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 6.30</span>, <span
+class="math inline"><em>p</em> = 0.02</span>), suggesting participants
+took longer time to identify local-level nonwords than local-level
+words. However, the main effect of task is not significant (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 1.07</span>, <span
+class="math inline"><em>p</em> = 0.31</span>), suggesting different
+tasks that require participants to respond to either global or local
+chunks have a similar level of difficulty. More importantly, all three
+two-way interactions are significant, global-level lexicality ×
+local-level lexicality (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 57.11</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>), global-level
+lexicality × task (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 16.02</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>), and local-level
+lexicality × task (<span
+class="math inline"><em>F</em><sub>1, 20</sub> = 57.11</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>).</p>
+<p>Planned <em>post hoc t</em> tests were further conducted in each
+factor to specify the observed significant interactions. First, we
+examined how global information affects processing at the local level
+(Fig. <a href="#fig:ch3.1" data-reference-type="ref"
+data-reference="fig:ch3.1">2.1</a><em>A</em>). In the local task, the
+reaction time in <em>GnLw</em> was significantly longer than that in
+<em>GwLw</em> (<span
+class="math inline"><em>t</em><sub>20</sub> = 5.71</span>, <span
+class="math inline"><em>p</em> &lt; 0.001</span>, difference = 55 ms),
+suggesting that the nonwords at the global level significantly slowed
+down the lexical decision of words at the local level. Moreover, the
+reaction time of <em>GwLn</em> was significantly longer than
+<em>GnLn</em> in the local task (<span
+class="math inline"><em>t</em><sub>20</sub> = 3.62</span>, <span
+class="math inline"><em>p</em> = 0.002</span>, difference = 54 ms),
+suggesting that the words at the global level also slowed down the
+lexical decision of nonwords at the local level. Second, we examined how
+the local chunk could affect processing at the global level (Fig. <a
+href="#fig:ch3.1" data-reference-type="ref"
+data-reference="fig:ch3.1">2.1</a><em>B</em>). In the global task, we
+did not find a significant difference between reaction time to
+<em>GwLw</em> and <em>GwLn</em> (<span
+class="math inline"><em>t</em><sub>20</sub> =  − 1.00</span>, <span
+class="math inline"><em>p</em> = 0.32</span>; Fig. <a href="#fig:ch3.1"
+data-reference-type="ref" data-reference="fig:ch3.1">2.1</a><em>B</em>,
+left), suggesting that the lexical status of local chunks cannot affect
+the lexical decision of words at the global chunks. These results
+collaboratively suggest that processing at the global level may take
+priority.</p>
+<div class="center">
+<figure>
+<img src="figures/ch3.1.jpg" id="fig:ch3.1"
+alt="Results of the behavioral experiment. A, B, Reaction time results in the global and local tasks, respectively. In each plot, condition labels are provided along the x-axis. Error bars represent ±1 SEM (standard error of the mean). Each planned paired test was represented by the line linking two bars; n.s., not significant; **p &lt;0.01, ***p &lt;0.001." />
+<figcaption aria-hidden="true"><strong>Results of the behavioral
+experiment.</strong> <em><strong>A</strong></em>,
+<em><strong>B</strong></em>, Reaction time results in the global and
+local tasks, respectively. In each plot, condition labels are provided
+along the <em>x</em>-axis. Error bars represent ±1 SEM (standard error
+of the mean). Each planned paired test was represented by the line
+linking two bars; n.s., not significant; **<em>p</em> &lt;0.01,
+***<em>p</em> &lt;0.001.</figcaption>
+</figure>
+</div>
+<p>Another comparison on how the local chunk could affect processing at
+the global level revealed that the reaction time of <em>GnLw</em> was
+significantly longer than that of <em>GnLn</em> in the global task
+(<em>t</em><sub>(20)</sub> = 6.69, <em>p</em> &lt;0.001, difference =
+112 ms; Fig. <a href="#fig:ch3.1" data-reference-type="ref"
+data-reference="fig:ch3.1">2.1</a><em>B</em>, right). This result
+suggests that the decisions of global chunks and local chunks could be
+parallel when the global decision took too long. The lexical information
+at the local level may leak through to the processing of global chunks
+and influence the decision of nonwords. The behavioral results
+demonstrate a unidirectional influence from the global level to the
+local level when the task targets are words and interactions between
+levels when the task targets are nonwords that need more time to make a
+decision about. That is, global chunks may take priority in lexical
+processing. Whereas the processing of global and local chunks could be
+parallel when global decision took too long, the lexical information at
+one level may leak through to the process of the other level and
+influence the decision of nonwords. We further test the processing
+dynamics in an EEG experiment.</p>
+<p>To examine and exclude the possible effects of the underline
+position, we extracted the trials with two-character underlines and ran
+a repeated measures three-way ANOVA with the factors of global-level
+lexicality, local-level lexicality, and underline position. The
+underline position showed neither main effect
+(<em>F</em><sub>(1,20)</sub> = 1.61, <em>p</em> =0.22), nor interaction
+effect with global-level lexicality (<em>F</em><sub>(1,20)</sub> = 0.01,
+<em>p</em> = 0.92), nor interaction effect with local-level lexicality
+(<em>F</em><sub>(1,20)</sub> = 0.38, <em>p</em> =0.54). These results
+suggest that positions of stimuli that were relevant to the task did not
+affect response speed.</p>
+<div id="eeg-results">
+<h5 id="ch3.eeg-results">EEG results</h5>
+</div>
+<div id="clustering-revealed-distinct-stages-of-chunking">
+<h6
+id="ch3.clustering-revealed-distinct-stages-of-chunking"><strong>Clustering
+revealed distinct stages of chunking</strong></h6>
+</div>
+<p>We first conducted the clustering analysis to explore the dynamics of
+ERP responses. The clustering algorithm aimed to separate the continuous
+ERP responses into distinct stages based on common features observed
+across time. As shown in Fig. <a href="#fig:ch3.2"
+data-reference-type="ref" data-reference="fig:ch3.2">2.2</a>, the
+clustering results were reliable as similar clusters were observed
+continuously in each condition.</p>
+<div class="center">
+<figure>
+<img src="figures/ch3.2.jpg" id="fig:ch3.2"
+alt="The dynamics of ERP responses and clustering results. A, Averaged ERPs waveform responses of all conditions from 32 electrodes (black lines), and RMS waveform response across all electrodes (red line). B, Temporal clustering results of topographies for four conditions (GwLw, GwLn, GnLw, and GnLn) and a baseline symbol condition (symbol). Different colors represent distinct clusters. Samples in the same color but at different time points indicate that they are grouped into the same cluster, sharing similar features but occurring at different times. The temperature of colors represents the rank of the cluster distance relative to the cluster baseline (cluster defined by the baseline period). Approximately 80 ms after stimulus onset, a novel cluster (the second cluster) appears at the same time across five conditions, followed by another new cluster. However, in the symbol condition, the third cluster (\sim250 ms) appears earlier with a much shorter duration than four-character string conditions. C, The topographies of each cluster." />
+<figcaption aria-hidden="true"><strong>The dynamics of ERP responses and
+clustering results.</strong> <em><strong>A</strong></em>, Averaged ERPs
+waveform responses of all conditions from 32 electrodes (black lines),
+and RMS waveform response across all electrodes (red line).
+<em><strong>B</strong></em>, Temporal clustering results of topographies
+for four conditions (<em>GwLw</em>, <em>GwLn</em>, <em>GnLw</em>, and
+<em>GnLn</em>) and a baseline symbol condition (symbol). Different
+colors represent distinct clusters. Samples in the same color but at
+different time points indicate that they are grouped into the same
+cluster, sharing similar features but occurring at different times. The
+temperature of colors represents the rank of the cluster distance
+relative to the cluster baseline (cluster defined by the baseline
+period). Approximately 80 ms after stimulus onset, a novel cluster (the
+second cluster) appears at the same time across five conditions,
+followed by another new cluster. However, in the symbol condition, the
+third cluster (<span class="math inline">∼</span>250 ms) appears earlier
+with a much shorter duration than four-character string conditions.
+<em><strong>C</strong></em>, The topographies of each
+cluster.</figcaption>
+</figure>
+</div>
+<p>More importantly, clear temporal profiles were revealed by the
+clustering analysis in all conditions. First, the same cluster was
+observed in the baseline period until around 80 ms after stimulus onset,
+as well as at the end of epochs (<span class="math inline">∼</span>600
+ms after onset) among all types of stimuli. The clustering in these
+periods was presumably because few cognitive processes that relate to
+the stimuli or task were available or manifested in the ERP
+topographies. Second, a novel cluster (the second cluster) appeared
+after 80 ms across five conditions. The clustering spanned in similar
+latencies as N1/P2 components, presumably reflecting visual processing.
+However, different dynamics were observed across conditions after 200
+ms. The third cluster appeared earlier in the symbol condition with a
+much shorter duration than the four experimental string conditions in
+which the third cluster appeared around 250 ms and lasted <span
+class="math inline">∼</span>90 ms. Moreover, in the symbol condition,
+the third cluster was immediately followed by the sixth cluster that did
+not appear until 500 ms in the four experimental string conditions
+(except in <em>GwLw</em> condition around 430 ms). The early start and
+long-lasting sixth cluster in the symbol condition was accompanied by
+the absense of the first and second clusters that appeared around 320 ms
+and lasted untill 450 ms in other conditions.</p>
+<p>More interestingly, a 15 ms period around 130 ms was labeled as the
+cluster baseline that was grouped in the baseline and the end of epoch
+periods. This formed a short gap that broke the early processing into
+two stages. The clustering results set up the time windows of interest
+for the following analyses. We focused on the components in early timing
+to further investigate the underlying processes of chunking
+operation.</p>
+<div id="chunk-detection-in-the-earliest-stage">
+<h6 id="ch3.chunk-detection-in-the-earliest-stage"><strong>Chunk
+detection in the earliest stage</strong></h6>
+</div>
+<p>To test the hypothesis about the lexical detection in the earliest
+stage, we conducted analyses to investigate the lexicality effects at
+the global and local chunk levels. First, we applied repeated measures
+one-way ANOVA on the ERPs in P3 and P4, as well as RMS waveforms
+calculated using all channels (Fig. <a href="#fig:ch3.3"
+data-reference-type="ref"
+data-reference="fig:ch3.3">2.3</a><em>A</em>,<em>B</em>). We did not
+find any significant amplitude differences among the four conditions.
+Next, compared with the responses to <em>GnLn</em> strings that
+contained no lexical chunks at either level, the topographical pattern
+of response amplitudes in conditions that include lexical chunks
+(<em>GwLw</em>, <em>GwLn</em>, and <em>GnLw</em>) did not show any
+significant differences in any sensors after multiple comparison
+correction (Fig. <a href="#fig:ch3.3" data-reference-type="ref"
+data-reference="fig:ch3.3">2.3</a><em>C</em>). However, the difference
+topographies showed distinctive patterns of amplitude distribution
+(90–130 ms, higher on the left frontal area and lower on occipital
+area). These results suggest that lexical detection could induce changes
+in the configuration of neural sources, rather than in response
+amplitude. Therefore, we investigated the topographic patterns to infer
+the different configurations of neural processing across conditions.</p>
+<div class="center">
+<figure>
+<img src="figures/ch3.3.jpg" id="fig:ch3.3"
+alt="The effects of lexicalized chunks revealed in the paired comparisons between GnLn condition and the other three lexical conditions (GwLw, GwLn, and GnLw). A, ERP waveform responses in the representative channels P3 and P4. One-way ANOVA did not reveal any response amplitude differences among conditions. B, RMS waveform responses of all channels. No amplitude difference was found. C, Topographical comparisons of response amplitude. Each row shows a comparison across time. The color scheme depicts the differences in response amplitude between conditions. No significant difference was found on the electrodes after the multiple comparison correction (FDR). D, The temporal dynamics of TANOVA on paired comparisons (uncorrected). The red boxes highlight the earliest latency when the significant differences were observed. All three conditions show evidence of early lexical detection. E, The temporal dynamics of TANOVA on the comparison between GnLn and the average of three lexical conditions, corrected by temporal clustering analysis with a corrected threshold of 0.05 (Maris and Oostenveld 2007). The lexicality effects emerge around 100 ms." />
+<figcaption aria-hidden="true"><strong>The effects of lexicalized chunks
+revealed in the paired comparisons between <em>GnLn</em> condition and
+the other three lexical conditions (<em>GwLw</em>, <em>GwLn</em>, and
+<em>GnLw</em>).</strong> <em><strong>A</strong></em>, ERP waveform
+responses in the representative channels P3 and P4. One-way ANOVA did
+not reveal any response amplitude differences among conditions.
+<em><strong>B</strong></em>, RMS waveform responses of all channels. No
+amplitude difference was found. <em><strong>C</strong></em>,
+Topographical comparisons of response amplitude. Each row shows a
+comparison across time. The color scheme depicts the differences in
+response amplitude between conditions. No significant difference was
+found on the electrodes after the multiple comparison correction (FDR).
+<em><strong>D</strong></em>, The temporal dynamics of TANOVA on paired
+comparisons (uncorrected). The red boxes highlight the earliest latency
+when the significant differences were observed. All three conditions
+show evidence of early lexical detection. <em><strong>E</strong></em>,
+The temporal dynamics of TANOVA on the comparison between <em>GnLn</em>
+and the average of three lexical conditions, corrected by temporal
+clustering analysis with a corrected threshold of 0.05 <span
+class="citation" data-cites="Maris2007-aa">(Maris and Oostenveld
+2007)</span>. The lexicality effects emerge around 100 ms.</figcaption>
+</figure>
+</div>
+<p>The analysis of TANOVA revealed significant differences between the
+topographies of <em>GnLn</em> and response patterns in <em>GwLw</em>,
+<em>GwLn</em>, and <em>GnLw</em> conditions (Fig. <a href="#fig:ch3.3"
+data-reference-type="ref" data-reference="fig:ch3.3">2.3</a><em>D</em>,
+highlighted in the red box). The differences were first observed at 90
+ms after stimulus onset. The differences were most substantial in the
+<em>GwLn-GnLn</em> comparison as the significant level at <em>p</em>
+&lt; 0.01 for the following 20 ms. The pattern differences were also
+observed in the <em>GwLw-GnLn</em> comparison, but the significant
+differences started later at 100 ms and lasted for 30 ms. The <em>p</em>
+value of the 90- to 100-ms time bin in the <em>GnLw-GnLn</em> comparison
+was 0.0539, and the relative Bayes factor (BF10) was 2.3371, which
+indicates weak evidence in favor of H1 <span class="citation"
+data-cites="Held2018-ir">(Held and Ott 2018)</span>. The TANOVA of the
+comparison between <em>GnLn</em> and the average of the other three
+lexical conditions showed significant differences around 110 ms (Fig. <a
+href="#fig:ch3.3" data-reference-type="ref"
+data-reference="fig:ch3.3">2.3</a><em>E</em>, highlighted in the red
+box). TANOVA revealed that topographic differences occurred before 130
+ms between lexicalized chunks at either level and the non-lexicalized
+<em>GnLn</em> condition. These results suggested that the early-stage
+process related to the detection of lexicality. The global level
+information may facilitate the detection because the effect size ranked
+from biggest to smallest in the order <em>GwLn</em>, <em>GwLw</em>, and
+<em>GnLw</em>.</p>
+<p>We also observed significant differences in later responses.
+<em>GwLn</em> has a significant cluster starting at 150 ms, followed by
+<em>GwLw</em> that has a significant cluster starting around 190 ms.
+<em>GnLw</em> does not have a significant late cluster until 230 ms.
+These latency differences at a later stage suggested that the lexical
+processes could first occur at the global level. We further investigate
+these dynamics in the next section.</p>
+<div id="processing-of-chunks-at-different-levels">
+<h6 id="ch3.processing-of-chunks-at-different-levels"><strong>Processing
+of chunks at different levels</strong></h6>
+</div>
+<p>We analyzed response amplitude and applied pattern analyses between
+conditions with different lexical status either at the global level or
+at the local level to test the dynamics of chunk processing. We compared
+ERPs from the P3 and P4 channels for words and nonwords, separately at
+the global and local levels (Fig. <a href="#fig:ch3.4"
+data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>A</em>,<em>B</em>), as well as RMS
+from all channels (Fig. <a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>C</em>). Paired <em>t</em> tests
+were applied to these data. We found that the lexicality effects
+occurred as early as 160 ms at the global level, but much later around
+250 ms at the local level. These effects are in selected parietal
+channels but are absent in the RMS, suggesting the effects are narrowly
+distributed, which is consistent with the distribution results in Figure
+<a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>D</em>. When comparing the strings
+that contained a global-level word (<em>GwLw</em>, <em>GwLn</em>) with
+the strings that contained global-level nonword (<em>GnLw</em>,
+<em>GnLn</em>), the significant differences were observed in the
+electrodes over the middle parietal and left frontal-temporal regions
+(Fig. <a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>D</em>, indicated by white points)
+starting around 170 ms (Fig. <a href="#fig:ch3.4"
+data-reference-type="ref" data-reference="fig:ch3.4">2.4</a><em>D</em>,
+red arrow). When comparing the strings that contained a local-level word
+(<em>GwLw</em>, <em>GnLw</em>) with the strings that contained
+local-level nonword (<em>GwLn</em>, <em>GnLn)</em>, the significant
+differences in response amplitudes started much later at the latency
+around 230 ms in the electrodes over frontal and parietal-occipital
+regions (Fig. <a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>D</em>, blue arrow).</p>
+<div class="center">
+<figure>
+<img src="figures/ch3.4.jpg" id="fig:ch3.4"
+alt="The processing dynamics of chunks at global and local levels. A, ERP waveform responses of the global lexicality effect in the representative channels P3 and P4; t tests revealed the effects occurred around 160 ms. The shaded area indicates p &lt;0.05. B, ERP waveform responses of local lexicality effect in the representative channels P3 and P4. The effects occurred around 250 ms, later than the global lexicality effect in A. The shaded area indicates p &lt;0.05. C, RMS waveform responses of all channels on global lexicality and local lexicality comparisons. No amplitude difference was found. D, Analysis of response amplitude in topographical comparisons between different lexical status at the global level (upper row) and at the local level (lower row) across time. The color scheme depicts the differences in response amplitude between conditions, and the white points superimposed on the topographies indicate the electrodes that showed significant differences after multiple comparison correction (FDR). E, The temporal dynamics of TANOVA results. The results showed a distinct starting time of significant response pattern differences between different lexical status at the global and local levels. The red arrows in all plots indicate the earliest latency of difference in the global level comparison, and the green arrows indicate the earliest latency of difference in the local level comparison. The results were corrected by a temporal clustering analysis with a corrected threshold of 0.05(Maris and Oostenveld 2007)." />
+<figcaption aria-hidden="true"><strong>The processing dynamics of chunks
+at global and local levels.</strong> <em><strong>A</strong></em>, ERP
+waveform responses of the global lexicality effect in the representative
+channels P3 and P4; <em>t</em> tests revealed the effects occurred
+around 160 ms. The shaded area indicates <em>p</em> &lt;0.05.
+<em><strong>B</strong></em>, ERP waveform responses of local lexicality
+effect in the representative channels P3 and P4. The effects occurred
+around 250 ms, later than the global lexicality effect in
+<em><strong>A</strong></em>. The shaded area indicates <em>p</em>
+&lt;0.05. <em><strong>C</strong></em>, RMS waveform responses of all
+channels on global lexicality and local lexicality comparisons. No
+amplitude difference was found. <em><strong>D</strong></em>, Analysis of
+response amplitude in topographical comparisons between different
+lexical status at the global level (upper row) and at the local level
+(lower row) across time. The color scheme depicts the differences in
+response amplitude between conditions, and the white points superimposed
+on the topographies indicate the electrodes that showed significant
+differences after multiple comparison correction (FDR).
+<em><strong>E</strong></em>, The temporal dynamics of TANOVA results.
+The results showed a distinct starting time of significant response
+pattern differences between different lexical status at the global and
+local levels. The red arrows in all plots indicate the earliest latency
+of difference in the global level comparison, and the green arrows
+indicate the earliest latency of difference in the local level
+comparison. The results were corrected by a temporal clustering analysis
+with a corrected threshold of 0.05<span class="citation"
+data-cites="Maris2007-aa">(Maris and Oostenveld
+2007)</span>.</figcaption>
+</figure>
+</div>
+<p>The TANOVA results in Figure 4<em>E</em> further showed that response
+patterns between distinct global-level lexical status were statistically
+significantly different began around 160 ms after the stimulus onset
+(Fig. <a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>E</em>, red arrow), and the
+significant pattern differences at the local level began around 220 ms
+(Fig. <a href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a><em>E</em>, blue arrow), consistent
+with the observation in Figure 4<em>A</em>,<em>D</em>, as well as the
+observations of late differences in Figure 3<em>D</em>.</p>
+<div id="discussion">
+<h4 id="ch3.discussion">Discussion</h4>
+</div>
+<p>This study investigated the processing dynamics for written texts
+that included different levels of chunks, such as word and phrase. With
+the stimuli of Chinese four-character strings that contain multiple
+grain-size language chunks, the behavioral results showed that the
+recognition of lexicalized local chunks was affected by the lexical
+status of global chunks, but not vice versa. These results suggest that
+the processing of chunks at the global level is prioritized over the
+processing of local ones during reading. Moreover, the earliest EEG
+responses showed distinct patterns between lexicalized and
+non-lexicalized chunks, and the latency of successive EEG responses was
+faster when processing chunks at the global level than that for local
+chunks. These consistent behavioral and electrophysiological results
+suggest that two distinct stages successively operate in the early stage
+of reading for the detection of potential chunks and further processes
+operated on the detected chunks at multiple levels.</p>
+<div id="detection-of-chunks-at-100-ms">
+<h5 id="ch3.detection-of-chunks-at-100-ms">Detection of chunks at 100
+ms</h5>
+</div>
+<p>In the clustering results (Fig. <a href="#fig:ch3.2"
+data-reference-type="ref" data-reference="fig:ch3.2">2.2</a>), a
+“temporal gap” was observed in the early EEG reading responses, which
+separated the processing from 80 to 200 ms into two distinct clusters,
+suggesting different neural bases and possible distinct functions.
+Furthermore, the response patterns of the earliest cluster around 100 ms
+were modulated by the lexical status of chunks at both global and local
+levels (Fig. <a href="#fig:ch3.3" data-reference-type="ref"
+data-reference="fig:ch3.3">2.3</a>). These findings are consistent with
+the early lexical familiarity checking mechanism proposed in the E-Z
+reader model <span class="citation" data-cites="Reichle2003-qe">(Erik D.
+Reichle, Rayner, and Pollatsek 2003)</span>. Language chunks and their
+lexical status should be checked before accessing the semantics. In
+other words, the familiar lexical chunks are detected before subsequent
+processes (e.g., semantic retrieval). This is especially important in
+the writing system that lacks explicit boundaries for lexicalized
+chunks/phrases, such as written Chinese. Our results suggest such
+lexical checking/detection can occur early in the reading process around
+100 ms and extend to multiple chunk levels.</p>
+<p>What factor enables this early chunk detection in reading? Top-down
+mechanisms have been proposed to account for perceptual and cognitive
+functions, such as the application of prior knowledge or prediction of
+the global shape information in object recognition <span
+class="citation"
+data-cites="Bar2003-ch Bar2006-cr Panichello2012-tp">(Moshe Bar 2003; M.
+Bar et al. 2006; Panichello, Cheung, and Bar 2012)</span>. The detection
+of language chunks at multiple levels during reading involved the left
+frontal regions and occipital regions (Fig. <a href="#fig:ch3.3"
+data-reference-type="ref" data-reference="fig:ch3.3">2.3</a><em>A</em>),
+similar to the top-down modulation by the early feed-forward projection
+of low spatial frequency information <span class="citation"
+data-cites="Bar2006-cr">(M. Bar et al. 2006)</span>. In previous
+research, high-frequency words can be easily detected and recognized
+<span class="citation" data-cites="Monsell1991-hc Ellis2002-hl">(Monsell
+1991; Ellis 2002)</span>. The transparency <span class="citation"
+data-cites="MacGregor2013-qb">(MacGregor and Shtyrov 2013)</span> and
+decomposability <span class="citation"
+data-cites="Abel2003-sb Vannest2005-ad">(Abel 2003; Vannest, Polk, and
+Lewis 2005)</span> also affect the mental encoding of complex words,
+phrases, and idioms. However, individual differences in reading may make
+the perception of these physical attributes vary across individuals.
+Therefore, the factor that leads to the early chunk detection is likely
+to be the familiarity of these attributes. The effect of familiarity has
+been demonstrated in improving language retrieval <span class="citation"
+data-cites="Bannard2008-eo Zheng2015-wv">(Bannard and Matthews 2008;
+Zheng, Li, and Xiao 2015)</span>. In this study, we controlled the
+familiarity by only using stimuli that were rated at the extreme degree
+of familiarity, either very familiar words or strange nonwords. We
+speculate that the familiarity of lexical-orthographic features (such as
+frequency and decomposability) is the criterion of chunk detection, and
+it can apply simultaneously at both global and local levels during early
+reading processes.</p>
+<div id="the-priority-of-processing-global-chunks">
+<h5 id="ch3.the-priority-of-processing-global-chunks">The priority of
+processing global chunks</h5>
+</div>
+<p>Our behavioral results demonstrated that the processing of a global
+chunk significantly affected the lexical decision of lexicalized local
+chunks. In contrast, the local chunks had no impact on the lexical
+decision of the lexicalized global chunk. The unidirectional effect
+suggested that the processing of global level chunks had priority over
+the processing of their constituents. EEG further provided evidence
+supporting the temporal hierarchy in processing global and local chunks.
+The EEG results showed that the processing of global chunks started
+around 160 ms, while the onset of local chunk processing was much later
+(<span class="math inline">∼</span> 220 ms). These EEG results, together
+with our behavioral data, demonstrated that after the simultaneous chunk
+detection at both levels, the processing of different sizes of lexical
+chunks began at different times: the processing of global chunks
+preceded that of local chunks.</p>
+<p>The priority of global information has been demonstrated in many
+cognitive domains. Gestaltism <span class="citation"
+data-cites="Heider1977-hb Dewey2018-ye">(Heider 1977; Dewey 2018)</span>
+considers the global more informative than the aggregation of its parts.
+In vision, the global precedence effect <span class="citation"
+data-cites="Navon1977-ss">(Navon 1977)</span> suggests that recognizing
+a scene is hierarchical and global processing has priority over local
+processing. In contrast, local processing is subject to the top-down
+reevaluation and integration into global processing. Similarly, the
+top-down facilitation of visual object recognition also implies that the
+activation of high-level information will be faster than the lower-level
+information <span class="citation"
+data-cites="Bar2003-ch Bar2006-cr">(Moshe Bar 2003; M. Bar et al.
+2006)</span>. In linguistics, the word superiority effect <span
+class="citation" data-cites="Reicher1969-iu">(Reicher 1969)</span>
+suggests that the processing of a word at the global level interacts
+with letter identification <span class="citation"
+data-cites="McClelland1981-ba">(McClelland and Rumelhart 1981)</span>.
+This study further demonstrates the influences of phrases on words. Our
+results expand previous research and suggest that the global-priority
+mechanism can be applied across multiple levels in a hierarchical manner
+in the linguistic context. The priority of global chunks is consistent
+with the information theory (Shannon, 1948): larger chunks contain more
+context information and less internal entropy, which can prevent
+ambiguity.</p>
+<div id="paralleled-processing-of-chunks-at-both-levels">
+<h5 id="ch3.paralleled-processing-of-chunks-at-both-levels">Paralleled
+processing of chunks at both levels</h5>
+</div>
+<p>The behavioral results revealed that the judgment of a
+non-lexicalized phrase at the global level was more difficult when the
+task-unrelated chunks were familiar words at the local level. These
+results indicate that local processing might be initiated before the
+finish of global processing. The EEG results further support that
+processing at both levels temporally overlapped: the response patterns
+of processing global chunks continued after the start of local
+processing response patterns (Fig. <a href="#fig:ch3.4"
+data-reference-type="ref" data-reference="fig:ch3.4">2.4</a>). This
+observation of partially temporal overlap in the processing of
+part-whole hierarchies is consistent with simultaneous processing
+mechanisms implemented in connectionist networks <span class="citation"
+data-cites="Hinton1990-np">(Hinton 1990)</span>. A scheduler could
+control the participation of processing at different levels. Should
+processing a chunk exceed expected duration, the processing of chunks at
+other levels would occur. Moreover, the topographic patterns showed left
+lateralization for processing chunks at the global level, whereas both
+hemispheres engaged in processing chunks at the local level (Fig. <a
+href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a>), suggesting possible anatomic
+differences that mediate the partial temporal paralleled processes at
+both levels.</p>
+<div id="chunking-in-a-broader-cognitive-perspective">
+<h5 id="ch3.chunking-in-a-broader-cognitive-perspective">Chunking in a
+broader cognitive perspective</h5>
+</div>
+<p>Various cognitive functions can exert a top-down influence on early
+perceptual responses. For example, attention is one of the most common
+functions that modulate early perceptual responses, such as increasing
+the response gain in the visual <span class="citation"
+data-cites="Fries2001-qp">(Fries et al. 2001)</span>, auditory <span
+class="citation" data-cites="Poghosyan2008-om">(Poghosyan and Ioannides
+2008)</span>, and somatosensory <span class="citation"
+data-cites="Steinmetz2000-zo">(Steinmetz et al. 2000)</span> domains.
+The current study offers a new top-down influence in a linguistic
+context. The lexicality/accessibility of the character combination
+determines the way of chunking and recombination of characters to form
+representations at both global and local scales. Such reconstruction of
+representations may modulate the early visual responses in reading.</p>
+<p>Top-down influence provides a common framework that links among
+cognitive systems. For example, orofacial motion alters speech
+perception, such as in the McGurk effect <span class="citation"
+data-cites="McGurk1976-li">(McGurk and MacDonald 1976)</span>, and
+shortens latency of early auditory responses <span class="citation"
+data-cites="Van_Wassenhove2005-qj">(Van Wassenhove, Grant, and Poeppel
+2005)</span>. Speech articulation dampens the auditory responses to
+speech feedback <span class="citation" data-cites="Houde2002-li">(Houde
+et al. 2002)</span> and modulates the sensitivity to auditory stimuli
+via motor-to-sensory transformation <span class="citation"
+data-cites="Tian2010-qc Tian2013-eq Tian2015-ds Tian2016-jb Tian2018-qi Ma2019-ir Li2020-io">(Tian
+and Poeppel 2010, 2013, 2015; Tian, Zarate, and Poeppel 2016; Tian et
+al. 2018; Ma and Tian 2019; S. Li, Zhu, and Tian 2020)</span>. The
+current study provides evidence supporting that the language system can
+penetrate and influence visual processing.</p>
+<p>Chunking, which deducts combinatory representations into more basic
+linguistic units for processing, plays a crucial role in language
+comprehension. Previous studies suggest that linguistic chunking
+arguably occurs in complex morphology such as decomposing compounds into
+morphemes – the smallest linguistic unit that carries meaning <span
+class="citation"
+data-cites="Stockall2006-in Fiorentino2007-tx">(Stockall and Marantz
+2006; Fiorentino and Poeppel 2007)</span>. The current study further
+demonstrates that phrases can be segmented into smaller linguistic units
+based on lexicality at both global and local levels. Our results bridge
+chunking in morphology with chunking in sentences based on semantics and
+syntax <span class="citation" data-cites="Ding2016-zc">(Ding et al.
+2016)</span>, and even higher linguistic levels such as paragraphs or an
+entire text based on formal structures and conceptual flow <span
+class="citation" data-cites="Teng2020-df">(Teng et al. 2020)</span>. A
+complete picture of chunking operation across all levels of linguistic
+hierarchy emerges.</p>
+<p>The two-stage processing suggested by our results may contribute to
+the debate regarding the accessible units in complex words <span
+class="citation" data-cites="Giraudo2016-xs">(Giraudo and Dal Maso
+2016)</span>. Some studies suggest that morphologic decomposition occurs
+only in semantically transparent morphologic pairs (e.g., hunter–HUNT;
+<span class="citation" data-cites="Meunier2007-dx">(Meunier and Longtin
+2007)</span>). In contrast, other studies found semantically-opaque but
+morphologically-complex words (e.g., corner = corn + er) also show
+decomposition <span class="citation"
+data-cites="Davis2004-hd Devlin2004-uv Gold2007-yr">(M. H. Davis 2004;
+J. T. Devlin et al. 2004; Gold and Rastle 2007)</span>. That is, the
+surface morpheme-like unit that could be an interface between form and
+meaning is accessible regardless of the semantic relation between the
+global level and its constituents <span class="citation"
+data-cites="Devlin2004-uv Gold2007-yr">(J. T. Devlin et al. 2004; Gold
+and Rastle 2007)</span>. Our results are more consistent with the latter
+view and suggest that this surface morpheme-like unit could be detected
+automatically as long as it is available. Specifically, these results
+show that bi-character words, which are bi-morpheme units, are also
+automatically decomposed from phrases, suggesting that the surface
+morpheme-like unit in the decomposition is not limited to the basic
+linguistic morphemes. Furthermore, the access of the surface
+morpheme-like unit has been localized over the occipito-temporal and
+left inferior frontal regions <span class="citation"
+data-cites="Devlin2004-uv Gold2007-yr Meinzer2009-pk Pliatsikas2014-an">(J.
+T. Devlin et al. 2004; Gold and Rastle 2007; Meinzer et al. 2009;
+Pliatsikas et al. 2014)</span>, which is consistent with our EEG
+topographic pattern (Fig. <a href="#fig:ch3.3" data-reference-type="ref"
+data-reference="fig:ch3.3">2.3</a><em>C</em>). Orthographic typicality
+and lexicality modulate reading responses around 100 ms <span
+class="citation" data-cites="Hauk2006-dt Faisca2019-we">(Hauk et al.
+2006; Faı́sca, Reis, and Araújo 2019)</span>, which is also consistent
+with the detection timing in our observations.</p>
+<p>The “global first” principle in different levels of accessible units
+has been observed in morphology <span class="citation"
+data-cites="Bybee1995-ha">(Bybee 1995)</span>, letter detection <span
+class="citation" data-cites="Han2003-gv">(Han, Yund, and Woods
+2003)</span>, and general vision <span class="citation"
+data-cites="Chen1982-db Wang2007-vd">(Chen 1982; B. Wang et al.
+2007)</span>. All these results are consistent with our findings that
+processing global level information possesses priority (Fig. <a
+href="#fig:ch3.4" data-reference-type="ref"
+data-reference="fig:ch3.4">2.4</a>). Last, the discrepancy between
+global and local information affects ERP responses as early as 250 ms
+<span class="citation" data-cites="Han1999-pc">(Han et al. 1999)</span>,
+suggesting a possible initiation time of parallel processing that is
+consistent with our results (Fig. <a href="#fig:ch3.4"
+data-reference-type="ref" data-reference="fig:ch3.4">2.4</a>).</p>
+<p>The chunking operation is universal among sensory modalities for
+processing information that is beyond cognitive capacity. However, the
+nature of stimuli among sensory modalities may differentiate the
+possible neural mechanisms that mediate chunking. For example,
+linguistic information unfolds over time in speech, whereas the
+information can be available at the same time in reading (e.g., visual
+field and reading span). Therefore, temporal processing such as neural
+oscillations might be a potential dominant mechanism for chunking in the
+auditory domain with neural entrainment to acoustic features (such as
+prosodic cues and speech envelope; <span class="citation"
+data-cites="Luo2007-yy">(H. Luo and Poeppel 2007)</span>), top-down
+rhythmic and melodic template <span class="citation"
+data-cites="Nozaradan2011-fc Di_Liberto2020-bs">(Nozaradan et al. 2011;
+Di Liberto et al. 2020)</span>, semantic and syntactic cues <span
+class="citation" data-cites="Ding2016-zc Ding2017-wf">(Ding et al. 2016,
+2017)</span>, as well as structures and formats of language <span
+class="citation" data-cites="Teng2020-df">(Teng et al. 2020)</span>.
+However, in the visual domain, additional spatial information can be
+available at the same time. Chunking is more likely based on the
+template from higher hierarchy, such as an orthographic template in
+global/local letters <span class="citation"
+data-cites="Kimchi1992-kz">(Kimchi 1992)</span> and mental
+representation of lexicality in the current study.</p>
+<p>Based on all results, we tentatively put forward a workflow of
+processing multiple-level information in reading (Fig. <a
+href="#fig:ch3.5" data-reference-type="ref"
+data-reference="fig:ch3.5">2.5</a>). The segmentation occurs in an early
+and short time window, and possible chunks at all levels are detected
+based on the familiarity of lexical-orthographic features (detection
+stage). The chunks at each level are further processed with distinct
+temporal characteristics (processing stage). Specifically, the
+processing of global chunks possesses priority over the local chunks,
+while the processing of local chunks can launch before global chunk
+processing finishes. Hence, the processes of chunks at two levels have a
+partial temporal overlap that enables interaction across levels before
+final integration.</p>
+<div class="center">
+<figure>
+<img src="figures/ch3.5.jpg" id="fig:ch3.5"
+alt="Schematic diagram of proposed two-stage chunking operation in reading." />
+<figcaption aria-hidden="true"><strong>Schematic diagram of proposed
+two-stage chunking operation in reading.</strong></figcaption>
+</figure>
+</div>
+<p>Because our primary goal was to test the relation between lexicality
+and chunking at different levels, we controlled the lexical-orthographic
+features such as the number of strokes, and frequencies. Theoretically,
+lexical access arguably occurs earlier than semantic processing. It is
+more likely that lexical factors are the primary factors mediating the
+effects that we observed. Semantic attributes could be another factor
+influencing the late process of chunking. It would be of interest to
+study semantics in chunking and obtain a complete understanding.
+Moreover, we investigated the computational dynamics of chunking in
+reading by testing the response latencies. EEG is one of the optimal
+tools to test the dynamics and latency, but not an optimal tool for
+inferring the spatial location of sources. The spatial distribution in
+topography is a distorted and incomplete representation of underlying
+neural sources because the topography is most likely a manifestation of
+a mixture from multiple neural sources. To avoid confusion, we only take
+advantage of changes in topographies across time or across conditions to
+infer the neural dynamics <span class="citation"
+data-cites="Tian2008-cg Tian2011-rs Yang2018-cq Wang2019-bv">(Tian and
+Huber 2008; Tian, Poeppel, and Huber 2011; Yang, Zhu, and Tian 2018; X.
+Wang, Zhu, and Tian 2019)</span>. Nevertheless, the location of the
+chunking operation is another aspect of interest. We plan to use fMRI
+for further investigation.</p>
+<div id="conclusion">
+<h3 id="ch3.conclusion">Conclusion</h3>
+</div>
+<p>The current study investigated the chunking mechanism in reading.
+Consistent behavioral and EEG results suggested that multiple levels of
+chunks are realized via two distinct stages of chunking in the early
+time course of reading. The first stage detects lexicalized chunks at
+all levels of grain-size. In the second stage, in contrast, the
+processing at the global level precedes the local level and later
+results in a parallel and interactive process. This study revealed the
+rich dynamics of chunking operation during reading, which provides the
+starting computation for comprehension of hierarchical language
+systems.</p>
+    </section>
+
+  </body>
+</html>
+

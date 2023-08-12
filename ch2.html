@@ -1,0 +1,1141 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="part-one-laboratory-experiments">Part One: Laboratory
+Experiments</h1>
+<h2 id="ch2">Group-Level Multivariate Analysis in EasyEEG Toolbox:
+Examining the Temporal Dynamics using Topographic Responses<a
+href="bibilo.html#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></h2>
+<div class="center">
+<p><strong>Abstract</strong><br />
+</p>
+</div>
+<p>Electroencephalography (EEG) provides high temporal resolution
+cognitive information from non-invasive recordings. However, one of the
+common practices – using a subset of sensors in ERP analysis makes it
+difficult to provide holistic and precise dynamic results. Selecting or
+grouping subsets of sensors may also be subject to selection bias and
+multiple comparisons, and is further complicated by individual
+differences in the group-level analysis. More importantly, changes in
+neural generators and variations in response magnitude from the same
+neural sources are difficult to separate, which limits the capacity for
+testing different aspects of cognitive hypotheses. We introduce EasyEEG,
+a toolbox that includes several multivariate analysis methods to
+directly test cognitive hypotheses based on topographic responses that
+include data from all sensors. These multivariate methods can
+investigate effects in the dimensions of response magnitude and
+topographic patterns separately using data in the sensor space, and
+therefore enables assessing neural response dynamics. The concise
+workflow and the modular design provide user-friendly and
+programmer-friendly features. Users of all levels can benefit from the
+open-source, free EasyEEG toolbox to obtain a straightforward solution
+for efficient processing of EEG data and a complete pipeline from raw
+data to final results for publication.</p>
+<div id="introduction">
+<h3 id="ch2.introduction">Introduction</h3>
+</div>
+<p>Electroencephalography (EEG) is a suitable non-invasive measure for
+investigating the temporal dynamics of mental processing because of its
+high temporal resolution and cost-effectiveness. The event-related
+potential (ERP) is the most common way to reflect neural response
+dynamics in the temporal domain. However, ERP analyses are mostly based
+on responses in individual sensors or an average of a group of selected
+sensors. This “selecting sensors” analysis method is not optimal,
+because it faces various challenges <span class="citation"
+data-cites="Tian2008-cg Tian2011-rs">(Tian and Huber 2008; Tian,
+Poeppel, and Huber 2011)</span>. For example, only relying on data in a
+few sensors cannot easily differentiate between changes in the
+distribution of neural sources versus changes in the magnitude of neural
+sources. Moreover, selecting sensors may introduce subjective bias
+during the selection processes, and sometimes data in different sensors
+may derive inconsistent or even contradicting results. Unless all
+possible sensor selections have been tested, readers will not know
+whether the reported effects are robust across sensors or sensor groups.
+Running statistical tests among multiple (groups of) sensors is subject
+to multiple comparisons, and hence increases the risk of type I error
+(false positives) or type II error (false negatives that could be
+induced by correction methods). Furthermore, the ERP analysis heavily
+depends on identifying ERP components. However, data in a few sensors
+cannot fully represent the spatial and temporal features of components,
+which makes the estimation of components’ response magnitude and latency
+difficult and incomplete. Last, individual differences in spatial and
+temporal characteristics caused by anatomical and functional differences
+across subjects further complicate the analysis, which makes group-level
+analysis even more opaque. Therefore, most of the time, it is difficult
+to get a precise and holistic view of temporal dynamics by using
+“selected sensors” in ERP analyses.</p>
+<p>These problems may be solvable by using information from all
+available sensors. Two approaches can be taken. The first one is to
+localize neural sources by projecting all sensors’ information back to
+the source space (source localization). The advantage is that additional
+information about source spatial distribution can be estimated together
+with their temporal dynamics. Numerous source localization methods, such
+as dipole modeling, sLoreta<span class="citation"
+data-cites="Pascual-Marqui2007-ij">(Pascual-Marqui 2007)</span>,
+Beamforming <span class="citation" data-cites="Van_Veen1988-no">(Van
+Veen and Buckley 1988)</span>, and MNE<span class="citation"
+data-cites="Grech2008-nv">(Grech et al. 2008)</span>, have been proposed
+and built in software packages such as BESA, EEGLab, Brainstorm, NutMEG,
+SPM, Fieldtrip, MNE-Python. However, source localization is an ill-posed
+problem – an infinite number of solutions can be obtained from the
+mixture of recordings. Therefore, many assumptions have to be met and
+sophisticated procedures and careful manipulation have to be followed in
+order to obtain meaningful source localization results. Moreover, these
+localization methods work best with magnetoencephalography (MEG) that
+has better spatial resolution. EEG signals, in contrast, are highly
+distorted by the skull. High-density EEG systems and realistic head
+models that are estimated by individual anatomical MRI scans are
+required to achieve acceptable results of EEG source localization.
+However, these high-cost systems and MRI scans may be not feasible for
+many researchers.</p>
+<p>The second approach is to work with all “raw” data in the sensor
+space. Compared with methods with dependent variables from individual
+sensors or averages of selected sensors, this approach that relies on
+information from multiple sensors is called multivariate analysis.
+Basically, multivariate analysis in EEG uses the topographical patterns
+of sensors, and tries to differentiate response patterns among
+conditions at each given time point. If differences, either in response
+magnitude, topographic patterns, or latency were detected across a
+timespan, we can infer that different mental processes and their
+temporal dynamics under distinct conditions. This multivariate approach
+aims to directly test cognitive hypotheses by using data in all sensors
+<span class="citation" data-cites="Tian2008-cg Tian2011-rs">(Tian and
+Huber 2008; Tian, Poeppel, and Huber 2011)</span> and by-passing source
+localization in case the location information of cortical activities was
+not the primary research interest of the study. Note that performing the
+source localization by solving the inverse problem is the only way in
+EEG and MEG studies to directly address questions regarding location at
+the brain level. Scalp data and topographic patterns reflect the
+response dynamics at the sensor level and can be used as indicators of
+modulation by experimental manipulation.</p>
+<p>In this paper, we introduce the EasyEEG toolbox (<a
+href="https://github.com/ray306/EasyEEG"
+class="uri">https://github.com/ray306/EasyEEG</a>), in which several
+multivariate analyses are included for processing EEG sensor data and
+testing cognitive hypotheses. To our knowledge, a few EEG analysis
+software packages <span class="citation"
+data-cites="Delorme2011-ht Pernet2011-vs Groppe2011-cl Gramfort2013-gh">(Delorme
+et al. 2011; Pernet et al. 2011; Groppe, Urbach, and Kutas 2011;
+Gramfort et al. 2013)</span> have already included several multivariate
+analysis methods for data in the sensor space. For example, LIMO EEG
+<span class="citation" data-cites="Pernet2011-vs">(Pernet et al.
+2011)</span> aims to test the effects at all sensors and all time points
+by a set of statistical tools such as ANOVA, ANCOVA and Hierarchical
+General Linear Models along with multiple comparison corrections; Mass
+Univariate ERP Toolbox <span class="citation"
+data-cites="Groppe2011-cl">(Groppe, Urbach, and Kutas 2011)</span>
+applies univariate tests (e.g., t-test) in each sensor over time points
+with multiple comparison correction; the Donders Machine Learning
+Toolbox <a href="bibilo.html#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> supports single-trial analysis with
+several machine learning methods built in, and MNE-Python <span
+class="citation" data-cites="Gramfort2013-gh">(Gramfort et al.
+2013)</span> makes use of a machine learn package named Scikit-Learn
+<span class="citation" data-cites="Pedregosa2011-vn">(Pedregosa et al.
+2011)</span> to see the decoding performance over the temporal or
+spatial domain. Those toolboxes and the new toolbox EasyEEG share the
+same goal which is to investigate the temporal neural dynamics using all
+data in all sensors. The uniqueness of EasyEEG toolbox is that the
+included multivariate methods are carried out over the explicit measures
+that reflect the topographic patterns across all sensors. It offers a
+straightforward and intuitive approach to efficiently test cognitive
+hypotheses.</p>
+<p>The design principle of this toolbox is to be both user friendly and
+programmer friendly. We therefore separated the procedure of EEG data
+analysis into several steps, and made each step into an independent
+module with concise input/output interfaces. In each module, common
+important but tedious operations that involve complicated programming
+details have been encapsulated into several simple commands. Various
+multivariate group analysis methods have been built in with single-line
+commands. Users simply need a descriptive dictionary to snip the data
+and one line of concatenated commands to perform all analyses and
+visualize the results. After knowing only a few commands, all users,
+regardless of programming experience, could start their analysis within
+a few minutes. Moreover, the open-source nature of this toolbox enables
+and supports users to add more algorithms for the EEG data analysis.
+EasyEEG has encapsulated many APIs for the programmers. Researchers who
+want to introduce a new analysis method need only pay attention to the
+core logic of that method, but leave out the trivial details, such as
+reshaping data and plotting, from the programming. And even for deep
+learning applications to EEG data, EasyEEG also provides a concise
+interface. In general, it offers a clear way to perform group level
+statistical tests to directly investigate cognitive hypotheses. We
+introduce how to use this package in the next section.</p>
+<div id="workflow-and-methods">
+<h3 id="ch2.workflow-and-methods">Workflow and Methods </h3>
+</div>
+<p>The general analysis workflow in EasyEEG involves four stages:</p>
+<ol>
+<li><p>Import the preprocessed data. EasyEEG currently (v.0.8.3)
+supports epoched data generated from MNE and EEGLAB;</p></li>
+<li><p>Define a dictionary (a Python syntax) to describe the analysis
+target (e.g., conditions, sensors, temporal durations, and/or any
+comparison between two groups), then extract the data by a function
+“extract()” with the definition as the parameter;</p></li>
+<li><p>Apply one of four analysis functions (e.g.
+<span><code>tanova()</code></span>) introduced in this paper. For
+algorithms that require long processing time, the computation process
+can be seen in a progress bar showing used time and estimated remaining
+time to finish; The computation function will yield a special data
+structure named <em>AnalyzedData</em>;</p></li>
+<li><p>Visualize and output the results. <em>AnalyzedData</em> includes
+the analysis name (in the <em>analysis_name</em> attribute), the
+analysis result (in the <em>data, annotation</em>, or
+<em>supplement</em> attribute), and the parameters for visualization (in
+the <em>default_plot_params</em> attribute). Researchers cannot only
+examine the <em>p</em>-values or other information, but also customize
+the visualization parameters for different figures.</p></li>
+</ol>
+<p>More details can be found in EasyEEG’s online documentation (<a
+href="http://easyeeg.readthedocs.io/en/latest/"
+class="uri">http://easyeeg.readthedocs.io/en/latest/</a>).</p>
+<p>We introduce a procedure that includes four multivariate methods for
+testing cognitive hypotheses using information in topographic patterns.
+An open dataset of face perception <span class="citation"
+data-cites="Wakeman2015-up">(Wakeman and Henson 2015)</span> is used to
+demonstrate this procedure and methods. The first two methods are to
+combine univariate approaches with topographic information to estimate
+the spatial extent of experimental effects (<em>distribution of
+significant sensors</em>) and the overall temporal dynamics of
+experimental effects (dynamics of global field power, <em>GFP</em>).
+These analyses can make the connection with the common practice of ERP
+analysis. The next two methods are to implement multivariate analyses,
+introducing in this paper <em>topographic analysis of variance</em>
+(<em>TANOVA</em>) and <em>pattern classification</em> that takes
+holistic topographic information into account to perform group-level
+statistics and investigate the dynamics of response patterns.</p>
+<div id="distribution-of-significant-sensors">
+<h5 id="ch2.distribution-of-significant-sensors">1. Distribution of
+significant sensors</h5>
+</div>
+<p>The spatial extent of experimental effects can be estimated by the
+number and distribution of sensors that are significantly different
+between conditions. This analysis is done by performing statistical
+tests, such as paired t-test, on response amplitudes between two
+conditions in each sensor at all given time points or windows, and
+counting the number of the sensors that have significant results. In
+this way, we can quantify the spatial difference in terms of response
+amplitude between two topographies. By examining differences across
+timepoints, we can estimate the temporal dynamics of underlying neural
+processes that are reflected in topographies.</p>
+<div id="dynamics-of-global-field-power-gfp">
+<h5 id="ch2.dynamics-of-global-field-power-gfp">2. Dynamics of global
+field power (GFP)</h5>
+</div>
+<p>Global field power (GFP) was introduced by Lehmann and Skrandies
+<span class="citation" data-cites="Lehmann1980-ol">(Lehmann and
+Skrandies 1980)</span>. It is calculated with the following
+equations:</p>
+<p><span class="math display">$$\begin{array}{l}
+\text{GFP}_{t}=\sqrt{\frac{1}{n} \cdot \sum_{i=1}^{n} u_{i}^{2}} \\
+u_{i}=U_{i}-\bar{u} \\
+\bar{u}=\frac{1}{n} \cdot \sum_{i=1}^{n} U_{i}
+\end{array}$$</span></p>
+<p>where <span class="math inline"><em>t</em></span> is the target
+timepoint <span class="math inline"><em>n</em></span> is the number of
+sensors in the montage; <span
+class="math inline"><em>U</em><sub><em>i</em></sub></span> is the
+measured potential of the <span class="math inline"><em>i</em></span>th
+senosr (for a given condition at a given time point <span
+class="math inline"><em>t</em></span>); and <span
+class="math inline"><em>u</em><sub><em>i</em></sub></span> is the
+average-referenced potential of the ith electrode.</p>
+<p>Basically, GFP is a summary statistics of response magnitude from all
+sensors on a topography, which is in the form of variance of response
+magnitude and mathematically equals the root mean square (RMS) of all
+mean-referenced sensor values. GFP reflects the overall energy
+fluctuation of distributed electric potentials across all sensors at a
+specific time point. Therefore, it is a good way to summarize and
+visualize the temporal dynamics of the whole brain activity.
+Nevertheless, researchers need to be cautious that the essence of GFP is
+a non-linear transformation. Therefore, when researchers apply GFP to
+group-averaged ERP, the outcome is not the same as the average of
+individual GFPs. Variances between subjects have a major effect on
+group-averaged GFP.</p>
+<p>The group-level statistical analysis of GFP can be addressed by many
+common approaches (time point by time point, area measures, peak
+measures etc.). We provide the time-point-wise approach in EasyEEG. For
+comparison between any two conditions, we take every subject’s data from
+every temporal window with defined duration of interest from both
+conditions and apply a paired t-test. Thus we get the <em>p</em>-value
+that indicates the level of significance across all sensors in
+successive temporal windows.</p>
+<div id="topographic-analysis-of-variance-tanova">
+<h5 id="ch2.topographic-analysis-of-variance-tanova">3. Topographic
+Analysis of Variance (TANOVA)</h5>
+</div>
+<p>Topographies reflect underlying neural processes. Comparing pattern
+similarity between topographies in different conditions can reveal
+distinct mental processes and hence directly test cognitive hypotheses.
+TANOVA is a statistical analysis on a measure of similarity between
+topographies. This topographic similarity measure, called “angle
+measure” <span class="citation" data-cites="Tian2008-cg">(Tian and Huber
+2008)</span>, quantifies the topographic pattern similarity by a
+high-dimensional angle between two topographies. More specifically, the
+multivariate topographic patterns across all sensors are represented in
+high-dimensional vectors <span class="math inline"><em>A⃗</em></span> and
+<span class="math inline"><em>B⃗</em></span> for two conditions <span
+class="math inline"><em>A</em></span> and <span
+class="math inline"><em>B</em></span>, where the number of dimensions is
+the number of sensors. The topographic similarity between the two
+conditions is quantified by the cosine value of the angle <span
+class="math inline"><em>θ</em></span> that can be obtained by the
+following equation:</p>
+<p><span
+class="math display">$$\cos(\theta)=\frac{\overrightarrow{\mathrm{A}}
+\cdot
+\overrightarrow{\mathrm{B}}}{|\overrightarrow{\mathrm{A}}||\overrightarrow{\mathrm{B}}|}$$</span></p>
+<p>The cosine value is an index of spatial similarity between two
+conditions, where a value of 1 represents identical patterns and a value
+of <span class="math inline"> − 1</span> represents exactly opposite
+patterns. Moreover, because this index is normalized by the response
+magnitude of both conditions, it has the advantage that it is unaffected
+by the magnitude of responses.</p>
+<p>The statistical analysis of the “angle measure” is a non-parametric
+statistical test, termed topographic analysis of variance (TANOVA) <span
+class="citation" data-cites="Murray2008-gz Brunet2011-gi">(Murray,
+Brunet, and Michel 2008; Brunet, Murray, and Michel 2011)</span>. The
+critical step in TANOVA is to generate a null distribution. In EasyEEG
+(0.8.4.1), we provided three different strategies to generate the null
+distribution of the angle measure cosine values.</p>
+<p>Strategy 1:</p>
+<ol>
+<li><p>Put all subjects’ data into one pool regardless of experimental
+conditions.</p></li>
+<li><p>Shuffle the pool and randomly re-assign the condition label for
+each trial (data permutation).</p></li>
+<li><p>Calculate the group-averaged ERPs for each new labeled
+condition.</p></li>
+<li><p>Calculate the topographic similarity angle measure (cosine value
+of angle <span class="math inline"><em>θ</em></span>) between the new
+group-averaged ERPs.</p></li>
+<li><p>Repeat the former steps (1)-(4) 1000 times (suggested by <span
+class="citation" data-cites="Manly2006-pd">Manly (2006)</span>, <span
+class="citation" data-cites="Manly2006-pd">(2006)</span>).</p></li>
+</ol>
+<p>Strategy 2:</p>
+<ol>
+<li><p>Perform data permutation within subject. That is, shuffle and
+re-label the trials for each subject.</p></li>
+<li><p>Calculate the group averaged ERPs for each new labeled
+condition.</p></li>
+<li><p>Calculate the topographic similarity angle measure (cosine value
+of angle <span class="math inline"><em>θ</em></span>) between the new
+group-averaged ERPs.</p></li>
+<li><p>Repeat the former steps (1)-(3) 1000 times.</p></li>
+</ol>
+<p>Strategy 3:</p>
+<ol>
+<li><p>Calculate the ERPs for each condition and subject.</p></li>
+<li><p>Perform data permutation within subject for ERPs. That is,
+re-label the ERPs for each subject.</p></li>
+<li><p>Calculate the spatial topographic similarity angle measure
+(cosine value of angle <span class="math inline"><em>θ</em></span>)
+between the new group-averaged ERPs.</p></li>
+<li><p>Repeat the former steps (1)-(3) 1000 times.</p></li>
+</ol>
+<p>Strategy 1 is used by many researchers <span class="citation"
+data-cites="Murray2008-gz Brunet2011-gi Lange2015-js">(Murray, Brunet,
+and Michel 2008; Brunet, Murray, and Michel 2011; Lange, Perret, and
+Laganaro 2015)</span>. However, it loses subject’s information by mixing
+all subjects’ data into one pool. In contrast, Strategy 2 permutes the
+data at the within-subject level. Both Strategies 1 &amp; 2 may be
+time-consuming and computational demanding. Therefore, Strategy 3 has
+the advantage of reducing computing complexity and processing duration
+(can be done within 1-2 minutes). However, Strategy 3 also has the
+limitation that it loses trial information by averaging trials at the
+first step. Regardless of the procedure, we find that the results from
+three strategies are similar and stable when the repetition times are
+beyond 1000 times (see details in the next section). Thus we suggest
+that Strategy 3 can be used as a pilot test to have a quick check of
+results, and Strategy 2 for further validation.</p>
+<p>After determining the null distribution, a comparison is made between
+the actual topographic similarity angle measure and the null
+distribution. The <em>p</em>-value is determined by finding the rank
+position of that actual cosine value in the generated null distribution.
+It reveals how significant the similarity between two topographic
+response patterns in different conditions are in a chosen time
+window.</p>
+<div id="pattern-classification">
+<h5 id="ch2.pattern-classification">4. Pattern classification</h5>
+</div>
+<p>Although TANOVA is good at measuring the significance of the
+topographic variance at a given moment, it is insensitive to the
+fluctuation over time. We introduce a pattern classification method in
+EasyEEG to capture topographic dynamics. Moreover, pattern
+classification can collaboratively take advantage of all aspects of
+information in topographies, compared with GFP and TANOVA that only
+emphasize response magnitude and energy distribution, respectively.</p>
+<p>This pattern classification method is in the framework of supervised
+machine learning. The collection of magnitudes of all sensors at a time
+point composes a sample, and the corresponding condition category is the
+label of the sample. After a classifier is trained by mapping the
+samples in a dataset to their labels, the classifier is used to infer
+the labels of samples in a new dataset for testing.</p>
+<p>The pattern classification method aims to obtain topographic
+differences among conditions at all timepoints to reveal the topographic
+changes over time. The general procedure works as follows:</p>
+<ol>
+<li><p>Data in each condition in a specific time point or window are
+extracted to form a sample. Samples in the time points or windows of
+interest from two conditions form a dataset for each subject.</p></li>
+<li><p>The pattern classification is done separately for each subject,
+so that we can obtain the classification results of all subjects at a
+given time point or window.</p>
+<ol>
+<li><p>Each dataset is divided into a training set and a test set. The
+samples in the training set are used to train the classifier, and then
+the samples in the test set are used to evaluate the trained classifier
+(get a classification score).</p></li>
+<li><p>Repeat step 2a for all time points and average the
+scores.</p></li>
+<li><p>Repeat step 2a and step 2b for each subject.</p></li>
+</ol></li>
+<li><p>Compare the classification scores of all subjects with the chance
+level 0.5 for a classification (where the two alternatives are equally
+frequent) with the permutation test <span class="citation"
+data-cites="Pitman1937-gw">(Pitman 1937)</span>. the <em>p</em>-value
+can be obtained to indicate whether topographies in two conditions are
+significantly different at a given time point or window.</p></li>
+<li><p>Repeat the steps 2 and 3 at successive time points or windows, so
+that dynamics across time can be obtained.</p></li>
+</ol>
+<p>Any supervised machine learning model can be used as a classifier.
+One should notice, however, that the classifier model determines the
+capacity of inferring the functional relationship between samples and
+their labels. The biggest issue for discovering the relationship is the
+number of available trials in the EEG data. In general, an EEG
+experiment generates fewer than hundreds of trials per subject. If we
+attempt to infer a complex functional relationship from only a few
+hundred samples, the result can hardly generalize to other samples (the
+problem of “overfitting”). One solution is to keep the balance between
+the trial counts and the complexity of the functional relationship. For
+example, Logistics Regression <span class="citation"
+data-cites="Cox1958-rv">(Cox 1958)</span> is a linear model, which can
+provide a simple functional relationship without much tuning of
+hyperparameters. We adopted the Logistics Regression algorithm as the
+default classifier model. Depending on different situations and needs,
+users can easily switch to other supervised machine learning algorithms
+such as Naive Bayes or Support Vector Machine in EasyEEG. Because
+sometimes the sample size in two labels might be unbalanced, we adopted
+Area Under Curve (AUC) as the classification score <span
+class="citation" data-cites="King2013-tf">(King et al. 2013)</span>. To
+make the classification score more robust, the algorithm will be applied
+several times to different partitions of the samples (Cross Validation;
+<span class="citation" data-cites="Arlot2010-sk">Arlot and Celisse
+(2010)</span>, <span class="citation"
+data-cites="Arlot2010-sk">(2010)</span>).</p>
+<p>The simple classifier models can reduce overfitting, but the
+functional relationship they are able to catch may also be too simple to
+represent the real relationship. That is, some complicated topographic
+pattern differences won’t be recognized by the model (the problem of
+“under-fitting”). The solution for under-fitting is to increase the
+complexity of classifier models, which tends to cause overfitting.
+Therefore, we need to find a fine balance using an appropriate
+regularization model (e.g., <span class="citation"
+data-cites="Krogh1992-bs">Krogh and Hertz (1992)</span>, <span
+class="citation" data-cites="Krogh1992-bs">(1992)</span>; <span
+class="citation" data-cites="Prechelt1998-zs">Prechelt (1998)</span>,
+<span class="citation" data-cites="Prechelt1998-zs">(1998)</span>; <span
+class="citation" data-cites="Hinton2012-qj">Hinton et al. (2012)</span>,
+<span class="citation" data-cites="Hinton2012-qj">(2012)</span>) or a
+special deep model that is designed for few samples (e.g., <span
+class="citation" data-cites="Kimura2018-hp">Kimura et al. (2018)</span>,
+<span class="citation" data-cites="Kimura2018-hp">(2018)</span>). Should
+one need to customize, all these extra optimizations can be easily added
+to the existing function by the programming interface provided in the
+toolbox.<br />
+</p>
+<div id="examples-and-results">
+<h3 id="ch2.examples-and-results">Examples and Results</h3>
+</div>
+<div id="data-for-this-tutorial">
+<h4 id="ch2.data-for-this-tutorial">Data for this Tutorial</h4>
+</div>
+<p>Data used for this tutorial are an open dataset of EEG responses to
+face stimuli (available at <a
+href="https://openfmri.org/dataset/ds000117/"
+class="uri">https://openfmri.org/dataset/ds000117/</a>; <span
+class="citation" data-cites="Wakeman2015-up">Wakeman and Henson
+(2015)</span>, <span class="citation"
+data-cites="Wakeman2015-up">(2015)</span>). The face stimuli comprise
+300 grayscale photographs (half from famous people and half from
+non-famous people) that are matched and cropped to show only the face.
+In addition, there are 150 grayscale photographs of scrambled faces that
+are generated by taking the 2D-Fourier transform of either famous or
+non-famous faces, permuting the phase information, and then
+inverse-transforming back into the image space. Subjects were required
+to make a judgment about how symmetric they regard each face stimulus by
+pressing a key, while EEG signals were recorded. The EEG data was
+acquired from 16 healthy subjects at 1100 Hz sampling rate in a light
+magnetically shielded room using a 70-channel Easycap EEG cap (based on
+the EC80 system: <a
+href="http://www.brainlatam.com/manufacturers/easycap/ec80--185"
+class="uri">http://www.brainlatam.com/manufacturers/easycap/ec80--185</a>).
+Full details about the experimental design and data acquisition can be
+found in <span class="citation" data-cites="Wakeman2015-up">(Wakeman and
+Henson 2015)</span>.</p>
+<div id="processing-pipeline">
+<h4 id="ch2.processing-pipeline">Processing Pipeline</h4>
+</div>
+<p>All raw data were first preprocessed by MNE-Python with a standard
+script (see Supplementary Code Snippet <a href="#smcode:ch2.2"
+data-reference-type="ref"
+data-reference="smcode:ch2.2">[smcode:ch2.2]</a>) and saved in the “.h5”
+format. Epochs were chosen from <span class="math inline">−</span>200 ms
+pre-stimulus to 600 ms post-stimulus onset, were baseline corrected
+based on the pre-stimulus period, and band-pass filtered from 0.1 to 30
+Hz. Epochs that contain artifacts were excluded based on a <span
+class="math inline"> ± 100<em>μ</em><em>V</em></span> rejection
+criterion.</p>
+<p>We demonstrate scripts for applying four analysis methods and their
+outcomes as follows (the entire script was running in a Jupyter
+notebook<a href="bibilo.html#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>). The runtime environment for the
+following examples was based on EasyEEG 0.8.4.1, Python 3.6 64 bit,
+Ubuntu 16.04.1.</p>
+<div id="load-data-and-define-the-analysis-target">
+<h5 id="ch2.load-data-and-define-the-analysis-target">Load data and
+define the analysis target </h5>
+</div>
+<p>First, we define a dictionary that contains information for further
+analysis. The descriptive dictionary “target” is composed of two
+components: conditions and timepoints. To make the comparison between
+conditions, we add “&amp;” between conditions as the operation symbol
+and use “X vs X” as the annotation. Because all analyses are based on
+all sensors, we do not need to define the channels. The duration of each
+epoch is 0-600 ms.</p>
+<div class="sourceCode" id="code:ch2.1" data-language="Python"
+data-caption="\textbf{The data loading and analysis target definition.}"
+label="code:ch2.1" data-showstringspaces="false"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="code:ch2.1-1"><a href="#code:ch2.1-1" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> {<span class="st">&#39;conditions&#39;</span>:<span class="st">&#39;S vs F:Scrambled&amp;Famous,</span><span class="ch">\</span></span>
+<span id="code:ch2.1-2"><a href="#code:ch2.1-2" aria-hidden="true" tabindex="-1"></a><span class="st">                        S vs U:Scrambled&amp;Unfamiliar,</span><span class="ch">\</span></span>
+<span id="code:ch2.1-3"><a href="#code:ch2.1-3" aria-hidden="true" tabindex="-1"></a><span class="st">                        U vs F:Unfamiliar&amp;Famous&#39;</span>,</span>
+<span id="code:ch2.1-4"><a href="#code:ch2.1-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">&#39;timepoints&#39;</span>:<span class="st">&#39;0~600&#39;</span>}</span>
+<span id="code:ch2.1-5"><a href="#code:ch2.1-5" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> epoch.extract(target)</span></code></pre></div>
+<p>EasyEEG provides a simple and easy way to complete the loading and
+extraction process by calling the “load_epochs()” and “extract()”
+functions. Data is extracted for further analysis by passing the
+descriptive dictionary “target” to the “extract()” function, and is
+saved in the variable “e”.</p>
+<div id="distribution-of-significant-sensors-1">
+<h5 id="ch2.distribution-of-significant-sensors-1">Distribution of
+significant sensors</h5>
+</div>
+<p>By applying the function “<span><code>topography()</code></span>”, we
+can perform the distribution of significant sensors analysis.
+Specifically, we define successive time windows of every 100 ms. The
+distribution results are saved in the variable “result”. By calling the
+function <em>“plot()”</em>, we can visualize the results (Fig. <a
+href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>). Sensors that show significant
+differences between two conditions are circled in white (Fig. <a
+href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>a). The function
+“<em>significant_channels_count()”</em> can be used to more clearly
+illustrate the temporal dynamics by the number of significant sensors.
+The results are saved in the variable “sig_ch_count” and depicted in
+Fig. <a href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>b that displays the number of
+significant sensors across time. The color scale represents the number
+of significant sensors.</p>
+<div class="sourceCode" id="code:ch2.2" data-language="Python"
+data-caption="\textbf{Apply the \emph{Distribution of significant sensors} analysis.}"
+label="code:ch2.2"><pre class="sourceCode python"><code class="sourceCode python"><span id="code:ch2.2-1"><a href="#code:ch2.2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the topographies of difference</span></span>
+<span id="code:ch2.2-2"><a href="#code:ch2.2-2" aria-hidden="true" tabindex="-1"></a>topo <span class="op">=</span> e.topography(win_size<span class="op">=</span><span class="st">&#39;100ms&#39;</span>) </span>
+<span id="code:ch2.2-3"><a href="#code:ch2.2-3" aria-hidden="true" tabindex="-1"></a>topo.plot()</span>
+<span id="code:ch2.2-4"><a href="#code:ch2.2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="code:ch2.2-5"><a href="#code:ch2.2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># the dynamics of the count of the significant sensors</span></span>
+<span id="code:ch2.2-6"><a href="#code:ch2.2-6" aria-hidden="true" tabindex="-1"></a>sig_ch_count <span class="op">=</span> e.significant_channels_count(win_size<span class="op">=</span><span class="st">&#39;5ms&#39;</span>)</span>
+<span id="code:ch2.2-7"><a href="#code:ch2.2-7" aria-hidden="true" tabindex="-1"></a>sig_ch_count.plot()</span></code></pre></div>
+<div class="center">
+<figure>
+<img src="figures/ch2.1.jpg" id="fig:ch2.1"
+alt="Results of distribution of significant sensors analysis: (a) Topographies of response differences between conditions across time. Each row contains topographies for a given comparison at different time points. Sensors that show significant response magnitude differences are circled in white. The color on the topography represents the response magnitude differences. The conditions in each comparison are listed on the left: S for scrambled condition, F for famous face condition, and U for unfamiliar face condition. (b) The number of significant sensors across time. The color scale represents the number of significant sensors. The conditions of comparison are listed at the left side of the figure. Labels are the same as in (a). The difference between face perception conditions (F and U) and scrambled (S) condition is significant in sensors above frontal, central, bilateral parietal-occipital areas, starting around 180 ms. The comparison between face perception conditions (F vs U), however, only shows significant differences at the latencies of 300-400 ms and 500-600 ms. Refer to main text for detailed results." />
+<figcaption aria-hidden="true"><strong>Results of <em>distribution of
+significant sensors</em> analysis</strong>: (a) Topographies of response
+differences between conditions across time. Each row contains
+topographies for a given comparison at different time points. Sensors
+that show significant response magnitude differences are circled in
+white. The color on the topography represents the response magnitude
+differences. The conditions in each comparison are listed on the left: S
+for scrambled condition, F for famous face condition, and U for
+unfamiliar face condition. (b) The number of significant sensors across
+time. The color scale represents the number of significant sensors. The
+conditions of comparison are listed at the left side of the figure.
+Labels are the same as in (a). The difference between face perception
+conditions (F and U) and scrambled (S) condition is significant in
+sensors above frontal, central, bilateral parietal-occipital areas,
+starting around 180 ms. The comparison between face perception
+conditions (F vs U), however, only shows significant differences at the
+latencies of 300-400 ms and 500-600 ms. Refer to main text for detailed
+results.</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a> shows that the differences between
+conditions “Famous” (F) and “Scrambled” (S), as well as the difference
+between conditions “Unfamiliar” (U) and “Scrambled” (S), are significant
+in sensors above frontal, central, bilateral parietal-occipital areas.
+These differences start around 200 ms (180 ms in sensor count results in
+Fig. <a href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>b). The comparison between conditions
+“Famous” (F) and “Unfamiliar” (U), however, only shows significant
+differences at the latencies of 300-400 ms and 500-600 ms. From 300 ms
+to 400 ms, only about 10 sensors above parietal and right-lateral
+occipital areas show significant differences. From 500 ms to 600 ms,
+around 25 sensors above middle frontal and bilateral occipital areas
+show significant differences. These differences are weaker compared to
+the comparisons between face and non-face conditions. See Supplementary
+Result <a href="#smcode:ch2.r1" data-reference-type="ref"
+data-reference="smcode:ch2.r1">[smcode:ch2.r1]</a> and <a
+href="#smcode:ch2.r2" data-reference-type="ref"
+data-reference="smcode:ch2.r2">[smcode:ch2.r2]</a> for the summary of
+sensor magnitude, <em>p</em>-values, and the count of significant
+sensors. See supplementary attachment<a href="bibilo.html#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a> for the raw data.</p>
+<div id="gfp">
+<h5 id="ch2.gfp">GFP</h5>
+</div>
+<p>The function “<span><code>GFP()</code></span>” can be used to obtain
+the GFP. Computation of GFP can be done within a few seconds. We set the
+“<em>compare</em>” parameter to be “True” to enable statistical analysis
+between any two conditions. With the function ‘plot()’, the results of
+GFP can be visualized.</p>
+<div class="sourceCode" id="code:ch2.3" data-language="Python"
+data-caption="\textbf{Apply the \emph{GFP} analysis.}"
+label="code:ch2.3"><pre class="sourceCode python"><code class="sourceCode python"><span id="code:ch2.3-1"><a href="#code:ch2.3-1" aria-hidden="true" tabindex="-1"></a>scripts <span class="op">=</span> [{<span class="st">&#39;conditions&#39;</span>: <span class="st">&#39;Scrambled,Famous&#39;</span>,</span>
+<span id="code:ch2.3-2"><a href="#code:ch2.3-2" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;timepoints&#39;</span>: <span class="st">&#39;0~600&#39;</span>},</span>
+<span id="code:ch2.3-3"><a href="#code:ch2.3-3" aria-hidden="true" tabindex="-1"></a>           {<span class="st">&#39;conditions&#39;</span>: <span class="st">&#39;Scrambled,Unfamiliar&#39;</span>,</span>
+<span id="code:ch2.3-4"><a href="#code:ch2.3-4" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;timepoints&#39;</span>: <span class="st">&#39;0~600&#39;</span>},</span>
+<span id="code:ch2.3-5"><a href="#code:ch2.3-5" aria-hidden="true" tabindex="-1"></a>           {<span class="st">&#39;conditions&#39;</span>: <span class="st">&#39;Unfamiliar,Famous&#39;</span>,</span>
+<span id="code:ch2.3-6"><a href="#code:ch2.3-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;timepoints&#39;</span>: <span class="st">&#39;0~600&#39;</span>}]</span>
+<span id="code:ch2.3-7"><a href="#code:ch2.3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="code:ch2.3-8"><a href="#code:ch2.3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># do the three analyses independently</span></span>
+<span id="code:ch2.3-9"><a href="#code:ch2.3-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> idx,script <span class="kw">in</span> <span class="bu">enumerate</span>(scripts):</span>
+<span id="code:ch2.3-10"><a href="#code:ch2.3-10" aria-hidden="true" tabindex="-1"></a>    gfp <span class="op">=</span> epochs.extract(script).GFP(compare<span class="op">=</span><span class="va">True</span>)</span>
+<span id="code:ch2.3-11"><a href="#code:ch2.3-11" aria-hidden="true" tabindex="-1"></a>    gfp.plot()</span></code></pre></div>
+<div class="center">
+<figure>
+<img src="figures/ch2.2.jpg" id="fig:ch2.2"
+alt="Results of GFP analysis. Each color line represents the GFP of the corresponding condition. Condition labels are the same as Fig. 1.1. The shaded areas around each line depict the standard error of the mean. The grayscale vertical bars stand for the results of statistical analysis. Grayscale represents the significance level, and location represents the latencies of significant effects. (a) &amp; (b) The condition “Scrambled” (S) begins to be significantly different from the face perception conditions around 140 ms. Differences are also significant at some later latencies. (c) For comparison between two face perception conditions, significant differences are observed starting around 220 ms, later than those in comparisons between face and non-face conditions in (a) and (b). Some later significant differences are also observed. Refer to main text for detailed results." />
+<figcaption aria-hidden="true"><strong>Results of <em>GFP</em>
+analysis.</strong> Each color line represents the GFP of the
+corresponding condition. Condition labels are the same as Fig. <a
+href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>. The shaded areas around each line
+depict the standard error of the mean. The grayscale vertical bars stand
+for the results of statistical analysis. Grayscale represents the
+significance level, and location represents the latencies of significant
+effects. (a) &amp; (b) The condition “Scrambled” (S) begins to be
+significantly different from the face perception conditions around 140
+ms. Differences are also significant at some later latencies. (c) For
+comparison between two face perception conditions, significant
+differences are observed starting around 220 ms, later than those in
+comparisons between face and non-face conditions in (a) and (b). Some
+later significant differences are also observed. Refer to main text for
+detailed results.</figcaption>
+</figure>
+</div>
+<p>As shown in Figure <a href="#fig:ch2.2" data-reference-type="ref"
+data-reference="fig:ch2.2">1.2</a>, the condition “Scrambled” (S) begins
+to be significantly different from the conditions “Famous” (F) or
+“Unfamiliar” (U) around 140 ms. A small significant difference is found
+between conditions “Scrambled” (S) and “Unfamiliar” (U) at 500-600 ms,
+whereas the comparison between conditions “Scrambled” (S) and “Famous”
+(F) shows weak but significant difference at 400-600 ms. For comparison
+between conditions “Famous” (F) and “Unfamiliar” (U), significant
+differences are at 220-260 ms (most at 240 ms), 300-400 ms (most at 400
+ms), and 500-600 ms (most at 600 ms). See Supplementary Result <a
+href="#smcode:ch2.r3" data-reference-type="ref"
+data-reference="smcode:ch2.r3">[smcode:ch2.r3]</a> for the summary of
+the GFP powers and the <em>p</em>-values over time. See supplementary
+attachment<a href="bibilo.html#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a> for the raw data.</p>
+<div id="tanova">
+<h5 id="ch2.tanova">TANOVA</h5>
+</div>
+<p>The function <em>“tanova()”</em> is for performing TANOVA analysis.
+Data was averaged in every 5 milliseconds defined by the parameter
+“win_size”. The number of repetitions for creating the null distribution
+was set to 1000 times as defined by the parameter “shuffle”. Different
+strategies for creating the null distribution can be defined by the
+parameter “strategy”. The computation time is about 60 times slower in
+Strategy 1 and Strategy 2 than in Strategy 3 (about 1 minute using our
+system). The output of the <em>“tanova()”</em> function is a series of
+<em>p</em>-values. We corrected the <em>p</em>-values by accepting
+consecutive significant data points which are longer than 20 ms <span
+class="citation" data-cites="Lange2015-js">(Lange, Perret, and Laganaro
+2015)</span> using a command “<em>correct(method=’cluster’)</em>”. Users
+can also use other solutions for multiple comparisons correction such as
+FDR <span class="citation" data-cites="Benjamini1995-rm">(Benjamini and
+Hochberg 1995)</span> by replacing the value of parameter “method”.</p>
+<div class="sourceCode" id="code:ch2.4" data-language="Python"
+data-caption="\textbf{Apply the \emph{TANOVA} analysis.}"
+label="code:ch2.4"><pre class="sourceCode python"><code class="sourceCode python"><span id="code:ch2.4-1"><a href="#code:ch2.4-1" aria-hidden="true" tabindex="-1"></a>t_result <span class="op">=</span> e.tanova(win_size<span class="op">=</span><span class="st">&#39;5ms&#39;</span>,shuffle<span class="op">=</span><span class="dv">1000</span>,strategy<span class="op">=</span><span class="dv">1</span>) <span class="co">#change value of the parameter &#39;strategy&#39; to 2 or 3 for Strategy 2 or Strategy 3</span></span>
+<span id="code:ch2.4-2"><a href="#code:ch2.4-2" aria-hidden="true" tabindex="-1"></a>t_result.correct(method<span class="op">=</span><span class="st">&#39;cluster&#39;</span>).plot()</span></code></pre></div>
+<div class="center">
+<figure>
+<img src="figures/ch2.3.jpg" id="fig:ch2.3"
+alt="Results of TANOVA analysis. The results are represented as p-values across time. Color represents the significance level, with darker color for smaller p-values. Condition labels are the same as in Fig. 1.1. (a-c) The results obtained by applying different strategies for computing null distributions in the non-parametric tests. These results are similar to each other. The topographic response patterns in condition “Scrambled” starts to be significantly different from those in the face perception conditions after 170 ms and lasts until the end of the epoch. For comparison between face perception conditions (F vs U), significant pattern differences are obtained after 470 ms. Results from Strategy 3 have an exception that all three comparisons show significant differences for a short time period around 180 ms. Refer to main text for detailed results." />
+<figcaption aria-hidden="true"><strong>Results of <em>TANOVA</em>
+analysis.</strong> The results are represented as <em>p</em>-values
+across time. Color represents the significance level, with darker color
+for smaller <em>p</em>-values. Condition labels are the same as in Fig.
+<a href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>. (a-c) The results obtained by
+applying different strategies for computing null distributions in the
+non-parametric tests. These results are similar to each other. The
+topographic response patterns in condition “Scrambled” starts to be
+significantly different from those in the face perception conditions
+after 170 ms and lasts until the end of the epoch. For comparison
+between face perception conditions (F vs U), significant pattern
+differences are obtained after 470 ms. Results from Strategy 3 have an
+exception that all three comparisons show significant differences for a
+short time period around 180 ms. Refer to main text for detailed
+results.</figcaption>
+</figure>
+</div>
+<p>The results from Strategy 1 and Strategy 2 are highly similar. The
+topographic response patterns in condition “Scrambled” starts to be
+significantly different from those in the conditions “Famous (F) /
+Unfamiliar (U)” after 170 ms (<span
+class="math inline"><em>p</em> &lt; 0.01</span>). For comparison between
+conditions “Famous” and “Unfamiliar”, most time after 470 ms shows a
+significant difference (<span
+class="math inline"><em>p</em> &lt; 0.01</span>) except from 530 ms to
+560 ms. The results from Strategy 3 mostly agree with those from
+Strategies 1 and 2, with one noticeable exception at 180 ms for the
+comparison between two face perception conditions. The results from all
+three comparisons show significant differences for a short time period
+around 180 ms (<span class="math inline"><em>p</em> &lt; 0.01</span> for
+comparison “Scrambled vs Unfamiliar” and comparison “Unfamiliar vs
+Famous”; <span class="math inline"><em>p</em> &lt; 0.05</span> for
+comparison “Scrambled vs Famous”). See Supplementary Result <a
+href="#smcode:ch2.r4" data-reference-type="ref"
+data-reference="smcode:ch2.r4">[smcode:ch2.r4]</a> for the summary of
+the <em>p</em>-values of TANOVA over time. See supplementary
+attachment<a href="bibilo.html#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a> for the raw data.</p>
+<div id="pattern-classification-1">
+<h5 id="ch2.pattern-classification-1">Pattern classification</h5>
+</div>
+<p>The function ‘classification’ is for performing pattern
+classification analysis. The default classifier is a logistic regression
+classifier. Data was averaged in every 5 milliseconds defined by the
+parameter “win_size=’5ms’ ”. The parameters “test_size=0.3” and
+“fold=25” indicate that 30% of data were randomly selected as the test
+set and the rest are in the training set in each fold (data splitting
+iteration) and the number of folds is 25 in the cross validation.</p>
+<div class="sourceCode" id="code:ch2.5" data-language="Python"
+data-caption="\textbf{Apply the \emph{Pattern classification.}}"
+label="code:ch2.5"><pre class="sourceCode python"><code class="sourceCode python"><span id="code:ch2.5-1"><a href="#code:ch2.5-1" aria-hidden="true" tabindex="-1"></a>c_result <span class="op">=</span> e.classification(win_size<span class="op">=</span><span class="st">&#39;5ms&#39;</span>,fold<span class="op">=</span><span class="dv">25</span>,test_size<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="code:ch2.5-2"><a href="#code:ch2.5-2" aria-hidden="true" tabindex="-1"></a>c_result.correct(method<span class="op">=</span><span class="st">&#39;cluster&#39;</span>).plot()</span></code></pre></div>
+<div class="center">
+<figure>
+<img src="figures/ch2.4.jpg" id="fig:ch2.4"
+alt="Results of Pattern classification analysis. Pattern classification results are represented as p-values across time. Color represents the significance level. Condition labels are the same as in Fig. 1.1. Both face perception conditions show differences (p&lt;0.01) from the scrambled condition as early as around 120 ms. Differences between two face perception conditions are scattered across the timespan. Refer to the main text for detailed results." />
+<figcaption aria-hidden="true"><strong>Results of <em>Pattern
+classification</em> analysis.</strong> Pattern classification results
+are represented as <em>p</em>-values across time. Color represents the
+significance level. Condition labels are the same as in Fig. <a
+href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>. Both face perception conditions show
+differences (<span class="math inline"><em>p</em> &lt; 0.01</span>) from
+the scrambled condition as early as around 120 ms. Differences between
+two face perception conditions are scattered across the timespan. Refer
+to the main text for detailed results.</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:ch2.4" data-reference-type="ref"
+data-reference="fig:ch2.4">1.4</a> depicts the pattern classification
+results as <em>p</em>-values across time. The condition “Scrambled”
+starts to be significantly different from condition “Famous (F) or
+Unfamiliar (U)” after 120 ms. The conditions “Unfamiliar” and “Famous“
+show sparse differences across time. More specifically, results show
+that at around 220 ms, 280 ms, 330 ms, 380 ms, 410-450 ms, and 510-600
+ms, there are significant differences between these two conditions
+(<span class="math inline"><em>p</em> &lt; 0.05</span>). See
+Supplementary Result <a href="#smcode:ch2.r5" data-reference-type="ref"
+data-reference="smcode:ch2.r5">[smcode:ch2.r5]</a> for the summary of
+the scores of the <em>p</em>-values of Pattern classification over time.
+See supplementary attachment<a href="bibilo.html#fn7" class="footnote-ref"
+id="fnref7" role="doc-noteref"><sup>7</sup></a> for the raw data.</p>
+<p>The function “classification()” also allows researchers to use an
+external model such as a deep learning model <span class="citation"
+data-cites="Abadi2016-rx Chollet2015-nh">(Abadi et al. 2016; Chollet and
+Others 2015)</span>, see Supplementary Code Snippet <a
+href="#smcode:ch2.3" data-reference-type="ref"
+data-reference="smcode:ch2.3">[smcode:ch2.3]</a> for an example.</p>
+<div id="discussion">
+<h3 id="ch2.discussion">Discussion</h3>
+</div>
+<p>EEG provides high temporal resolution information that reflects
+cognitive processes. However, common ERP methods using partial
+information in selected sensors make it difficult to obtain a precise
+and comprehensive temporal dynamics across the system. In contrast,
+source localization may estimate the distribution of neural generators
+and their dynamics. However, sophisticated procedures, various
+assumptions, as well as high demand on data quality and computational
+power may make localization methods not practical for some users. In the
+EasyEEG toolbox, we offer multivariate analyses that use EEG
+topographical patterns of sensors to obtain holistic system-level
+dynamic information without projecting back to the source space.
+Different types of analyses that take distinct yet related perspectives
+help users infer different aspects of temporal dynamics by
+differentiating response patterns and magnitude across time. Main
+functions and other necessary steps have been packed in this toolbox, so
+that users can easily use them. Moreover, the highly flexible,
+compatible and expandable design in programming are also ideal for
+advanced users. Our EasyEEG toolbox offers a practical, efficient and
+complete pipeline from raw data to publication for EEG research to
+directly test cognitive hypotheses.</p>
+<p>This paper introduces four methods included in EasyEEG, which take
+information from all sensors of a topography to investigate neural
+dynamics. These methods target different aspects of topographic
+information and separately evaluate topographic patterns and response
+magnitude across time. The first method, the distribution of significant
+sensors analysis, can provide the spatial extent of effects by observing
+the spatial configuration and counting the number of sensors that have
+significant differences among conditions. The sample results show
+greater spatial extent and higher number of significant sensors in both
+face perception conditions, compared with the scrambled condition,
+starting around 180 ms (Fig. <a href="#fig:ch2.1"
+data-reference-type="ref" data-reference="fig:ch2.1">1.1</a>). These
+results indicate that the distribution of significant sensors can
+grossly identify the dynamics of neural processing in different
+conditions. The second method, GFP analysis, provides an indicator of
+overall energy variation among all sensors. The sample results show that
+the face perception conditions start to differ from the scrambled
+condition around 140 ms, whereas response magnitudes differ between face
+perception conditions (famous vs unfamiliar) starting around 220 ms.
+These latency differences in response magnitude reveal that the general
+face perception occurs earlier, and specific face identification occurs
+later.</p>
+<p>The third method, the TANOVA analysis, provides a way to quantify and
+statistically test pattern similarity between topographies. The sample
+results show that the response topographic patterns in face perception
+conditions start to differ from those in the scrambled condition around
+170 ms (Fig. <a href="#fig:ch2.3" data-reference-type="ref"
+data-reference="fig:ch2.3">1.3</a>). These results indicate that
+distinct processes for face perception emerge around 170 ms. In
+contrast, topographic responses in two face perception conditions remain
+the same until around 470 ms. These results indicate that similar sensor
+patterns mediate the perception of famous and unfamiliar faces during
+the early perceptual processes. The differences start around 470 ms,
+which could be because the effects of familiarity induce additional
+neural processes for famous faces compared with the processes for
+unfamiliar faces. The fourth method, the pattern classification, uses
+self-adaptive algorithms and takes advantage of all information
+regarding response magnitude and patterns of topographies to investigate
+neural dynamics. The sample results show that both face perception
+conditions show differences from the scrambled condition as early as
+around 120 ms. Differences between two face perception conditions are
+scattered across the timespan. These results indicate that the pattern
+classification method can reveal response magnitude and pattern
+differences as the classification results between two face conditions,
+as well as provide additional information such as magnitude and pattern
+interaction, indicated by the detection of early differences between
+scrambled and face conditions.</p>
+<p>These four methods are complementary to each other and can provide
+information at different levels to overcome limitations of individual
+methods. Users can use them in combination to obtain a comprehensive
+picture of their data. For example, the distribution of significant
+sensors was obtained by individually testing response magnitude
+differences in each sensor. Without correction, this is subject to the
+multiple comparisons problem. We use this result to provide a general
+and direct visualization of data and dynamic results, similar to the
+common practice in fMRI research that uses “<span
+class="math inline"><em>p</em> &lt; 0.05</span> uncorrected” for
+visualizing results.</p>
+<p>The observed significant sensors distribution differences, as
+demonstrated in the face perception sample, can be caused either by
+response magnitude changes or a change of neural generators that is
+reflected in topographic patterns. We use the GFP and TANOVA to further
+test the magnitude and pattern differences among conditions,
+respectively. The GFP results show magnitude differences between two
+face perception conditions starting around 220 ms, whereas TANOVA
+results show pattern difference starting until 440 ms. These results
+from two methods collaboratively suggest that response magnitude in the
+same neural sources is firstly different between perceiving famous and
+unfamiliar faces, and later distinct neural generators are involved for
+processing familiarity. In the comparisons between face and scrambled
+conditions, both GFP and TANOVA analyses reveal differences starting
+around 170 ms, suggesting both neural generators and their magnitude
+differ when processing faces versus non-faces.</p>
+<p>The pattern classification analysis gives the combination of
+magnitude and topographic differences, and can be used to verify and
+“double-check” the results in both GFP and TANOVA. In the sample
+results, the latencies of significant results in the classification
+agree with the combination of results in GFP and TANOVA in comparisons
+between face and non-face conditions, as well as between face perception
+conditions. Moreover, the pattern classification can provide more
+information than GFP or TANOVA methods alone. This additional
+information is likely to arise from the interaction between the response
+magnitude and patterns. For example, the early differences between face
+and scrambled conditions is only detected using pattern
+classification.</p>
+<p>Based on the features of the four methods and their complementary
+nature, we recommend the following procedure. Users can follow all or
+part of this procedure based on their research goals to obtain
+topographic and response magnitude dynamics.</p>
+<ol>
+<li><p>Perform basic pre-processes such as noise reduction, baseline
+correction, filtering using other available toolboxes such as MNE
+Python.</p></li>
+<li><p>Load the pre-processed data
+“<span><code>EasyEEG.io.load_epochs(‘path’)</code></span>”, define
+conditions and comparisons, and extract the data epochs of interests
+“<span><code>extract()</code></span>”.</p></li>
+<li><p>Obtain the distribution of significant sensors
+“<span><code>topography()</code></span>” for a direct and intuitive
+visualization “<span><code>plot()</code></span>” of effects.</p></li>
+<li><p>Test the overall magnitude differences
+“<span><code>GFP().plot()</code></span>”.</p></li>
+<li><p>Test the topographic pattern differences
+“<span><code>tanova().plot()</code></span>”.</p></li>
+<li><p>Perform pattern classification
+“<span><code>classification().plot()</code></span>” to verify the
+results from step 3 to 5.</p></li>
+</ol>
+<p>By following the above 6 steps, users can visually inspect their data
+and effects, obtain statistical analysis results at the group-level
+regarding response magnitude and topographic patterns, and have a
+verification of obtained results from the perspective of pattern
+classification and machine learning. EasyEEG provides the realization of
+these steps and a complete pipeline from raw EEG data, to generating
+figures, to statistical testing for publication.</p>
+<p>The results obtained by EasyEEG are consistent with those from other
+analysis approaches. A mass univariate General Linear Model (GLM) was
+applied on the same face perception dataset <span class="citation"
+data-cites="Wakeman2015-up">(Wakeman and Henson 2015)</span>. Their
+results suggested that faces and scrambled conditions significantly
+differed from around 160 ms and last to the end of the epoch (600 ms),
+with differences in the sensors over fronto-central and lateral
+parieto-occipital areas, which are very consistent with our results
+(Fig. <a href="#fig:ch2.1" data-reference-type="ref"
+data-reference="fig:ch2.1">1.1</a>, <a href="#fig:ch2.2"
+data-reference-type="ref" data-reference="fig:ch2.2">1.2</a> &amp; <a
+href="#fig:ch2.4" data-reference-type="ref"
+data-reference="fig:ch2.4">1.4</a>). In the comparison between two face
+perception conditions, they found a single cluster over mid-frontal
+electrodes from 520–620 ms <span class="citation"
+data-cites="Wakeman2015-up">(Wakeman and Henson 2015)</span>, which also
+agrees with our TANOVA results (Fig. <a href="#fig:ch2.3"
+data-reference-type="ref" data-reference="fig:ch2.3">1.3</a>). These
+consistent results obtained by different approaches and toolboxes
+demonstrate the reliability of our methods and EasyEEG.</p>
+<p>Besides the reliability, EasyEEG can obtain additional results and
+provide more insights. The most important one is separating response
+magnitude effects from topographic pattern changes. As in our results,
+GFP and TANOVA analyses reveal differences in response magnitude but not
+in topographic patterns between two face perception conditions, whereas
+both magnitude and patterns differ between face and scrambled
+conditions. These results highlight the advantage and capacity of
+EasyEEG on testing different aspects of hypotheses. Moreover, EasyEEG
+provides an unbiased omnibus measure using information of all sensors in
+topographies, which overcomes individual spatial and temporal
+differences and facilitates group-level analyses.</p>
+<p>EasyEEG shares some attributes with other existing toolboxes of
+multivariate analyses, yet has distinct features. For instances, the
+Mass Univariate ERP Toolbox applies the univariate test at each of all
+sensors, and reduces the multiple comparison pollution by different
+correction methods <span class="citation"
+data-cites="Groppe2011-cl">(Groppe, Urbach, and Kutas 2011)</span>,
+whereas EasyEEG takes the topographical pattern of sensors directly with
+multivariate approaches so that it can better avoid the multiple
+comparison problems than the univariate tests. LIMO EEG utilizes the
+hierarchical general linear model for multivariate data <span
+class="citation" data-cites="Pernet2011-vs">(Pernet et al. 2011)</span>.
+The Donders Machine Learning and MNE-Python offer an interface to
+Scikit-Learn for retrieving the classification score <span
+class="citation" data-cites="Gramfort2013-gh">(Gramfort et al.
+2013)</span>.</p>
+<p>EasyEEG offers great convenience and outstanding compatibility. The
+most common difficulty of using various software packages is how to get
+your own EEG data working in that toolbox. EasyEEG has a solution by
+reducing programming demands for customized algorithms. First, the
+complicated and tedious data extraction operations are replaced by
+calling built-in extraction functions with a descriptive dictionary.
+Researchers are only required to understand the structure of extracted
+EEG data. Second, EasyEEG makes extraction and combination of data in
+multiple sections/blocks automatic. In this way, users avoid the tedious
+and error-prone repetitive steps. Third, the proposed multivariate
+analysis methods have been implemented in simple command lines. Users
+can specify the intended analysis and parameters in one place and obtain
+the final results. Thus, researchers can focus more on their experiments
+and selection of core algorithms and methods, and obtain quick results
+to test their hypotheses.</p>
+<p>EasyEEG also provides great flexibility and expandability for
+advanced users. Should researchers want to examine different aspects of
+data or to apply some other customized algorithms, they only need to
+modify a small portion of the current scripts to quickly create new
+computational or visualization algorithms based on a resilient data
+structure and a number of well-written application programming
+interfaces (APIs).</p>
+<p>Besides the introduced multivariate analysis methods, we aim to
+include more analysis methods in EasyEEG to investigate neural dynamics,
+and increase the reliability of these methods. More specifically, we
+plan to integrate more machine learning models for EEG data analysis and
+pattern classification methods. Moreover, we aim to increase the
+efficiency and expandability of EasyEEG by designing more programming
+APIs for developers.</p>
+<p>There are several limitations of the current version of our toolbox.
+First, methods included in our toolbox work best with the activation
+widely distributed among all sensors. However, if the effects are
+focused in several electrodes, the effect size could be reduced by the
+summary of topography, especially in the GFP analysis. Second, the
+multivariate methods rely on the topographies in the sensor space to
+infer the relation between neural sources of different conditions. The
+mapping between sources and topographies could be complicated. For
+example, two different neural sources, in theory, could generate the
+same pattern, although it is highly unlikely. If this situation
+occurred, our toolbox would derive incorrect results. Moreover, the
+topography-based analysis can find differences of neural sources between
+conditions but it cannot further separate whether the differences are
+induced by the changing of source location or the orientation of the
+same source. All these limitations are induced by the cost-effectiveness
+tradeoff. While methods in our toolbox can offer direct and easy ways to
+test psychological and neuroscientific hypotheses, we sacrifice the
+ability to precisely test aspects of underlying neural sources.
+Therefore, users should choose different methods based on their own
+questions and needs. Third, only four multivariate methods are built
+into the current version of toolbox. We aim to integrate more features
+in the future, such as deep learning techniques, to increase the power
+of our toolbox, meet broader requirement of users and provide solutions
+to wider ranges of questions.</p>
+<p>In summary, EasyEEG provides simple, flexible and powerful methods
+that can be used to directly test cognitive hypotheses based on
+topographic responses. These multivariate methods can investigate
+effects in the dimensions of response magnitude and topographic patterns
+separately using data in the sensor space, therefore enabling assessing
+neural response dynamics without sophisticated localization.
+Python-based algorithms provide concise and extendable features of
+EasyEEG. Users of all levels can benefit from EasyEEG and obtain a
+straightforward solution to efficiently handle and process EEG data and
+a complete pipeline from preprocessing to statistical testing and to
+result visualization.</p>
+    </section>
+
+  </body>
+</html>
+

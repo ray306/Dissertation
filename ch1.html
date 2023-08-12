@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch7.html#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="ch7.html#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="ch7.html#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="ch7.html#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <p><span>“<em>In the matter of language, people have always been
+satisfied with ill-defined units.</em>”</span><br />
+</p>
+<div class="flushright">
+<p><span>— <span class="citation" data-cites="Saussure1959-rs">De
+Saussure (1916/1959)</span>,  <span class="citation"
+data-cites="Saussure1959-rs">(1916/1959)</span>, p. 111</span></p>
+</div>
+<h2 id="ch1">General introduction</h2>
+<div id="the-discreteness-of-cognition">
+<h3 id="ch1.the-discreteness-of-cognition">The discreteness of
+cognition</h3>
+</div>
+<p>The world may be continuous, but our cognitive apparatus that deals
+with the world is at least partially discrete. George A. Miller, in his
+famous paper (<span class="citation"
+data-cites="Miller1956-ju">(1956)</span>), introduced the capacity
+limitation for processing the information as 7 ± 2 <em>chunks</em>.
+Though a later study <span class="citation"
+data-cites="Cowan2001-qn">(Cowan 2001)</span> updated the number to 4 ±
+2, they did not change the key point of Miller’s theory, that the unit
+of memory is a <em>chunk</em>. A chunk may consist of many smaller
+units, but it can be recognized as a whole pattern. For example, a chess
+expert can remember realistic positions of the pieces of a whole chess
+board in several seconds <span class="citation"
+data-cites="De_Groot1946-vc">(De Groot 1946)</span>. The expert has
+great experience of the chess board patterns, so she/he memorized the
+whole board as a few chunks or even a single chunk instead of memorizing
+the chess pieces one by one. Even though most people cannot memorize the
+chess board as one chunk, everyone can recognize portions of the world
+by a few chunks. This ability is called <em>conceptualization</em>.</p>
+<p>The ability of conceptualization is necessary to deal with the huge
+amount of information received from vision, hearing, and other senses in
+a human’s daily life. In vision alone, the retina can transmit about 10
+million bits to the brain per second <span class="citation"
+data-cites="Koch2006-gn">(Koch et al. 2006)</span>. Our brains are
+powerful, but processing all the details of the received information is
+still impossible. Instead, received information will be clustered into
+discrete chunks that carry different concepts, such as blue sky, hot
+sand, and the sound of waves. The number of concepts is much smaller
+than the number of all received details, therefore humans are able to
+recognize the board world with the limited processing capacity of
+working memory.</p>
+<p>The concept chunks are the entries or cues to meaning. They are basic
+units in our cognition. It is worth noting that <em>basic</em> does not
+mean <em>smallest</em>. There can be many conceptual levels: a forest
+consists of trees; a tree consists of a canopy, a stem, and roots; a
+canopy consists of leaves, branches; and so on and so forth. The large
+hierarchy of concepts makes it hard to define the lowest level of
+concepts, so it is not possible to construct concepts from the
+<em>smallest</em> units. <em>Basic</em> units, instead, refer to the
+units that take priority during understanding, and the priority depends
+on the interpreter’s experience. For example, most people will recognize
+a cat as <em>cat</em> rather than the superordinate concept
+<em>mammal</em> or the subordinate concept <em>Russian Blue</em>, and a
+cat owner may move their prior level to different breeds of cats<span
+class="citation" data-cites="Hajibayova2013-ud">(Hajibayova
+2013)</span>. Owing to the priority of the basic units in conceptual
+levels, people can reduce the complicated hierarchy to a single concept.
+In this thesis, I investigate the basic units of language
+comprehension.</p>
+<div id="the-discreteness-of-language-cognition">
+<h3 id="ch1.the-discreteness-of-language-cognition">The discreteness of
+language cognition</h3>
+</div>
+<p>Language is a part of the human world. So as in the cognition of the
+world, discreteness can also be seen in the cognition apparatus dealing
+with language. The world may be continuous, but language is
+intrinsically discrete since it evolved from human’s discrete cognitive
+actions rather than the natural environment. Units in languages include
+phonemes, gestures, signs, and other symbols. If these simple symbols
+are used alone, their expressive capabilities are far from adequate for
+the current communication of people. However, as Wilhelm von Humboldt
+summarized language as a system which “makes infinite use of finite
+means” (translated and quoted by Noam Chomsky (<span class="citation"
+data-cites="Chomsky2016-lc">(2016)</span>)), humans invent different
+syntactic roles for symbols so the symbols can be combined to form a
+short sentence, and a sentence can nest inside another sentence to
+generate a longer sentence. The recursion of language allows language
+users to build infinite expressions from an initially limited set of
+concepts. In other words, not only is language inherently discrete, the
+evolution of language has also taken advantage of its discrete
+nature.</p>
+<p>The discrete nature of language is apparent in its spoken and written
+form. Sentences and their internal clauses are usually separated by
+speech pauses, and the voice stress given to certain syllables can
+indicate the separations between words, clauses, or other linguistic
+units. Almost all current writing systems have punctuations and
+delimiters (such as spaces). Punctuations sometimes help to disambiguate
+the meaning of the text. For example, in case we remove punctuations
+from “<em>Most of the time, travellers worry about their luggage.</em>”,
+the sentence “<em>Most of the time travellers worry about their
+luggage</em>” turns to be Sci-Fi. Also, current European and Arabic
+writing systems usually put spaces in the text to indicate the
+boundaries of words. The spaces play a similar role of disambiguation as
+punctuations. With punctuations, spaces, and other dividers, language
+users can distinguish different entities and understand the materials
+more easily.</p>
+<p>However, the discreteness in language forms differs from the
+discreteness in language cognition. The dividers in the form are
+explicit and perceptible. But a lot of discreteness in language
+cognition is implicit and can be recognized only by experience. Syllable
+stresses do not mark all the separations between linguistic units. A
+robot voice may even lack stress cues and become monotonous, while
+people can still understand it without much effort. The written styles
+of Ancient Greek and Classical Latin, scriptio continua or continuous
+script (<span class="citation" data-cites="Nagy2009-ih">Nagy
+(2009)</span>, <span class="citation"
+data-cites="Nagy2009-ih">(2009)</span>, p. 5; <span class="citation"
+data-cites="Rhodes2013-uq">Rhodes (2013)</span>, <span class="citation"
+data-cites="Rhodes2013-uq">(2013)</span>), do not use dividers like
+space or punctuation. Classical Chinese text has a similar style, and
+was used until about one hundred years ago. Modern Chinese added
+punctuations, but still has no space between words.</p>
+<p>In sum, perceptual dividers may facilitate understanding, but they
+only partially mark the discrete units of language cognition. Therefore,
+the discreteness of language cognition cannot be deduced merely from the
+perceptual cues, which leaves the open challenge of discovering the
+building blocks in language cognition. These building blocks are the
+genuine language units that we memorize, perceive, and produce in our
+daily life. I will name them <em>cognitive units</em> below.</p>
+<div id="from-linguistic-units-to-cognitive-units">
+<h3 id="ch1.from-linguistic-units-to-cognitive-units">From linguistic
+units to cognitive units</h3>
+</div>
+<p>Ferdinand de Saussure, in his famous edited works <em>Course in
+General Linguistics,</em> indicated the importance of units in language
+science:</p>
+<p>“... just as the game of chess is entirely in the combination of the
+different chess pieces, language is characterized as a system based
+entirely on the opposition of its concrete units. We can neither
+dispense with becoming acquainted with them nor take a single step
+without coming back to them” (<span class="citation"
+data-cites="Saussure1959-rs">De Saussure (1916/1959)</span>, <span
+class="citation" data-cites="Saussure1959-rs">(1916/1959)</span>,
+p. 107).</p>
+<p>Various branches of linguistics take some form of <em>units</em> as
+the basis of their theoretical frameworks. In the following paragraphs,
+I will go through different types of linguistic units that researchers
+have used and discuss their relations with our desired cognitive
+units.</p>
+<p>Although Saussure admitted the difficulty of seizing language units
+in practice, he said the word “bears a rough resemblance to the unit and
+has the advantage of being concrete” (Saussure 1959, page 113). Indeed,
+words are the most generally accepted units of language, either in daily
+use, such as dictionary lookup and word count, in linguistics, such as
+sentence parsing <span class="citation"
+data-cites="Chomsky1957-dk">(Chomsky 1957)</span>, in computational
+linguistics, such as word embedding <span class="citation"
+data-cites="Mikolov2013-om Pennington2014-ii">(Mikolov et al. 2013;
+Pennington, Socher, and Manning 2014)</span>, or in psycholinguistics,
+such as lexical decision task <span class="citation"
+data-cites="Meyer1971-ej">(Meyer and Schvaneveldt 1971)</span>. The
+reason behind the wide acceptance of word units is as Saussure said:
+they are <em>concrete</em>. The spaces and punctuations make words
+conspicuous in most texts, so it is easy for the reader to locate them
+as units.</p>
+<p>However, words are not always so conspicuous. For example, fluent
+speech smooths the pronunciation of neighboring words into a continuum,
+rather than marking the pronunciation of each word separately; and as I
+have mentioned in Section <a
+href="#ch1.the-discreteness-of-language-cognition"
+data-reference-type="ref"
+data-reference="ch1.the-discreteness-of-language-cognition">1.2</a>,
+some writing systems lack perceptual word dividers, so even the
+definitions of <em>words</em> in those systems remain ambiguous.
+Moreover, we cannot say that words are cognitive units even in the
+writing systems which have conspicuous words. For example, infrequent
+morphologically complex words (e.g., <em>allyship</em>) or long words
+(e.g., <em>pseudohypoparathyroidism</em>) should probably be decomposed
+during understanding because of their unfamiliarity and composition into
+meaningful parts. For those cases, morphemes, that are defined as the
+linguistic form which bears no partial phonetic-semantic resemblance
+(<span class="citation" data-cites="Bloomfield1933-gl">Bloomfield
+(1933)</span>, <span class="citation"
+data-cites="Bloomfield1933-gl">(1933)</span>, p. 161) or the minimal
+meaning-bearing units in a language <span class="citation"
+data-cites="Chomsky1953-zp">(Chomsky 1953)</span>, may serve as the
+better candidates for cognitive units. But if morphemes serve as the
+only units in cognition, the number of tokens would increase (as would
+the number of operations required), and many opaque compounds (e.g.,
+<em>strawman</em>) would not be understood as a whole.</p>
+<p>Still, words and morphemes are the prevalent units in mainstream
+linguistics. It may be because they are all defined as the
+<em>minimal</em> units though under different criteria: words are the
+minimal units in most syntactic theories or the minimal units between
+two spaces in most European texts, and morphemes are the minimal units
+bearing meaning. Taking only the <em>minimal</em> units in language
+formalization is a type of reductionism, and the reductive approach can
+simplify formalization. For example, words and morphemes are more
+distinguishable than phrases and clauses, and words and morphemes are
+also of fewer types than phrases and clauses, so the units based on
+<em>words + morphemes</em> require simpler definitions and rules in
+formalization.</p>
+<p>However, the advantage in formalization does not mean these units
+alone can describe cognition. For instance, there are a lot of idioms of
+which the figurative meanings are different from their literal meanings.
+The figurative meanings of idioms must be assessed holistically, and
+that means idioms should be included as cognitive units. When Chomsky
+attempted to formalize the language systems into <em>generative
+grammar</em>, he considered only grammar, which is the set of rules
+composing the minimal units into sentences, and regarded meaning and
+pragmatics as secondary <span class="citation"
+data-cites="Barman2012-li">(Barman 2012)</span>. His approach simplified
+his formal system of language and facilitated the analysis of “regular”
+language, but this system treats idioms as irregular exceptions <span
+class="citation" data-cites="Almohizea2016-vu">(Almohizea 2016)</span>.
+While generative grammar became mainstream linguistics from the middle
+of the last century, its neglect of idioms and other shortcomings kept
+drawing criticisms. Some of these criticisms spawned <em>usage-based
+linguistics</em>, which regards all linguistic knowledge emerged from
+embodied experience and language use in the real world. Usage-based
+linguistics naturally allows idioms to be cognitive units, since idioms
+are observable products of language use.</p>
+<p>Usage-based linguistics softens the traditional, rigid definitions of
+language units and makes the language units flexible in terms of sizes
+and structures. Given this, one might assert that usage-based
+linguistics should be able to describe cognitive units better than
+formal linguistics in the style of Chomsky. Having said that,
+usage-based linguistics is not developed in a unified frame, but is
+developed in parallel theories, such as Cognitive Grammar <span
+class="citation" data-cites="Langacker1987-fi">(R. W. Langacker
+1987)</span>, Cognitive Construction Grammar (<span class="citation"
+data-cites="Lakoff1987-cl">Lakoff (1987)</span>, <span class="citation"
+data-cites="Lakoff1987-cl">(1987)</span>, p. 467; <span class="citation"
+data-cites="Goldberg1995-kz">Goldberg (1995)</span>, <span
+class="citation" data-cites="Goldberg1995-kz">(1995)</span>; <span
+class="citation" data-cites="Goldberg2006-gf">Goldberg (2006)</span>,
+<span class="citation" data-cites="Goldberg2006-gf">(2006)</span>), and
+Radical Construction Grammar <span class="citation"
+data-cites="Croft2001-vh">(Croft 2001)</span>. But at least, they share
+the same terminology <em>construction</em> to describe the language
+units.</p>
+<p>We may wonder whether constructions are our expected cognitive units.
+In general, construction means form-meaning or form-function pairing,
+but its definition has been evolving several times. In the early days of
+usage-based linguistics, Lakoff argued in “Linguistic Gestalts” (<span
+class="citation" data-cites="Lakoff1977-jw">(1977)</span>) that the
+meaning of an expression may be more than the additive meanings of its
+parts, and Langacker said a construction contains two or more symbolic
+components (<span class="citation"
+data-cites="Langacker1987-fi">(1987)</span>, p. 82). They considered
+constructions to be <em>complex</em> structures and serve as supplements
+to the minimal units. However, since the 1990s, most researchers in
+usage-based linguistics, such as Goldberg (<span class="citation"
+data-cites="Goldberg1995-kz">(1995)</span>; <span class="citation"
+data-cites="Goldberg2006-gf">(2006)</span>; <span class="citation"
+data-cites="Goldberg2013-ci">(2013)</span>), Croft and Cruse (<span
+class="citation" data-cites="Croft2004-ok">(2004)</span>), and even
+Langacker himself (<span class="citation"
+data-cites="Langacker2017-lf">(2017)</span>), used the notion of
+construction also for minimal units. This extension integrated
+morphemes, words, idioms, etc., which used to be described at different
+linguistic levels, into a neat concept.</p>
+<p>Another conceptual change of construction is on the constraint of
+“unpredictability” or “non-decomposability”. Lakoff and Goldberg’s
+Cognitive Construction Grammar is the most popular genre in construction
+grammar, and its timeline illustrates this conceptual change. According
+to Goldberg in her first book (<span class="citation"
+data-cites="Goldberg1995-kz">(1995)</span>, p. 4), constructions should
+not be strictly predictable from their component parts; in a later book
+(<span class="citation" data-cites="Goldberg2006-gf">(2006)</span>,
+p. 5), she privileged a condition: ”patterns are stored as constructions
+even if they are fully predictable as long as they occur with sufficient
+frequency”. In a more recent book chapter (<span class="citation"
+data-cites="Goldberg2013-ci">(2013)</span>), she loosened the constraint
+further and refined the definition of construction as “conventional,
+learned form-function pairings at varying levels of complexity and
+abstraction”. The cancellation of “unpredictability”, together with the
+cancellation of “complexity”, allows <em>any</em> expression, such as
+“-ly”, “dog”, “I don’t know”, or “he is”, to be the constructions.</p>
+<p>There is abundant evidence from psycholinguistic research showing
+that the units in language cognition indeed span from morphemes <span
+class="citation"
+data-cites="Koester2011-sv MacGregor2013-qb Fiorentino2014-pg Kaczer2015-em Leminen2019-wz">(Koester
+and Schiller 2011; MacGregor and Shtyrov 2013; Fiorentino et al. 2014;
+Kaczer et al. 2015; Leminen et al. 2019)</span> to multi-word
+expressions <span class="citation"
+data-cites="Jackendoff2002-bd Bannard2008-eo Arnon2010-kw">(Jackendoff
+2002; Bannard and Matthews 2008; Arnon and Snider 2010)</span>. It
+seems, therefore, that the term <em>constructions</em>, in linguistics,
+approximates the cognitive units I talk about in this thesis. However,
+the definition of constructions still does not fully satisfy what I want
+of cognitive units, because the constraint “conventional, learned” in
+the new definition of construction <span class="citation"
+data-cites="Goldberg2013-ci">(Goldberg 2013)</span> creates a circular
+argument if we ask for a discriminative statement rather than a
+descriptive statement. A common approach to get around this plight is to
+interpret “conventional, learned” as a matter of concrete frequency. But
+we should note that the frequency effect cannot explain everything about
+cognitive units: as an instance for low frequency, people may
+immediately memorize the name of a new friend; as an instance for high
+frequency, people may forget something that was once familiar.</p>
+<p>In summary, the word, the morpheme, the idiom, as well as other
+classical linguistic units, only describe part of cognitive units; the
+construction, as a type of usage-based linguistic unit, represents the
+notion of cognitive unit best among the linguistic units, but still not
+perfectly. It remains necessary to study cognitive units from a variety
+of perspectives.</p>
+<div id="the-research-questions-of-cognitive-units">
+<h3 id="ch1.the-research-questions-of-cognitive-units">The research
+questions of cognitive units</h3>
+</div>
+<p>I have argued that cognitive units are rooted in language usage in
+the above section, but also argued that the existing concepts in current
+usage-based linguistics failed to give a formal, definite description of
+cognitive units. To study what cognitive units are, we should examine
+the reason for that failure.</p>
+<p>The linguistic units assumed by current formal theories, e.g., words
+and morphemes, lack flexibility, while they are well-defined and can be
+easily identified in any language material. In contrast, usage-based
+linguistics discards some of the rigidity of formal linguistics. But
+units in usage-based linguistic theories are not defined consistently
+yet, and outsider adopters from e.g. psycholinguistics or computational
+linguistics cannot easily decide on a <em>suitable</em> definition given
+the different variants of theories. Furthermore, even if we had decided
+on a definition, the definition is still ambiguous for identifying the
+units in given language material: The current typical solution for
+usage-based linguists is to handcraft a vocabulary with linguistic
+intuition, but this is not a generic solution for defining the units in
+a general cognitive model. For these reasons, even psycholinguistic
+studies, which require cognitive reality and plausibility, still often
+adopt traditional linguistic units in their analyses.</p>
+<p>In the current thesis, I will not dig into the divergence between
+different linguistic theories. Rather, I will attempt to discover
+cognitive units, adopting the flexibility of the usage-based view. I am
+interested in formalizing the underlying principles that are analogous
+to principles allowing humans to learn and use cognitive units. More
+specifically, I will explore three questions about cognitive units:</p>
+<ol>
+<li><p><span
+id="ch1.what-will-be-learned-as-cognitive-units-during-language-acquisition"
+label="ch1.what-will-be-learned-as-cognitive-units-during-language-acquisition"></span><strong>What
+will be learned as cognitive units during language
+acquisition?</strong><br />
+Traditional studies of language acquisition usually talk about learning
+words. Yet, words may not be the units of learning; perhaps the learning
+of cognitive units should be the more generic research goal. Cognitive
+units may be very different language chunks, but not just any language
+chunk is a Cognitive unit (otherwise, the mental lexicon would be
+unlimited). The flexibility of cognitive units implies that humans are
+able to learn whether an arbitrary chunk in the language input is a
+Cognitive unit without prior knowledge.</p>
+<p>Accordingly, I propose the first research question on cognitive
+units: what will be learned as cognitive units during language
+acquisition? In Section <a
+href="#ch1.from-linguistic-units-to-cognitive-units"
+data-reference-type="ref"
+data-reference="ch1.from-linguistic-units-to-cognitive-units">1.3</a>, I
+have mentioned that the definition of construction “conventional,
+learned form-function pairings at varying levels of complexity and
+abstraction” <span class="citation"
+data-cites="Goldberg2013-ci">(Goldberg 2013)</span> closely represents
+cognitive units. But the prerequisite “<em>conventional or learned</em>”
+in the definition is too vague since it does not answer anything about
+what will be learned. This issue leads to the requirement of a formal
+definition of cognitive units.</p>
+<p>Furthermore, the above question implies <em>how to learn them</em>
+because cognitive units are the results of learning. The two questions
+are two sides of the same coin, but it is also interesting to
+investigate more specific aspects of the learning.</p></li>
+<li><p><span id="ch1.how-to-segment-language-input-into-cognitive-units"
+label="ch1.how-to-segment-language-input-into-cognitive-units"></span><strong>How
+to segment language input into cognitive units?</strong><br />
+We can hardly read a sentence instantly. Instead, we segment the
+sentence into smaller cognitive units. A similar effort is sentence
+parsing, which has been well-studied. However, it is different from
+cognitive units segmentation, because sentence parsing analyzes the
+structure of complete sentences, while cognitive units segmentation may
+operate on partial sentences as sentences are incrementally processed.
+In other words, sentence parsing in the end requires the input to be
+fully available, after which the parse can be established post-hoc,
+while cognitive units segmentation should be modeled as an online task
+that does not require the input to be finished or pre-segmented.</p>
+<p>Moreover, cognitive units may vary in length or form, and they are
+not always highlighted by perceptual cues in the language input. In
+order to understand continuous language, readers must rely on their
+experience to segment the language input into cognitive units. In other
+words, the cognitive function for Cognitive unit segmentation in the
+language input is based on the mental lexicon that stores learned
+cognitive units.</p>
+<p>In this thesis, I will investigate and model the mechanism of
+cognitive units segmentation. The answer would not only contribute as a
+psycholinguistic theory, but also provide a formal solution for sentence
+segmentation in usage-based linguistics.</p></li>
+<li><p><span id="ch1.how-to-process-segmented-cognitive-units"
+label="ch1.how-to-process-segmented-cognitive-units"></span> <strong>How
+to process segmented cognitive units?</strong><br />
+A natural follow-up to the cognitive unit segmentation is the processing
+of the segmented result. Through the processing of the cognitive units
+and their relations, language input can be fully understood. However,
+the investigation of this process is very complicated since it involves
+many subprocesses (e.g., semantic access and syntactic composition of
+these units) and the interaction between them. In this thesis, I attempt
+to develop a concise framework to describe the processing of cognitive
+units. More specifically, I will use the mechanism for scheduling
+cognitive units of various grain sizes as the entry point for this
+framework.</p>
+<p>If only one Cognitive unit is segmented at each time step, there is
+no question of which one to process. However, more cognitive units could
+be segmented at the same time in the case that these units form a
+hierarchical tree. For example, if <em>mail</em>, <em>box</em>, and
+<em>mail box</em> are all stored in the mental lexicon, the whole form
+and its components may all be segmented and activated. The multiple
+candidates complicate subsequent processing: would the reader process
+the cognitive units at different levels simultaneously, process only
+some of them, or process some of them in advance? This is precisely the
+scheduling question asked in this section.</p></li>
+</ol>
+<div id="the-methodologies">
+<h3 id="ch1.the-methodologies">The methodologies</h3>
+</div>
+<p>Language is the product of human cognition. However, traditional
+studies of language usually start from language <em>per se</em>.
+Chomsky, who claims linguistics is a branch of cognitive psychology
+(<span class="citation" data-cites="Chomsky2006-wj">(2006)</span>,
+p. 1), built his theories within the scope of language structure, using
+as the cornerstone of his theory a controversial hypothesis -- the
+innate grammar ability in the human brain. Even the schools of
+usage-based linguistics, which do not use Chomsky’s hypothesis and
+ground themselves in cognitive plausibility (which is why they are also
+commonly referred to <em>cognitive linguistics</em>), focus on the
+language phenomena to prove their consistency and completeness rather
+than collecting cognitive evidence to prove their cognitive reality.</p>
+<p>In investigating our research questions, I will start from
+psycholinguistic methods, i.e., designing experiments to collect human
+behavioral or neural responses to language material. By doing so, we may
+obtain the empirical positive or negative evidence for our hypotheses on
+cognitive units, and eventually, we may infer some key mechanisms of
+language cognition that deal with these units. Specifically, this thesis
+will involve the following experimental techniques:</p>
+<ol>
+<li><p>Behavioral approaches</p></li>
+</ol>
+<blockquote>
+<p>The philosophy behind behavioral experiments is that people’s
+behaviors reflect the underlying cognitive procedure. Not any cognitive
+procedure will result in overt or measurable behavior, but we may be
+able to design a targeted task to force the cognitive procedure to show
+a behavior. The <strong>Lexical decision task (LDT)</strong> is such a
+task in psycholinguistics. In detail, LDT measures how quickly the
+experiment participants classify the designed stimuli as words or
+non-words. By comparing the reaction time between two types of stimuli
+that are different on a linguistic attribute <em>X</em>, we can estimate
+how <em>X</em> affects the processing time.</p>
+<p>LDT requires reporting the decision of each stimulus, so the reading
+should be interrupted often. In contrast, <strong>eye-tracking</strong>
+can collect data during natural reading. This technique measures
+people’s eye movement, so it requires no extra response, such as in LDT,
+from the participants. An eye fixation usually reflects attention at the
+fixation point. Using eye tracking instruments, researchers can record
+and analyze the latencies, durations, and locations of fixations while
+reading, to understand when, to what extent, and where the language
+content is processed.</p>
+</blockquote>
+<ol>
+<li><p>Neuroimaging</p></li>
+</ol>
+<blockquote>
+<p>Cognitive procedures may not always result in overt behaviors, but
+they are certainly reflected by neural activities. Neuroimaging,
+therefore, can provide more detail of our interested cognition
+procedure. Some imaging techniques, such as functional magnetic
+resonance imaging (fMRI) and positron emission tomography (PET), have
+high spatial resolution and facilitate the discovery of the link between
+brain areas to cognitive functions. Some imaging techniques, such as
+<strong>electroencephalography (EEG)</strong> and magnetoencephalography
+(MEG), have high temporal resolution and facilitate the discovery of the
+temporal dynamics of cognitive functions.</p>
+<p>The studies of this thesis will use EEG since the research questions
+care about the temporal dynamics more than the brain areas of Cognitive
+unit processing. The electrical activity in response to the processing
+will conduct to the scalp, and EEG can record the electrical activity by
+multiple electrodes attached to the scalp. Even though the EEG signal
+reflects the brain activity with extremely short lag, which is much
+better than the behavioral responses that also involve the time for
+motor planning and muscle movement, we should notice that EEG cannot
+reflect all cognitive activities and the EEG signal is complicated for
+analysis. Thus, EEG is a complement, not a replacement, to the
+behavioral techniques.</p>
+</blockquote>
+<p>In addition to the psycholinguistic methods, which mainly provide
+scattered evidence for building our hypothesis of the processing
+mechanism related to cognitive units, I will also build a learning
+<strong>computational model</strong> to formalize the hypothesized
+mechanism. Within computational models that learn from data, there are
+two main branches: <em>supervised</em> models and <em>unsupervised</em>
+models. <em>Supervised</em> means the data to feed into the model are
+labeled as ground truth. Ground truths are taught by others. In human
+learning, supervised ground-truth learning is rare, and most learning is
+from our own experience of the world. Learning in the absence of labeled
+ground truth is called <em>unsupervised</em> learning.</p>
+<p>In case we had the ground truth of cognitive units, a supervised
+computational model could fit itself to the data and then predict the
+cognitive units in new cases. In reality, we lack a ground truth. More
+importantly, children learning a language have no access to the ground
+truth either. Only unsupervised computational models, therefore, are
+acceptable for cognitive units discovery. Though an unsupervised
+computational model does not need labeled data as ground truth, it
+requires the learning target to guide the discovery from unlabeled data.
+In order to make the model cognitively plausible, I will build on a
+number of general cognitive principles to design the learning
+target.</p>
+<p>An unsupervised model does not require ground truth to fit. However,
+it also means that it is difficult to know whether the unsupervised
+model reflects cognitive reality if it is not tested on empirical
+evidence. In order to evaluate the cognitive reality of our unsupervised
+model, we will let the model do a psycholinguistic task that the model
+should not have knowledge of. In our case, the task will be to predict
+eye fixations during reading since our unsupervised model does not aim
+to simulate the eye movements of humans, nor it is trained on
+eye-fixation data. If the model succeeds, we could say the model does
+conform to the cognitive reality of reading.</p>
+<div id="the-roadmap-of-the-thesis">
+<h3 id="ch1.the-roadmap-of-the-thesis">The roadmap of the thesis</h3>
+</div>
+<p>This thesis presents the discovery of the processing units in
+language cognition. The discovery contains two parts: the first part
+(Chapter <a href="ch2.html#ch2" data-reference-type="ref"
+data-reference="ch2">2</a>, <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a>, and <a href="ch4.html#ch4" data-reference-type="ref"
+data-reference="ch4">4</a>) describes laboratory studies that provide
+empirical evidence to a theoretical model of the processing of cognitive
+units; the second part (Chapter <a href="ch5.html#ch5" data-reference-type="ref"
+data-reference="ch5">5</a> and <a href="ch6.html#ch6" data-reference-type="ref"
+data-reference="ch6">6</a>) introduces a computational model, that
+formalizes the learning and processing of cognitive units. The
+computational model is based on the theoretical model.</p>
+<p>In Chapter <a href="ch2.html#ch2" data-reference-type="ref"
+data-reference="ch2">2</a>, I will introduce a toolbox,
+<em>EasyEEG</em>, which was developed for our subsequent analysis of EEG
+data. EasyEEG includes several multivariate pattern analysis (MVPA)
+methods to precisely examine the temporal dynamics of our interested
+cognitive mechanisms. The MVPA methods require no background knowledge
+of the ERP components and the sensor locations. This advantage is
+critical to the studies in the next two chapters since the studies about
+cognitive units are exploratory, which lacks the background knowledge.
+In Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> and <a href="ch4.html#ch4" data-reference-type="ref"
+data-reference="ch4">4</a>, I will present the behavioral and EEG
+evidence for our hypotheses about cognitive units, and propose a
+two-stage workflow to describe the processing of cognitive units.</p>
+<p>In Chapter <a href="ch5.html#ch5" data-reference-type="ref"
+data-reference="ch5">5</a>, I will present an unsupervised computational
+model, <em>Less-is-Better</em> (<em>LiB</em>). This model can segment
+any given text into sequences of units. The plausibility of the
+model-derived units as <em>cognitive units</em> should be tested on a
+realistic cognitive task namely, by the task related to empirical human
+behavior. Therefore, in Chapter <a href="ch6.html#ch6" data-reference-type="ref"
+data-reference="ch6">6</a>, I will present the usage of the LiB model to
+predict eye fixations during reading under the hypothesis that reading
+units are cognitive units.</p>
+<p>In the final chapter, I will summarize what I have found about
+cognitive units, discuss the implications of the findings and the
+theoretical connections to other domains, and propose some future
+work.</p>
+    </section>
+
+  </body>
+</html>
+

@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jinbiao Yang Thesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="dissertation.html">Summary</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General introduction
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-cognition">1. The discreteness of cognition</a>
+              <a class="dropdown-item" href="ch1.html#the-discreteness-of-language-cognition">2. The discreteness of language cognition</a>
+              <a class="dropdown-item" href="ch1.html#from-linguistic-units-to-cognitive-units">3. From linguistic units to cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-research-questions-of-cognitive-units">4. The research questions of cognitive units</a>
+              <a class="dropdown-item" href="ch1.html#the-methodologies">5. The methodologies</a>
+              <a class="dropdown-item" href="ch1.html#the-roadmap-of-the-thesis">6. The roadmap of the thesis</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Laboratory Experiments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch2.html#part-one-laboratory-experiments">Group-Level Multivariate Analysis in EasyEEG Toolbox: Examining the Temporal Dynamics using Topographic Responses</a>
+              <a class="dropdown-item" href="ch2.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch2.html#workflow-and-methods">2. Workflow and Methods</a>
+              <a class="dropdown-item" href="ch2.html#examples-and-results">3. Examples and Results</a>
+              <a class="dropdown-item" href="ch2.html#discussion">4. Discussion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch3.html#ch3">How do we segment text? Two-stage chunking operation in reading</a>
+              <a class="dropdown-item" href="ch3.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch3.html#materials-and-methods">2. Materials and Methods</a>
+              <a class="dropdown-item" href="ch3.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch3.html#discussion">4. Discussion</a>
+              <a class="dropdown-item" href="ch3.html#conclusion">5. Conclusion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch4.html#ch4">Rapid familiarity detection for text chunks in surrounding text</a>
+              <a class="dropdown-item" href="ch4.html#introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch4.html#methods">2. Methods</a>
+              <a class="dropdown-item" href="ch4.html#results">3. Results</a>
+              <a class="dropdown-item" href="ch4.html#discussion">4. Discussion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Computational modeling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ch5.html#part-two-computational-modeling">Less is Better: A cognitively inspired unsupervised model for language segmentation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.introduction">1. Introduction</a>
+              <a class="dropdown-item" href="ch5.html#ch5.the-Less-is-better-Model">2. The Less-is-better Model</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-training">3. Model Training</a>
+              <a class="dropdown-item" href="ch5.html#ch5.model-evaluation">4. Model Evaluation</a>
+              <a class="dropdown-item" href="ch5.html#ch5.conclusions-and-future-work">5. Conclusions and Future Work</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ch6.html#ch6">Unsupervised text segmentation predicts eyefixations during reading</a>
+              <a class="dropdown-item" href="ch6.html#ch6.introduction">1. Introduction </a>
+              <a class="dropdown-item" href="ch6.html#ch6.methods">2. Methods </a>
+              <a class="dropdown-item" href="ch6.html#ch6.results">3. Results </a>
+              <a class="dropdown-item" href="ch6.html#ch6.discussion">4. Discussion </a>
+              <a class="dropdown-item" href="ch6.html#ch6.conclusion">5. Conclusion </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              General discussion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#summary-of-the-findings">1. Summary of the findings</a>
+              <a class="dropdown-item" href="#linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">2. Linking the findings: The need of cognitive economy the principle of least effort</a>
+              <a class="dropdown-item" href="#the-current-answers-to-the-research-questions">3. The current answers to the research questions</a>
+              <a class="dropdown-item" href="#extending-the-notion-of-cognitive-units-to-different-fields">4. Extending the notion of cognitive units to different fields</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibilo.html">References</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Appendix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-2">Materials for Chapter 2</a>
+              <a class="dropdown-item" href="appendix.html#materials-for-chapter-5">Materials for Chapter 5</a>
+              <a class="dropdown-item" href="appendix.html#research-data-management">Research Data Management</a>
+              <a class="dropdown-item" href="appendix.html#acknowledgement">Acknowledgement</a>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="page-header">
+      <h1 class="project-name">Discovering the units in language cognition</h1>
+      <h2>From empirical evidence to a computational model</h2>
+      <button type="button" class="btn btn-success"> Jinbiao Yang</button>
+      <button type="button" class="btn btn-success">Ph.D. dissertation</button>
+      <h2 class="project-tagline"><a href="https://doi.org/10.13140/RG.2.2.35086.84804" target="_blank" style="color:#FFF">Yang, J. (2022). Discovering the units in language cognition: From empirical evidence to a computational model (A. van den Bosch & S. L. Frank (eds.)) [Ph.D., Radboud University & Max Planck Institute for Psycholinguistics]. https://doi.org/10.13140/RG.2.2.35086.84804</a></h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="ch7">General discussion</h2>
+<p>“Linguistics accordingly works continuously with concepts forged by
+grammarians without knowing whether or not the concepts actually
+correspond to the constituents of the system of language. But how can we
+find out? And if they are phantoms, what realities can we place in
+opposition to them?” -- (<span class="citation"
+data-cites="Saussure1959-rs">De Saussure (1916/1959)</span>, <span
+class="citation" data-cites="Saussure1959-rs">(1916/1959)</span>,
+p. 110)</p>
+<div id="summary-of-the-findings">
+<h3 id="ch7.summary-of-the-findings">Summary of the findings</h3>
+</div>
+<p>My investigations into cognitive units of language consist of two
+parts: 1. The laboratory studies provided empirical evidence to a
+theoretical model describing the processing of cognitive units; 2. The
+computational model simulated the mechanisms of learning of, and
+segmentation into, cognitive units.</p>
+<div
+id="how-readers-process-cognitive-units-nearby-a-point-of-gaze-the-two-stage-workflow">
+<h4
+id="ch7.how-readers-process-cognitive-units-nearby-a-point-of-gaze-the-two-stage-workflow">How
+readers process cognitive units nearby a point of gaze: the two-stage
+workflow</h4>
+</div>
+<p>I investigated the processing dynamics for different cognitive units
+in the language hierarchy at a point of gaze. The first experiment,
+described in Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a>, was a behavioral lexical decision task whose
+stimuli were four-character Chinese strings that are short enough to be
+perceived in one eye fixation. With four-character strings, we were able
+to manipulate the recognizability<a href="bibilo.html#fn25" class="footnote-ref"
+id="fnref25" role="doc-noteref"><sup>25</sup></a> of the global string
+(four characters) and two local strings (two characters each).</p>
+<p>We measured the reaction time of participants in the global/local
+lexical decision task. The behavioral results showed that the lexical
+decision of local lexicalized strings were influenced by the lexical
+status of the global string, but not vice versa; the lexical decision of
+an unlexicalized string at any level was influenced by the lexical
+status of the other level. The task result suggested the higher priority
+for processing global recognizable units over local units; and if the
+process of global units had not been finished before the process of
+global units, the two types of processes would interact.</p>
+<p>Then we modified the test into an EEG test to observe the dynamics of
+processing (Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a>). The EEG result showed that the processing
+workflow was divided into two stages: after about 100 ms from stimulus
+onset, the recognizable units, no matter whether they are global or
+local, are processed in a short time window; the global units will be
+processed again at about 160 ms, and the local units at about 220
+ms.</p>
+<p>According to those results, we proposed a two-stage workflow to
+describe how readers process the text nearby a point of gaze：</p>
+<ul>
+<li><p><em>Detection stage</em>: within 100 ms, the reader can detect
+different text chunks (e.g., a phrase“<em>blue sky</em>”, and its
+components “<em>blue</em>” and “<em>sky</em>”) simultaneously near a
+point of gaze, as long as the reader’s mental lexicon has stored them as
+cognitive units, and regardless of their complexities. This stage
+pre-activates the potential cognitive units to make them entries for
+subsequent recognition;</p></li>
+<li><p><em>Recognition stage</em>: the pre-activated units may be
+distributed at different linguistic levels. The resources allocated to
+them are unequal: global units (e.g., “<em>blue sky</em>”) will be
+recognized earlier than local units (e.g., “<em>blue</em>” and
+“<em>sky</em>”). However, their recognitions can occur in parallel and
+may interact.</p></li>
+</ul>
+<p>I also attempted to replicate the study in Chapter <a href="ch3.html#ch3"
+data-reference-type="ref" data-reference="ch3">3</a> using another
+behavioral experiment and another EEG experiment. The stimuli used in
+Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> were presented in isolation, rather than
+within the surrounding text. However, in natural reading environments,
+the cognitive units are usually surrounded by more text. To test whether
+the findings in Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> will generalize to a more natural reading
+environment, the stimuli in replication experiments used rare Chinese
+characters (as surrounding text) to fill a four-character Chinese string
+(as the reading target). The results of Chapter <a href="ch3.html#ch3"
+data-reference-type="ref" data-reference="ch3">3</a> were partially
+replicated: behavioral experiments in the original and new studies
+showed similar results; both EEG experiments found early detection of
+available cognitive units, but the new study neither replicated nor
+falsified the global priority effect of cognitive units. Several
+possible explanations for the absence of global precedence effects have
+been discussed in Section <a href="ch4.html#ch4.discussion"
+data-reference-type="ref" data-reference="ch4.discussion">4.4</a>.</p>
+<div
+id="how-readers-learn-and-segment-cognitive-units-from-text-the-less-is-better-model">
+<h4
+id="ch7.how-readers-learn-and-segment-cognitive-units-from-text-the-less-is-better-model">How
+readers learn and segment cognitive units from text: the
+<em>Less-is-Better</em> model</h4>
+</div>
+<p>The behavioral and EEG findings not only covered a cognitive
+mechanism, but also confirmed that cognitive units are flexible in terms
+of size and linguistic level. But how do humans learn the flexible
+units, and how do humans identify the flexible units in continuous
+language input? In order to provide an answer, I computationally modeled
+the human ability to learn and segment cognitive units (Chapter <a
+href="ch5.html#ch5" data-reference-type="ref" data-reference="ch5">5</a>).</p>
+<p>There is no ground truth of cognitive units provided to human
+language users, and therefore the current model does not rely on labeled
+data, i.e., the model is unsupervised. An unsupervised model requires a
+learning objective to guide the discovery from unlabeled data. To design
+such a learning objective, I hypothesize that language users would
+attempt to make their language cognition more efficient, and cognitive
+units are the adaptive result of the attempt. In other words,
+<em>cognitive units are the units that can minimize the cognitive
+load</em>. More specifically, the objective of the model is to minimize
+long-term memory load (the numbers of unit types) and working memory
+load (the numbers of unit tokens) simultaneously. I named the model
+<em>Less-is-Better</em> (LiB), and I will explain the logic of the
+objective in more detail in the next section.</p>
+<p>With the objective of minimizing the numbers of unit types and
+tokens, the LiB model consists of a <em>Memorizer</em> and a
+<em>Forgetter</em>. <em>Memorizer</em> will merge some adjacent units in
+the corpus into new (longer) units<a href="bibilo.html#fn26" class="footnote-ref"
+id="fnref26" role="doc-noteref"><sup>26</sup></a> and store them in a
+Lexicon. With longer units, the number of unit tokens in text decreases
+while the number of types increases. In contrast, <em>Forgetter</em>
+will remove “junk” (less useful) units from the Lexicon to reduce the
+number of unit types. The junk units may be unit types that will
+increase the number of unit tokens in the corpus<a href="bibilo.html#fn27"
+class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a>,
+as well as some unit types that do not occur frequently in the corpus.
+<em>Memorizer</em> and <em>Forgetter</em> counterbalance each other and
+finally converge to a (relatively) steady state, and the Lexicon at the
+steady state consists of the units that are close to the minimization
+objective. The model derived units that are flexible, such as “you”,
+“you can” and “ly”, which is in line with my general views about
+cognitive units. However, more qualitative evaluations are needed.</p>
+<p>In Chapter <a href="ch5.html#ch5" data-reference-type="ref"
+data-reference="ch5">5</a>, I evaluated the model-derived units
+computationally. In terms of description length (a metric in information
+theory) and bits-per-character (a metric of language model quality), the
+LiB units display advantages over units composed of characters, words,
+and units generated by the Byte Pair Encoding (BPE) algorithm.</p>
+<p>The computational advantages cannot provide empirical evidence for
+the plausibility of the model-derived units as cognitive units. Ideally,
+evaluation of the plausibility requires knowing what the true cognitive
+units are. However, there is no means to measure cognitive units in our
+mental lexicon directly. Therefore, I made two hypotheses to examine the
+relationship between the model-derived units and cognitive units: 1. LiB
+units reflect cognitive units; 2. the locations of cognitive units in
+text steer eye fixations during reading. The eye-fixation is an
+empirical human behavior and is independent of the design and training
+of the LiB model. In that sense, only cognitive units can link the model
+predictions and the eye fixations. Thus, if we can use the LiB units to
+predict the locations of eye fixations during reading, the above two
+hypotheses will be supported at the same time. In Chapter <a href="ch6.html#ch6"
+data-reference-type="ref" data-reference="ch6">6</a>, I tested this idea
+on a dataset that consists of both text and eye-fixation data, and found
+the LiB units offered advantages both in terms of prediction score and
+efﬁciency among the alternatives. These positive results support the
+hypothesis that the LiB units are indeed analogous with cognitive
+units.</p>
+<div
+id="linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">
+<h3
+id="ch7.linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">Linking
+the findings: The need of cognitive economy / the principle of least
+effort</h3>
+</div>
+<p>In theory, the two-stage workflow in reading describes how readers
+detect and recognize cognitive units nearby a point of gaze in text. The
+LiB model computationally describes how readers learn and segment
+cognitive units from a lot of text. Although they describe different
+aspects of Cognitive unit processing, we could notice that both of them
+reflect cognitive economy in their processing.</p>
+<p>The two-stage workflow describes economic scheduling of processing.
+Once a stimulus is displayed, the reader will first attempt to detect
+the potential cognitive units in the stimulus. The detection requires
+only the surface information (i.e., form) of those units, so the
+activation of those units is also shallow, fast, and low-cost at this
+stage. In contrast, it would be redundant for the reader to fully
+process all potential cognitive units from the beginning, as I will
+explain under <em>Synchronous</em> strategy below.</p>
+<p>The detection stage prepares multiple cognitive units for
+recognition. Then there might be different strategies to schedule the
+recognition of these units:</p>
+<ul>
+<li><blockquote>
+<p><em>Local only</em>: recognizing only minimal units. This would
+hamper comprehension of opaque expressions such as idioms;</p>
+</blockquote></li>
+<li><blockquote>
+<p><em>Global only</em>: recognizing only maximal units. This would
+hamper comprehension of unfamiliar expressions;</p>
+</blockquote></li>
+<li><blockquote>
+<p><em>Local first</em>: recognizing minimal units before maximal units.
+This might be ambiguous in case of opaque expressions, since both the
+metaphorical meaning and the literal meaning would be accessed;</p>
+</blockquote></li>
+<li><blockquote>
+<p><em>Global first:</em> recognizing maximal units before minimal
+units. This would not hamper comprehension. In case the processing of
+the global units take too much time, the processing of the local units
+would catch up and assist the comprehension of the global units;</p>
+</blockquote></li>
+<li><blockquote>
+<p><em>Synchronous</em>: recognizing different units simultaneously. In
+case of opaque expressions, this has the same shortcoming as the
+<em>Local first</em> strategy; in case of transparent expressions,
+accessing meaning that exists at different levels is redundant.</p>
+</blockquote></li>
+</ul>
+<p>In the comparison of strategies above, we can see that the
+larger-first strategy in the recognition stage, which is also supported
+by the empirical evidence, will reduce the processing load on the
+smaller units, which may be redundant for the final comprehension.
+Therefore, both stages of unit processing reveal the economy of our
+reading ability.</p>
+<p>Chomsky’s linguistic theory has been updated several times. In the
+most recent update (i.e., Minimalism) he also claimed that the design of
+language is determined by the “principle of economy” (<span
+class="citation" data-cites="Chomsky1995-tr">(1995)</span>, p. 168). He
+did not clarify the source of such an economy, but usage-based linguists
+might agree and explain that language use is adapted to be more economic
+under our needs. In general, it appears that the current form of
+language (e.g. dependency length and word length) is economic for our
+language system <span class="citation"
+data-cites="Futrell2015-ca Piantadosi2011-ct">(Futrell, Mahowald, and
+Gibson 2015; Piantadosi, Tily, and Gibson 2011)</span>. That is to say,
+the current form of language reflects the principle of least effort in
+our cognition, and we can use this principle to investigate language, as
+we did when designing the LiB model.</p>
+<p>From Aristotle’s preference of “the demonstration which derives from
+fewer postulates or hypotheses” in his <em>Posterior Analytics</em>, to
+William of Ockham’s (1287–1347) law of parsimony (also known as Occam’s
+razor), all tried to reveal the simplicity of nature. The principle of
+least effort inherited those ideas and extended to the parts of human
+nature -- behaviors and cognition. Loh Seng Tsai stated the animal
+“tends to select that <span>[</span>behavior<span>]</span> which
+involves the least expenditure of energy” (<span class="citation"
+data-cites="Tsai1932-on">(1932)</span>). Tsai’s statement can also be
+inferred from the common idea of evolution: the species/genes/behaviors
+that are more efficient for the current environment are more likely to
+survive. However, “the least expenditure of energy” in Tsai’s statement
+implies a pitfall: it in general means the current effort for the
+behavior rather than the future effort raised by the behavior.
+Therefore, George Kingsley Zipf, who formally proposed the <em>Principle
+of Least Effort</em>, explained the principle as “<span>[</span>the
+person<span>]</span> will strive to solve his problems in such a way as
+to minimize the total work that he must expend in solving both his
+immediate problems and his probable future problems.” (<span
+class="citation" data-cites="Zipf1949-lo">Zipf (1949)</span>, <span
+class="citation" data-cites="Zipf1949-lo">(1949)</span>, p. 1). Zipf’s
+emphasis on both “immediate” and “probable future” effort perfected
+Tsai’s statement.</p>
+<p>Language is a part of human behavior and cognition, so I considered
+language as a system that obeys the principle of least effort, and
+cognitive units are the result of applying the principle of least effort
+to language. It opened the door to discover the flexible cognitive units
+in a formal way. However, Zipf’s principle of least effort is more like
+a metaphysical proposition, since “effort” is hard to measure. To solve
+this issue and build a computational model, I define “effort” as the
+load on both working memory and long-term memory. In other words, the
+principle of least effort turns out to be:</p>
+<ul>
+<li><blockquote>
+<p>Minimizing the load of <strong>both current and prospective working
+memory</strong>;</p>
+</blockquote></li>
+<li><blockquote>
+<p>Minimizing the load of <strong>long-term memory</strong>.</p>
+</blockquote></li>
+</ul>
+<p>More specifically for language, the above two goals should be
+operationalized as:</p>
+<ul>
+<li><blockquote>
+<p>Minimizing the number of processing units in all potential texts
+(i.e., <strong>unit tokens</strong>);</p>
+</blockquote></li>
+<li><blockquote>
+<p>Minimizing the number of stored units in the lexicon (i.e.,
+<strong>unit types</strong>).</p>
+</blockquote></li>
+</ul>
+<p>By defining cognitive units as the language chunks that satisfy the
+minimization of the numbers of unit tokens and types, the theory of
+cognitive units becomes formal, and the computational model for
+discovering cognitive units becomes feasible.</p>
+<p>Of course, working memory and long-term memory are only parts of our
+language-cognition system. These memories store the unit tokens and
+types, which represent the morphological aspect of language, but
+language also involves syntax, semantics, and pragmatics. Therefore,
+according to the view that cognitive units are the result of applying
+the principle of least effort to language, we should also minimize the
+complexity of dependency relations, the steps of meaning encoding and
+decoding, the social pressure, etc., in order to obtain cognitive units.
+But as I have shown in Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> and Section <a
+href="ch7.html#ch7.how-readers-process-cognitive-units-nearby-a-point-of-gaze-the-two-stage-workflow"
+data-reference-type="ref"
+data-reference="ch7.how-readers-process-cognitive-units-nearby-a-point-of-gaze-the-two-stage-workflow">7.1.1</a>,
+the detection of cognitive units can be based their morphological form.
+This is why the units learned by the LiB model, which only takes into
+account working and long-term memory, can be close to cognitive units
+and predict eye fixations in reading. However, any model is a
+simplification of reality. In case we require more precise cognitive
+units, we need to minimize more objectives in the LiB model.</p>
+<h3 id="the-current-answers-to-the-research-questions">The current
+answers to the research questions </h3>
+<p><span id="ch7.the-current-answers-to-the-research-questions"
+label="ch7.the-current-answers-to-the-research-questions"></span></p>
+<p>Language is discrete, but the cognitive units of language are not
+simply words or any other linguistic units that have been well studied.
+To obtain a more clear picture of cognitive units and their processing,
+I have posed three questions in Section <a
+href="ch1.html#ch1.the-research-questions-of-cognitive-units"
+data-reference-type="ref"
+data-reference="ch1.the-research-questions-of-cognitive-units">1.4</a>,
+and the research findings I presented in this thesis provide the
+corresponding answers to different extents.</p>
+<div id="what-will-be-learned-as-cognitive-units">
+<h4 id="ch7.what-will-be-learned-as-cognitive-units">What will be
+learned as cognitive units?</h4>
+</div>
+<p>Cognitive units may be any form of linguistic chunk: word, morpheme,
+idiom, etc. They do not need to be indicated by perceptible dividers, or
+by an external dictionary. But which linguistic chunks will be learned
+as cognitive units? The question is related to the definition of
+cognitive units. Cognitive units cannot be defined by their forms
+because their forms are too flexible; instead, the previous chapters
+answered the question from a functional view: <strong>cognitive units
+are the units that minimize the cognitive load</strong>. In the
+usage-based view, cognitive units are the product of language usage.
+Inefficient units are more likely to be abandoned during usage, so which
+units will be retained in memory and which will be forgotten will follow
+the principle of least effort.</p>
+<p>How to implement the learning of cognitive units in human’s cognitive
+system? Since we know little of the mechanism, one may simply attribute
+the black-box mechanism to a specific module. If such a module does
+exist, the aim of the minimization requires the module to be able to
+measure the cognitive load of other modules in the language system. In
+contrast, the LiB model proposes that cognitive units can emerge from
+the interaction of different general cognitive modules (e.g., storage,
+computation, emotion, etc.) each trying to minimize its own load<a
+href="bibilo.html#fn28" class="footnote-ref" id="fnref28"
+role="doc-noteref"><sup>28</sup></a>. In that sense, cognitive units
+rely only on general cognitive modules, so no specific module is needed.
+Furthermore, the flexible forms of cognitive units can be explained as
+the unpredictable interactions among the modules, rather than intricate
+rules programmed in a single module.</p>
+<p>The states of different cognitive modules can play different roles
+for learning cognitive units. For example, the capability of the
+long-term memory limits the number of unit types, the capability of
+working memory affects the number of unit tokens and the complexity of
+unit dependencies. Besides the cognitive modules, the language
+experience is also an important factor in the learning. We cannot expect
+an uneducated person to have the same mental lexicon (of cognitive
+units) with a literary giant, nor can we even expect a person to have
+the same mental lexicon in childhood and adulthood.</p>
+<p>Even with the same lexicon, the <em>working</em> cognitive units may
+be different under different environments. For example, while speaking
+to a child, an adult may tend to use fewer unit types but more unit
+tokens than when addressing another adult. Therefore, we should notice
+that cognitive units are not fixed as linguistic units. If we need to
+estimate the mental lexicon of an individual, shared by a population, or
+shared under an environment, we must take the individual/population’s
+attributes (e.g., age, nativeness, or with/without language disorder)
+and the usage environment into consideration.</p>
+<p>It is also worth noting that cognitive units are not just the result
+of frequency, even though frequency is the most convenient standard to
+determine the flexible units. But let us take these cases into
+consideration: 1. the individual letters are the most frequent units,
+but they may not be cognitive units; 2. people may immediately memorize
+a newly-heard name as a cognitive unit. These cases suffice to support
+the idea that cognitive units involve <em>more</em> than frequency. And
+this <em>more</em> is, as I said above, the emerging result of the
+counterbalancing of different cognitive modules.</p>
+<p>In summary, cognitive units are the units that help to minimize the
+cognitive load. Cognitive units are not pre-defined by linguistics, but
+are the emerging result of different cognitive modules each trying to
+minimize their own load. Although for research we can estimate the
+general cognitive units, the genuine cognitive units may vary between
+individuals or between settings.</p>
+<div id="how-to-segment-language-input-into-cognitive-units-1">
+<h4 id="ch7.how-to-segment-language-input-into-cognitive-units-1">How to
+segment language input into cognitive units?</h4>
+</div>
+<p>Cognitive units are not perceptually highlighted in language input,
+but as we discussed above, cognitive units can be learned
+unsupervisedly. The learned cognitive units are stored in the mental
+lexicon, and the mental lexicon will guide the segmentation that online
+discretizes language input into cognitive units.</p>
+<p>Since cognitive units are independent of linguistic levels, the
+segmentation into cognitive units may involve different complexities.
+Such segmentation links to a controversial debate between the
+composition view and the whole-form view in psycholinguistics <span
+class="citation"
+data-cites="Koester2011-sv Fiorentino2014-pg Stites2016-by Leminen2019-wz">(Koester
+and Schiller 2011; Fiorentino et al. 2014; Stites, Federmeier, and
+Christianson 2016; Leminen et al. 2019)</span>. The composition view
+argues that only morphemes, the minimal meaning-bearing units, are
+stored in the mental lexicon, and the processing of language is based on
+the composition of morphemes. The whole-form view argues that frequent
+compound words are represented and processed as units, so the units of
+different complexities are equally stored in the mental lexicon <span
+class="citation"
+data-cites="Arnon2010-kw Siyanova-Chanturia2017-nj">(Arnon and Snider
+2010; Siyanova-Chanturia et al. 2017)</span>, and the composition is
+redundant for these complex but frequent compound words <span
+class="citation"
+data-cites="Ellis2003-ij Krishnamurthy2003-md Blache2015-jf">(Ellis
+2003; Krishnamurthy 2003; Blache 2015)</span>.</p>
+<p>The concept of Cognitive unit naturally supports the whole-form view
+in the segmentation since the traditional linguistics units of varying
+sizes are integrated into cognitive units, which is a single level. In
+Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a>, the EEG experiment result shows that the
+lexical units at different levels are detected simultaneously, which
+provides empirical evidence for the whole-form view. We can assume such
+segmentation physiologically acts like an attractor network, which will
+lead the input to the closest attractor (stable pattern). The learning
+of cognitive units creates a different attractor for each unit in the
+network, and when the network perceives the language input containing
+one or more cognitive units, the attractors of these cognitive units
+will be activated in parallel.</p>
+<p>The timing of the segmentation is also a crucial question. In case
+meaning was involved for segmentation, the segmentation might be more
+accurate, but it also means the segmentation would take until semantic
+processing is finished. In contrast, if only form information is
+involved, the segmentation can be achieved quickly since the access of
+semantic information should rely on the access of form information. The
+EEG result in Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> supports early and fast (after about 100 ms
+and lasting less than 50 ms) segmentation. Because this time window is
+too early and short for semantic analysis, it is more plausible for
+visual form analysis, which is at the lower level of cognitive
+processing. The LiB model, which utilizes only form information, can
+also learn the units close to cognitive units. Therefore, the
+segmentation strategy that relies on only form matches the principle of
+least effort, and benefits the speed needed for online segmentation.
+Moreover, the decoupling of form and meaning is also more economical for
+the meaning processing after segmentation, which I will discuss more in
+the next question (see Section <a
+href="ch7.html#ch7.how-to-process-the-segmented-cognitive-units"
+data-reference-type="ref"
+data-reference="ch7.how-to-process-the-segmented-cognitive-units">7.3.3</a>).</p>
+<p>In summary, the segmentation of language input is fast enough to
+support online processing. Within the 100 ms after gazing at a point,
+the cognitive units which are stored in the reader’s mental lexicon and
+displayed in the gazing text can be detected. The detection is quick
+because it only pre-activates the form of those cognitive units.</p>
+<div id="how-to-process-the-segmented-cognitive-units">
+<h4 id="ch7.how-to-process-the-segmented-cognitive-units">How to process
+the segmented cognitive units?</h4>
+</div>
+<p>The raw form of language input is usually variable and complex, so
+understanding it as a whole is difficult. But by segmenting the language
+input into the combination of cognitive units, readers can understand
+the input based on the knowledge of these cognitive units. An important
+issue here is that cognitive units may form hierarchical treelets (e.g.,
+<em><span>[</span><span>[</span>blue<span>]</span>
+<span>[</span>sky<span>]</span><span>]</span></em>) instead of flat
+sequences (e.g., <em>blue sky</em>). The processing order of a hierarchy
+is uncertain: it may be top-down, bottom-up, or other ways I have
+discussed in Section <a
+href="ch7.html#ch7.linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort"
+data-reference-type="ref"
+data-reference="ch7.linking-the-findings-the-need-of-cognitive-economy-the-principle-of-least-effort">7.2</a>.
+To deal with the uncertainty, the language system of humans should also
+be able to arrange the processing of cognitive units. The experiments in
+Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> suggest that the schedule of the processing
+is top-down, that the processing of the global units in a hierarchy will
+start earlier than of the local units, and then the processing of both
+units will be in parallel.</p>
+<p>Top-down processing has been studied for a long time in many domains.
+The earliest idea may come from holism in many kinds of philosophies,
+such as Tai Chi and Aristotle’s “<em>The whole is more than the sum of
+its parts</em>”. The latter also influenced Max Wertheimer’s Gestaltism
+theory in the early 20th century (see <span class="citation"
+data-cites="Brett2017-bb">(Brett and Michael 2017)</span>). In the study
+of vision, Navon (<span class="citation"
+data-cites="Navon1977-ss">(1977)</span>) found the global precedence
+effect , which suggests that the processing of the global level is
+faster than of the local level while recognizing a scene. The priority
+of global level was also found in psycholinguistics as the word
+superiority effect <span class="citation"
+data-cites="Reicher1969-iu">(Reicher 1969)</span>, that the letter in
+words can be better recognized than the letter presented alone or in
+nonwords. The finding in Chapter <a href="ch3.html#ch3"
+data-reference-type="ref" data-reference="ch3">3</a> further extends the
+superiority to phrases, which suggests the superiority effect as a
+generalized effect of varying global language units.</p>
+<p>The studies of top-down processing usually focus on the priorities
+for global units, and Chapter <a href="ch3.html#ch3" data-reference-type="ref"
+data-reference="ch3">3</a> further elucidates the reason for the
+priority - the earlier processing onset of global units. This finding is
+consistent with Bar et al.’s (<span class="citation"
+data-cites="Bar2006-cr">(2006)</span>) study; they found the visual
+top-down effect results from the coarse representation of input (i.e.,
+global information) that projects from early visual areas rapidly
+through the dorsal pathway, while the fine representation (i.e., local
+information) propagates relatively slower along the ventral pathway. My
+finding and Bar’s finding share the same logic, both for faster
+processing: the processing of the coarse representation/global unit may
+quickly detect the gist of the object, and so the processing of the
+detail representation/local units is not needed. Even if a coarse
+representation/global unit leaves uncertainty, it still narrows the
+predictions of the object and relieves the processing load of the
+detailed representation/local units.</p>
+<p>The priority of the global cognitive units does not only benefit the
+speed of processing, but also reduces the ambiguity in processing. Some
+of the global units are “opaque” (e.g., “hot dog”), which means the
+composition of the meaning of local units cannot be simply combined to
+determine the meaning of the global unit. Taking “<em>The whole is more
+than the sum of its parts</em>” more seriously, the direct access of any
+global unit may obtain a more appropriate meaning than compositing the
+local units. For example, even the word “blue sky” is not just a literal
+combination of “blue” and “sky”, it also metaphorically suggests an
+ideal situation.</p>
+<p>Moreover, as I mentioned before, the economy in the processing
+benefits from the decoupling of form and meaning. The segmentation
+involves only the form, not the meaning of different units. The
+advantage of this strategy is that the processing of the local unit can
+be omitted when the meaning of the global unit can be processed quickly,
+and it also avoids ambiguity if the global unit and the composition of
+the local unit have different meanings.</p>
+<p>In summary, the global and local cognitive units in a hierarchical
+treelet are processed parallel, but the global cognitive units are
+processed earlier. This processing schedule may speed up processing and
+reduce ambiguity.</p>
+<div id="extending-the-notion-of-cognitive-units-to-different-fields">
+<h3
+id="ch7.extending-the-notion-of-cognitive-units-to-different-fields">Extending
+the notion of cognitive units to different fields</h3>
+</div>
+<div id="cognitive-units-and-grammar">
+<h4 id="ch7.cognitive-units-and-grammar">Cognitive units and
+grammar</h4>
+</div>
+<p>Grammar refers to the roles of abstract language units and the
+structural constraints between them. Parsing is the application of
+grammar to find the structure of a sentence. The current LiB model does
+something similar to parsing: It can get the sequence of units (e.g.,
+<em>I like blue sky -&gt; <span>[</span>I like<span>]</span>
+<span>[</span>blue sky<span>]</span></em>), and also the treelets belong
+to those units by segmenting the units again (e.g., <em><span>[</span>I
+like<span>]</span> <span>[</span>blue sky<span>]</span> -&gt;
+<span>[</span><span>[</span>I<span>]</span>
+<span>[</span>like<span>]</span><span>]</span>
+<span>[</span><span>[</span>blue<span>]</span>
+<span>[</span>sky<span>]</span><span>]</span></em>). However, the
+mechanism of the current LiB model does nothing related to grammar. This
+is just because the current LiB model aims to be as simple as possible
+to show its theoretical value<a href="bibilo.html#fn29" class="footnote-ref"
+id="fnref29" role="doc-noteref"><sup>29</sup></a>; it concerns only the
+unit tokens and types.</p>
+<p>However, the LiB model can be adapted to represent grammar. A future
+version of LiB may not only combine the adjacent units (N-gram), but
+also the nonadjacent units (skip-gram), into a new unit. The skip-gram
+units can capture the long-distance relationship between tokens (e.g.,
+“<em>too_to_</em>”, “<em>is_by_</em>”, and “<em>the_.</em>”). The
+skip-gram units can also beneﬁt the detection of infrequent entities
+(e.g., the skip-gram “<em>Mr._said</em>” helps to detect
+“<em>Mortimer</em>” in “<em>Mr.Mortimersaid</em>”). Furthermore,
+skip-gram units integrate the grammatical structure into the lexicon, so
+the function of cognitive units is closer to Cognitive grammar <span
+class="citation" data-cites="Langacker1987-fi">(R. W. Langacker
+1987)</span>, which regards the grammar and lexicon as a continuum.</p>
+<div id="cognitive-units-and-natural-language-processing">
+<h4 id="ch7.cognitive-units-and-natural-language-processing">Cognitive
+units and Natural Language Processing</h4>
+</div>
+<p>Natural Language Processing (NLP) studies how to program computers to
+process human language. As do humans, computers need to discretize
+language input into units (tokenization). The traditional tokenization
+approach is to use words as the units, but there are too many infrequent
+words. Accepting all of them would raise an extremely large lexicon,
+which is inefficient for processing. A solution is to segment rare words
+into smaller units, such as characters<a href="bibilo.html#fn30"
+class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a>
+or subwords from Byte-Pair-Encoding (BPE) <span class="citation"
+data-cites="Sennrich2016-fv">(Sennrich, Haddow, and Birch 2016)</span>.
+However, some units larger than words (e.g., “<em>machine
+learning</em>”, “<em>kick the bucket</em>”) can improve semantic tasks
+since their global forms contain extra information.</p>
+<p>Maybe the Cognitive-unit tokenization is a better solution. cognitive
+units include units are, within, or beyond words; and the features of
+cognitive units - fewer tokens and fewer types - benefit the computation
+cost of NLP. In Chapter <a href="ch5.html#ch5" data-reference-type="ref"
+data-reference="ch5">5</a>, I have shown the advantage of cognitive
+units on simple language models. It is worth evaluating cognitive units
+on the giant language models, which usually cost enormous computation
+resources, such as BERT <span class="citation"
+data-cites="Devlin2018-eq">(J. Devlin et al. 2018)</span> and GPT-3
+<span class="citation" data-cites="Brown2020-rs">(Brown et al.
+2020)</span>.</p>
+<div class="CJK*">
+<p><span>UTF8</span><span>gbsn</span> Cognitive units may also be a
+better solution for machine translation. As I mentioned above, the
+meaning of some multi-word units cannot be deduced from the meanings of
+the individual words. And some words in a language have no corresponding
+words in another language. For example, the English word
+“<em>pragmatism</em>” corresponds to the Chinese phrase
+“<em>实用主义</em>”, the English phrase “<em>open source</em>”
+corresponds to the Chinese word “<em>开源</em>”. A common solution to
+the asymmetry is to add an auxiliary memory that stores these asymmetric
+translation pairs, but it is a manual task that takes time and is also
+error-prone. Instead, “<em>pragmatism</em>”, “实用主义”, “<em>open
+source</em>”, and “<em>开源</em>” may all be induced as cognitive units,
+and the LiB model can segment them out from sentences for the next
+translation.</p>
+</div>
+<div id="cognitive-units-and-information-theory">
+<h4 id="ch7.cognitive-units-and-information-theory">Cognitive units and
+information theory</h4>
+</div>
+<p>Shannon (<span class="citation"
+data-cites="Shannon1951-ye">(1951)</span>) has estimated the entropy of
+English. Although his method is rough (asking human subjects to guess
+upcoming characters in a short passage) from a modern point of view, he
+showed that the information in a language can be measured. Not only do
+different languages have different entropies, different types of units
+in a language also have different entropies. In Chapter <a href="ch5.html#ch5"
+data-reference-type="ref" data-reference="ch5">5</a>, I have shown that
+a language has lower entropy when it is encoded by cognitive units than
+by characters, words, or BPE subwords. This indicates the high
+efficiency of cognitive units in terms of information theory (and also
+validates that cognition is an efficient machine).</p>
+<p>However, I should note some gaps (maybe small, but they exist)
+between the language in cognition and the language in information
+theory. Although minimal description length (MDL) is a common
+information-theoretical tool to measure the complexity of an object,
+there is a shortcoming of MDL to describe human language system: MDL
+measures both lexicon and corpus in bits and simply sums their bits;
+that means their weights are equal, but the weights in the cognitive
+modules representing lexicon and corpus may not equal. Another gap is in
+the encoding/decoding of language. Information theory usually sees
+decoding as the symmetric operation of encoding. But in the real world,
+the encoders and decoders in language communication are always
+asymmetric. This issue might be solved by a deeper investigation of
+information processing, such as Logical depth proposed by Charles H.
+Bennett (<span class="citation"
+data-cites="Bennett1995-fg">(1995)</span>), which emphasizes information
+<em>value</em> (“<em>the value of a message is the amount of
+mathematical or other work plausibly done by its originator, which its
+receiver is saved from having to repeat.</em>”) more than information
+entropy.</p>
+<div id="cognitive-units-and-complex-systems">
+<h4 id="ch7.cognitive-units-and-complex-systems">Cognitive units and
+complex systems</h4>
+</div>
+<p>If a concept is formalized, much of the ambiguity in the concept can
+be avoided. The concept of cognitive units is deeply rooted in the
+usage-based perspective. Usage-based linguistics emphasizes the flexible
+usage of language and to some extent opposes the formal limitations of
+language. It therefore may seem as if usage-based linguistics is to a
+lesser extent formalized. Because of this relative lack of
+formalization, theories of usage-based linguistics are often difficult
+to analyze language quantitatively<a href="bibilo.html#fn31" class="footnote-ref"
+id="fnref31" role="doc-noteref"><sup>31</sup></a>.</p>
+<p>For formalizing the theory related to a phenomenon, it is more
+straightforward to fit a descriptive model from the statistical pattern
+of the phenomenon than to build a generative model using the mechanisms
+behind the phenomenon. However, this approach has a weakness: many types
+of models will treat rare events as exceptions/noises/errors, while they
+are just as real and productive as more frequent events <span
+class="citation" data-cites="Van_den_Bosch2013-we">(Bosch and Daelemans
+2013)</span>. In case we want to include the rare events, the model
+might be over-complicated; not to say it might be impossible to observe
+all rare events. Chomskyan linguistics argues against descriptive
+linguistics, and provides a generative approach to formalize language
+and simplify the analysis of language. However, I argue that Chomskyan
+linguistics is still not flexible enough: it allows only a limited class
+of units (i.e., words/morphemes); it cannot deal with idiomatic units,
+let alone the flexible cognitive units I am proposing.</p>
+<p>From the usage-based perspective, language involves not only the
+symbolic language, but also the human cognitive modules, and even the
+environment. Therefore, language is a <em>complex system</em>, which
+refers to the dynamical system containing multiple modules that interact
+with each other. An important attribute of complex systems is that
+complex phenomena may emerge from the complex interactions of modules
+while the working rules of the modules are simple. In other words,
+formalizing complex language phenomena in complex systems may be simple.
+An example of complex system is the Less-is-Better model introduced in
+the current thesis: the model simulates the interactions of several
+cognitive modules and the language input, and can discover the flexible
+cognitive units unsupervisedly.</p>
+    </section>
+
+  </body>
+</html>
+
